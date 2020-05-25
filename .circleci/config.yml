@@ -17,7 +17,8 @@ jobs:
   create_env_variables:
     <<: *container_config
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/dfs-optimizer
       - run:
           name: Install AWS CLI
           command: |
@@ -45,7 +46,8 @@ jobs:
   test:
     <<: *container_config
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/dfs-optimizer
       - run:
           name: Run Tests
           command: npm test
