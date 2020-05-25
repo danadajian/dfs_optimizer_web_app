@@ -45,8 +45,7 @@ jobs:
   test:
     <<: *container_config
     steps:
-      - attach_workspace:
-          at: ~/dfs-optimizer
+      - checkout
       - run:
           name: Run Tests
           command: npm test
@@ -95,7 +94,6 @@ workflows:
       - test:
           requires:
             - install
-            - create_env_variables
       - build:
           requires:
             - install
