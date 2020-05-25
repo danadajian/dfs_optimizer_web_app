@@ -11,14 +11,6 @@ jobs:
       - run:
           name: Install Dependencies
           command: npm install
-      - persist_to_workspace:
-          root: ~/dfs-optimizer
-          paths: .
-  create_env_variables:
-    <<: *container_config
-    steps:
-      - attach_workspace:
-          at: ~/dfs-optimizer
       - run:
           name: Install AWS CLI
           command: |
@@ -90,8 +82,7 @@ workflows:
   version: 2
   deploy_dfs_optimizer_web_app:
     jobs:
-      - install
-      - create_env_variables:
+      - install:
           context: DFS_OPTIMIZER
       - test:
           requires:
@@ -99,7 +90,6 @@ workflows:
       - build:
           requires:
             - install
-            - create_env_variables
       - deploy:
           context: DFS_OPTIMIZER
           filters:
