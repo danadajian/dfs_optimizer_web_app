@@ -4,20 +4,25 @@ import {downloadImage} from "./downloadImage";
 
 export const handleExportLineup = async (navigator: any, componentRef: any) => {
     const lineupGrid: any = findDOMNode(componentRef.current);
-    const canvas = await html2canvas(lineupGrid, {
+    return html2canvas(lineupGrid, {
         backgroundColor: null,
         scrollY: -window.scrollY,
         useCORS: true,
-    });
-    const dataUrl = canvas.toDataURL('image/png', 1.0);
+    }).then((canvas: HTMLCanvasElement) => {
+        return canvas.toDataURL('image/png', 1.0)
+    }).then((dataUrl: string) => {
+        if (navigator.share) {
+            navigator.share({title: 'Share Optimal Lineup', file: getBlobFromUrl(dataUrl)})
+                .then(() => alert('Success!'))
+                .catch((error: any) => alert(error.toString()));
+        } else {
+            downloadImage(dataUrl, 'lineup.png');
+        }
+    })
+}
 
-    if (navigator.share) {
-        const response = await fetch(dataUrl);
-        const blob = await response.blob();
-        navigator.share({title: 'Share Optimal Lineup', file: [blob]})
-            .then(() => alert('Success!'))
-            .catch((error: any) => alert(error.toString()));
-    } else {
-        downloadImage(dataUrl, 'lineup.png');
-    }
+const getBlobFromUrl = async (url: string) => {
+    return fetch(url)
+        .then(res => res.blob())
+        .then(blob => blob);
 }
