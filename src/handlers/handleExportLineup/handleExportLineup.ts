@@ -12,11 +12,11 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     const dataUrl = canvas.toDataURL('image/png', 1.0);
 
     if (navigator.share) {
-        // @ts-ignore
-        canvas.toBlob(blob => navigator.clipboard.write([new ClipboardItem({'image/png': blob})]))
-        // @ts-ignore
-            .then(() => alert('Copied to clipboard!'))
-            .catch((error: any) => alert(error.toString()));
+        try {
+            canvas.toBlob(blob => navigator.share({file: blob, mimeType: 'image/png'}));
+        } catch (error) {
+            alert(error.toString())
+        }
     } else {
         downloadImage(dataUrl, 'lineup.png');
     }
