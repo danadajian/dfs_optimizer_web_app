@@ -16,7 +16,8 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
             title: 'Share Optimal Lineup',
             text: 'Sample Text',
             url: dataUrl
-        });
+        }).then(() => alert('Success!'))
+            .catch((error: any) => alert(error.toString()));
     } else {
         downloadImage(dataUrl, 'lineup.png');
     }
