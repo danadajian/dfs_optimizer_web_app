@@ -14,7 +14,7 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     if (navigator.share) {
         navigator.share({
             title: 'Share Optimal Lineup',
-            text: 'Share Optimal Lineup',
+            text: 'Sample Text',
             url: dataUrl
         });
     } else {
