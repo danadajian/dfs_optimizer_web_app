@@ -12,10 +12,10 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     const dataUrl = canvas.toDataURL('image/png', 1.0);
 
     if (navigator.share) {
-        navigator.share({
-            title: 'Share Optimal Lineup',
-            url: dataUrl
-        }).then(() => alert('Success!'))
+        // @ts-ignore
+        canvas.toBlob(blob => navigator.clipboard.write([new ClipboardItem({'image/png': blob})]))
+        // @ts-ignore
+            .then(() => alert('Copied to clipboard!'))
             .catch((error: any) => alert(error.toString()));
     } else {
         downloadImage(dataUrl, 'lineup.png');
