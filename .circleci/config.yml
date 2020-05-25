@@ -90,7 +90,8 @@ workflows:
   deploy_dfs_optimizer_web_app:
     jobs:
       - install
-      - create_env_variables
+      - create_env_variables:
+          context: DFS_OPTIMIZER
       - test:
           requires:
             - install
