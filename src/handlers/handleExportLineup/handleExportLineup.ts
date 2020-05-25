@@ -9,17 +9,15 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
         scrollY: -window.scrollY,
         useCORS: true,
     });
+    const dataUrl = canvas.toDataURL('image/png', 1.0);
 
     if (navigator.share) {
         navigator.share({
             title: 'Share Optimal Lineup',
-            text: 'This is some text',
-            url: 'https://dfsoptimizer.app'
-        })
-            .then(() => alert('Share successful!'))
-            .catch((error: any) => alert(`Share unsuccessful: ${error.toString()}`))
+            text: 'Share Optimal Lineup',
+            url: dataUrl
+        });
     } else {
-        const dataUrl = canvas.toDataURL('image/png', 1.0);
         downloadImage(dataUrl, 'lineup.png');
     }
 }
