@@ -23,25 +23,25 @@ const canvasOptions = {
 };
 
 describe('handleExportLineup', () => {
-    describe('mobile device case', () => {
-        let result;
-        const share = jest.fn();
-        const mockNavigator = {
-            share
-        }
-
-        beforeEach(async () => {
-            result = await handleExportLineup(mockNavigator, componentRef)
-        })
-
-        it('should call findDOMNode with correct params', () => {
-            expect(findDOMNode).toHaveBeenCalledWith('component ref')
-        });
-
-        it('should call html2canvas with correct params', () => {
-            expect(html2canvas).toHaveBeenCalledWith('lineup grid element', canvasOptions)
-        });
-    })
+    // describe('mobile device case', () => {
+    //     let result;
+    //     const share = jest.fn();
+    //     const mockNavigator = {
+    //         share
+    //     }
+    //
+    //     beforeEach(async () => {
+    //         result = await handleExportLineup(mockNavigator, componentRef)
+    //     })
+    //
+    //     it('should call findDOMNode with correct params', () => {
+    //         expect(findDOMNode).toHaveBeenCalledWith('component ref')
+    //     });
+    //
+    //     it('should call html2canvas with correct params', () => {
+    //         expect(html2canvas).toHaveBeenCalledWith('lineup grid element', canvasOptions)
+    //     });
+    // })
 
     describe('non-mobile device case', () => {
         let result;

@@ -11,12 +11,13 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     });
 
     if (navigator.share) {
-        const args: any = (blob: Blob) => ({
+        navigator.share({
             title: 'Share Optimal Lineup',
-            blob,
-            mimeType: 'image/png'
+            text: 'This is some text',
+            url: 'https://dfsoptimizer.app'
         })
-        canvas.toBlob(blob => navigator.share(args(blob)), 'image/png');
+            .then(() => alert('Share successful!'))
+            .catch((error: any) => alert(`Share unsuccessful: ${error.toString()}`))
     } else {
         const dataUrl = canvas.toDataURL('image/png', 1.0);
         downloadImage(dataUrl, 'lineup.png');
