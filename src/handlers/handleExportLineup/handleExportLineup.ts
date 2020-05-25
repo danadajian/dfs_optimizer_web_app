@@ -12,12 +12,13 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     const dataUrl = canvas.toDataURL('image/png', 1.0);
 
     if (navigator.share) {
-        navigator.share({
-            title: 'Share Optimal Lineup',
-            text: 'Sample Text',
-            url: dataUrl
-        }).then(() => alert('Success!'))
-            .catch((error: any) => alert(error.toString()));
+        canvas.toBlob(blob => {
+            navigator.share({
+                blob: blob,
+                mimeType: 'image/png'
+            }).then(() => alert('Success!'))
+                .catch((error: any) => alert(error.toString()));
+        }, 'image/png');
     } else {
         downloadImage(dataUrl, 'lineup.png');
     }
