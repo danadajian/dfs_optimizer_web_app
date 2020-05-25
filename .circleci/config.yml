@@ -1,0 +1,108 @@
+version: 2
+container_config: &container_config
+  working_directory: ~/dfs-optimizer
+  docker:
+    - image: node:11.10.1
+jobs:
+  install:
+    <<: *container_config
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: npm install
+      - persist_to_workspace:
+          root: ~/dfs-optimizer
+          paths: .
+  create_env_variables:
+    <<: *container_config
+    steps:
+      - checkout
+      - run:
+          name: Install AWS CLI
+          command: |
+            apt-get -y -qq update
+            apt-get -y -qq install python-dev
+            apt-get -y -qq install python-pip
+            pip install --upgrade awscli
+      - run:
+          name: Configure AWS
+          command: |
+            aws configure set aws_access_key_id AWS_ACCESS_KEY_ID
+            aws configure set aws_secret_access_key AWS_SECRET_ACCESS_KEY
+            aws configure set default.region us-east-2
+      - run:
+          name: Install Jq
+          command: apt-get install -y -qq jq
+      - run:
+          name: Prepare Environment Variables
+          command: |
+            chmod +x ./scripts/createEnvironmentVariables.sh
+            ./scripts/createEnvironmentVariables.sh
+      - persist_to_workspace:
+          root: ~/dfs-optimizer
+          paths: .
+  test:
+    <<: *container_config
+    steps:
+      - attach_workspace:
+          at: ~/dfs-optimizer
+      - run:
+          name: Run Tests
+          command: npm test
+  build:
+    <<: *container_config
+    steps:
+      - attach_workspace:
+          at: ~/dfs-optimizer
+      - run:
+          name: Build
+          command: npm run build
+      - persist_to_workspace:
+          root: ~/dfs-optimizer
+          paths: .
+  deploy:
+    <<: *container_config
+    steps:
+      - attach_workspace:
+          at: ~/dfs-optimizer
+      - run:
+          name: Install AWS CLI
+          command: |
+            apt-get -y -qq update
+            apt-get -y -qq install python-dev
+            apt-get -y -qq install python-pip
+            pip install --upgrade awscli
+      - run:
+          name: Configure AWS
+          command: |
+            aws configure set aws_access_key_id AWS_ACCESS_KEY_ID
+            aws configure set aws_secret_access_key AWS_SECRET_ACCESS_KEY
+            aws configure set default.region us-east-2
+      - run:
+          name: Deploy to AWS
+          command: |
+            chmod +x ./scripts/deploy.sh
+            ./scripts/deploy.sh
+
+workflows:
+  version: 2
+  deploy_personal_website:
+    jobs:
+      - install
+      - create_env_variables
+      - test:
+          requires:
+            - install
+            - create_env_variables
+      - build:
+          requires:
+            - install
+            - create_env_variables
+      - deploy:
+          context: DFS_OPTIMIZER
+          filters:
+            branches:
+              only:
+                - master
+          requires: build
