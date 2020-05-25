@@ -10,9 +10,9 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
         useCORS: true,
     }).then((canvas: HTMLCanvasElement) => {
         return canvas.toDataURL('image/png', 1.0)
-    }).then((dataUrl: string) => {
+    }).then(async (dataUrl: string) => {
         if (navigator.share) {
-            navigator.share({title: 'Share Optimal Lineup', file: getBlobFromUrl(dataUrl)})
+            navigator.share({title: 'Share Optimal Lineup', file: await getBlobFromUrl(dataUrl)})
                 .then(() => alert('Success!'))
                 .catch((error: any) => alert(error.toString()));
         } else {
