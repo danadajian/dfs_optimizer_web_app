@@ -19,7 +19,7 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
             byteNumbers[i] = byteCharacters.charCodeAt(i);
         }
         let byteArray = new Uint8Array(byteNumbers);
-        let file = new Blob([byteArray], { type: 'image/png' + ';base64' });
+        let file = new Blob([byteArray], { type: 'image/png;base64' });
         let fileURL = URL.createObjectURL(file);
         window.open(fileURL);
     })
