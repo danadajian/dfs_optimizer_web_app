@@ -1,6 +1,7 @@
 import {findDOMNode} from "react-dom";
 import html2canvas from "html2canvas";
 import {downloadImage} from "./downloadImage";
+import { Share } from 'react-native';
 
 export const handleExportLineup = async (navigator: any, componentRef: any) => {
     const lineupGrid: any = findDOMNode(componentRef.current);
@@ -12,9 +13,11 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
         return canvas.toDataURL('image/png', 1.0)
     }).then((dataUrl: string) => {
         if (navigator.share) {
-            navigator.share({url: dataUrl})
-                .then(() => alert('Success'))
-                .catch((error: any) => alert(error.toString()))
+            Share.share({
+                url: dataUrl,
+                message: 'Share Optimal Lineup'
+            }).then(() => alert('Success'))
+                .catch((error: any) => alert(error.toString()));
         } else {
             downloadImage(dataUrl, 'lineup.png');
         }
