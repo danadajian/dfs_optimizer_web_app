@@ -13,10 +13,11 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
         return canvas.toDataURL('image/png', 1.0)
     }).then((dataUrl: string) => {
         if (navigator.share) {
-            Share.open({
+            Share.shareSingle({
                 url: dataUrl,
                 type: 'image/png',
-                message: 'Share Optimal Lineup'
+                message: 'Share Optimal Lineup',
+                social: Share.Social.WHATSAPP
             })
                 .then(() => alert('Success'))
                 .catch((error: any) => alert(error.toString()));

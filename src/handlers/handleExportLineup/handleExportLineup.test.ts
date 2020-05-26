@@ -6,6 +6,11 @@ import {downloadImage} from "./downloadImage";
 jest.mock('react-dom');
 jest.mock('html2canvas');
 jest.mock('./downloadImage');
+jest.mock('react-native-share', () => {
+    return {
+        open: jest.fn(),
+    };
+});
 
 (findDOMNode as jest.Mock).mockReturnValue('lineup grid element');
 (html2canvas as jest.Mock).mockResolvedValue({
