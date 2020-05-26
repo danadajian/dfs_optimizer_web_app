@@ -9,16 +9,8 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
         scrollY: -window.scrollY,
         useCORS: true,
     }).then((canvas: HTMLCanvasElement) => {
-        const dataUrl = canvas.toDataURL('image/png', 1.0);
-        if (navigator.share) {
-            try {
-                // @ts-ignore
-                canvas.toBlob(blob => navigator.clipboard.write([new ClipboardItem({"image/png": blob})]));
-            } catch (e) {
-                alert(e.toString());
-            }
-        } else {
-            downloadImage(dataUrl, 'lineup.png');
-        }
+        return canvas.toDataURL('image/png', 1.0)
+    }).then((dataUrl: string) => {
+        downloadImage(dataUrl, 'lineup.png');
     })
 }
