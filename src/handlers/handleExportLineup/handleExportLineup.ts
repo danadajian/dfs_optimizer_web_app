@@ -13,7 +13,7 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     }).then(async (dataUrl: string) => {
         if (navigator.share) {
             const blob = new Blob([dataUrl], {type: 'image/png'});
-            navigator.share({title: 'Share Optimal Lineup', file: blob})
+            navigator.share({title: 'Share Optimal Lineup', file: [blob]})
                 .then(() => alert('Success!'))
                 .catch((error: any) => alert(error.toString()));
         } else {
