@@ -11,6 +11,12 @@ export const handleExportLineup = async (navigator: any, componentRef: any) => {
     }).then((canvas: HTMLCanvasElement) => {
         return canvas.toDataURL('image/png', 1.0)
     }).then((dataUrl: string) => {
-        downloadImage(dataUrl, 'lineup.png');
+        if (navigator.share) {
+            navigator.share({url: dataUrl})
+                .then(() => alert('Success'))
+                .catch((error: any) => alert(error.toString()))
+        } else {
+            downloadImage(dataUrl, 'lineup.png');
+        }
     })
 }
