@@ -5,6 +5,6 @@ import '../css/DateSection.css'
 import {handleDateChange} from "../handlers/handleDateChange/handleDateChange";
 
 export const DateSection = (props: StateProps) =>
-    <DatePicker className="Date-section"
+    <DatePicker className="Date-section text-center"
                 selected={props.state.date}
                 onChange={(newDate: any) => handleDateChange(newDate, props.state, props.setState)}/>;

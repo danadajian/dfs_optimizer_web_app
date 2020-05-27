@@ -1,26 +1,26 @@
 import {findDOMNode} from "react-dom";
 import html2canvas from "html2canvas";
+import {downloadImage} from "./downloadImage";
+import {copyToClipboard} from "./copyToClipboard";
 
-export const handleExportLineup = async (navigator: any, componentRef: any) => {
+export const handleExportLineup = async (componentRef: any) => {
+    let dataUrl: string;
     const lineupGrid: any = findDOMNode(componentRef.current);
     return html2canvas(lineupGrid, {
         backgroundColor: null,
         scrollY: -window.scrollY,
         useCORS: true,
     }).then((canvas: HTMLCanvasElement) => {
-        return canvas.toDataURL('image/png', 1.0)
-    }).then((dataUrl: string) => {
-        // const newTab = window.open()!;
-        // newTab.document.body.innerHTML = `<img src=${dataUrl} alt="lineup">`;
-
-        let byteCharacters = atob(dataUrl.split('data:image/png;base64,')[1]);
-        let byteNumbers = new Array(byteCharacters.length);
-        for (let i = 0; i < byteCharacters.length; i++) {
-            byteNumbers[i] = byteCharacters.charCodeAt(i);
-        }
-        let byteArray = new Uint8Array(byteNumbers);
-        let file = new Blob([byteArray], { type: 'image/png;base64' });
-        let fileURL = URL.createObjectURL(file);
-        window.open(fileURL);
+        dataUrl = canvas.toDataURL('image/png', 1.0);
+        return fetch(dataUrl)
+    }).then((response: Response) => {
+        return response.blob()
+    }).then((blob: Blob) => {
+        return copyToClipboard(blob)
+    }).then(() => {
+        return Promise.resolve()
+    }).catch(() => {
+        alert('This browser does not support the copy feature.\nDownloading the lineup image instead.')
+        downloadImage(dataUrl, 'lineup.png')
     })
-}
+};

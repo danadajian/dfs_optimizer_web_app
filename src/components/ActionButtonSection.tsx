@@ -1,7 +1,9 @@
 import React, {useRef} from "react";
 import Button from 'react-bootstrap/Button';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 import '../css/ActionButtonSection.css'
-import {StateProps} from "../interfaces";
+import {lineupAttributes, StateProps} from "../interfaces";
 import {handleGenerateOptimalLineup} from "../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
 import {handleClearLineup} from "../handlers/handleClearLineup/handleClearLineup";
 import {handleExportLineup} from "../handlers/handleExportLineup/handleExportLineup";
@@ -9,10 +11,9 @@ import {Lineup} from "./Lineup";
 import {Optimizing} from "./Optimizing";
 
 export const ActionButtonSection = (props: StateProps) => {
-    const {isOptimizing, site, sport} = props.state;
-    const shouldRenderElement = site && sport;
-    const shouldRenderExportButton = true;
-
+    const {isOptimizing, site, sport, contest, lineup} = props.state;
+    const shouldRenderElement = sport && contest && site;
+    const shouldRenderExportButton = lineup.every((player: lineupAttributes) => player.name);
     const componentRef = useRef();
 
     const element =
@@ -25,8 +26,13 @@ export const ActionButtonSection = (props: StateProps) => {
                     variant={"secondary"}
                     onClick={() => handleClearLineup(props.state, props.setState)}>Clear Lineup</Button>
                 {shouldRenderExportButton &&
-                <Button variant={"primary"}
-                        onClick={() => handleExportLineup(navigator, componentRef)}>Share Lineup</Button>}
+                <>
+                    <OverlayTrigger trigger="click" rootClose={true} placement="top"
+                                    overlay={<Tooltip id="clipboard-overlay">Copied to clipboard!</Tooltip>}>
+                        <Button variant={"primary"}
+                                onClick={() => handleExportLineup(componentRef)}>Share Lineup</Button>
+                    </OverlayTrigger>
+                </>}
             </div>
             <Lineup {...props} ref={componentRef}/>
         </>

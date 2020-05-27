@@ -23,16 +23,13 @@ export const NavBar = (props: {
 
     return <Navbar sticky="top" bg="dark" variant="dark" expand="xl" collapseOnSelect>
         <Navbar.Brand as={NavLink} to="/">
-            <img alt="logo"
-                 src={logo}
-                 width="30"
-                 height="30"
-                 className="d-inline-block align-top mr-2"/>
+            <img alt="logo" src={logo} width="30" height="30" className="d-inline-block align-top mr-2"/>
             {' '}DFS Optimizer
         </Navbar.Brand>
         <OverlayTrigger
             placement={'auto'}
             defaultShow={!isDesktopView}
+            rootClose={true}
             overlay={
                 <Tooltip id={'site-tooltip'} placement={'auto'}>
                     Select a site to begin.
@@ -43,16 +40,18 @@ export const NavBar = (props: {
         </OverlayTrigger>
         <Navbar.Collapse id="nav-bar">
             <Nav>
-                <Nav.Link as={NavLink} to="/" className="ml-2 mr-2 mt-1 mb-1">Home</Nav.Link>
-                <Nav.Link as={NavLink} to="/about" className="ml-2 mr-2 mt-1 mb-1">About</Nav.Link>
+                <Nav.Link as={NavLink} to="/" className="text-center ml-2 mr-2 mt-1 mb-1">Home</Nav.Link>
+                <Nav.Link as={NavLink} to="/about" className="text-center ml-2 mr-2 mt-1 mb-1">About</Nav.Link>
                 <>
-                    <DateSection {...props}/>
+                    <div className="text-center"><DateSection {...props}/></div>
                     <SiteSection {...props} isDesktopView={isDesktopView}/>
                     <SportSection {...props}/>
-                    {!isDesktopView && isLoading ?
-                        <Loading sport={sport}
-                                 loadingText={loadingText}
-                                 className={'Navbar-loading'}/> : <ContestSection {...props}/>}
+                    <div className="text-center">
+                        {!isDesktopView && isLoading ?
+                            <Loading sport={sport}
+                                     loadingText={loadingText}
+                                     className={'Navbar-loading'}/> : <ContestSection {...props}/>}
+                    </div>
                 </>
             </Nav>
         </Navbar.Collapse>

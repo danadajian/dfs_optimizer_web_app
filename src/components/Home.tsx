@@ -7,7 +7,7 @@ import {StateProps} from "../interfaces";
 import {Loading} from "./Loading";
 
 export const Home = (props: StateProps) => {
-    const {isLoading, sport, loadingText} = props.state;
+    const {isLoading, sport, loadingText, contest} = props.state;
 
     const isDesktopView = window.innerWidth > 1200;
 
@@ -27,7 +27,7 @@ export const Home = (props: StateProps) => {
         <>
             <NavBar state={props.state} setState={props.setState} isDesktopView={isDesktopView}/>
             <Jumbotron>
-                {!sport &&
+                {!contest &&
                 <>
                     <h1>DFS Optimizer</h1>
                     <p>

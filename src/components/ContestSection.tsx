@@ -12,14 +12,14 @@ export const ContestSection = (props: StateProps) => {
     const shouldDisplayTooltip = shouldRenderElement && !contest;
 
     const dropdown =
-        <NavDropdown id="basic-nav-dropdown"
+        <NavDropdown id="contest-dropdown"
                      className="mt-1 ml-2"
                      title="Contests"
-                     show={!contest}
                      onSelect={(eventKey: any) => handleContestChange(eventKey, props.state, props.setState)}>
             {contests.map(
                 contestName =>
                     <NavDropdown.Item
+                        className="text-center"
                         key={contestName}
                         eventKey={contestName}
                         active={contest === contestName}>
@@ -43,6 +43,7 @@ const overlayTooltip = (contestObject: any) => {
         <OverlayTrigger
             placement={'auto'}
             defaultShow
+            rootClose={true}
             overlay={
                 <Tooltip id={'contest-tooltip'}>
                     Select a contest.
