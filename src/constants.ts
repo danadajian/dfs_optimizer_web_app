@@ -252,3 +252,4 @@ export const TEAM_ABBREVIATIONS: any = {
 export const SUPPORTED_SPORTS = ['mlb', 'nfl', 'nba', 'nhl'];
 export const KNAPSACK_PROBLEM_LINK = "https://en.wikipedia.org/wiki/Knapsack_problem";
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
+export const SPORTS_START_DATE = "2020-07-31";
