@@ -69,6 +69,7 @@ export const LineupGrid = (props: StateProps) => {
                            data={lineup}
                            columns={columns}
                            headerWrapperClasses={lineupHeaderClass}
+                           footerClasses="Lineup-footer"
                            rowClasses="Player-row"
                            rowStyle={rowStyle}
     />

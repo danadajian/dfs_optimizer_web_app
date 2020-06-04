@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import Table from 'react-bootstrap/Table'
 import '../css/PlayerCell.css'
 import {lineupAttributes} from "../interfaces";
 
@@ -7,27 +8,24 @@ export const LineupPlayerCell = (props: {
 }) => {
     const {name, status, team, opponent, opponentRank} = props.player;
     return (
-        <span className="Player-cell">
-            <table>
-                <tbody>
-                <tr className="Player-cell-row">
-                    <td>
-                        {name && name + ' '}
-                        <b>{status}</b>
-                    </td>
-                </tr>
-                <tr className="Player-team-row">
-                    <td>
-                        {team && <b>{team + ' '}</b>}
-                        <span
-                            style={getOpponentRankStyle(opponentRank!)}>
-                            {opponent}
-                        </span>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </span>
+        <Table className="Player-cell">
+            <tbody>
+            <tr className="Player-cell-row">
+                <td>
+                    {name && name + ' '}
+                    <b>{status}</b>
+                </td>
+            </tr>
+            <tr className="Player-team-row">
+                <td>
+                    {team && <b>{team + '    '}</b>}
+                    <p style={getOpponentRankStyle(opponentRank!)}>
+                        {opponent}
+                    </p>
+                </td>
+            </tr>
+            </tbody>
+        </Table>
     )
 };
 

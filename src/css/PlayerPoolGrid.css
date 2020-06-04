@@ -8,7 +8,7 @@
 }
 
 .Player-table {
-    min-width: 150vmin;
+    width: auto;
 }
 
 .Up-down-buttons {
@@ -41,7 +41,7 @@
 .Player-pool-row td {
     vertical-align: middle;
     text-align: center;
-    padding: 0.4vmin;
+    padding: 0.5vmin;
 }
 
 .Player-pool-row p {

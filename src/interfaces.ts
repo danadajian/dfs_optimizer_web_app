@@ -48,17 +48,6 @@ export interface lineupAttributes {
     overUnder?: number
 }
 
-export interface lineupPlayerProps {
-    player: lineupAttributes,
-    onRemove: () => void,
-    whiteList: number[],
-    site: string
-}
-
-export interface blackListPlayerProps {
-    player: lineupAttributes
-}
-
 export interface playerPoolAttributes {
     playerId: number,
     position: string,

@@ -17,8 +17,6 @@ export const handleExportLineup = async (componentRef: any) => {
         return response.blob()
     }).then((blob: Blob) => {
         return copyToClipboard(blob)
-    }).then(() => {
-        return Promise.resolve()
     }).catch(() => {
         alert('This browser does not support the copy feature.\nDownloading the lineup image instead.')
         downloadImage(dataUrl, 'lineup.png')

@@ -6,3 +6,8 @@
 .Action-button-section button {
     margin-bottom: 2vmin;
 }
+
+.Blacklist-popover {
+    max-height: 35vmin;
+    overflow: auto;
+}

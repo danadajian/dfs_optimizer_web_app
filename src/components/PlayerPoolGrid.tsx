@@ -33,9 +33,11 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         events: {
             onClick: (event: any) => {
                 const playerId = Number(event.target.getAttribute('data-player-id'));
-                lineup.map(player => player.playerId).includes(playerId) ?
-                    handleRemovePlayerFromLineup(playerId, props.state, props.setState) :
-                    handleAddPlayerToLineup(playerId, props.state, props.setState)
+                if (playerId) {
+                    lineup.map(player => player.playerId).includes(playerId) ?
+                        handleRemovePlayerFromLineup(playerId, props.state, props.setState) :
+                        handleAddPlayerToLineup(playerId, props.state, props.setState)
+                }
             }
         },
         formatter: (cell: any, row: any) => {
@@ -50,7 +52,9 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         events: {
             onClick: (event: any) => {
                 const playerId = Number(event.target.getAttribute('data-player-id'));
-                handleAddPlayerToBlackList(playerId, props.state, props.setState)
+                if (playerId) {
+                    handleAddPlayerToBlackList(playerId, props.state, props.setState)
+                }
             }
         },
         formatter: (cell: any, row: any) => {

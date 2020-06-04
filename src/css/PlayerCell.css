@@ -24,4 +24,14 @@
 
 .Player-team-row b {
     color: blue;
+    margin-right: 5px;
+}
+
+.Player-team-row p {
+    all: unset;
+}
+
+.Player-team-row td {
+    display: flex;
+    justify-content: center;
 }
