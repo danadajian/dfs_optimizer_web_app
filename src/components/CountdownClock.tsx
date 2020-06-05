@@ -1,30 +1,27 @@
 import React, {useEffect, useState} from "react";
 import '../css/CountdownClock.css'
 import Toast from "react-bootstrap/Toast";
+import {calculateTimeLeft} from "../helpers/calculateTimeLeft/calculateTimeLeft";
 import {SPORTS_START_DATE} from "../constants";
 
 export const CountdownClock = () => {
-    const [timeLeft, setTimeLeft]: any = useState(calculateTimeLeft());
+    const [timeLeft, setTimeLeft]: any = useState(calculateTimeLeft(+new Date(SPORTS_START_DATE) - +new Date()));
     const [showToast, setShowToast] = useState(true);
-
     useEffect(() => {
         setTimeout(() => {
-            setTimeLeft(calculateTimeLeft());
+            setTimeLeft(calculateTimeLeft(+new Date(SPORTS_START_DATE) - +new Date()));
         }, 1000);
     });
 
     const timerComponents: any = [];
-
     Object.keys(timeLeft).forEach(interval => {
-        if (timeLeft[interval]) {
-            const element = (
+        if (timeLeft[interval])
+            timerComponents.push((
                 <div className="Timer">
                     <span>{timeLeft[interval]}</span>
-                    <span>{interval}</span>
+                    <span>{interval.toUpperCase()}</span>
                 </div>
-            );
-            timerComponents.push(element);
-        }
+            ))
     });
 
     return (
@@ -40,22 +37,3 @@ export const CountdownClock = () => {
         </div>
     );
 }
-
-const calculateTimeLeft = () => {
-    const difference = +new Date(SPORTS_START_DATE) - +new Date();
-    let timeLeft = {};
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
-    const minutes = Math.floor((difference / 1000 / 60) % 60);
-    const seconds = Math.floor((difference / 1000) % 60);
-
-    if (difference > 0) {
-        timeLeft = {
-            DAYS: days,
-            HOURS: `0${hours}`.slice(-2),
-            MINUTES: `0${minutes}`.slice(-2),
-            SECONDS: `0${seconds}`.slice(-2)
-        };
-    }
-    return timeLeft;
-};
