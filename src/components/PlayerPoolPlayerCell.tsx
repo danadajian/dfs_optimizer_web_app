@@ -20,4 +20,4 @@ export const PlayerPoolPlayerCell = (props: {
             </tbody>
         </Table>
     )
-}
+};

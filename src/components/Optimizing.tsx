@@ -14,7 +14,7 @@ export const Optimizing = (props: {
         nfl: football,
         nba: basketball,
         nhl: hockey
-    }
+    };
     return (
         <div className="Optimizing">
             <p>Optimizing . . .</p>

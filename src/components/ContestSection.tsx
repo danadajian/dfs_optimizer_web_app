@@ -41,7 +41,7 @@ export const ContestSection = (props: StateProps) => {
 const overlayTooltip = (contestObject: any) => {
     return (
         <OverlayTrigger
-            placement={'auto'}
+            placement={'right'}
             defaultShow
             rootClose={true}
             overlay={

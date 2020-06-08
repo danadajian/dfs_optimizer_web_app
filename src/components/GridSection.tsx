@@ -14,7 +14,7 @@ export const GridSection: any = (props: StateProps) => {
                     <ActionButtonSection {...props}/>
                 </span>
             <PlayerPool {...props}/>
-        </div>
+        </div>;
 
     return <>{shouldRenderElement && element}</>
 };

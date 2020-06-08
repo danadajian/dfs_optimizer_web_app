@@ -46,4 +46,4 @@ export const Home = (props: StateProps) => {
             </Jumbotron>
         </>
     );
-}
+};

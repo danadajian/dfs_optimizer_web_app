@@ -9,7 +9,7 @@ import {sumAttribute} from "../helpers/sumAttribute/sumAttribute";
 import {StateProps} from "../interfaces";
 import BootstrapTable from "react-bootstrap-table-next";
 
-const removeIcon = require('../icons/remove.svg')
+const removeIcon = require('../icons/remove.svg');
 
 export const LineupGrid = (props: StateProps) => {
     const {site, lineup, whiteList, salaryCap} = props.state;
@@ -54,7 +54,10 @@ export const LineupGrid = (props: StateProps) => {
         dataField: 'projection',
         text: 'Projection',
         footer: pointSum.toFixed(1),
-        formatter: (cellContent: any, row: any) => <p>{row.projection && row.projection.toFixed(1)}</p>
+        formatter: (cellContent: any, row: any) => {
+            const projection = row.projection && Number(row.projection).toFixed(1);
+            return <p>{projection}</p>
+        }
     }, {
         dataField: 'salary',
         text: 'Salary',
@@ -73,4 +76,4 @@ export const LineupGrid = (props: StateProps) => {
                            rowClasses="Player-row"
                            rowStyle={rowStyle}
     />
-}
+};

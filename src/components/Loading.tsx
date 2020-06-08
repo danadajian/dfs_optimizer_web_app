@@ -17,11 +17,11 @@ export const Loading = (props: {
         nfl: football,
         nba: basketball,
         nhl: hockey
-    }
+    };
     return (
         <div className={props.className}>
             <p className="Loading-text">{'Loading ' + props.loadingText + ' . . .'}</p>
             <img src={sportImageMap[props.sport] || loading} className="Loading-logo" alt="Loading Logo"/>
         </div>
     )
-}
+};

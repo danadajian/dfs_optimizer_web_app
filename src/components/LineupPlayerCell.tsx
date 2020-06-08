@@ -31,4 +31,4 @@ export const LineupPlayerCell = (props: {
 
 export const getOpponentRankStyle = (opponentRank: number) => ({
     color: opponentRank < 9 ? 'red' : opponentRank > 22 ? 'green' : 'black'
-})
+});

@@ -8,17 +8,18 @@ export const CountdownClock = () => {
     const [showToast, setShowToast] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => {
-            setTimeLeft(calculateTimeLeft());
-        }, 1000);
+        const clock = setTimeout(() => setTimeLeft(calculateTimeLeft()), 1000);
+        return function cleanup() {
+            clearTimeout(clock)
+        };
     });
 
     const timerComponents: any = [];
 
-    Object.keys(timeLeft).forEach(interval => {
+    Object.keys(timeLeft).forEach((interval: string, index: number) => {
         if (timeLeft[interval]) {
             const element = (
-                <div className="Timer">
+                <div key={index} className="Timer">
                     <span>{timeLeft[interval]}</span>
                     <span>{interval}</span>
                 </div>
@@ -28,7 +29,7 @@ export const CountdownClock = () => {
     });
 
     return (
-        <div className="Countdown-clock">
+        <div id="Countdown-clock" className="Countdown-clock">
             <Toast show={showToast} onClose={() => setShowToast(!showToast)}>
                 <Toast.Header>
                     <strong className="mr-auto">Countdown to Sports</strong>
@@ -39,7 +40,7 @@ export const CountdownClock = () => {
             </Toast>
         </div>
     );
-}
+};
 
 const calculateTimeLeft = () => {
     const difference = +new Date(SPORTS_START_DATE) - +new Date();

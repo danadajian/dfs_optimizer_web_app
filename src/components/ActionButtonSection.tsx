@@ -50,7 +50,7 @@ export const ActionButtonSection = (props: StateProps) => {
                 }
             </div>
             <Lineup {...props} ref={componentRef}/>
-        </>
+        </>;
 
     if (isOptimizing) {
         return <Optimizing sport={sport}/>
