@@ -10,6 +10,7 @@ import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
 import {getOrdinalString} from "../helpers/getOrdinalString/getOrdinalString";
 import {getOpponentRankStyle} from "./LineupPlayerCell";
 import {handleRemovePlayerFromLineup} from "../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
+import {NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../constants";
 
 const upIcon = require('../icons/up.svg');
 const downIcon = require('../icons/down.svg');
@@ -113,6 +114,14 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </p>
+    }, {
+        dataField: 'rollingAverage',
+        text: `${NUMBER_OF_GAMES_FOR_ROLLING_AVG}-Game Avg`,
+        editable: false,
+        sort: true,
+        sortCaret: getSortIcon,
+        formatter: (cellContent: any, row: any) =>
+            <p>{row.rollingAverage ? Number(row.rollingAverage).toFixed(1) : 'N/A'}</p>
     }, {
         dataField: 'opponent',
         text: 'Opponent',

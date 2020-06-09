@@ -30,21 +30,22 @@ describe('handleContestChange', () => {
             projectionsData: {
                 some: 'data'
             },
+            playerHistory: {},
             opponentRanks: {},
             injuries: {},
             playerStatuses: []
         };
-        const contest = 'a contest'
+        const contest = 'a contest';
         const lineupPositions = ['P', 'C,1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'C,1B,2B,3B,SS,OF'];
         const displayMatrix = ['P', 'C/1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'Util'];
         beforeEach(async () => {
             // @ts-ignore
             result = await handleContestChange(contest, state, setState)
-        })
+        });
 
         it('should call getPlayerPool with correct params', () => {
-            expect(getPlayerPool).toHaveBeenCalledWith('dfsPlayers', state.projectionsData, state.site,
-                state.opponentRanks, state.injuries, state.playerStatuses)
+            expect(getPlayerPool).toHaveBeenCalledWith('dfsPlayers', state.projectionsData, state.playerHistory,
+                state.site, state.opponentRanks, state.injuries, state.playerStatuses)
         });
 
         it('should call createEmptyLineup with correct params', () => {
@@ -67,6 +68,7 @@ describe('handleContestChange', () => {
                 projectionsData: {
                     some: 'data'
                 },
+                playerHistory: {},
                 opponentRanks: {},
                 injuries: {},
                 playerStatuses: [],
@@ -101,11 +103,11 @@ describe('handleContestChange', () => {
             injuries: {},
             playerStatuses: []
         };
-        const contest = 'a contest'
+        const contest = 'a contest';
         beforeEach(async () => {
             // @ts-ignore
             result = await handleContestChange(contest, state, setState)
-        })
+        });
 
         it('should call window alert', () => {
             expect(window.alert).toHaveBeenCalledWith('Fanduel data is currently unavailable.');
@@ -131,11 +133,11 @@ describe('handleContestChange', () => {
             injuries: {},
             playerStatuses: []
         };
-        const contest = 'a contest'
+        const contest = 'a contest';
         beforeEach(async () => {
             // @ts-ignore
             result = await handleContestChange(contest, state, setState)
-        })
+        });
 
         it('should call window alert', () => {
             expect(window.alert).toHaveBeenCalledWith('Projection data is currently unavailable.');

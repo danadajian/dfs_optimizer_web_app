@@ -24,6 +24,7 @@ export interface State {
     projectionsData: any,
     contests: any[],
     playerStatuses: any[],
+    playerHistory: any[]
 }
 
 export interface StateProps {

@@ -2,7 +2,7 @@ import {handleSportChange} from "./handleSportChange";
 import {getDfsData} from "../../helpers/getDfsData/getDfsData";
 import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
-import {INITIAL_STATE} from "../../constants";
+import {INITIAL_STATE, NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
 
 jest.mock("../../helpers/getDfsData/getDfsData");
 jest.mock("../../helpers/extractContestsFromDfsData/extractContestsFromDfsData");
@@ -20,12 +20,12 @@ describe('handleSportChange', () => {
         const state = {
             site: 'a site',
             date: 'a date'
-        }
+        };
         const sport = 'not nhl';
         beforeEach(async () => {
             // @ts-ignore
             result = await handleSportChange(sport, state, setState)
-        })
+        });
 
         it('should call getDfsData with correct params', () => {
             expect(getDfsData).toHaveBeenCalledWith('a site', 'not nhl', 'a date')
@@ -39,7 +39,8 @@ describe('handleSportChange', () => {
             'a site data',
             'NOT NHL projections',
             'NOT NHL opponent ranks',
-            'NOT NHL injury data'
+            'NOT NHL injury data',
+            'player history'
         ];
         it.each(loadingTexts)
         ('should call setState via updateLoadingText with correct params', (loadingText) => {
@@ -53,15 +54,19 @@ describe('handleSportChange', () => {
                 })
         });
 
-        const lambdas = [
+        const sportLambdas = [
             process.env.REACT_APP_PROJECTIONS_LAMBDA,
             process.env.REACT_APP_OPPONENT_RANKS_LAMBDA,
             process.env.REACT_APP_INJURIES_LAMBDA
         ];
-        it.each(lambdas)
+        it.each(sportLambdas)
         ('should call invoke lambda with correct params', (lambdaName) => {
-            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( lambdas.indexOf(lambdaName) + 1,
+            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( sportLambdas.indexOf(lambdaName) + 1,
                 lambdaName, {sport: 'not nhl'})
+        });
+
+        it('should call rolling averages lambda with correct params', () => {
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site: state.site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG})
         });
 
         it('should call setState with correct params at the end', () => {
@@ -72,6 +77,7 @@ describe('handleSportChange', () => {
                 dfsData: 'dfs data',
                 contests: 'contests',
                 projectionsData: 'lambda result',
+                playerHistory: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},
                 injuries: {body: 'lambda result'},
                 playerStatuses: [],
@@ -82,19 +88,19 @@ describe('handleSportChange', () => {
                 blackList: []
             })
         });
-    })
+    });
 
     describe('nhl case', () => {
         let result: any;
         const state = {
             site: 'a site',
             date: 'a date'
-        }
+        };
         const sport = 'nhl';
         beforeEach(async () => {
             // @ts-ignore
             result = await handleSportChange(sport, state, setState)
-        })
+        });
 
         it('should call getDfsData with correct params', () => {
             expect(getDfsData).toHaveBeenCalledWith('a site', 'nhl', 'a date')
@@ -109,6 +115,7 @@ describe('handleSportChange', () => {
             'NHL projections',
             'NHL opponent ranks',
             'NHL injury data',
+            'player history',
             'player statuses'
         ];
         it.each(loadingTexts)
@@ -134,8 +141,12 @@ describe('handleSportChange', () => {
                 lambdaName, {sport: 'nhl'})
         });
 
+        it('should call rolling averages lambda with correct params', () => {
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site: state.site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG})
+        });
+
         it('should call invoke lambda with goalie scraper', () => {
-            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( 4, process.env.REACT_APP_GOALIE_SCRAPER_LAMBDA)
+            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( 5, process.env.REACT_APP_GOALIE_SCRAPER_LAMBDA)
         });
 
         it('should call setState with correct params at the end', () => {
@@ -146,6 +157,7 @@ describe('handleSportChange', () => {
                 dfsData: 'dfs data',
                 contests: 'contests',
                 projectionsData: 'lambda result',
+                playerHistory: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},
                 injuries: {body: 'lambda result'},
                 playerStatuses: {body: 'lambda result'},
@@ -156,7 +168,7 @@ describe('handleSportChange', () => {
                 blackList: []
             })
         });
-    })
+    });
 
     afterEach(() => {
         jest.clearAllMocks()

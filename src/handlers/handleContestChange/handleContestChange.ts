@@ -4,7 +4,7 @@ import {createEmptyLineup} from "../../helpers/createEmptyLineup/createEmptyLine
 import {State} from "../../interfaces";
 
 export const handleContestChange = async (contest: string, state: State, setState: (state: State) => void) => {
-    const {site, sport, dfsData, projectionsData, opponentRanks, injuries, playerStatuses} = state;
+    const {site, sport, dfsData, projectionsData, playerHistory, opponentRanks, injuries, playerStatuses} = state;
     if (!dfsData || dfsData.length === 0) {
         alert(`${site} data is currently unavailable.`);
         return
@@ -16,8 +16,7 @@ export const handleContestChange = async (contest: string, state: State, setStat
     const contestRules = LINEUP_RULES[site][sport][gameType];
     const {lineupPositions, displayMatrix, salaryCap, lineupRestrictions} = contestRules;
     const dfsPlayers = dfsData.filter((contestJson: any) => contestJson.contest === contest)[0]['players'];
-    const playerPool = getPlayerPool(dfsPlayers, projectionsData, site, opponentRanks, injuries,
-        playerStatuses);
+    const playerPool = getPlayerPool(dfsPlayers, projectionsData, playerHistory, site, opponentRanks, injuries, playerStatuses);
     setState({
         ...state,
         contest,

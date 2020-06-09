@@ -2,27 +2,30 @@ import {getDfsData} from "../../helpers/getDfsData/getDfsData";
 import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
 import {State} from "../../interfaces";
-import {INITIAL_STATE} from "../../constants";
+import {INITIAL_STATE, NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
 
 export const handleSportChange = async (sport: string, state: State, setState: (state: State) => void) => {
+    const {site, date} = state;
     const updateLoadingText = (loadingText: string) => {
         setState({
             ...INITIAL_STATE,
-            site: state.site,
+            site,
             isLoading: true,
             loadingText,
             sport
         });
     };
-    updateLoadingText(`${state.site} data`);
-    const dfsData = await getDfsData(state.site, sport, state.date);
-    const contests = extractContestsFromDfsData(dfsData, state.site, state.date);
-    updateLoadingText(sport.toUpperCase() + ' projections');
+    updateLoadingText(`${site} data`);
+    const dfsData = await getDfsData(site, sport, date);
+    const contests = extractContestsFromDfsData(dfsData, site, date);
+    updateLoadingText(`${sport.toUpperCase()} projections`);
     const projectionsData = await invokeLambdaFunction(process.env.REACT_APP_PROJECTIONS_LAMBDA, {sport});
-    updateLoadingText(sport.toUpperCase() + ' opponent ranks');
+    updateLoadingText(`${sport.toUpperCase()} opponent ranks`);
     const opponentRanks = await invokeLambdaFunction(process.env.REACT_APP_OPPONENT_RANKS_LAMBDA, {sport});
-    updateLoadingText(sport.toUpperCase() + ' injury data');
+    updateLoadingText(`${sport.toUpperCase()} injury data`);
     const injuries = await invokeLambdaFunction(process.env.REACT_APP_INJURIES_LAMBDA, {sport});
+    updateLoadingText('player history');
+    const playerHistory = await invokeLambdaFunction(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG});
     let playerStatuses = [];
     if (sport === 'nhl') {
         updateLoadingText('player statuses');
@@ -35,6 +38,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
         dfsData,
         contests,
         projectionsData: projectionsData.body,
+        playerHistory,
         opponentRanks,
         injuries,
         playerStatuses,

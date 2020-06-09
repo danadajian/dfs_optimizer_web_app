@@ -1,6 +1,6 @@
 import {INJURY_ABBREVIATIONS, TEAM_ABBREVIATIONS} from "../../constants";
 
-export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, site: string,
+export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, playerHistory: any, site: string,
                               opponentRanks: any, injuries: any, playerStatuses: any) => {
     let playerPool: any[] = [];
     dfsPlayers.forEach((player: any) => {
@@ -18,6 +18,8 @@ export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, site: str
             player.spread = playerData['spread'];
             player.overUnder = playerData.overUnder;
             player.projection = playerData[site + 'Projection'];
+            const playerHistoryPlayer = playerHistory.find((playerObject: any) => playerObject.PlayerId === player.playerId) || {};
+            player.rollingAverage = playerHistoryPlayer[site];
             if (Object.keys(opponentRanks).length > 0) {
                 const opposingTeam = playerData.opponent.split(' ')[1];
                 const teamRanks = opponentRanks[TEAM_ABBREVIATIONS[opposingTeam]];
