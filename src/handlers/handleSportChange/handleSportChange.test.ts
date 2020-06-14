@@ -2,7 +2,7 @@ import {handleSportChange} from "./handleSportChange";
 import {getDfsData} from "../../helpers/getDfsData/getDfsData";
 import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
-import {INITIAL_STATE, NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
+import {INITIAL_STATE} from "../../constants";
 
 jest.mock("../../helpers/getDfsData/getDfsData");
 jest.mock("../../helpers/extractContestsFromDfsData/extractContestsFromDfsData");
@@ -66,7 +66,8 @@ describe('handleSportChange', () => {
         });
 
         it('should call rolling averages lambda with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site: state.site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG})
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA,
+                {site: state.site, sport})
         });
 
         it('should call setState with correct params at the end', () => {
@@ -142,7 +143,8 @@ describe('handleSportChange', () => {
         });
 
         it('should call rolling averages lambda with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site: state.site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG})
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA,
+                {site: state.site, sport})
         });
 
         it('should call invoke lambda with goalie scraper', () => {
