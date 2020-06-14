@@ -2,7 +2,7 @@ import {getDfsData} from "../../helpers/getDfsData/getDfsData";
 import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
 import {State} from "../../interfaces";
-import {INITIAL_STATE, NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
+import {INITIAL_STATE} from "../../constants";
 
 export const handleSportChange = async (sport: string, state: State, setState: (state: State) => void) => {
     const {site, date} = state;
@@ -25,7 +25,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
     updateLoadingText(`${sport.toUpperCase()} injury data`);
     const injuries = await invokeLambdaFunction(process.env.REACT_APP_INJURIES_LAMBDA, {sport});
     updateLoadingText('player history');
-    const playerHistory = await invokeLambdaFunction(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site, sport, numberOfWeeks: NUMBER_OF_GAMES_FOR_ROLLING_AVG});
+    const playerHistory = await invokeLambdaFunction(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site, sport});
     let playerStatuses = [];
     if (sport === 'nhl') {
         updateLoadingText('player statuses');
