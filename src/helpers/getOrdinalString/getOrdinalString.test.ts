@@ -13,6 +13,5 @@ describe('gets correct ordinal string', () => {
         expect(getOrdinalString(22)).toEqual('(22nd)');
         expect(getOrdinalString(23)).toEqual('(23rd)');
         expect(getOrdinalString(32)).toEqual('(32nd)');
-        expect(getOrdinalString(null)).toEqual('');
     });
 });

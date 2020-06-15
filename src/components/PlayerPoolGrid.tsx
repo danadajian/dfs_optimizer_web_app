@@ -130,7 +130,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
             <p>
                 {row.opponent + ' '}
                 <b style={getOpponentRankStyle(row.opponentRank)}>
-                    {getOrdinalString(row.opponentRank)}
+                    {row.opponentRank && getOrdinalString(row.opponentRank)}
                 </b>
             </p>
     }, {

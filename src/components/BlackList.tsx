@@ -11,11 +11,16 @@ export const BlackList = (props: {
     return (
         <Table size={"sm"} className="Blacklist">
             <tbody>
-            {props.blackList.map(
-                (playerId: number) =>
-                    <PlayerPoolPlayerCell
-                        player={props.playerPool.find(player => player.playerId === playerId)!}/>
-            )}
+            <tr>
+                <td>
+                    {props.blackList.map(
+                        (playerId: number) =>
+                            <PlayerPoolPlayerCell
+                                key={playerId}
+                                player={props.playerPool.find(player => player.playerId === playerId)!}/>
+                    )}
+                </td>
+            </tr>
             </tbody>
         </Table>
     )

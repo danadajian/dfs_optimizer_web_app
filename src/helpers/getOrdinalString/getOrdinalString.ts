@@ -1,15 +1,16 @@
-export const getOrdinalString = (number: number | null) => {
-    if (!number) {
-        return ''
+export const getOrdinalString = (number: number) => {
+    const numString = number.toString();
+    const lastTwoDigitsAreBetween10And19 = numString.charAt(numString.length - 2) === '1';
+    if (lastTwoDigitsAreBetween10And19) {
+        return `(${number}th)`
     }
-    let numString = number.toString();
-    if (numString.endsWith('1') && numString[numString.length - 2] !== '1') {
-        return '(' + numString + 'st)'
-    } else if (numString.endsWith('2') && numString[numString.length - 2] !== '1') {
-        return '(' + numString + 'nd)'
-    } else if (numString.endsWith('3') && numString[numString.length - 2] !== '1') {
-        return '(' + numString + 'rd)'
-    } else {
-        return '(' + numString + 'th)'
-    }
+    const lastNumber = numString.slice(-1);
+    return `(${number}${ordinalMap[lastNumber] || ordinalMap.other})`
+};
+
+const ordinalMap: any = {
+    1: 'st',
+    2: 'nd',
+    3: 'rd',
+    other: 'th'
 };

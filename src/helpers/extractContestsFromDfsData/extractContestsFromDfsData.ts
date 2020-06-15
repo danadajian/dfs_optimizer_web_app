@@ -1,10 +1,8 @@
 export const extractContestsFromDfsData = (dataArray: any[], site: string, date: Date) => {
-    let contestArray: any[] = [];
     if (site === 'Fanduel')
-        dataArray.forEach((contestJson: any) => contestArray.push(contestJson.contest));
+        return dataArray.map(contestJson => contestJson.contest);
     else {
-        dataArray &&
-        dataArray
+        return dataArray
             .filter((contestJson: any) => {
                 const contestName = contestJson.contest;
                 const contestNameWords = contestName.split(' ');
@@ -13,7 +11,6 @@ export const extractContestsFromDfsData = (dataArray: any[], site: string, date:
                 const day = parseInt(contestDate.split('/')[1]);
                 return date.getMonth() + 1 === month && date.getDate() === day;
             })
-            .forEach((contestJson: any) => contestArray.push(contestJson.contest));
+            .map(contestJson => contestJson.contest);
     }
-    return contestArray;
 };

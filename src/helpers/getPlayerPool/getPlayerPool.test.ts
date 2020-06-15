@@ -22,14 +22,14 @@ describe('combineDfsAndProjectionsData', () => {
         {
             "DraftKings": 69.9,
             "Fanduel": 69.6,
-            "Name": "LeSean McCoy",
-            "PlayerId": 397945
+            "name": "LeSean McCoy",
+            "playerId": 397945
         },
         {
-            "Name": "Anthony Sherman",
+            "name": "Anthony Sherman",
             "DraftKings": 4.0,
             "Fanduel": 5.0,
-            "PlayerId": 400947
+            "playerId": 400947
         }
     ];
     const site = 'Fanduel';
@@ -49,6 +49,8 @@ describe('combineDfsAndProjectionsData', () => {
                 "gameDate": "Sun 3:05PM EST",
                 "spread": "-7.0",
                 "overUnder": 53,
+                "DraftKingsProjection": 0.8460388191826829,
+                "FanduelProjection": 0.7579393092959834,
                 "projection": 0.7579393092959834,
                 "rollingAverage": 69.6,
                 "opponentRank": 16,
@@ -64,12 +66,15 @@ describe('combineDfsAndProjectionsData', () => {
                 "gameDate": "Sun 3:05PM EST",
                 "spread": "-7.0",
                 "overUnder": 53,
+                "DraftKingsProjection": 0.5435214312075175,
+                "FanduelProjection": 0.4296565759700945,
                 "projection": 0.4296565759700945,
                 "rollingAverage": 5.0,
                 "opponentRank": 16,
                 "position": "RB",
                 "salary": 4500,
-                "playerId": 400947
+                "playerId": 400947,
+                "status": ""
             }
         ])
     });

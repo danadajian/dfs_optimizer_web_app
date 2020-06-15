@@ -2,7 +2,7 @@ import {playerPoolAttributes, State} from "../../interfaces";
 
 export const handleAddPlayerToBlackList = (playerIdToAdd: number, state: State, setState: (state: State) => void) => {
     const {playerPool, lineup, whiteList, blackList, lineupPositions, displayMatrix} = state;
-    let blackListedPlayer = playerPool.find((player: playerPoolAttributes) => player.playerId === playerIdToAdd)!;
+    const blackListedPlayer = playerPool.find((player: playerPoolAttributes) => player.playerId === playerIdToAdd)!;
     if (blackList.includes(blackListedPlayer.playerId)) {
         blackList.splice(blackList.indexOf(blackListedPlayer.playerId), 1);
     } else {
@@ -10,9 +10,9 @@ export const handleAddPlayerToBlackList = (playerIdToAdd: number, state: State, 
         if (whiteList.includes(blackListedPlayer.playerId)) {
             whiteList.splice(whiteList.indexOf(blackListedPlayer.playerId), 1);
         }
-        let playerInLineup = lineup.find((player: any) => player.playerId === blackListedPlayer.playerId, null);
+        const playerInLineup = lineup.find(player => player.playerId === blackListedPlayer.playerId);
         if (playerInLineup) {
-            let lineupIndex = lineup.indexOf(playerInLineup);
+            const lineupIndex = lineup.indexOf(playerInLineup);
             lineup[lineupIndex] = {
                 lineupIndex,
                 playerId: 0,

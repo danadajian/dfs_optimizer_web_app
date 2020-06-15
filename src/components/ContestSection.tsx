@@ -39,9 +39,11 @@ export const ContestSection = (props: StateProps) => {
 };
 
 const overlayTooltip = (contestObject: any) => {
+    const isDesktopView = window.innerWidth > 1200;
+
     return (
         <OverlayTrigger
-            placement={'right'}
+            placement={isDesktopView ? 'right' : 'bottom'}
             defaultShow
             rootClose={true}
             overlay={

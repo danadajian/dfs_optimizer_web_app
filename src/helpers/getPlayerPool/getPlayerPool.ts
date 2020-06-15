@@ -2,38 +2,32 @@ import {INJURY_ABBREVIATIONS, TEAM_ABBREVIATIONS} from "../../constants";
 
 export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, playerHistory: any, site: string,
                               opponentRanks: any, injuries: any, playerStatuses: any) => {
-    let playerPool: any[] = [];
-    dfsPlayers.forEach((player: any) => {
-        if (!player.playerId)
-            player.playerId = parseInt(
-                Object.keys(projectionsData)
-                    .filter(playerId => projectionsData[playerId].name === player.name)[0]
-            );
-        let playerData = projectionsData[player.playerId];
+    return dfsPlayers.filter(player => {
+        if (!player.playerId) {
+            player.playerId = Number(Object.keys(projectionsData)
+                .find(playerId => projectionsData[playerId].name === player.name)!);
+        }
+        return projectionsData[player.playerId];
+    }).map((player: any) => {
+        const playerData = projectionsData[player.playerId];
         if (playerData) {
-            player.name = playerData.name;
-            player.team = playerData.team;
-            player.opponent = playerData.opponent;
-            player.gameDate = playerData.gameDate;
-            player.spread = playerData['spread'];
-            player.overUnder = playerData.overUnder;
-            player.projection = playerData[site + 'Projection'];
-            const playerHistoryPlayer = playerHistory.find((playerObject: any) => playerObject.PlayerId === player.playerId) || {};
-            player.rollingAverage = playerHistoryPlayer[site];
-            if (Object.keys(opponentRanks).length > 0) {
-                const opposingTeam = playerData.opponent.split(' ')[1];
-                const teamRanks = opponentRanks[TEAM_ABBREVIATIONS[opposingTeam]];
-                const opponentRankPosition: any = Object.keys(teamRanks)
-                    .find(position => position.replace('/', '').includes(player.position));
-                player.opponentRank = teamRanks[opponentRankPosition];
-            }
-            let playerStatus = playerStatuses.find((player: any) => player.name === playerData.name) ?
+            const opposingTeam = playerData.opponent.split(' ')[1];
+            const teamRanks = opponentRanks[TEAM_ABBREVIATIONS[opposingTeam]];
+            const playerHistoryPlayer = playerHistory.find((playerObject: any) => playerObject.playerId === player.playerId);
+            const opponentRankPosition: any = Object.keys(teamRanks)
+                .find(position => position.replace('/', '').includes(player.position));
+            const playerStatus = playerStatuses.find((player: any) => player.name === playerData.name) ?
                 playerStatuses.find((player: any) => player.name === playerData.name).status : '';
-            let injuryStatus = injuries[playerData.name] ? injuries[playerData.name].toLowerCase() : '';
-            if (playerStatus || injuryStatus)
-                player.status = `${INJURY_ABBREVIATIONS[injuryStatus] || ''}${playerStatus ? ' ' : ''}${playerStatus}`;
-            playerPool.push(player);
+            const injuryStatus = injuries[playerData.name] ? injuries[playerData.name].toLowerCase() : '';
+            return {
+                ...player,
+                ...playerData,
+                projection: playerData[site + 'Projection'],
+                rollingAverage: playerHistoryPlayer && playerHistoryPlayer[site],
+                opponentRank: teamRanks[opponentRankPosition],
+                status: (playerStatus || injuryStatus) &&
+                    `${INJURY_ABBREVIATIONS[injuryStatus] || ''}${playerStatus ? ' ' : ''}${playerStatus}`
+            };
         }
     });
-    return playerPool;
 };
