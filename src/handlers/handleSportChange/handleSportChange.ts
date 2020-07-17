@@ -9,6 +9,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
     const updateLoadingText = (loadingText: string) => {
         setState({
             ...INITIAL_STATE,
+            date,
             site,
             isLoading: true,
             loadingText,
@@ -16,7 +17,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
         });
     };
     updateLoadingText(`${site} data`);
-    const dfsData = await getDfsData(site, sport, date);
+    const dfsData = await getDfsData(site, sport, date) || [];
     const contests = extractContestsFromDfsData(dfsData, site, date);
     updateLoadingText(`${sport.toUpperCase()} projections`);
     const projectionsData = await invokeLambdaFunction(process.env.REACT_APP_PROJECTIONS_LAMBDA, {sport});

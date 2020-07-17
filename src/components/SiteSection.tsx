@@ -16,10 +16,10 @@ export const SiteSection = (props: {
         <ButtonGroup className="ml-2 mr-2 mt-1 mb-1">
             <Button variant="outline-primary"
                     active={props.state.site === 'Fanduel'}
-                    onClick={() => handleSiteChange('Fanduel', props.setState)}>Fanduel</Button>
+                    onClick={() => handleSiteChange('Fanduel', props.state, props.setState)}>Fanduel</Button>
             <Button variant="outline-light"
                     active={props.state.site === 'DraftKings'}
-                    onClick={() => handleSiteChange('DraftKings', props.setState)}>DraftKings</Button>
+                    onClick={() => handleSiteChange('DraftKings', props.state, props.setState)}>DraftKings</Button>
         </ButtonGroup>
     );
 

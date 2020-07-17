@@ -47,6 +47,7 @@ describe('handleSportChange', () => {
             expect(setState).toHaveBeenNthCalledWith( loadingTexts.indexOf(loadingText) + 1,
                 {
                     ...INITIAL_STATE,
+                    date: state.date,
                     site: state.site,
                     isLoading: true,
                     loadingText,
@@ -124,6 +125,7 @@ describe('handleSportChange', () => {
             expect(setState).toHaveBeenNthCalledWith( loadingTexts.indexOf(loadingText) + 1,
                 {
                     ...INITIAL_STATE,
+                    date: state.date,
                     site: state.site,
                     isLoading: true,
                     loadingText,

@@ -5,14 +5,17 @@ const setState = jest.fn();
 
 describe('handleSiteChange', () => {
     let result: any;
-    const site = 'a site'
+    const site = 'a site';
+    const state = {date: 'a date'}
     beforeEach(() => {
-        result = handleSiteChange(site, setState)
+        // @ts-ignore
+        result = handleSiteChange(site, state, setState)
     })
 
     it('should call setState with correct params', () => {
         expect(setState).toHaveBeenCalledWith({
             ...INITIAL_STATE,
+            date: 'a date',
             site,
         })
     });
