@@ -5,27 +5,21 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import {GridSection} from "./GridSection";
 import {StateProps} from "../interfaces";
 import {Loading} from "./Loading";
-import {CountdownClock} from "./CountdownClock";
 
 export const Home = (props: StateProps) => {
     const {isLoading, sport, loadingText, contest} = props.state;
 
     const isDesktopView = window.innerWidth > 1200;
-
     let backgroundElement;
 
     if (isDesktopView && isLoading) {
         backgroundElement =
             <>
                 <Loading sport={sport} loadingText={loadingText} className="Home-loading"/>
-                <div style={{opacity: '0.2'}} className="sliding-background"/>
+                <div className="sliding-background-transparent"/>
             </>
     } else {
-        backgroundElement =
-            <>
-                <CountdownClock/>
-                <div className="sliding-background"/>
-            </>
+        backgroundElement = <div className="sliding-background"/>
     }
 
     return (

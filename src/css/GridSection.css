@@ -1,8 +1,9 @@
 .Grid-section {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     flex-wrap: wrap;
+    max-width: 95vw;
 }
 
 .Grid-section span {

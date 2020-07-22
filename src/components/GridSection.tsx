@@ -10,9 +10,9 @@ export const GridSection: any = (props: StateProps) => {
 
     const element =
         <div className="Grid-section">
-                <span>
-                    <ActionButtonSection {...props}/>
-                </span>
+            <span>
+                <ActionButtonSection {...props}/>
+            </span>
             <PlayerPool {...props}/>
         </div>;
 

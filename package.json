@@ -31,6 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --runInBand",
+    "update": "npm update -g",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
