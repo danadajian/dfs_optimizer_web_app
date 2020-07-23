@@ -163,7 +163,13 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                             headerWrapperClasses="Player-pool-grid-header"
                             rowClasses="Player-pool-row"
                             rowStyle={rowStyle}
-                            cellEdit={ cellEditFactory({ mode: 'click', blurToSave: true, autoSelectText: true }) }
+                            cellEdit={ cellEditFactory({
+                                mode: 'click',
+                                blurToSave: true,
+                                autoSelectText: true,
+                                afterSaveCell: (oldValue: number, newValue: string, row: any) =>
+                                    row.projection = Number(newValue),
+                            }) }
             />
         </div>
     )
