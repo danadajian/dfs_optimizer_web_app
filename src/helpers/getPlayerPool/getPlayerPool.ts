@@ -22,7 +22,7 @@ export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, playerHis
         const opposingTeam = playerData.opponent.split(' ')[1];
         const teamRanks = opponentRanks[TEAM_ABBREVIATIONS[opposingTeam]];
         const playerHistoryPlayer = playerHistory.find((playerObject: any) => playerObject.playerId === player.playerId);
-        const opponentRankPosition: any = Object.keys(teamRanks)
+        const opponentRankPosition: any = teamRanks && Object.keys(teamRanks)
             .find(position => position.replace('/', '').includes(player.position));
         const playerStatus = playerStatuses.find((player: any) => player.name === playerData.name) ?
             playerStatuses.find((player: any) => player.name === playerData.name).status : '';
@@ -32,7 +32,7 @@ export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, playerHis
             ...playerData,
             projection: playerData[site + 'Projection'],
             rollingAverage: playerHistoryPlayer && playerHistoryPlayer[site],
-            opponentRank: teamRanks[opponentRankPosition],
+            opponentRank: teamRanks && opponentRankPosition && teamRanks[opponentRankPosition],
             status: (playerStatus || injuryStatus) &&
                 `${INJURY_ABBREVIATIONS[injuryStatus] || ''}${playerStatus ? ' ' : ''}${playerStatus}`
         };

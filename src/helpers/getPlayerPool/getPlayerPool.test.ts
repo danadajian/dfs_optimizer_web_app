@@ -139,4 +139,66 @@ describe('combineDfsAndProjectionsData', () => {
             ])
         });
     })
+
+    describe('other data does not exist case', () => {
+        const dfsPlayers = [
+            {"position": "RB", "salary": 4900, "name": "LeSean McCoy", "team": "KC"},
+            {"position": "RB", "salary": 4500, "playerId": 400947, "name": "Anthony Sherman", "team": "KC"}
+        ];
+        const site = 'Fanduel';
+        const playerHistory: any = [];
+        const opponentRanks = {};
+        const injuries = {"LeSean McCoy": "Questionable"};
+        const projectionsData = {
+            "397945": {
+                "overUnder": 53, "gameDate": "Sun 3:05PM EST", "opponent": "v. Ten",
+                "DraftKingsProjection": 0.8460388191826829, "name": "LeSean McCoy", "FanduelProjection": 0.7579393092959834,
+                "team": "KC", "spread": "-7.0"
+            },
+            "400947": {
+                "overUnder": 53, "gameDate": "Sun 3:05PM EST", "opponent": "v. Ten",
+                "DraftKingsProjection": 0.5435214312075175, "name": "Anthony Sherman", "FanduelProjection": 0.4296565759700945,
+                "team": "KC", "spread": "-7.0"
+            }
+        };
+
+        beforeEach(() => {
+            result = getPlayerPool(dfsPlayers, projectionsData, playerHistory, site, opponentRanks, injuries, [])
+        });
+
+        it('combines data correctly', () => {
+            expect(result).toEqual([
+                {
+                    "name": "LeSean McCoy",
+                    "team": "KC",
+                    "opponent": "v. Ten",
+                    "gameDate": "Sun 3:05PM EST",
+                    "spread": "-7.0",
+                    "overUnder": 53,
+                    "DraftKingsProjection": 0.8460388191826829,
+                    "FanduelProjection": 0.7579393092959834,
+                    "projection": 0.7579393092959834,
+                    "status": "Q",
+                    "position": "RB",
+                    "salary": 4900,
+                    "playerId": 397945
+                },
+                {
+                    "name": "Anthony Sherman",
+                    "team": "KC",
+                    "opponent": "v. Ten",
+                    "gameDate": "Sun 3:05PM EST",
+                    "spread": "-7.0",
+                    "overUnder": 53,
+                    "DraftKingsProjection": 0.5435214312075175,
+                    "FanduelProjection": 0.4296565759700945,
+                    "projection": 0.4296565759700945,
+                    "position": "RB",
+                    "salary": 4500,
+                    "playerId": 400947,
+                    "status": ""
+                }
+            ])
+        });
+    })
 });
