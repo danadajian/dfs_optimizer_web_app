@@ -118,36 +118,6 @@ describe('handleContestChange', () => {
         });
     });
 
-    describe('no projection data exists', () => {
-        let result: any;
-        const state = {
-            site: 'Fanduel',
-            sport: 'mlb',
-            dfsData: [
-                {
-                    some: 'stuff'
-                }
-            ],
-            projectionsData: {},
-            opponentRanks: {},
-            injuries: {},
-            playerStatuses: []
-        };
-        const contest = 'a contest';
-        beforeEach(async () => {
-            // @ts-ignore
-            result = await handleContestChange(contest, state, setState)
-        });
-
-        it('should call window alert', () => {
-            expect(window.alert).toHaveBeenCalledWith('Projection data is currently unavailable.');
-        });
-
-        it('should return expected result', () => {
-            expect(result).toBe(undefined)
-        });
-    });
-
     afterEach(() => {
         jest.clearAllMocks()
     })

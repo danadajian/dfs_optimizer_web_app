@@ -107,13 +107,15 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         sort: true,
         sortCaret: (order: any) => getSortIcon(order),
         sortValue: (cell: any, row: any) => row.salary / row.projection,
-        formatter: (cellContent: any, row: any) =>
-            <p>
-                ${(row.salary / row.projection)
+        formatter: (cellContent: any, row: any) => {
+            const pricePerPoint = row.salary / row.projection;
+            return <p>
+                {isFinite(pricePerPoint) && '$'}{(pricePerPoint)
                 .toFixed(0)
                 .toString()
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </p>
+        }
     }, {
         dataField: 'rollingAverage',
         text: `${NUMBER_OF_GAMES_FOR_ROLLING_AVG}-Game Avg`,
@@ -128,7 +130,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false,
         formatter: (cellContent: any, row: any) =>
             <p>
-                {row.opponent + ' '}
+                {row.opponent && row.opponent + ' '}
                 <b style={getOpponentRankStyle(row.opponentRank)}>
                     {row.opponentRank && getOrdinalString(row.opponentRank)}
                 </b>

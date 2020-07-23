@@ -2,6 +2,15 @@ import {INJURY_ABBREVIATIONS, TEAM_ABBREVIATIONS} from "../../constants";
 
 export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, playerHistory: any, site: string,
                               opponentRanks: any, injuries: any, playerStatuses: any) => {
+    if (!projectionsData || Object.keys(projectionsData).length === 0 || projectionsData['errorMessage']) {
+        alert('Projection data is currently unavailable.');
+        return dfsPlayers.map(player => ({
+                ...player,
+                playerId: player.playerId || Math.random(),
+                projection: 0
+            })
+        )
+    }
     return dfsPlayers.filter(player => {
         if (!player.playerId) {
             player.playerId = Number(Object.keys(projectionsData)
