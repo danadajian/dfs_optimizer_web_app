@@ -4,7 +4,7 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
 import {handleSiteChange} from "../handlers/handleSiteChange/handleSiteChange";
-import {State} from "../interfaces";
+import {State} from "../types";
 
 export const SiteSection = (props: {
     state: State,

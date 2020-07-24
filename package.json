@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@dadajian/shared-fantasy-constants": "^1.0.1",
     "@types/aws-sdk": "^2.7.0",
     "@types/dotenv": "^8.2.0",
     "@types/jest": "^24.0.0",
@@ -31,7 +32,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --watchAll=false --runInBand",
-    "update": "npm update -g",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

@@ -1,11 +1,11 @@
 import React from "react";
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
-import {SUPPORTED_SPORTS} from "../constants";
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import {handleSportChange} from "../handlers/handleSportChange/handleSportChange";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import {SUPPORTED_SPORTS} from "@dadajian/shared-fantasy-constants";
 
 export const SportSection = (props: StateProps) => {
     const {site, sport} = props.state;

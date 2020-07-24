@@ -1,6 +1,6 @@
 import React from "react";
 import Form from 'react-bootstrap/Form'
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import {handleFilterPlayers} from "../handlers/handleFilterPlayers/handleFilterPlayers";
 
 export const SearchBar: any = (props: StateProps) => {

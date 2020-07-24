@@ -1,6 +1,6 @@
 import React from "react";
 import DatePicker from 'react-datepicker';
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import '../css/DateSection.css'
 import {handleDateChange} from "../handlers/handleDateChange/handleDateChange";
 

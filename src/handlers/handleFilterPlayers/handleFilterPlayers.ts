@@ -1,4 +1,4 @@
-import {State} from "../../interfaces";
+import {State} from "../../types";
 
 export const handleFilterPlayers = (attribute: string, sortValue: string, state: State,
                                     setState: (state: State) => void) => {

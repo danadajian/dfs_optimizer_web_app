@@ -32,7 +32,7 @@ describe('handleSportChange', () => {
         });
 
         it('should call extractContestsFromDfsData with correct params', () => {
-            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', 'a date')
+            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', sport, 'a date')
         });
 
         const loadingTexts = [
@@ -109,7 +109,7 @@ describe('handleSportChange', () => {
         });
 
         it('should call extractContestsFromDfsData with correct params', () => {
-            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', 'a date')
+            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', sport, 'a date')
         });
 
         const loadingTexts = [

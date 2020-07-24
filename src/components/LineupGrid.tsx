@@ -6,7 +6,7 @@ import {getFormattedSalary} from "../helpers/getFormattedSalary/getFormattedSala
 import {getAdjustedDraftKingsSalary} from "../helpers/getAdjustedDraftKingsSalary/getAdjustedDraftKingsSalary";
 import {handleRemovePlayerFromLineup} from "../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
 import {sumAttribute} from "../helpers/sumAttribute/sumAttribute";
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import BootstrapTable from "react-bootstrap-table-next";
 
 const removeIcon = require('../icons/remove.svg');

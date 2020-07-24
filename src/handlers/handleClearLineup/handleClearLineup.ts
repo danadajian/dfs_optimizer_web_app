@@ -1,5 +1,5 @@
 import {createEmptyLineup} from "../../helpers/createEmptyLineup/createEmptyLineup";
-import {State} from "../../interfaces";
+import {State} from "../../types";
 
 export const handleClearLineup = (state: State, setState: (state: State) => void) => {
     setState({

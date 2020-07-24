@@ -1,4 +1,4 @@
-import {State} from "../../interfaces";
+import {State} from "../../types";
 import {handleSportChange} from "../handleSportChange/handleSportChange";
 
 export const handleDateChange = async (date: Date, state: State, setState: (state: State) => void) => {

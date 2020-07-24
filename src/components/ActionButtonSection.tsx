@@ -4,7 +4,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Popover from 'react-bootstrap/Popover';
 import '../css/ActionButtonSection.css'
-import {lineupAttributes, StateProps} from "../interfaces";
+import {lineupAttributes, StateProps} from "../types";
 import {handleGenerateOptimalLineup} from "../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
 import {handleClearLineup} from "../handlers/handleClearLineup/handleClearLineup";
 import {handleExportLineup} from "../handlers/handleExportLineup/handleExportLineup";

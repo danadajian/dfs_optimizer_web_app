@@ -1,7 +1,7 @@
-import {LINEUP_RULES} from "../../constants";
 import {getPlayerPool} from "../../helpers/getPlayerPool/getPlayerPool";
 import {createEmptyLineup} from "../../helpers/createEmptyLineup/createEmptyLineup";
-import {State} from "../../interfaces";
+import {State} from "../../types";
+import {LINEUP_RULES} from "@dadajian/shared-fantasy-constants";
 
 export const handleContestChange = async (contest: string, state: State, setState: (state: State) => void) => {
     const {site, sport, dfsData, projectionsData, playerHistory, opponentRanks, injuries, playerStatuses} = state;

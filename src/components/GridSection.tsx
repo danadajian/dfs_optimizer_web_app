@@ -1,7 +1,7 @@
 import React from "react";
 import '../css/GridSection.css'
 import {PlayerPool} from "./PlayerPool";
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import {ActionButtonSection} from "./ActionButtonSection";
 
 export const GridSection: any = (props: StateProps) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/PlayerPoolGrid.css'
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory from 'react-bootstrap-table2-editor';
 import Button from 'react-bootstrap/Button';

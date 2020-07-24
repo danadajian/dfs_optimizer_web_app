@@ -1,5 +1,5 @@
 import {INITIAL_STATE} from "../../constants";
-import {State} from "../../interfaces";
+import {State} from "../../types";
 
 export const handleSiteChange = (site: string, state: State, setState: (state: State) => void) => {
     const {date} = state;

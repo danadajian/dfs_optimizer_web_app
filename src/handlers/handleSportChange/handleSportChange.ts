@@ -1,7 +1,7 @@
 import {getDfsData} from "../../helpers/getDfsData/getDfsData";
 import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
-import {State} from "../../interfaces";
+import {State} from "../../types";
 import {INITIAL_STATE} from "../../constants";
 
 export const handleSportChange = async (sport: string, state: State, setState: (state: State) => void) => {
@@ -18,7 +18,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
     };
     updateLoadingText(`${site} data`);
     const dfsData = await getDfsData(site, sport, date) || [];
-    const contests = extractContestsFromDfsData(dfsData, site, date);
+    const contests = extractContestsFromDfsData(dfsData, site, sport, date);
     updateLoadingText(`${sport.toUpperCase()} projections`);
     const projectionsData = await invokeLambdaFunction(process.env.REACT_APP_PROJECTIONS_LAMBDA, {sport});
     updateLoadingText(`${sport.toUpperCase()} opponent ranks`);

@@ -1,5 +1,5 @@
 import {invokeLambdaFunction} from "../../aws/aws";
-import {lineupAttributes, State} from "../../interfaces";
+import {lineupAttributes, State} from "../../types";
 
 export const handleGenerateOptimalLineup = async (state: State, setState: (state: State) => void) => {
     setState({

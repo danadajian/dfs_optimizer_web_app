@@ -1,4 +1,4 @@
-import {playerPoolAttributes, State} from "../../interfaces";
+import {playerPoolAttributes, State} from "../../types";
 
 export const handleAddPlayerToBlackList = (playerIdToAdd: number, state: State, setState: (state: State) => void) => {
     const {playerPool, lineup, whiteList, blackList, lineupPositions, displayMatrix} = state;

@@ -3,7 +3,7 @@ import '../css/Home.css'
 import {NavBar} from "./NavBar";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import {GridSection} from "./GridSection";
-import {StateProps} from "../interfaces";
+import {StateProps} from "../types";
 import {Loading} from "./Loading";
 
 export const Home = (props: StateProps) => {

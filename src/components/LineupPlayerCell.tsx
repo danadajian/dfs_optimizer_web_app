@@ -1,7 +1,7 @@
 import React from "react";
 import Table from 'react-bootstrap/Table'
 import '../css/PlayerCell.css'
-import {lineupAttributes} from "../interfaces";
+import {lineupAttributes} from "../types";
 
 export const LineupPlayerCell = (props: {
     player: lineupAttributes

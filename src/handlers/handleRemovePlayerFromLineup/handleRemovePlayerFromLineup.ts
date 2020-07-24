@@ -1,4 +1,4 @@
-import {lineupAttributes, State} from "../../interfaces";
+import {lineupAttributes, State} from "../../types";
 
 export const handleRemovePlayerFromLineup = (playerIdToRemove: number, state: State, setState: (state: State) => void) => {
     const {lineup, whiteList, lineupPositions, displayMatrix} = state;
