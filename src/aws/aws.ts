@@ -29,5 +29,5 @@ const mockResponseMap: any = {
     'dfs-optimizer-stack-GetOpponentRanksDataFunction-9KIEIP392WEF': mockOpponentRanksData,
     'dfs-optimizer-stack-GetInjuryDataFunction-NBYNB8ZSZBW6': mockInjuriesData,
     'dfs-optimizer-stack-GetOptimalLineupFunction-12U6F4GY6ANQ2': mockOptimalLineupResponse,
-    'dfs-pipeline-stack-GetRollingFantasyPointAveragesF-HCPH5NGI23BE': mockPlayerHistoryData
+    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockPlayerHistoryData
 };
