@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@dadajian/shared-fantasy-constants": "^1.0.1",
+    "@dadajian/shared-fantasy-constants": "^1.0.3",
     "@types/aws-sdk": "^2.7.0",
     "@types/dotenv": "^8.2.0",
     "@types/jest": "^24.0.0",
