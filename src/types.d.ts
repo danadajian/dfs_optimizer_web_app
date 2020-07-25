@@ -12,9 +12,9 @@ export interface State {
     loadingText: string,
     searchText: string,
     sortValue: string,
-    playerPool: playerPoolAttributes[],
-    filteredPool: playerPoolAttributes[],
-    lineup: lineupAttributes[],
+    playerPool: PlayerPoolAttributes[],
+    filteredPool: PlayerPoolAttributes[],
+    lineup: LineupAttributes[],
     lineupPositions: string[],
     displayMatrix: string[],
     dfsData: any[],
@@ -32,7 +32,7 @@ export interface StateProps {
     setState: (state: State) => void
 }
 
-export interface lineupAttributes {
+export interface LineupAttributes {
     lineupIndex: number,
     playerId: number,
     displayPosition: string,
@@ -49,7 +49,7 @@ export interface lineupAttributes {
     overUnder?: number
 }
 
-export interface playerPoolAttributes {
+export interface PlayerPoolAttributes {
     playerId: number,
     position: string,
     displayPosition: string,
@@ -65,4 +65,10 @@ export interface playerPoolAttributes {
     overUnder: number
 
     [key: string]: any
+}
+
+export interface DfsContest {
+    contest: string,
+    players: any[],
+    sport?: string
 }

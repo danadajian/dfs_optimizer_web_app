@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from "react-bootstrap/Dropdown";
 import '../css/FilterBar.css'
-import {playerPoolAttributes, StateProps} from "../types";
+import {PlayerPoolAttributes, StateProps} from "../types";
 import {getSetFromArray} from "../helpers/getSetFromArray/getSetFromArray";
 import {handleFilterPlayers} from "../handlers/handleFilterPlayers/handleFilterPlayers";
 
@@ -20,7 +20,7 @@ export const FilterBar: any = (props: StateProps) => {
                             handleFilterPlayers('position', 'All', props.state, props.setState)}>All
                 </Button>
                 {
-                    getSetFromArray(playerPool.map((player: playerPoolAttributes) => player.position))
+                    getSetFromArray(playerPool.map((player: PlayerPoolAttributes) => player.position))
                         .map((position, index: number) =>
                             <Button key={index}
                                     variant={"dark"}
@@ -38,7 +38,7 @@ export const FilterBar: any = (props: StateProps) => {
                                 handleFilterPlayers('team', eventKey, props.state, props.setState)}>
                 <Dropdown.Item eventKey={'All'}
                                active={sortValue === 'All'}>All</Dropdown.Item>
-                {getSetFromArray(playerPool.map((player: playerPoolAttributes) => player.team))
+                {getSetFromArray(playerPool.map((player: PlayerPoolAttributes) => player.team))
                     .sort()
                     .map((team, index: number) =>
                         <Dropdown.Item key={index}

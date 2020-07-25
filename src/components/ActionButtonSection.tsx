@@ -4,7 +4,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Popover from 'react-bootstrap/Popover';
 import '../css/ActionButtonSection.css'
-import {lineupAttributes, StateProps} from "../types";
+import {LineupAttributes, StateProps} from "../types";
 import {handleGenerateOptimalLineup} from "../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
 import {handleClearLineup} from "../handlers/handleClearLineup/handleClearLineup";
 import {handleExportLineup} from "../handlers/handleExportLineup/handleExportLineup";
@@ -15,7 +15,7 @@ import {BlackList} from "./BlackList";
 export const ActionButtonSection = (props: StateProps) => {
     const {isOptimizing, site, sport, contest, lineup, blackList, playerPool} = props.state;
     const shouldRenderElement = sport && contest && site;
-    const shouldRenderExportButton = lineup.every((player: lineupAttributes) => player.name);
+    const shouldRenderExportButton = lineup.every((player: LineupAttributes) => player.name);
     const shouldRenderBlacklistButton = blackList.length > 0;
     const componentRef = useRef();
 

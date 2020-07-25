@@ -1,15 +1,20 @@
 import {handleSportChange} from "./handleSportChange";
 import {getDfsData} from "../../helpers/getDfsData/getDfsData";
-import {extractContestsFromDfsData} from "../../helpers/extractContestsFromDfsData/extractContestsFromDfsData";
 import {invokeLambdaFunction} from "../../aws/aws";
 import {INITIAL_STATE} from "../../constants";
 
 jest.mock("../../helpers/getDfsData/getDfsData");
-jest.mock("../../helpers/extractContestsFromDfsData/extractContestsFromDfsData");
 jest.mock("../../aws/aws");
 
-(getDfsData as jest.Mock).mockResolvedValue('dfs data');
-(extractContestsFromDfsData as jest.Mock).mockReturnValue('contests');
+const dfsData = [
+    {
+        contest: 'dfs1'
+    },
+    {
+        contest: 'dfs2'
+    }
+];
+(getDfsData as jest.Mock).mockResolvedValue(dfsData);
 (invokeLambdaFunction as jest.Mock).mockResolvedValue({body: 'lambda result'});
 
 const setState = jest.fn();
@@ -29,10 +34,6 @@ describe('handleSportChange', () => {
 
         it('should call getDfsData with correct params', () => {
             expect(getDfsData).toHaveBeenCalledWith('a site', 'not nhl', 'a date')
-        });
-
-        it('should call extractContestsFromDfsData with correct params', () => {
-            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', sport, 'a date')
         });
 
         const loadingTexts = [
@@ -76,8 +77,8 @@ describe('handleSportChange', () => {
                 ...state,
                 isLoading: false,
                 sport,
-                dfsData: 'dfs data',
-                contests: 'contests',
+                dfsData,
+                contests: ['dfs1', 'dfs2'],
                 projectionsData: 'lambda result',
                 playerHistory: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},
@@ -106,10 +107,6 @@ describe('handleSportChange', () => {
 
         it('should call getDfsData with correct params', () => {
             expect(getDfsData).toHaveBeenCalledWith('a site', 'nhl', 'a date')
-        });
-
-        it('should call extractContestsFromDfsData with correct params', () => {
-            expect(extractContestsFromDfsData).toHaveBeenCalledWith('dfs data', 'a site', sport, 'a date')
         });
 
         const loadingTexts = [
@@ -158,8 +155,8 @@ describe('handleSportChange', () => {
                 ...state,
                 isLoading: false,
                 sport,
-                dfsData: 'dfs data',
-                contests: 'contests',
+                dfsData,
+                contests: ['dfs1', 'dfs2'],
                 projectionsData: 'lambda result',
                 playerHistory: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},

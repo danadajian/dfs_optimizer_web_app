@@ -1,9 +1,9 @@
-import {playerPoolAttributes, State} from "../../types";
+import {PlayerPoolAttributes, State} from "../../types";
 
 export const handleAddPlayerToLineup = (playerIdToAdd: number, state: State, setState: (state: State) => void) => {
     const {playerPool, lineup, whiteList, blackList} = state;
     const playerToAdd = playerPool
-        .find((player: playerPoolAttributes) => player.playerId === playerIdToAdd)!;
+        .find((player: PlayerPoolAttributes) => player.playerId === playerIdToAdd)!;
     let spotsToReplace = lineup.filter(
         (player: any) =>
             !player.name && (

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Table from 'react-bootstrap/Table'
 import '../css/BlackList.css'
-import {playerPoolAttributes} from "../types";
+import {PlayerPoolAttributes} from "../types";
 import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
 
 export const BlackList = (props: {
     blackList: number[],
-    playerPool: playerPoolAttributes[]
+    playerPool: PlayerPoolAttributes[]
 }) => {
     return (
         <Table size={"sm"} className="Blacklist">

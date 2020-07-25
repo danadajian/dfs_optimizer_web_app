@@ -1,8 +1,8 @@
-import {playerPoolAttributes, State} from "../../types";
+import {PlayerPoolAttributes, State} from "../../types";
 
 export const handleAddPlayerToBlackList = (playerIdToAdd: number, state: State, setState: (state: State) => void) => {
     const {playerPool, lineup, whiteList, blackList, lineupPositions, displayMatrix} = state;
-    const blackListedPlayer = playerPool.find((player: playerPoolAttributes) => player.playerId === playerIdToAdd)!;
+    const blackListedPlayer = playerPool.find((player: PlayerPoolAttributes) => player.playerId === playerIdToAdd)!;
     if (blackList.includes(blackListedPlayer.playerId)) {
         blackList.splice(blackList.indexOf(blackListedPlayer.playerId), 1);
     } else {

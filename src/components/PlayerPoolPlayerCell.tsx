@@ -1,10 +1,10 @@
 import React from "react";
 import Table from 'react-bootstrap/Table'
 import '../css/PlayerCell.css'
-import {playerPoolAttributes} from "../types";
+import {PlayerPoolAttributes} from "../types";
 
 export const PlayerPoolPlayerCell = (props: {
-    player: playerPoolAttributes
+    player: PlayerPoolAttributes
 }) => {
     const {name, status, team, position} = props.player;
 
