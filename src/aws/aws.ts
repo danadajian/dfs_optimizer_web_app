@@ -3,7 +3,7 @@ import {isDevelopment} from "../constants";
 
 const mockFanduelData = require('../fixtures/fanduelDataResponse.json');
 const mockProjectionsData = require('../fixtures/nflProjectionsResponse.json');
-const mockPlayerHistoryData = require('../fixtures/playerHistoryResponse.json');
+const mockRollingAveragesData = require('../fixtures/rollingAveragesResponse.json');
 const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
@@ -29,5 +29,5 @@ const mockResponseMap: any = {
     'dfs-optimizer-stack-GetOpponentRanksDataFunction-9KIEIP392WEF': mockOpponentRanksData,
     'dfs-optimizer-stack-GetInjuryDataFunction-NBYNB8ZSZBW6': mockInjuriesData,
     'dfs-optimizer-stack-GetOptimalLineupFunction-12U6F4GY6ANQ2': mockOptimalLineupResponse,
-    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockPlayerHistoryData
+    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockRollingAveragesData
 };

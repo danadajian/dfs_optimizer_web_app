@@ -3,30 +3,30 @@
     "DraftKings": 69.9,
     "Fanduel": 69.6,
     "Name": "Player 1",
-    "PlayerId": 748070
+    "playerId": 748070
   },
   {
     "Name": "Player 2",
     "DraftKings": 5.0,
     "Fanduel": 5.0,
-    "PlayerId": 589991
+    "playerId": 589991
   },
   {
     "Name": "Player 3",
     "DraftKings": 15.7,
     "Fanduel": 11.8,
-    "PlayerId": 746613
+    "playerId": 746613
   },
   {
     "DraftKings": 3.7,
     "Fanduel": 2.7,
     "Name": "Player 4",
-    "PlayerId": 494969
+    "playerId": 494969
   },
   {
     "DraftKings": 6.9,
     "Fanduel": 6.9,
     "Name": "Player 5",
-    "PlayerId": 920062
+    "playerId": 920062
   }
 ]

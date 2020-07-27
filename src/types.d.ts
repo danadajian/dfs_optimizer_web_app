@@ -24,7 +24,7 @@ export interface State {
     projectionsData: any,
     contests: any[],
     playerStatuses: any[],
-    playerHistory: any[]
+    rollingAverages: any[]
 }
 
 export interface StateProps {
@@ -60,6 +60,7 @@ export interface PlayerPoolAttributes {
     gameDate: string,
     projection: number,
     salary: number,
+    rollingAverage: number,
     opponentRank: number,
     spread: string,
     overUnder: number

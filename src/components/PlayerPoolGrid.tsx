@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/PlayerPoolGrid.css'
-import {StateProps} from "../types";
+import {PlayerPoolAttributes, StateProps} from "../types";
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory from 'react-bootstrap-table2-editor';
 import Button from 'react-bootstrap/Button';
@@ -44,7 +44,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                 }
             }
         },
-        formatter: (cell: any, row: any) => {
+        formatter: (cell: any, row: PlayerPoolAttributes) => {
             const playerInLineup = lineup.map(player => player.playerId).includes(row.playerId);
             return <Button size={"sm"}
                            variant={playerInLineup ? "warning" : "success"}
@@ -62,7 +62,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                 }
             }
         },
-        formatter: (cell: any, row: any) => {
+        formatter: (cell: any, row: PlayerPoolAttributes) => {
             const blackListText = blackList.includes(row.playerId) ? 'Unblacklist' : 'Blacklist';
             return <Button size={"sm"}
                     variant={"danger"}
@@ -72,7 +72,8 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         dataField: 'name',
         text: 'Player',
         editable: false,
-        formatter: (cellContent: any, row: any, index: number) => <PlayerPoolPlayerCell key={index} player={row}/>
+        formatter: (cellContent: any, row: PlayerPoolAttributes, index: number) =>
+            <PlayerPoolPlayerCell key={index} player={row}/>
     }, {
         dataField: 'projection',
         text: 'Projection',
@@ -88,7 +89,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         },
         sort: true,
         sortCaret: getSortIcon,
-        formatter: (cellContent: any, row: any) => {
+        formatter: (cellContent: any, row: PlayerPoolAttributes) => {
             const projection = row.projection && Number(row.projection).toFixed(1);
             return <p>{projection}</p>
         }
@@ -98,7 +99,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false,
         sort: true,
         sortCaret: getSortIcon,
-        formatter: (cellContent: any, row: any) =>
+        formatter: (cellContent: any, row: PlayerPoolAttributes) =>
             <p>${row.salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
     }, {
         dataField: 'pricePerPoint',
@@ -106,8 +107,8 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false,
         sort: true,
         sortCaret: (order: any) => getSortIcon(order),
-        sortValue: (cell: any, row: any) => row.salary / row.projection,
-        formatter: (cellContent: any, row: any) => {
+        sortValue: (cell: any, row: PlayerPoolAttributes) => row.salary / row.projection,
+        formatter: (cellContent: any, row: PlayerPoolAttributes) => {
             const pricePerPoint = row.salary / row.projection;
             return <p>
                 {isFinite(pricePerPoint) && '$'}{(pricePerPoint)
@@ -122,13 +123,13 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false,
         sort: true,
         sortCaret: getSortIcon,
-        formatter: (cellContent: any, row: any) =>
+        formatter: (cellContent: any, row: PlayerPoolAttributes) =>
             <p>{row.rollingAverage ? Number(row.rollingAverage).toFixed(1) : 'N/A'}</p>
     }, {
         dataField: 'opponent',
         text: 'Opponent',
         editable: false,
-        formatter: (cellContent: any, row: any) =>
+        formatter: (cellContent: any, row: PlayerPoolAttributes) =>
             <p>
                 {row.opponent && row.opponent + ' '}
                 <b style={getOpponentRankStyle(row.opponentRank)}>
@@ -149,7 +150,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false
     }];
 
-    const rowStyle = (row: any) => ({
+    const rowStyle = (row: PlayerPoolAttributes) => ({
         backgroundColor: (whiteList.includes(row.playerId)) ? 'lightgreen' :
             (blackList.includes(row.playerId)) ? 'indianred' : 'white'
     });
@@ -167,7 +168,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                                 mode: 'click',
                                 blurToSave: true,
                                 autoSelectText: true,
-                                afterSaveCell: (oldValue: number, newValue: string, row: any) =>
+                                afterSaveCell: (oldValue: number, newValue: string, row: PlayerPoolAttributes) =>
                                     row.projection = Number(newValue),
                             }) }
             />

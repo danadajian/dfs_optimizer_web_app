@@ -26,7 +26,7 @@ export const INITIAL_STATE: State = {
     lineupRestrictions: {},
     opponentRanks: {},
     projectionsData: {},
-    playerHistory: []
+    rollingAverages: []
 };
 export const INJURY_ABBREVIATIONS: any = {
     'questionable': 'Q',

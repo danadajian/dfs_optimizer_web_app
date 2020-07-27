@@ -13,7 +13,7 @@ describe('combineDfsAndProjectionsData', () => {
             {"position": "RB", "salary": 4500, "playerId": 400947, "name": "Anthony Sherman", "team": "KC"}
         ];
         const site = 'Fanduel';
-        const playerHistory = [
+        const rollilngAverages = [
             {
                 "DraftKings": 69.9,
                 "Fanduel": 69.6,
@@ -43,7 +43,7 @@ describe('combineDfsAndProjectionsData', () => {
         };
 
         beforeEach(() => {
-            result = getPlayerPool(dfsPlayers, projectionsData, playerHistory, site, opponentRanks, injuries, [])
+            result = getPlayerPool(dfsPlayers, projectionsData, rollilngAverages, site, opponentRanks, injuries, [])
         });
 
         it('combines data correctly', () => {
@@ -92,7 +92,7 @@ describe('combineDfsAndProjectionsData', () => {
             {"position": "RB", "salary": 4500, "playerId": 400947, "name": "Anthony Sherman", "team": "KC"}
         ];
         const site = 'Fanduel';
-        const playerHistory = [
+        const rollilngAverages = [
             {
                 "DraftKings": 69.9,
                 "Fanduel": 69.6,
@@ -111,7 +111,7 @@ describe('combineDfsAndProjectionsData', () => {
         const projectionsData = {};
 
         beforeEach(() => {
-            result = getPlayerPool(dfsPlayers, projectionsData, playerHistory, site, opponentRanks, injuries, [])
+            result = getPlayerPool(dfsPlayers, projectionsData, rollilngAverages, site, opponentRanks, injuries, [])
         });
 
         it('should call window alert', () => {
@@ -146,7 +146,7 @@ describe('combineDfsAndProjectionsData', () => {
             {"position": "RB", "salary": 4500, "playerId": 400947, "name": "Anthony Sherman", "team": "KC"}
         ];
         const site = 'Fanduel';
-        const playerHistory: any = [];
+        const rollilngAverages: any = [];
         const opponentRanks = {};
         const injuries = {"LeSean McCoy": "Questionable"};
         const projectionsData = {
@@ -163,7 +163,7 @@ describe('combineDfsAndProjectionsData', () => {
         };
 
         beforeEach(() => {
-            result = getPlayerPool(dfsPlayers, projectionsData, playerHistory, site, opponentRanks, injuries, [])
+            result = getPlayerPool(dfsPlayers, projectionsData, rollilngAverages, site, opponentRanks, injuries, [])
         });
 
         it('combines data correctly', () => {
