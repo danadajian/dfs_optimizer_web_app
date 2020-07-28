@@ -1108,7 +1108,11 @@
       "name": "Baker Mayfield",
       "DraftKingsProjection": 20.085806484970657,
       "team": "Cle",
-      "spread": "-2.5"
+      "spread": "-2.5",
+      "weather":  {
+        "forecast": "Partly Cloudy",
+        "details": "69°, 69% precip"
+      }
     },
     "593517": {
       "overUnder": 45.5,

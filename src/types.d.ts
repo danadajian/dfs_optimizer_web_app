@@ -63,9 +63,15 @@ export interface PlayerPoolAttributes {
     rollingAverage: number,
     opponentRank: number,
     spread: string,
-    overUnder: number
+    overUnder: number,
+    weather?: Weather
 
     [key: string]: any
+}
+
+export interface Weather {
+    forecast: string,
+    details: string
 }
 
 export interface DfsContest {

@@ -11,12 +11,14 @@ import {getOrdinalString} from "../helpers/getOrdinalString/getOrdinalString";
 import {getOpponentRankStyle} from "./LineupPlayerCell";
 import {handleRemovePlayerFromLineup} from "../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
 import {NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../constants";
+import {getWeatherImage} from "../helpers/getWeatherImage/getWeatherImage";
+import {SUPPORTED_WEATHER_SPORTS} from "@dadajian/shared-fantasy-constants";
 
 const upIcon = require('../icons/up.svg');
 const downIcon = require('../icons/down.svg');
 
 export const PlayerPoolGrid: any = (props: StateProps) => {
-    const {playerPool, filteredPool, lineup, whiteList, blackList} = props.state;
+    const {playerPool, filteredPool, lineup, whiteList, blackList, sport} = props.state;
 
     const getSortIcon = (sortOrder: string) => {
         if (sortOrder) {
@@ -65,8 +67,8 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         formatter: (cell: any, row: PlayerPoolAttributes) => {
             const blackListText = blackList.includes(row.playerId) ? 'Unblacklist' : 'Blacklist';
             return <Button size={"sm"}
-                    variant={"danger"}
-                    data-player-id={row.playerId}>{blackListText}</Button>
+                           variant={"danger"}
+                           data-player-id={row.playerId}>{blackListText}</Button>
         }
     }, {
         dataField: 'name',
@@ -150,6 +152,20 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false
     }];
 
+    if (SUPPORTED_WEATHER_SPORTS.includes(sport))
+        columns.push({
+            dataField: 'weather',
+            text: 'Weather',
+            editable: false,
+            formatter: (cellContent: any, row: PlayerPoolAttributes) =>
+                <span>
+                    {row.weather && <img src={getWeatherImage(row.weather.forecast)} alt={"weather"} style={{height: '4vmin'}}/>}
+                    <p>
+                        {row.weather && row.weather.details}
+                    </p>
+                </span>
+        })
+
     const rowStyle = (row: PlayerPoolAttributes) => ({
         backgroundColor: (whiteList.includes(row.playerId)) ? 'lightgreen' :
             (blackList.includes(row.playerId)) ? 'indianred' : 'white'
@@ -164,13 +180,13 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                             headerWrapperClasses="Player-pool-grid-header"
                             rowClasses="Player-pool-row"
                             rowStyle={rowStyle}
-                            cellEdit={ cellEditFactory({
+                            cellEdit={cellEditFactory({
                                 mode: 'click',
                                 blurToSave: true,
                                 autoSelectText: true,
                                 afterSaveCell: (oldValue: number, newValue: string, row: PlayerPoolAttributes) =>
                                     row.projection = Number(newValue),
-                            }) }
+                            })}
             />
         </div>
     )
