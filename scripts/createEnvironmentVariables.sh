@@ -10,6 +10,7 @@ REACT_APP_OPPONENT_RANKS_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[]
 REACT_APP_INJURIES_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GetInjuryDataFunction"))' | jq '.FunctionName')
 REACT_APP_GOALIE_SCRAPER_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GoalieScraperFunction"))' | jq '.FunctionName')
 REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GetRollingFantasyPoint"))' | jq '.FunctionName')
+REACT_APP_RETRIEVE_FROM_S3_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("RetrieveFromS3Function"))' | jq '.FunctionName')
 
 {
   echo "REACT_APP_AWS_KEY=$AWS_ACCESS_KEY_ID"
@@ -22,6 +23,7 @@ REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.F
   echo "REACT_APP_INJURIES_LAMBDA=$REACT_APP_INJURIES_LAMBDA"
   echo "REACT_APP_GOALIE_SCRAPER_LAMBDA=$REACT_APP_GOALIE_SCRAPER_LAMBDA"
   echo "REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA=$REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA"
+  echo "REACT_APP_RETRIEVE_FROM_S3_LAMBDA=$REACT_APP_RETRIEVE_FROM_S3_LAMBDA"
 } >> ./.env
 
 cat ./.env
