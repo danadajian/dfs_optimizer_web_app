@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "sport": "mlb",
+    "time": "6:30 PM EDT"
+  },
+  {
+    "id": 1,
+    "sport": "nfl",
+    "time": "1:00 PM EDT"
+  }
+]

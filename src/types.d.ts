@@ -79,3 +79,9 @@ export interface DfsContest {
     players: any[],
     sport?: string
 }
+
+export interface StartTime {
+    id: number,
+    sport: string,
+    time: string
+}

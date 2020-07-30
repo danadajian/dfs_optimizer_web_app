@@ -13,6 +13,10 @@ jest.spyOn(window, 'alert').mockImplementation(() => jest.fn());
 const setState = jest.fn();
 
 describe('handleContestChange', () => {
+    const contest = 'a contest';
+    const lineupPositions = ['P', 'C,1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'C,1B,2B,3B,SS,OF'];
+    const displayMatrix = ['P', 'C/1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'Util'];
+
     describe('all data exists case', () => {
         let result: any;
         const state = {
@@ -35,9 +39,7 @@ describe('handleContestChange', () => {
             injuries: {},
             playerStatuses: []
         };
-        const contest = 'a contest';
-        const lineupPositions = ['P', 'C,1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'C,1B,2B,3B,SS,OF'];
-        const displayMatrix = ['P', 'C/1B', '2B', '3B', 'SS', 'OF', 'OF', 'OF', 'Util'];
+
         beforeEach(async () => {
             // @ts-ignore
             result = await handleContestChange(contest, state, setState)
@@ -103,7 +105,7 @@ describe('handleContestChange', () => {
             injuries: {},
             playerStatuses: []
         };
-        const contest = 'a contest';
+
         beforeEach(async () => {
             // @ts-ignore
             result = await handleContestChange(contest, state, setState)
@@ -115,6 +117,45 @@ describe('handleContestChange', () => {
 
         it('should return expected result', () => {
             expect(result).toBe(undefined)
+        });
+    });
+
+    describe('no projection data exists', () => {
+        let result: any;
+        const state = {
+            site: 'Fanduel',
+            sport: 'mlb',
+            dfsData: [
+                {
+                    contest: 'a contest',
+                    players: 'dfsPlayers'
+                },
+                {
+                    something: 'else'
+                }
+            ],
+            projectionsData: {}
+        };
+
+        beforeEach(async () => {
+            // @ts-ignore
+            result = await handleContestChange(contest, state, setState)
+        });
+
+        it('should call window alert', () => {
+            expect(window.alert).toHaveBeenCalledWith('Projection data is currently unavailable. You may add custom projections in the meantime.');
+        });
+
+        it('should still call getPlayerPool', () => {
+            expect(getPlayerPool).toHaveBeenCalled()
+        });
+
+        it('should still call createEmptyLineup', () => {
+            expect(createEmptyLineup).toHaveBeenCalled()
+        });
+
+        it('should still call setState', () => {
+            expect(setState).toHaveBeenCalled()
         });
     });
 

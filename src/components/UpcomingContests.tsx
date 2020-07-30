@@ -1,14 +1,11 @@
 import BootstrapTable from 'react-bootstrap-table-next';
 import React, {useEffect, useState} from "react";
-import {invokeLambdaFunction} from "../aws/aws";
+import {handleUpcomingContestsLoad} from "../handlers/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
 
 export const UpcomingContests = () => {
-    const [startTimes, setStartTimes] = useState([]);
+    const [startTimes, setStartTimes]: any = useState(undefined);
 
-    useEffect(() => {
-        invokeLambdaFunction(process.env.REACT_APP_RETRIEVE_FROM_S3_LAMBDA, {fileName: 'startTimes.json'})
-            .then(startTimes => setStartTimes(startTimes))
-    });
+    useEffect(() => handleUpcomingContestsLoad(setStartTimes), []);
 
     const columns = [
         {
@@ -24,12 +21,12 @@ export const UpcomingContests = () => {
 
     return (
         <>
-        {startTimes.length > 0 && <BootstrapTable keyField='id'
-                                                  data={startTimes}
-                                                  columns={columns}
-                                                  classes="Player-table"
-                                                  headerWrapperClasses="Player-pool-grid-header"
-                                                  rowClasses="Player-pool-row"/>}
+        {startTimes && <BootstrapTable keyField='id'
+                                       data={startTimes}
+                                       columns={columns}
+                                       classes="Player-table"
+                                       headerWrapperClasses="Player-pool-grid-header"
+                                       rowClasses="Player-pool-row"/>}
         </>
     )
 }

@@ -8,6 +8,8 @@ export const handleContestChange = async (contest: string, state: State, setStat
     if (!dfsData || dfsData.length === 0) {
         alert(`${site} data is currently unavailable.`);
         return
+    } else if (!projectionsData || Object.keys(projectionsData).length === 0 || projectionsData['errorMessage']) {
+        alert('Projection data is currently unavailable. You may add custom projections in the meantime.');
     }
     const gameType = contest.includes('@') || contest.includes('vs') ? 'Single Game' : 'Classic';
     const contestRules = LINEUP_RULES[site][sport][gameType];

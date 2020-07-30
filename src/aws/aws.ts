@@ -7,6 +7,7 @@ const mockRollingAveragesData = require('../fixtures/rollingAveragesResponse.jso
 const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
+const mockStartTimesData = require('../fixtures/startTimes.json');
 
 export const invokeLambdaFunction = async (functionName: any, payload = {}) => {
     const params = {
@@ -29,5 +30,6 @@ const mockResponseMap: any = {
     'dfs-optimizer-stack-GetOpponentRanksDataFunction-9KIEIP392WEF': mockOpponentRanksData,
     'dfs-optimizer-stack-GetInjuryDataFunction-NBYNB8ZSZBW6': mockInjuriesData,
     'dfs-optimizer-stack-GetOptimalLineupFunction-12U6F4GY6ANQ2': mockOptimalLineupResponse,
-    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockRollingAveragesData
+    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockRollingAveragesData,
+    'dfs-pipeline-stack-RetrieveFromS3Function-XJEJ6CZ63IJG': mockStartTimesData
 };
