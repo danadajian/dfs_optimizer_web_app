@@ -33,3 +33,13 @@
         transform: translate3d(-2650px, 0, 0);
     }
 }
+
+.home-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-heading {
+    display: unset;
+    align-items: center;
+}

@@ -1,4 +1,4 @@
-import {Lambda} from "../aws";
+import {Lambda, S3} from "../aws";
 import {isDevelopment} from "../constants";
 
 const mockFanduelData = require('../fixtures/fanduelDataResponse.json');
@@ -7,6 +7,32 @@ const mockRollingAveragesData = require('../fixtures/rollingAveragesResponse.jso
 const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
+
+export const retrieveObjectFromS3 = async (fileName: string): Promise<any> => {
+    const params = {
+        Bucket: 'dfs-pipeline',
+        Key: fileName
+    };
+    if (isDevelopment()) {
+        const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+        await delay(250);
+        return [
+            {
+                id: 0,
+                sport: 'mlb',
+                time: '6:30 PM EST'
+            },
+            {
+                id: 1,
+                sport: 'nfl',
+                time: '8:30 PM EST'
+            }
+        ]
+    } else {
+        const data: any = await S3.getObject(params).promise();
+        return JSON.parse(data.Body.toString());
+    }
+};
 
 export const invokeLambdaFunction = async (functionName: any, payload = {}) => {
     const params = {

@@ -5,6 +5,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import {GridSection} from "./GridSection";
 import {StateProps} from "../types";
 import {Loading} from "./Loading";
+import {UpcomingContests} from "./UpcomingContests";
 
 export const Home = (props: StateProps) => {
     const {isLoading, sport, loadingText, contest} = props.state;
@@ -28,10 +29,15 @@ export const Home = (props: StateProps) => {
             <Jumbotron>
                 {!contest &&
                 <>
-                    <h1>DFS Optimizer</h1>
-                    <p>
-                        A better way to find the winning lineup.
-                    </p>
+                    <div className="home-top">
+                        <span className="site-heading">
+                            <h1>DFS Optimizer</h1>
+                            <p>
+                                A better way to find the winning lineup.
+                            </p>
+                        </span>
+                        <UpcomingContests/>
+                    </div>
                     <div className="wrapper">
                         {backgroundElement}
                     </div>
