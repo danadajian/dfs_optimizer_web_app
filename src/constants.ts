@@ -1,33 +1,22 @@
-import {State} from "./types";
+import {PerformanceState, State} from "./types";
 
 export const INITIAL_STATE: State = {
     isLoading: false,
     isOptimizing: false,
     date: new Date(),
-    maxCombinations: 10000000,
-    salaryCap: 0,
-    site: '',
-    sport: '',
-    contest: '',
-    loadingText: '',
-    searchText: '',
-    sortValue: 'All',
     playerPool: [],
     filteredPool: [],
     whiteList: [],
     blackList: [],
     lineup: [],
-    lineupPositions: [],
-    displayMatrix: [],
     contests: [],
-    playerStatuses: [],
-    dfsData: [],
-    injuries: {},
-    lineupRestrictions: {},
-    opponentRanks: {},
-    projectionsData: {},
-    rollingAverages: []
 };
+
+export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
+    isLoading: false,
+    date: new Date()
+}
+
 export const INJURY_ABBREVIATIONS: any = {
     'questionable': 'Q',
     'out': 'O',
@@ -71,3 +60,8 @@ export const TEAM_ABBREVIATIONS: any = {
 export const KNAPSACK_PROBLEM_LINK = "https://en.wikipedia.org/wiki/Knapsack_problem";
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 export const NUMBER_OF_GAMES_FOR_ROLLING_AVG = 5;
+export const NUMBER_OF_SEASONS_AGO = 5;
+export const NUMBER_OF_WEEKS_IN_SEASON = 17;
+export const SUPPORTED_SITES = ['Fanduel', 'DraftKings'];
+export const MAX_COMBINATIONS = 1000000;
+export const DESKTOP_VIEW_THRESHOLD = 1200;

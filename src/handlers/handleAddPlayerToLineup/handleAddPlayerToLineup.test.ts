@@ -115,7 +115,7 @@ describe('can add to lineup case', () => {
                 blackList: [3, 4, 5],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })
@@ -160,7 +160,7 @@ describe('can add to lineup case', () => {
                 blackList: [1, 3, 5],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })
@@ -205,7 +205,7 @@ describe('can add to lineup case', () => {
                 blackList: [1, 3, 4],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })
@@ -250,7 +250,7 @@ describe('can add to lineup case', () => {
                 blackList: [],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })
@@ -295,7 +295,7 @@ describe('can add to lineup case', () => {
                 blackList: [],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })

@@ -12,10 +12,10 @@ export const handleContestChange = async (contest: string, state: State, setStat
         alert('Projection data is currently unavailable. You may add custom projections in the meantime.');
     }
     const gameType = contest.includes('@') || contest.includes('vs') ? 'Single Game' : 'Classic';
-    const contestRules = LINEUP_RULES[site][sport][gameType];
+    const contestRules = LINEUP_RULES[site!][sport!][gameType];
     const {lineupPositions, displayMatrix, salaryCap, lineupRestrictions} = contestRules;
     const dfsPlayers = dfsData.filter((contestJson: any) => contestJson.contest === contest)[0]['players'];
-    const playerPool = getPlayerPool(dfsPlayers, projectionsData, rollingAverages, site, opponentRanks, injuries, playerStatuses);
+    const playerPool = getPlayerPool(dfsPlayers, projectionsData, rollingAverages, site!, opponentRanks, injuries, playerStatuses);
     setState({
         ...state,
         contest,

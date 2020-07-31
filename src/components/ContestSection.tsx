@@ -16,7 +16,7 @@ export const ContestSection = (props: StateProps) => {
                      className="mt-1 ml-2"
                      title="Contests"
                      onSelect={(eventKey: any) => handleContestChange(eventKey, props.state, props.setState)}>
-            {contests.map(
+            {contests!.map(
                 contestName =>
                     <NavDropdown.Item
                         className="text-center"
@@ -30,7 +30,7 @@ export const ContestSection = (props: StateProps) => {
 
     if (!shouldRenderElement) {
         return null
-    } else if (contests.length === 0) {
+    } else if (contests!.length === 0) {
         return <Button className="ml-2 mr-2 mt-1 mb-1"
                        disabled variant={"outline-light"}>No contests are available.</Button>
     } else {

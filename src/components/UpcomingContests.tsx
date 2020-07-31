@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button'
 import Spinner from 'react-bootstrap/Spinner'
 import BootstrapTable from 'react-bootstrap-table-next';
 import '../css/UpcomingContests.css'
-
 import {handleUpcomingContestsLoad} from "../handlers/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
 
 export const UpcomingContests = () => {

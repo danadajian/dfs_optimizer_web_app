@@ -44,7 +44,7 @@ describe('addPlayerToBlackList', () => {
                 blackList: [0, 2, 3, 4, 5],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })
@@ -90,7 +90,7 @@ describe('addPlayerToBlackList', () => {
                 blackList: [0, 2, 3, 4],
                 searchText: '',
                 filteredPool: [],
-                sortValue: 'All'
+                sortValue: undefined
             })
         });
     })

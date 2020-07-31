@@ -16,7 +16,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
         });
     };
     updateLoadingText(`${site} data`);
-    const dfsData = await getDfsData(site, sport, date) || [];
+    const dfsData = await getDfsData(site!, sport, date) || [];
     const contests = dfsData.map((contestJson: DfsContest) => contestJson.contest);
     updateLoadingText(`${sport.toUpperCase()} projections`);
     const projectionsData = await invokeLambdaFunction(process.env.REACT_APP_PROJECTIONS_LAMBDA, {sport});

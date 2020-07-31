@@ -39,7 +39,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
             onClick: (event: any) => {
                 const playerId = Number(event.target.getAttribute('data-player-id'));
                 if (playerId) {
-                    const playerInLineup = lineup.map(player => player.playerId).includes(playerId);
+                    const playerInLineup = lineup!.map(player => player.playerId).includes(playerId);
                     playerInLineup ?
                         handleRemovePlayerFromLineup(playerId, props.state, props.setState) :
                         handleAddPlayerToLineup(playerId, props.state, props.setState)
@@ -47,7 +47,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
             }
         },
         formatter: (cell: any, row: PlayerPoolAttributes) => {
-            const playerInLineup = lineup.map(player => player.playerId).includes(row.playerId);
+            const playerInLineup = lineup!.map(player => player.playerId).includes(row.playerId);
             return <Button size={"sm"}
                            variant={playerInLineup ? "warning" : "success"}
                            data-player-id={row.playerId}>{playerInLineup ? 'Remove' : 'Add'}</Button>
@@ -65,7 +65,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
             }
         },
         formatter: (cell: any, row: PlayerPoolAttributes) => {
-            const blackListText = blackList.includes(row.playerId) ? 'Unblacklist' : 'Blacklist';
+            const blackListText = blackList!.includes(row.playerId) ? 'Unblacklist' : 'Blacklist';
             return <Button size={"sm"}
                            variant={"danger"}
                            data-player-id={row.playerId}>{blackListText}</Button>
@@ -152,7 +152,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         editable: false
     }];
 
-    if (SUPPORTED_WEATHER_SPORTS.includes(sport))
+    if (SUPPORTED_WEATHER_SPORTS.includes(sport!))
         columns.push({
             dataField: 'weather',
             text: 'Weather',
@@ -167,14 +167,14 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         })
 
     const rowStyle = (row: PlayerPoolAttributes) => ({
-        backgroundColor: (whiteList.includes(row.playerId)) ? 'lightgreen' :
-            (blackList.includes(row.playerId)) ? 'indianred' : 'white'
+        backgroundColor: (whiteList!.includes(row.playerId)) ? 'lightgreen' :
+            (blackList!.includes(row.playerId)) ? 'indianred' : 'white'
     });
 
     return (
         <div className="Player-pool-grid">
             <BootstrapTable keyField='playerId'
-                            data={filteredPool.length > 0 ? filteredPool : playerPool}
+                            data={filteredPool!.length > 0 ? filteredPool! : playerPool!}
                             columns={columns}
                             classes="Player-table"
                             headerWrapperClasses="Player-pool-grid-header"

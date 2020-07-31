@@ -33,7 +33,7 @@ describe('removePlayerFromLineup', () => {
             whiteList: [],
             searchText: '',
             filteredPool: [],
-            sortValue: 'All'
+            sortValue: undefined
         })
     });
 });

@@ -5,15 +5,16 @@ export const handleFilterPlayers = (attribute: string, sortValue: string, state:
     const {playerPool} = state;
     let filteredPool;
     let searchText: string = '';
-    if (sortValue === 'All') {
+    if (!sortValue) {
         filteredPool = playerPool;
-    } else if (attribute === 'name') {
+    }
+    else if (attribute === 'name') {
         searchText = sortValue.toLowerCase();
-        filteredPool = playerPool.filter(
+        filteredPool = playerPool!.filter(
             (player: any) => player.name.toLowerCase().includes(searchText.toLowerCase())
         );
     } else {
-        filteredPool = playerPool.filter(
+        filteredPool = playerPool!.filter(
             (player: any) => player[attribute].includes(sortValue)
         );
     }

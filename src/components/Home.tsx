@@ -10,13 +10,12 @@ import {UpcomingContests} from "./UpcomingContests";
 export const Home = (props: StateProps) => {
     const {isLoading, sport, loadingText, contest} = props.state;
 
-    const isDesktopView = window.innerWidth > 1200;
     let backgroundElement;
 
-    if (isDesktopView && isLoading) {
+    if (props.isDesktopView && isLoading) {
         backgroundElement =
             <>
-                <Loading sport={sport} loadingText={loadingText} className="Home-loading"/>
+                <Loading sport={sport!} loadingText={loadingText!} className="Home-loading"/>
                 <div className="sliding-background-transparent"/>
             </>
     } else {
@@ -25,7 +24,7 @@ export const Home = (props: StateProps) => {
 
     return (
         <>
-            <NavBar state={props.state} setState={props.setState} isDesktopView={isDesktopView}/>
+            <NavBar {...props}/>
             <Jumbotron>
                 {!contest &&
                 <>

@@ -11,6 +11,8 @@ REACT_APP_INJURIES_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | sel
 REACT_APP_GOALIE_SCRAPER_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GoalieScraperFunction"))' | jq '.FunctionName')
 REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GetRollingFantasyPoint"))' | jq '.FunctionName')
 REACT_APP_RETRIEVE_FROM_S3_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("RetrieveFromS3Function"))' | jq '.FunctionName')
+REACT_APP_GET_FANTASY_DATA_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GetFantasyDataFunction"))' | jq '.FunctionName')
+REACT_APP_GET_CURRENT_DATA_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions[] | select(.FunctionName | contains("GetCurrentDataFunction"))' | jq '.FunctionName')
 
 {
   echo "REACT_APP_AWS_KEY=$AWS_ACCESS_KEY_ID"
@@ -24,6 +26,8 @@ REACT_APP_RETRIEVE_FROM_S3_LAMBDA=$(echo "$LAMBDA_FUNCTIONS" | jq -r '.Functions
   echo "REACT_APP_GOALIE_SCRAPER_LAMBDA=$REACT_APP_GOALIE_SCRAPER_LAMBDA"
   echo "REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA=$REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA"
   echo "REACT_APP_RETRIEVE_FROM_S3_LAMBDA=$REACT_APP_RETRIEVE_FROM_S3_LAMBDA"
+  echo "REACT_APP_GET_FANTASY_DATA_LAMBDA=$REACT_APP_GET_FANTASY_DATA_LAMBDA"
+  echo "REACT_APP_GET_CURRENT_DATA_LAMBDA=$REACT_APP_GET_CURRENT_DATA_LAMBDA"
 } >> ./.env
 
 cat ./.env

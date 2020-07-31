@@ -15,14 +15,14 @@ import {BlackList} from "./BlackList";
 export const ActionButtonSection = (props: StateProps) => {
     const {isOptimizing, site, sport, contest, lineup, blackList, playerPool} = props.state;
     const shouldRenderElement = sport && contest && site;
-    const shouldRenderExportButton = lineup.every((player: LineupAttributes) => player.name);
-    const shouldRenderBlacklistButton = blackList.length > 0;
+    const shouldRenderExportButton = lineup!.every((player: LineupAttributes) => player.name);
+    const shouldRenderBlacklistButton = blackList!.length > 0;
     const componentRef = useRef();
 
     const blackListPopover = (
         <Popover id="blacklist-popover">
             <Popover.Content className="Blacklist-popover">
-                <BlackList blackList={blackList} playerPool={playerPool}/>
+                <BlackList blackList={blackList!} playerPool={playerPool!}/>
             </Popover.Content>
         </Popover>
     );
@@ -53,7 +53,7 @@ export const ActionButtonSection = (props: StateProps) => {
         </>;
 
     if (isOptimizing) {
-        return <Optimizing sport={sport}/>
+        return <Optimizing sport={sport!}/>
     } else {
         return <>{shouldRenderElement && element}</>
     }

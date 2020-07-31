@@ -1,5 +1,6 @@
 import {handleGenerateOptimalLineup} from "./handleGenerateOptimalLineup";
 import {invokeLambdaFunction} from "../../aws/aws";
+import {MAX_COMBINATIONS} from "../../constants";
 
 jest.mock('../../aws/aws');
 
@@ -37,7 +38,8 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true
+                isOptimizing: true,
+                maxCombinations: MAX_COMBINATIONS
             })
         });
 
@@ -87,7 +89,8 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true
+                isOptimizing: true,
+                maxCombinations: MAX_COMBINATIONS
             })
         });
 
@@ -118,7 +121,8 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true
+                isOptimizing: true,
+                maxCombinations: MAX_COMBINATIONS
             })
         });
 

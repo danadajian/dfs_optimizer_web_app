@@ -4,22 +4,19 @@ import Tooltip from 'react-bootstrap/Tooltip'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
 import {handleSiteChange} from "../handlers/handleSiteChange/handleSiteChange";
-import {State} from "../types";
+import {StateProps} from "../types";
+import {SUPPORTED_SITES} from "../constants";
 
-export const SiteSection = (props: {
-    state: State,
-    setState: (state: State) => void,
-    isDesktopView: boolean
-}) => {
+export const SiteSection = (props: StateProps) => {
     const shouldDisplayTooltip = !props.state.site;
+
     const buttonGroup = (
         <ButtonGroup className="ml-2 mr-2 mt-1 mb-1">
-            <Button variant="outline-primary"
-                    active={props.state.site === 'Fanduel'}
-                    onClick={() => handleSiteChange('Fanduel', props.state, props.setState)}>Fanduel</Button>
-            <Button variant="outline-light"
-                    active={props.state.site === 'DraftKings'}
-                    onClick={() => handleSiteChange('DraftKings', props.state, props.setState)}>DraftKings</Button>
+            {SUPPORTED_SITES.map((site: string, key: number) =>
+                <Button key={key}
+                        variant="outline-primary"
+                        active={props.state.site === site}
+                        onClick={() => handleSiteChange(site, props.state, props.setState)}>{site}</Button>)}
         </ButtonGroup>
     );
 

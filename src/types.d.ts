@@ -1,35 +1,37 @@
 export interface State {
     isLoading: boolean,
-    isOptimizing: boolean,
+    isOptimizing?: boolean,
     date: Date,
-    maxCombinations: number,
-    salaryCap: number,
-    whiteList: number[],
-    blackList: number[],
-    site: string,
-    sport: string,
-    contest: string,
-    loadingText: string,
-    searchText: string,
-    sortValue: string,
-    playerPool: PlayerPoolAttributes[],
-    filteredPool: PlayerPoolAttributes[],
-    lineup: LineupAttributes[],
-    lineupPositions: string[],
-    displayMatrix: string[],
-    dfsData: any[],
-    injuries: any,
-    lineupRestrictions: any,
-    opponentRanks: any,
-    projectionsData: any,
-    contests: any[],
-    playerStatuses: any[],
-    rollingAverages: any[]
+    maxCombinations?: number,
+    salaryCap?: number,
+    whiteList?: number[],
+    blackList?: number[],
+    site?: string,
+    sport?: string,
+    contest?: string,
+    loadingText?: string,
+    searchText?: string,
+    sortValue?: string,
+    playerPool?: PlayerPoolAttributes[],
+    filteredPool?: PlayerPoolAttributes[],
+    lineup?: LineupAttributes[],
+    lineupPositions?: string[],
+    displayMatrix?: string[],
+    dfsData?: any[],
+    injuries?: any,
+    lineupRestrictions?: any,
+    opponentRanks?: any,
+    projectionsData?: any,
+    contests?: any[],
+    playerStatuses?: any[],
+    rollingAverages?: any[]
 }
 
 export interface StateProps {
     state: State,
-    setState: (state: State) => void
+    setState: (state: State) => void,
+    isDesktopView?: boolean,
+    isHome?: boolean
 }
 
 export interface LineupAttributes {
@@ -84,4 +86,16 @@ export interface StartTime {
     id: number,
     sport: string,
     time: string
+}
+
+export interface PerformanceState {
+    isLoading: boolean,
+    date: Date,
+    fantasyData?: any,
+    site?: string,
+    sport?: string,
+    currentWeek?: number,
+    currentSeason?: number,
+    week?: number,
+    season?: number
 }

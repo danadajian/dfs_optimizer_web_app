@@ -1,10 +1,12 @@
 import {invokeLambdaFunction} from "../../aws/aws";
 import {LineupAttributes, State} from "../../types";
+import {MAX_COMBINATIONS} from "../../constants";
 
 export const handleGenerateOptimalLineup = async (state: State, setState: (state: State) => void) => {
     setState({
         ...state,
-        isOptimizing: true
+        isOptimizing: true,
+        maxCombinations: MAX_COMBINATIONS
     });
     let newLineup;
     let optimalPlayerIds = await invokeLambdaFunction(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, state);
@@ -17,11 +19,11 @@ export const handleGenerateOptimalLineup = async (state: State, setState: (state
             optimalPlayerIds.stackTrace.slice(0, 7));
     } else {
         newLineup = optimalPlayerIds.map((playerId: number) => {
-            return state.playerPool.find((player: any) => player.playerId === playerId)
+            return state.playerPool!.find((player: any) => player.playerId === playerId)
         });
         newLineup.forEach((player: LineupAttributes, lineupIndex: number) => {
             player.lineupIndex = lineupIndex;
-            player.displayPosition = state.displayMatrix[lineupIndex];
+            player.displayPosition = state.displayMatrix![lineupIndex];
         });
     }
     setState({

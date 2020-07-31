@@ -8,6 +8,8 @@ const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
 const mockStartTimesData = require('../fixtures/startTimes.json');
+const mockHistoricalData = require('../fixtures/historicalDataResponse.json');
+const mockCurrentData = require('../fixtures/currentDataResponse.json');
 
 export const invokeLambdaFunction = async (functionName: any, payload = {}) => {
     const params = {
@@ -25,11 +27,13 @@ export const invokeLambdaFunction = async (functionName: any, payload = {}) => {
 };
 
 const mockResponseMap: any = {
-    'dfs-optimizer-stack-GetFanduelDataFunction-77GMJJP3YXN8': mockFanduelData,
-    'dfs-optimizer-stack-GetProjectionsDataFunction-QKLNCL4DUKM2': mockProjectionsData,
-    'dfs-optimizer-stack-GetOpponentRanksDataFunction-9KIEIP392WEF': mockOpponentRanksData,
-    'dfs-optimizer-stack-GetInjuryDataFunction-NBYNB8ZSZBW6': mockInjuriesData,
-    'dfs-optimizer-stack-GetOptimalLineupFunction-12U6F4GY6ANQ2': mockOptimalLineupResponse,
-    'fantasy-analytics-stack-GetRollingFantasyPointAver-1G09RZFW4ADLR': mockRollingAveragesData,
-    'dfs-pipeline-stack-RetrieveFromS3Function-XJEJ6CZ63IJG': mockStartTimesData
+    REACT_APP_FANDUEL_LAMBDA: mockFanduelData,
+    REACT_APP_PROJECTIONS_LAMBDA: mockProjectionsData,
+    REACT_APP_OPPONENT_RANKS_LAMBDA: mockOpponentRanksData,
+    REACT_APP_INJURIES_LAMBDA: mockInjuriesData,
+    REACT_APP_OPTIMAL_LINEUP_LAMBDA: mockOptimalLineupResponse,
+    REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA: mockRollingAveragesData,
+    REACT_APP_RETRIEVE_FROM_S3_LAMBDA: mockStartTimesData,
+    REACT_APP_GET_FANTASY_DATA_LAMBDA: mockHistoricalData,
+    REACT_APP_GET_CURRENT_DATA_LAMBDA: mockCurrentData
 };

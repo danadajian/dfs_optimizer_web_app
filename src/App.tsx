@@ -6,18 +6,25 @@ import "react-datepicker/dist/react-datepicker.css";
 import './env'
 import {Home} from "./components/Home";
 import {About} from "./components/About";
+import {Performance} from "./components/Performance";
 import ScrollToTop from "./components/ScrollToTop";
-import {INITIAL_STATE} from "./constants";
+import {DESKTOP_VIEW_THRESHOLD, INITIAL_STATE} from "./constants";
 
 const App = () => {
     const [state, setState] = useState(INITIAL_STATE);
+    const isDesktopView = window.innerWidth > DESKTOP_VIEW_THRESHOLD;
 
     return (
         <BrowserRouter>
             <ScrollToTop>
                 <Switch>
-                    <Route path="/" render={() => <Home state={state} setState={setState}/>} exact/>
-                    <Route path="/about" render={() => <About/>}/>
+                    <Route path="/" render={() => <Home state={state} setState={setState} isDesktopView={isDesktopView}
+                                                        isHome={true}/>} exact/>
+                    <Route path="/about"
+                           render={() => <About state={state} setState={setState} isDesktopView={isDesktopView}/>}/>
+                    <Route path="/performance"
+                           render={() => <Performance state={state} setState={setState} isDesktopView={isDesktopView}
+                                                      isHome={false}/>}/>
                 </Switch>
             </ScrollToTop>
         </BrowserRouter>

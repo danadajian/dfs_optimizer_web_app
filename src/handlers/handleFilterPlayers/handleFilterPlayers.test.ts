@@ -111,13 +111,13 @@ describe('filterPlayers', () => {
 
         beforeEach(() => {
             // @ts-ignore
-            result = handleFilterPlayers('position', 'All', state, setState)
+            result = handleFilterPlayers('position', undefined, state, setState)
         })
 
         it('should call setState with correct params', () => {
             expect(setState).toHaveBeenCalledWith({
                 ...state,
-                sortValue: 'All',
+                sortValue: undefined,
                 searchText: '',
                 filteredPool: [
                     {name: 'Player1', playerId: 1, position: 'QB'},

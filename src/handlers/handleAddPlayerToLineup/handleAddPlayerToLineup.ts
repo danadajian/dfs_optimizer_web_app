@@ -2,9 +2,9 @@ import {PlayerPoolAttributes, State} from "../../types";
 
 export const handleAddPlayerToLineup = (playerIdToAdd: number, state: State, setState: (state: State) => void) => {
     const {playerPool, lineup, whiteList, blackList} = state;
-    const playerToAdd = playerPool
+    const playerToAdd = playerPool!
         .find((player: PlayerPoolAttributes) => player.playerId === playerIdToAdd)!;
-    let spotsToReplace = lineup.filter(
+    let spotsToReplace = lineup!.filter(
         (player: any) =>
             !player.name && (
                 playerToAdd.position === player.position
@@ -17,17 +17,17 @@ export const handleAddPlayerToLineup = (playerIdToAdd: number, state: State, set
         alert('Not enough positions available to add player.');
         return
     } else {
-        whiteList.push(playerToAdd.playerId);
-        if (blackList.includes(playerToAdd.playerId)) {
-            blackList.splice(blackList.indexOf(playerToAdd.playerId), 1);
+        whiteList!.push(playerToAdd.playerId);
+        if (blackList!.includes(playerToAdd.playerId)) {
+            blackList!.splice(blackList!.indexOf(playerToAdd.playerId), 1);
         }
         let spotToReplace = spotsToReplace[0];
-        let lineupIndex = lineup.indexOf(spotToReplace);
+        let lineupIndex = lineup!.indexOf(spotToReplace);
         let playerToAddCopy = JSON.parse(JSON.stringify(playerToAdd));
         playerToAddCopy.position = spotToReplace.position;
         playerToAddCopy.displayPosition = spotToReplace.displayPosition;
         playerToAddCopy.lineupIndex = lineupIndex;
-        lineup[lineupIndex] = playerToAddCopy;
+        lineup![lineupIndex] = playerToAddCopy;
     }
     setState({
         ...state,
@@ -36,6 +36,6 @@ export const handleAddPlayerToLineup = (playerIdToAdd: number, state: State, set
         blackList,
         searchText: '',
         filteredPool: [],
-        sortValue: 'All'
+        sortValue: undefined
     })
 };

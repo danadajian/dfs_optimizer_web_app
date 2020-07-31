@@ -14,17 +14,17 @@ const removeIcon = require('../icons/remove.svg');
 export const LineupGrid = (props: StateProps) => {
     const {site, lineup, whiteList, salaryCap} = props.state;
 
-    const pointSum = sumAttribute(lineup, 'projection');
-    const salarySum = sumAttribute(lineup, 'salary');
+    const pointSum = sumAttribute(lineup!, 'projection');
+    const salarySum = sumAttribute(lineup!, 'salary');
 
     const lineupHeaderClass = (site === 'Fanduel') ? "Fanduel-header" : "DraftKings-header";
 
     const salaryStyle = {
-        color: (salarySum > salaryCap) ? 'indianred' : 'black'
+        color: (salarySum > salaryCap!) ? 'indianred' : 'black'
     };
 
     const rowStyle = (row: any) => ({
-        backgroundColor: whiteList.includes(row.playerId) ? 'lightgreen' : 'white'
+        backgroundColor: whiteList!.includes(row.playerId) ? 'lightgreen' : 'white'
     });
 
     const columns = [{
@@ -69,7 +69,7 @@ export const LineupGrid = (props: StateProps) => {
     }];
 
     return <BootstrapTable keyField='lineupIndex'
-                           data={lineup}
+                           data={lineup!}
                            columns={columns}
                            headerWrapperClasses={lineupHeaderClass}
                            footerClasses="Lineup-footer"
