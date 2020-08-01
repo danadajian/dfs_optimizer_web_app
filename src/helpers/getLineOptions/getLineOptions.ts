@@ -1,4 +1,6 @@
-export const getLineOptions = (site: string) => {
+import {playerIsInOptimalLineup} from "./playerIsInOptimalLineup";
+
+export const getLineOptions = (site: string, optimalLineup: any) => {
     return {
         title: {
             display: true,
@@ -8,6 +10,13 @@ export const getLineOptions = (site: string) => {
         },
         legend: {
             display: false
+        },
+        elements: {
+            point: {
+                radius: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 10 : 1,
+                pointStyle: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 'star' : 'circle',
+                borderWidth: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 3 : 1
+            }
         },
         scales: {
             xAxes: [

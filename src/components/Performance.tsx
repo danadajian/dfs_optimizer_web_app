@@ -26,22 +26,22 @@ import {SUPPORTED_SPORTS} from "@dadajian/shared-fantasy-constants";
 export const Performance = (props: StateProps) => {
     const [state, setState] = useState(INITIAL_PERFORMANCE_STATE);
 
-    const {isLoading, currentWeek, week, currentSeason, season, fantasyData, site, sport, date}: any = state;
+    const {isLoading, currentWeek, week, currentSeason, season, fantasyData, optimalLineup, site, sport, date}: any = state;
 
-    const getFantasyData = () => {
+    const getFantasyData = async () => {
         setState({
             ...state,
             isLoading: true
         });
         const dateString = date.toISOString().slice(0, 10);
-        invokeLambdaFunction(process.env.REACT_APP_GET_FANTASY_DATA_LAMBDA, {sport, season, date: dateString, week})
-            .then((fantasyData: any) => {
-                setState({
-                    ...state,
-                    isLoading: false,
-                    fantasyData
-                });
-            });
+        const fantasyData = await invokeLambdaFunction(process.env.REACT_APP_GET_FANTASY_DATA_LAMBDA, {sport, season, date: dateString, week});
+        const optimalLineup = await invokeLambdaFunction(process.env.REACT_APP_RETRIEVE_FROM_S3_LAMBDA, {fileName: `${sport}OptimalLineup.json`});
+        setState({
+            ...state,
+            isLoading: false,
+            fantasyData,
+            optimalLineup
+        });
     };
 
     const toggleWeek = (event: any) => {
@@ -178,7 +178,7 @@ export const Performance = (props: StateProps) => {
                     <Line data={chartData}
                           width={1000}
                           height={500}
-                          options={getLineOptions(site)}/>
+                          options={getLineOptions(site, optimalLineup)}/>
                 </div>
             </Jumbotron>
         </>

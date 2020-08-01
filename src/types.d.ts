@@ -92,6 +92,7 @@ export interface PerformanceState {
     isLoading: boolean,
     date: Date,
     fantasyData?: any,
+    optimalLineup?: LineupAttributes[],
     site?: string,
     sport?: string,
     currentWeek?: number,

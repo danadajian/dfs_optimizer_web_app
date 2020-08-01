@@ -1,0 +1,60 @@
+{
+  "totalProjection": 144.46695,
+  "totalSalary": 35000,
+  "lineup": [
+    {
+      "name": "Xander Bogaerts",
+      "team": "OAK",
+      "position": "P",
+      "projection": 35.86502
+    },
+    {
+      "name": "Yasmani Grandal",
+      "team": "CWS",
+      "position": "C",
+      "projection": 12.78939
+    },
+    {
+      "name": "Victor Caratini",
+      "team": "HOU",
+      "position": "2B",
+      "projection": 13.17789
+    },
+    {
+      "name": "Kris Bryant",
+      "team": "CWS",
+      "position": "3B",
+      "projection": 13.82453
+    },
+    {
+      "name": "Nick Castellanos",
+      "team": "NYY",
+      "position": "SS",
+      "projection": 14.00349
+    },
+    {
+      "name": "Nelson Cruz",
+      "team": "ATL",
+      "position": "OF",
+      "projection": 14.78894
+    },
+    {
+      "name": "Anthony Rizzo",
+      "team": "NYY",
+      "position": "OF",
+      "projection": 14.75734
+    },
+    {
+      "name": "Kyle Schwarber",
+      "team": "CHC",
+      "position": "OF",
+      "projection": 13.21977
+    },
+    {
+      "name": "C.J. Cron",
+      "team": "TAM",
+      "position": "1B",
+      "projection": 12.04058
+    }
+  ]
+}

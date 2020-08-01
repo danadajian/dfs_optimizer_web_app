@@ -2,12 +2,22 @@ import {getLineOptions} from './getLineOptions'
 
 describe('get line options', () => {
     let result: any;
+    let optimalLineup = {
+        lineup: [
+            {
+                name: 'player1'
+            },
+            {
+                name: 'player2'
+            }
+        ]
+    }
     beforeEach(() => {
-        result = getLineOptions('a site');
+        result = getLineOptions('a site', optimalLineup);
     });
 
     it('should return the expected result', () => {
-        expect(result).toEqual({
+        expect(result).toMatchObject({
             title: {
                 display: true,
                 text: 'a site Points',
@@ -16,6 +26,13 @@ describe('get line options', () => {
             },
             legend: {
                 display: false
+            },
+            elements: {
+                point: {
+                    radius: expect.any(Function),
+                    pointStyle: expect.any(Function),
+                    borderWidth: expect.any(Function)
+                }
             },
             scales: {
                 xAxes: [
