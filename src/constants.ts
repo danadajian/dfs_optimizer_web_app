@@ -60,8 +60,6 @@ export const TEAM_ABBREVIATIONS: any = {
 export const KNAPSACK_PROBLEM_LINK = "https://en.wikipedia.org/wiki/Knapsack_problem";
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
 export const NUMBER_OF_GAMES_FOR_ROLLING_AVG = 5;
-export const NUMBER_OF_SEASONS_AGO = 5;
-export const NUMBER_OF_WEEKS_IN_SEASON = 17;
 export const SUPPORTED_SITES = ['Fanduel', 'DraftKings'];
 export const MAX_COMBINATIONS = 1000000;
 export const DESKTOP_VIEW_THRESHOLD = 1200;

@@ -94,9 +94,5 @@ export interface PerformanceState {
     fantasyData?: any,
     optimalLineup?: LineupAttributes[],
     site?: string,
-    sport?: string,
-    currentWeek?: number,
-    currentSeason?: number,
-    week?: number,
-    season?: number
+    sport?: string
 }

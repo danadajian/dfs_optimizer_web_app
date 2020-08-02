@@ -1,4 +1,4 @@
-import {Lambda} from "../aws";
+import {Lambda, S3} from "../aws";
 import {isDevelopment} from "../constants";
 
 const mockFanduelData = require('../fixtures/fanduelDataResponse.json');
@@ -8,8 +8,7 @@ const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
 const mockStartTimesData = require('../fixtures/startTimes.json');
-const mockHistoricalData = require('../fixtures/historicalDataResponse.json');
-const mockCurrentData = require('../fixtures/currentDataResponse.json');
+const mockRecentFantasyData = require('../fixtures/recentFantasyDataResponse.json');
 const mockOptimalLineupS3 = require('../fixtures/optimalLineupS3.json');
 
 export const invokeLambdaFunction = async (functionName: any, payload: any = {}) => {
@@ -27,13 +26,29 @@ export const invokeLambdaFunction = async (functionName: any, payload: any = {})
             REACT_APP_INJURIES_LAMBDA: mockInjuriesData,
             REACT_APP_OPTIMAL_LINEUP_LAMBDA: mockOptimalLineupResponse,
             REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA: mockRollingAveragesData,
-            REACT_APP_RETRIEVE_FROM_S3_LAMBDA: payload.fileName === 'startTimes.json' ? mockStartTimesData : mockOptimalLineupS3,
-            REACT_APP_GET_FANTASY_DATA_LAMBDA: mockHistoricalData,
-            REACT_APP_GET_CURRENT_DATA_LAMBDA: mockCurrentData
         };
         return mockResponseMap[functionName]
     } else {
         const response: any = await Lambda.invoke(params).promise();
         return JSON.parse(response.Payload.toString());
     }
+};
+
+export const retrieveObjectFromS3 = async (bucketName: string, fileName: string): Promise<any> => {
+    const params = {
+        Bucket: bucketName,
+        Key: fileName
+    };
+    if (isDevelopment()) {
+        const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+        await delay(250);
+        const mockResponseMap: any = {
+            'startTimes.json': mockStartTimesData,
+            'mlbOptimalLineup.json': mockOptimalLineupS3,
+            'mlbRecentFantasyData.json': mockRecentFantasyData
+        };
+        return mockResponseMap[fileName]
+    }
+    const data: any = await S3.getObject(params).promise();
+    return JSON.parse(data.Body.toString());
 };

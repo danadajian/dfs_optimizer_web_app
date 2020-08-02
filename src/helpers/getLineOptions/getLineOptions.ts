@@ -13,7 +13,7 @@ export const getLineOptions = (site: string, optimalLineup: any) => {
         },
         elements: {
             point: {
-                radius: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 10 : 1,
+                radius: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 10 : 2,
                 pointStyle: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 'star' : 'circle',
                 borderWidth: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 3 : 1
             }
