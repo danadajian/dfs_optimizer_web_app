@@ -5,10 +5,13 @@ import {MAX_COMBINATIONS} from "../../constants";
 export const handleGenerateOptimalLineup = async (state: State, setState: (state: State) => void) => {
     return Promise.resolve(setState({
         ...state,
-        isOptimizing: true,
-        maxCombinations: MAX_COMBINATIONS
+        isOptimizing: true
     })).then(() => {
-        return invokeLambdaFunction(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, state);
+        const optimizerInput = {
+            ...state,
+            maxCombinations: MAX_COMBINATIONS
+        }
+        return invokeLambdaFunction(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, optimizerInput);
     }).then(optimalPlayerIds => {
         if (!optimalPlayerIds || optimalPlayerIds.length === 0) {
             alert('Failed to generate optimal lineup.')

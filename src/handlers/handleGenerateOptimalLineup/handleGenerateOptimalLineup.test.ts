@@ -38,13 +38,15 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true,
-                maxCombinations: MAX_COMBINATIONS
+                isOptimizing: true
             })
         });
 
         it('should call invokeLambdaFunction with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, state)
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, {
+                ...state,
+                maxCombinations: MAX_COMBINATIONS
+            })
         });
 
         it('should call setState with correct params at the end', () => {
@@ -89,13 +91,15 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true,
-                maxCombinations: MAX_COMBINATIONS
+                isOptimizing: true
             })
         });
 
         it('should call invokeLambdaFunction with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, state)
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, {
+                ...state,
+                maxCombinations: MAX_COMBINATIONS
+            })
         });
 
         it('should call window alert', () => {
@@ -121,13 +125,15 @@ describe('handleGenerateOptimalLineup', () => {
         it('should initially call setState with correct params', () => {
             expect(setState).toHaveBeenNthCalledWith(1, {
                 ...state,
-                isOptimizing: true,
-                maxCombinations: MAX_COMBINATIONS
+                isOptimizing: true
             })
         });
 
         it('should call invokeLambdaFunction with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, state)
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_OPTIMAL_LINEUP_LAMBDA, {
+                ...state,
+                maxCombinations: MAX_COMBINATIONS
+            })
         });
 
         it('should call window alert', () => {
