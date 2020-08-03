@@ -7,7 +7,7 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => ({
         ...optimalPlayer,
-        actual: fantasyData.find((player: any) => player.name === optimalPlayer.name)?.Fanduel || 0
+        actual: fantasyData.find((player: any) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0
     }));
 
     const columns = [
