@@ -1,6 +1,7 @@
 import {playerIsInOptimalLineup} from "./playerIsInOptimalLineup";
+import {LineupAttributes} from "../../types";
 
-export const getLineOptions = (site: string, optimalLineup: any) => {
+export const getLineOptions = (site: string, optimalLineup: LineupAttributes[]) => {
     return {
         title: {
             display: true,

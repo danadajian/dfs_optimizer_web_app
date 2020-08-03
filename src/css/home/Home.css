@@ -11,14 +11,14 @@
 }
 
 .sliding-background {
-    background: url('../icons/big_four_logos.jpg') repeat-x;
+    background: url('../../icons/big_four_logos.jpg') repeat-x;
     height: 500px;
     width: 7950px;
     animation: slide 60s linear infinite;
 }
 
 .sliding-background-transparent {
-    background: url('../icons/big_four_logos.jpg') repeat-x;
+    background: url('../../icons/big_four_logos.jpg') repeat-x;
     height: 500px;
     width: 7950px;
     animation: slide 60s linear infinite;

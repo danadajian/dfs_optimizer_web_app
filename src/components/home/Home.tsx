@@ -1,9 +1,9 @@
 import React from "react";
-import '../css/Home.css'
+import '../../css/home/Home.css'
 import {NavBar} from "./NavBar";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import {GridSection} from "./GridSection";
-import {StateProps} from "../types";
+import {StateProps} from "../../types";
 import {Loading} from "./Loading";
 import {UpcomingContests} from "./UpcomingContests";
 

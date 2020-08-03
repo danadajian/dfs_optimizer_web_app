@@ -1,7 +1,7 @@
 import React from "react";
 import Table from 'react-bootstrap/Table'
-import '../css/PlayerCell.css'
-import {PlayerPoolAttributes} from "../types";
+import '../../css/home/PlayerCell.css'
+import {PlayerPoolAttributes} from "../../types";
 
 export const PlayerPoolPlayerCell = (props: {
     player: PlayerPoolAttributes

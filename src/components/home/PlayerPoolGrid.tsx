@@ -1,21 +1,21 @@
 import React from 'react'
-import '../css/PlayerPoolGrid.css'
-import {PlayerPoolAttributes, StateProps} from "../types";
+import '../../css/home/PlayerPoolGrid.css'
+import {PlayerPoolAttributes, StateProps} from "../../types";
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory from 'react-bootstrap-table2-editor';
 import Button from 'react-bootstrap/Button';
-import {handleAddPlayerToLineup} from "../handlers/handleAddPlayerToLineup/handleAddPlayerToLineup";
-import {handleAddPlayerToBlackList} from "../handlers/handleAddPlayerToBlackList/handleAddPlayerToBlackList";
+import {handleAddPlayerToLineup} from "../../handlers/handleAddPlayerToLineup/handleAddPlayerToLineup";
+import {handleAddPlayerToBlackList} from "../../handlers/handleAddPlayerToBlackList/handleAddPlayerToBlackList";
 import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
-import {getOrdinalString} from "../helpers/getOrdinalString/getOrdinalString";
+import {getOrdinalString} from "../../helpers/getOrdinalString/getOrdinalString";
 import {getOpponentRankStyle} from "./LineupPlayerCell";
-import {handleRemovePlayerFromLineup} from "../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
-import {NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../constants";
-import {getWeatherImage} from "../helpers/getWeatherImage/getWeatherImage";
+import {handleRemovePlayerFromLineup} from "../../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
+import {NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
+import {getWeatherImage} from "../../helpers/getWeatherImage/getWeatherImage";
 import {SUPPORTED_WEATHER_SPORTS} from "@dadajian/shared-fantasy-constants";
 
-const upIcon = require('../icons/up.svg');
-const downIcon = require('../icons/down.svg');
+const upIcon = require('../../icons/up.svg');
+const downIcon = require('../../icons/down.svg');
 
 export const PlayerPoolGrid: any = (props: StateProps) => {
     const {playerPool, filteredPool, lineup, whiteList, blackList, sport} = props.state;

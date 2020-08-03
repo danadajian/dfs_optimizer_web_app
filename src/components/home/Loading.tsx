@@ -1,11 +1,11 @@
 import React from "react";
-import '../css/Loading.css'
+import '../../css/home/Loading.css'
 
-const loading = require("../icons/loading.svg") as any;
-const baseball = require("../icons/baseball.svg") as any;
-const football = require("../icons/football.ico") as any;
-const basketball = require("../icons/basketball.svg") as any;
-const hockey = require("../icons/hockey.svg") as any;
+const loading = require("../../icons/loading.svg") as any;
+const baseball = require("../../icons/baseball.svg") as any;
+const football = require("../../icons/football.ico") as any;
+const basketball = require("../../icons/basketball.svg") as any;
+const hockey = require("../../icons/hockey.svg") as any;
 
 export const Loading = (props: {
     sport: string,

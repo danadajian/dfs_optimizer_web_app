@@ -3,10 +3,10 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import Button from 'react-bootstrap/Button';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from "react-bootstrap/Dropdown";
-import '../css/FilterBar.css'
-import {PlayerPoolAttributes, StateProps} from "../types";
-import {getSetFromArray} from "../helpers/getSetFromArray/getSetFromArray";
-import {handleFilterPlayers} from "../handlers/handleFilterPlayers/handleFilterPlayers";
+import '../../css/home/FilterBar.css'
+import {PlayerPoolAttributes, StateProps} from "../../types";
+import {getSetFromArray} from "../../helpers/getSetFromArray/getSetFromArray";
+import {handleFilterPlayers} from "../../handlers/handleFilterPlayers/handleFilterPlayers";
 
 export const FilterBar: any = (props: StateProps) => {
     const {playerPool, sortValue} = props.state;

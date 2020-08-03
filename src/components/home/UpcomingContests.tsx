@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import Button from 'react-bootstrap/Button'
 import Spinner from 'react-bootstrap/Spinner'
 import BootstrapTable from 'react-bootstrap-table-next';
-import '../css/UpcomingContests.css'
-import {handleUpcomingContestsLoad} from "../handlers/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
+import '../../css/home/UpcomingContests.css'
+import {handleUpcomingContestsLoad} from "../../handlers/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
 
 export const UpcomingContests = () => {
     const [startTimes, setStartTimes]: any = useState(undefined);
@@ -22,7 +22,7 @@ export const UpcomingContests = () => {
         }
     ];
 
-    const startTimesTable = <BootstrapTable keyField='id'
+    const startTimesTable = <BootstrapTable keyField='sport'
                                             data={startTimes}
                                             columns={columns}
                                             classes="Player-table"

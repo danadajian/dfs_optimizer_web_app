@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Table from 'react-bootstrap/Table'
-import '../css/BlackList.css'
-import {PlayerPoolAttributes} from "../types";
+import '../../css/home/BlackList.css'
+import {PlayerPoolAttributes} from "../../types";
 import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
 
 export const BlackList = (props: {

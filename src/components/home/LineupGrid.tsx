@@ -1,15 +1,15 @@
 import React from "react";
-import '../css/Lineup.css'
-import '../css/LineupPlayer.css'
+import '../../css/home/Lineup.css'
+import '../../css/home/LineupPlayer.css'
 import {LineupPlayerCell} from "./LineupPlayerCell";
-import {getFormattedSalary} from "../helpers/getFormattedSalary/getFormattedSalary";
-import {getAdjustedDraftKingsSalary} from "../helpers/getAdjustedDraftKingsSalary/getAdjustedDraftKingsSalary";
-import {handleRemovePlayerFromLineup} from "../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
-import {sumAttribute} from "../helpers/sumAttribute/sumAttribute";
-import {StateProps} from "../types";
+import {getFormattedSalary} from "../../helpers/getFormattedSalary/getFormattedSalary";
+import {getAdjustedDraftKingsSalary} from "../../helpers/getAdjustedDraftKingsSalary/getAdjustedDraftKingsSalary";
+import {handleRemovePlayerFromLineup} from "../../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
+import {sumAttribute} from "../../helpers/sumAttribute/sumAttribute";
+import {StateProps} from "../../types";
 import BootstrapTable from "react-bootstrap-table-next";
 
-const removeIcon = require('../icons/remove.svg');
+const removeIcon = require('../../icons/remove.svg');
 
 export const LineupGrid = (props: StateProps) => {
     const {site, lineup, whiteList, salaryCap} = props.state;

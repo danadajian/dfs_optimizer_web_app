@@ -1,7 +1,7 @@
 import React from 'react';
 import InputGroup from 'react-bootstrap/InputGroup'
-import '../css/PlayerPool.css'
-import {StateProps} from "../types";
+import '../../css/home/PlayerPool.css'
+import {StateProps} from "../../types";
 import {SearchBar} from "./SearchBar";
 import {FilterBar} from "./FilterBar";
 import {PlayerPoolGrid} from "./PlayerPoolGrid";

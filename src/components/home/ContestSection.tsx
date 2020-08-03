@@ -1,8 +1,8 @@
 import React from "react";
 import Button from 'react-bootstrap/Button'
 import NavDropdown from "react-bootstrap/NavDropdown";
-import {StateProps} from "../types";
-import {handleContestChange} from "../handlers/handleContestChange/handleContestChange";
+import {StateProps} from "../../types";
+import {handleContestChange} from "../../handlers/handleContestChange/handleContestChange";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 

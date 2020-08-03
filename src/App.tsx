@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import './css/App.css'
+import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-datepicker/dist/react-datepicker.css";
 import './env'
-import {Home} from "./components/Home";
-import {About} from "./components/About";
-import {Performance} from "./components/Performance";
+import {Home} from "./components/home/Home";
+import {About} from "./components/about/About";
+import {Performance} from "./components/performance/Performance";
 import ScrollToTop from "./components/ScrollToTop";
 import {DESKTOP_VIEW_THRESHOLD, INITIAL_STATE} from "./constants";
 

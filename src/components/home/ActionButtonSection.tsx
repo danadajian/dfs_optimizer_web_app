@@ -3,14 +3,14 @@ import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Popover from 'react-bootstrap/Popover';
-import '../css/ActionButtonSection.css'
-import {LineupAttributes, StateProps} from "../types";
-import {handleGenerateOptimalLineup} from "../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
-import {handleClearLineup} from "../handlers/handleClearLineup/handleClearLineup";
-import {handleExportLineup} from "../handlers/handleExportLineup/handleExportLineup";
+import '../../css/home/ActionButtonSection.css';
 import {Lineup} from "./Lineup";
 import {Optimizing} from "./Optimizing";
 import {BlackList} from "./BlackList";
+import {LineupAttributes, StateProps} from "../../types";
+import {handleGenerateOptimalLineup} from "../../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
+import {handleClearLineup} from "../../handlers/handleClearLineup/handleClearLineup";
+import {handleExportLineup} from "../../handlers/handleExportLineup/handleExportLineup";
 
 export const ActionButtonSection = (props: StateProps) => {
     const {isOptimizing, site, sport, contest, lineup, blackList, playerPool} = props.state;

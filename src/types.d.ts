@@ -83,7 +83,6 @@ export interface DfsContest {
 }
 
 export interface StartTime {
-    id: number,
     sport: string,
     time: string
 }
@@ -95,4 +94,9 @@ export interface PerformanceState {
     optimalLineup?: LineupAttributes[],
     site?: string,
     sport?: string
+}
+
+export interface PerformanceStateProps {
+    state: PerformanceState,
+    setState: (state: PerformanceState) => void,
 }

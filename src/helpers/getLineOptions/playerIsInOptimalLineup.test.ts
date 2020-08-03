@@ -1,16 +1,14 @@
 import {playerIsInOptimalLineup} from "./playerIsInOptimalLineup";
 
 describe('playerIsInOptimalLineup', () => {
-    const optimalLineup = {
-        lineup: [
-            {
-                name: 'player1'
-            },
-            {
-                name: 'player2'
-            }
-        ]
-    };
+    const optimalLineup = [
+        {
+            name: 'player1'
+        },
+        {
+            name: 'player2'
+        }
+    ];
     describe('true case', () => {
         let result: any;
         const context = {
@@ -26,6 +24,7 @@ describe('playerIsInOptimalLineup', () => {
         }
 
         beforeEach(() => {
+            // @ts-ignore
             result = playerIsInOptimalLineup(optimalLineup, context)
         })
 
@@ -49,6 +48,7 @@ describe('playerIsInOptimalLineup', () => {
         }
 
         beforeEach(() => {
+            // @ts-ignore
             result = playerIsInOptimalLineup(optimalLineup, context)
         })
 

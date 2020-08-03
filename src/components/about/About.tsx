@@ -1,8 +1,8 @@
 import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import {KNAPSACK_PROBLEM_LINK} from "../constants";
-import {NavBar} from "./NavBar";
-import {StateProps} from "../types";
+import {KNAPSACK_PROBLEM_LINK} from "../../constants";
+import {StateProps} from "../../types";
+import {NavBar} from "../home/NavBar";
 
 export const About = (props: StateProps) => {
     return (

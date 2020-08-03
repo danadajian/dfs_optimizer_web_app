@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import {NavLink} from 'react-router-dom';
-import {StateProps} from "../types";
+import {StateProps} from "../../types";
 import {SiteSection} from "./SiteSection";
 import {SportSection} from "./SportSection";
 import {DateSection} from "./DateSection";
@@ -11,7 +11,7 @@ import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import {Loading} from "./Loading";
 
-const logo = require('../icons/logo.ico');
+const logo = require('../../icons/logo.ico');
 
 export const NavBar = (props: StateProps) => {
     const {isLoading, sport, loadingText} = props.state;
