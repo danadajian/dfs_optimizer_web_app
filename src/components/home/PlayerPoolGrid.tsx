@@ -10,7 +10,6 @@ import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
 import {getOrdinalString} from "../../helpers/getOrdinalString/getOrdinalString";
 import {getOpponentRankStyle} from "./LineupPlayerCell";
 import {handleRemovePlayerFromLineup} from "../../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
-import {NUMBER_OF_GAMES_FOR_ROLLING_AVG} from "../../constants";
 import {getWeatherImage} from "../../helpers/getWeatherImage/getWeatherImage";
 import {SUPPORTED_WEATHER_SPORTS} from "@dadajian/shared-fantasy-constants";
 
@@ -119,14 +118,6 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
                 .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             </p>
         }
-    }, {
-        dataField: 'rollingAverage',
-        text: `${NUMBER_OF_GAMES_FOR_ROLLING_AVG}-Game Avg`,
-        editable: false,
-        sort: true,
-        sortCaret: getSortIcon,
-        formatter: (cellContent: any, row: PlayerPoolAttributes) =>
-            <p>{row.rollingAverage ? Number(row.rollingAverage).toFixed(1) : 'N/A'}</p>
     }, {
         dataField: 'opponent',
         text: 'Opponent',

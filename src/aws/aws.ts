@@ -3,7 +3,6 @@ import {delay, isDevelopment} from "../constants";
 
 const mockFanduelData = require('../fixtures/fanduelDataResponse.json');
 const mockProjectionsData = require('../fixtures/nflProjectionsResponse.json');
-const mockRollingAveragesData = require('../fixtures/rollingAveragesResponse.json');
 const mockOpponentRanksData = require('../fixtures/opponentRanksResponse.json');
 const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
@@ -22,8 +21,7 @@ export const invokeLambdaFunction = async (functionName: any, payload: any = {})
             REACT_APP_PROJECTIONS_LAMBDA: mockProjectionsData,
             REACT_APP_OPPONENT_RANKS_LAMBDA: mockOpponentRanksData,
             REACT_APP_INJURIES_LAMBDA: mockInjuriesData,
-            REACT_APP_OPTIMAL_LINEUP_LAMBDA: mockOptimalLineupResponse,
-            REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA: mockRollingAveragesData,
+            REACT_APP_OPTIMAL_LINEUP_LAMBDA: mockOptimalLineupResponse
         };
         return delay(250).then(() => mockResponseMap[functionName])
     } else {

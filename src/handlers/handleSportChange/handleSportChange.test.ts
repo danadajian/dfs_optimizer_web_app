@@ -40,8 +40,7 @@ describe('handleSportChange', () => {
             'a site data',
             'NOT NHL projections',
             'NOT NHL opponent ranks',
-            'NOT NHL injury data',
-            'player history'
+            'NOT NHL injury data'
         ];
         it.each(loadingTexts)
         ('should call setState via updateLoadingText with correct params', (loadingText) => {
@@ -67,11 +66,6 @@ describe('handleSportChange', () => {
                 lambdaName, {sport: 'not nhl'})
         });
 
-        it('should call rolling averages lambda with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA,
-                {site: state.site, sport})
-        });
-
         it('should call setState with correct params at the end', () => {
             expect(setState).toHaveBeenLastCalledWith({
                 ...state,
@@ -80,7 +74,6 @@ describe('handleSportChange', () => {
                 dfsData,
                 contests: ['dfs1', 'dfs2'],
                 projectionsData: 'lambda result',
-                rollingAverages: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},
                 injuries: {body: 'lambda result'},
                 playerStatuses: [],
@@ -114,7 +107,6 @@ describe('handleSportChange', () => {
             'NHL projections',
             'NHL opponent ranks',
             'NHL injury data',
-            'player history',
             'player statuses'
         ];
         it.each(loadingTexts)
@@ -141,13 +133,8 @@ describe('handleSportChange', () => {
                 lambdaName, {sport: 'nhl'})
         });
 
-        it('should call rolling averages lambda with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA,
-                {site: state.site, sport})
-        });
-
         it('should call invoke lambda with goalie scraper', () => {
-            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( 5, process.env.REACT_APP_GOALIE_SCRAPER_LAMBDA)
+            expect(invokeLambdaFunction).toHaveBeenNthCalledWith( 4, process.env.REACT_APP_GOALIE_SCRAPER_LAMBDA)
         });
 
         it('should call setState with correct params at the end', () => {
@@ -158,7 +145,6 @@ describe('handleSportChange', () => {
                 dfsData,
                 contests: ['dfs1', 'dfs2'],
                 projectionsData: 'lambda result',
-                rollingAverages: {body: 'lambda result'},
                 opponentRanks: {body: 'lambda result'},
                 injuries: {body: 'lambda result'},
                 playerStatuses: {body: 'lambda result'},

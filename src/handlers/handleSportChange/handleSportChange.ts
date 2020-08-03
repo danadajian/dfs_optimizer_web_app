@@ -15,8 +15,7 @@ export const handleSportChange = async (sport: string, state: State, setState: (
             sport
         });
     };
-    let dfsData: DfsContest[], contests: any[], projectionsData: any, opponentRanks: any, injuries: any,
-        rollingAverages: any[], playerStatuses: any[];
+    let dfsData: DfsContest[], contests: any[], projectionsData: any, opponentRanks: any, injuries: any, playerStatuses: any[];
     return Promise.resolve(updateLoadingText(`${site} data`))
         .then(() => {
             return getDfsData(site!, sport, date)
@@ -47,13 +46,6 @@ export const handleSportChange = async (sport: string, state: State, setState: (
             injuries = injuriesResult;
         })
         .then(() => {
-            updateLoadingText('player history');
-            return invokeLambdaFunction(process.env.REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA, {site, sport});
-        })
-        .then(rollingAveragesResult => {
-            rollingAverages = rollingAveragesResult;
-        })
-        .then(() => {
             if (sport === 'nhl') {
                 updateLoadingText('player statuses');
                 return invokeLambdaFunction(process.env.REACT_APP_GOALIE_SCRAPER_LAMBDA);
@@ -70,7 +62,6 @@ export const handleSportChange = async (sport: string, state: State, setState: (
                 dfsData,
                 contests,
                 projectionsData: projectionsData.body,
-                rollingAverages,
                 opponentRanks,
                 injuries,
                 playerStatuses,

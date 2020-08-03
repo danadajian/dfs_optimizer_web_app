@@ -34,7 +34,6 @@ describe('handleContestChange', () => {
             projectionsData: {
                 some: 'data'
             },
-            rollingAverages: {},
             opponentRanks: {},
             injuries: {},
             playerStatuses: []
@@ -46,7 +45,7 @@ describe('handleContestChange', () => {
         });
 
         it('should call getPlayerPool with correct params', () => {
-            expect(getPlayerPool).toHaveBeenCalledWith('dfsPlayers', state.projectionsData, state.rollingAverages,
+            expect(getPlayerPool).toHaveBeenCalledWith('dfsPlayers', state.projectionsData,
                 state.site, state.opponentRanks, state.injuries, state.playerStatuses)
         });
 
@@ -70,7 +69,6 @@ describe('handleContestChange', () => {
                 projectionsData: {
                     some: 'data'
                 },
-                rollingAverages: {},
                 opponentRanks: {},
                 injuries: {},
                 playerStatuses: [],

@@ -1,7 +1,7 @@
 import {INJURY_ABBREVIATIONS, TEAM_ABBREVIATIONS} from "../../constants";
 
-export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, rollingAverages: any, site: string,
-                              opponentRanks: any, injuries: any, playerStatuses: any) => {
+export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, site: string, opponentRanks: any, injuries: any,
+                              playerStatuses: any) => {
     if (!projectionsData || Object.keys(projectionsData).length === 0 || projectionsData['errorMessage']) {
         alert('Projection data is currently unavailable.');
         return dfsPlayers.map(player => ({
@@ -21,7 +21,6 @@ export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, rollingAv
         const playerData = projectionsData[player.playerId];
         const opposingTeam = playerData.opponent.split(' ')[1];
         const teamRanks = opponentRanks[TEAM_ABBREVIATIONS[opposingTeam]];
-        const rollingAveragesPlayer = rollingAverages.find((playerObject: any) => playerObject.playerId === player.playerId);
         const opponentRankPosition: any = teamRanks && Object.keys(teamRanks)
             .find(position => position.replace('/', '').includes(player.position));
         const playerStatus = playerStatuses.find((player: any) => player.name === playerData.name) ?
@@ -31,7 +30,6 @@ export const getPlayerPool = (dfsPlayers: any[], projectionsData: any, rollingAv
             ...player,
             ...playerData,
             projection: playerData[site + 'Projection'],
-            rollingAverage: rollingAveragesPlayer && rollingAveragesPlayer[site],
             opponentRank: teamRanks && opponentRankPosition && teamRanks[opponentRankPosition],
             status: (playerStatus || injuryStatus) &&
                 `${INJURY_ABBREVIATIONS[injuryStatus] || ''}${playerStatus ? ' ' : ''}${playerStatus}`
