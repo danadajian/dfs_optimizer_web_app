@@ -1,5 +1,5 @@
 import {Lambda, S3} from "../aws";
-import {isDevelopment} from "../constants";
+import {delay, isDevelopment} from "../constants";
 
 const mockFanduelData = require('../fixtures/fanduelDataResponse.json');
 const mockProjectionsData = require('../fixtures/nflProjectionsResponse.json');
@@ -17,8 +17,6 @@ export const invokeLambdaFunction = async (functionName: any, payload: any = {})
         Payload: JSON.stringify(payload)
     };
     if (isDevelopment()) {
-        const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
-        await delay(250);
         const mockResponseMap: any = {
             REACT_APP_FANDUEL_LAMBDA: mockFanduelData,
             REACT_APP_PROJECTIONS_LAMBDA: mockProjectionsData,
@@ -27,7 +25,7 @@ export const invokeLambdaFunction = async (functionName: any, payload: any = {})
             REACT_APP_OPTIMAL_LINEUP_LAMBDA: mockOptimalLineupResponse,
             REACT_APP_ROLLING_FANTASY_AVERAGES_LAMBDA: mockRollingAveragesData,
         };
-        return mockResponseMap[functionName]
+        return delay(250).then(() => mockResponseMap[functionName])
     } else {
         const response: any = await Lambda.invoke(params).promise();
         return JSON.parse(response.Payload.toString());
@@ -40,14 +38,12 @@ export const retrieveObjectFromS3 = async (bucketName: string, fileName: string)
         Key: fileName
     };
     if (isDevelopment()) {
-        const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
-        await delay(250);
         const mockResponseMap: any = {
             'startTimes.json': mockStartTimesData,
             'mlbOptimalLineup.json': mockOptimalLineupS3,
             'mlbRecentFantasyData.json': mockRecentFantasyData
         };
-        return mockResponseMap[fileName]
+        return delay(250).then(() => mockResponseMap[fileName])
     }
     const data: any = await S3.getObject(params).promise();
     return JSON.parse(data.Body.toString());

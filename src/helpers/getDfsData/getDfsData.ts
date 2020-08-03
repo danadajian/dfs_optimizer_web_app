@@ -5,11 +5,15 @@ import {SUPPORTED_CONTESTS} from "@dadajian/shared-fantasy-constants";
 
 export const getDfsData = async (site: string, sport: string, date: Date) => {
     if (site === 'Fanduel') {
-        const fanduelData = await invokeLambdaFunction(process.env.REACT_APP_FANDUEL_LAMBDA, {date: formatDate(date)});
-        return fanduelData.filter((contestJson: DfsContest) => isValidFanduelContest(contestJson, sport));
+        return invokeLambdaFunction(process.env.REACT_APP_FANDUEL_LAMBDA, {date: formatDate(date)})
+            .then(fanduelData => {
+                return fanduelData.filter((contestJson: DfsContest) => isValidFanduelContest(contestJson, sport));
+            })
     } else {
-        const draftKingsData = await invokeLambdaFunction(process.env.REACT_APP_DRAFTKINGS_LAMBDA, {sport});
-        return draftKingsData.filter((contestJson: DfsContest) => isValidDraftKingsContest(contestJson.contest, date));
+        return invokeLambdaFunction(process.env.REACT_APP_DRAFTKINGS_LAMBDA, {sport})
+            .then(draftKingsData => {
+                return draftKingsData.filter((contestJson: DfsContest) => isValidDraftKingsContest(contestJson.contest, date));
+            })
     }
 };
 
