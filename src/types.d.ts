@@ -1,4 +1,4 @@
-export interface State {
+export type State = {
     isLoading: boolean,
     isOptimizing?: boolean,
     date: Date,
@@ -26,14 +26,14 @@ export interface State {
     playerStatuses?: any[]
 }
 
-export interface StateProps {
+export type StateProps = {
     state: State,
     setState: (state: State) => void,
     isDesktopView?: boolean,
     isHome?: boolean
 }
 
-export interface LineupAttributes {
+export type LineupAttributes = {
     lineupIndex: number,
     playerId: number,
     displayPosition: string,
@@ -50,7 +50,7 @@ export interface LineupAttributes {
     overUnder?: number
 }
 
-export interface PlayerPoolAttributes {
+export type PlayerPoolAttributes = {
     playerId: number,
     position: string,
     displayPosition: string,
@@ -69,32 +69,39 @@ export interface PlayerPoolAttributes {
     [key: string]: any
 }
 
-export interface Weather {
+export type Weather = {
     forecast: string,
     details: string
 }
 
-export interface DfsContest {
+export type DfsContest = {
     contest: string,
     players: any[],
     sport?: string
 }
 
-export interface StartTime {
+export type StartTime = {
     sport: string,
     time: string
 }
 
-export interface PerformanceState {
+export type PerformanceState = {
     isLoading: boolean,
     date: Date,
-    fantasyData?: any,
+    fantasyData?: FantasyData[],
     optimalLineup?: LineupAttributes[],
     site?: string,
     sport?: string
 }
 
-export interface PerformanceStateProps {
+export type PerformanceStateProps = {
     state: PerformanceState,
     setState: (state: PerformanceState) => void,
+}
+
+export type FantasyData = {
+    playerId: number,
+    name: string,
+    Fanduel: number,
+    DraftKings: number
 }

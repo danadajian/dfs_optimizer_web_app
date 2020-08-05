@@ -1,13 +1,13 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import {LineupAttributes, PerformanceStateProps} from "../../types";
+import {FantasyData, LineupAttributes, PerformanceStateProps} from "../../types";
 
 export const PerformanceTable = (props: PerformanceStateProps) => {
     const {fantasyData, optimalLineup} = props.state;
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => ({
         ...optimalPlayer,
-        actual: fantasyData.find((player: any) => player.playerId === optimalPlayer.playerId)?.Fanduel || 'DNP'
+        actual: fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0
     }));
 
     const columns = [
@@ -20,17 +20,23 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
             text: 'Player'
         },
         {
+            dataField: 'team',
+            text: 'Team'
+        },
+        {
             dataField: 'projection',
-            text: 'Projection'
+            text: 'Projected',
+            formatter: (cell: any, row: any) => <p>{row.projection.toFixed(1)}</p>
         },
         {
             dataField: 'actual',
-            text: 'Actual'
+            text: 'Actual',
+            formatter: (cell: any, row: any) => <p>{row.actual.toFixed(1)}</p>
         }
     ];
 
     return <>{tableData && <BootstrapTable keyField='name'
-                                           data={tableData || []}
+                                           data={tableData}
                                            columns={columns}
                                            classes="Player-table"
                                            headerWrapperClasses="Player-pool-grid-header"

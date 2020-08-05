@@ -9,7 +9,7 @@ export const PerformanceChart = (props: PerformanceStateProps) => {
     const {site, fantasyData, optimalLineup}: any = props.state;
 
     const sortedFantasyData = _.sortBy(fantasyData, site).filter((player: any) => player.Fanduel !== 0);
-    const labels = sortedFantasyData.map((playerObject: any) => playerObject.name);
+    const labels = sortedFantasyData.map((player: any) => player.name);
     const datasets = getChartData(site, sortedFantasyData);
     const chartData = {
         labels,
