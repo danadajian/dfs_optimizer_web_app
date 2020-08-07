@@ -18,7 +18,8 @@ export const PerformanceChart = (props: PerformanceStateProps) => {
     const labels = filteredFantasyData.map((player: any) => player.name);
     const datasets = [{
         ...CHART_CONFIG,
-        data: filteredFantasyData.map((playerData: any) => playerData.Fanduel),
+        data: filteredFantasyData.map((player: any) => player.Fanduel),
+        playerIds: filteredFantasyData.map((player: any) => player.playerId)
     }];
     const chartData = {
         labels,
