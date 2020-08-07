@@ -1,69 +1,69 @@
 {
-  "totalProjection": 144.46695,
-  "totalSalary": 35000,
+  "totalProjection": 134.03665999999998,
+  "totalSalary": 34500,
   "lineup": [
     {
-      "playerId": 550735,
-      "name": "Xander Bogaerts",
-      "team": "OAK",
+      "name": "Josh Lindblom",
+      "team": "MIL",
       "position": "P",
-      "projection": 35.86502
+      "projection": 30.36405,
+      "playerId": 454435
     },
     {
-      "playerId": 392198,
-      "name": "Yasmani Grandal",
-      "team": "CWS",
-      "position": "C",
-      "projection": 12.78939
+      "name": "Anthony Rizzo",
+      "team": "CHC",
+      "position": "1B",
+      "projection": 12.90034,
+      "playerId": 390610
     },
     {
-      "playerId": 737618,
-      "name": "Victor Caratini",
-      "team": "HOU",
+      "name": "Ketel Marte",
+      "team": "ARI",
       "position": "2B",
-      "projection": 13.17789
+      "projection": 12.32705,
+      "playerId": 597026
     },
     {
-      "playerId": 549381,
-      "name": "Kris Bryant",
-      "team": "CWS",
+      "name": "Alex Bregman",
+      "team": "HOU",
       "position": "3B",
-      "projection": 13.82453
+      "projection": 12.94539,
+      "playerId": 659419
     },
     {
-      "playerId": 548164,
-      "name": "Nick Castellanos",
-      "team": "NYY",
+      "name": "Javier Baez",
+      "team": "CHC",
       "position": "SS",
-      "projection": 14.00349
+      "projection": 11.46269,
+      "playerId": 597757
     },
     {
-      "playerId": 201363,
-      "name": "Nelson Cruz",
+      "name": "Ronald Acuna",
       "team": "ATL",
       "position": "OF",
-      "projection": 14.78894
+      "projection": 14.53356,
+      "playerId": 877503
     },
     {
-      "playerId": 390610,
-      "name": "Anthony Rizzo",
-      "team": "NYY",
-      "position": "OF",
-      "projection": 14.75734
-    },
-    {
-      "playerId": 709545,
       "name": "Kyle Schwarber",
       "team": "CHC",
       "position": "OF",
-      "projection": 13.21977
+      "projection": 12.83376,
+      "playerId": 709545
     },
     {
-      "playerId": 577718,
-      "name": "C.J. Cron",
-      "team": "TAM",
+      "name": "Christian Yelich",
+      "team": "MIL",
+      "position": "OF",
+      "projection": 12.79745,
+      "playerId": 548190
+    },
+    {
+      "name": "Freddie Freeman",
+      "team": "ATL",
       "position": "1B",
-      "projection": 12.04058
+      "projection": 13.87237,
+      "playerId": 390291
     }
   ]
 }

@@ -63,3 +63,61 @@ export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 export const SUPPORTED_SITES = ['Fanduel', 'DraftKings'];
 export const MAX_COMBINATIONS = 1000000;
 export const DESKTOP_VIEW_THRESHOLD = 1200;
+
+export const CHART_CONFIG = {
+    label: 'Fanduel Points',
+    lineTension: 0.1,
+    backgroundColor: 'rgba(75,192,192,0.4)',
+    borderColor: 'rgba(75,192,192,1)',
+    borderCapStyle: 'butt',
+    borderDash: [],
+    borderDashOffset: 0.0,
+    borderJoinStyle: 'miter',
+    pointBorderColor: 'rgba(75,192,192,1)',
+    pointBackgroundColor: 'gray',
+    pointHoverRadius: 5,
+    pointHoverBackgroundColor: 'rgba(75,192,192,1)',
+    pointHoverBorderColor: 'rgba(220,220,220,1)',
+};
+
+export const CHART_OPTIONS = {
+    title: {
+        display: true,
+        fontSize: 24,
+        fontColor: "black",
+        text: 'Fanduel Points'
+    },
+    legend: {
+        display: false
+    },
+    scales: {
+        xAxes: [
+            {
+                ticks: {
+                    display: false
+                },
+                gridLines: {
+                    display: false
+                }
+            }
+        ],
+        yAxes: [
+            {
+                ticks: {
+                    suggestedMin: -5,
+                    suggestedMax: 50,
+                    fontColor: "black"
+                },
+                gridLines: {
+                    zeroLineColor: "black",
+                    color: "rgba(200, 200, 200, 0.25)"
+                }
+            }
+        ]
+    },
+    tooltips: {
+        displayColors: false
+    },
+    responsive: true,
+    maintainAspectRatio: false
+};

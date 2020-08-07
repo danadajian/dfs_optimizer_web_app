@@ -1,13 +1,14 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import {FantasyData, LineupAttributes, PerformanceStateProps} from "../../types";
+import {FantasyData, LineupAttributes, PerformanceStateProps, PlayerPoolAttributes} from "../../types";
+import {getPlayerPercentile} from "../../helpers/getPlayerPercentile/getPlayerPercentile";
 
 export const PerformanceTable = (props: PerformanceStateProps) => {
-    const {fantasyData, optimalLineup} = props.state;
+    const {fantasyData, playerPool, optimalLineup} = props.state;
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => ({
         ...optimalPlayer,
-        actual: fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0
+        actual: fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0,
     }));
 
     const columns = [
@@ -32,6 +33,16 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
             dataField: 'actual',
             text: 'Actual',
             formatter: (cell: any, row: any) => <p>{row.actual.toFixed(1)}</p>
+        },
+        {
+            dataField: 'positionPercentile',
+            text: 'Percentile (Position)',
+            formatter: (cell: any, row: any) => <p>{getPlayerPercentile(row.actual, fantasyData!.filter((player: FantasyData) => playerPool?.find((playerPoolPlayer: PlayerPoolAttributes) => playerPoolPlayer.playerId === player.playerId)?.position === row.position)).toFixed(1)}</p>
+        },
+        {
+            dataField: 'overallPercentile',
+            text: 'Percentile (Overall)',
+            formatter: (cell: any, row: any) => <p>{getPlayerPercentile(row.actual, fantasyData!).toFixed(1)}</p>
         }
     ];
 

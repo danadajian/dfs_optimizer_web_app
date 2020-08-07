@@ -1,19 +1,39 @@
 import {Line} from "react-chartjs-2";
-import {getLineOptions} from "../../helpers/getLineOptions/getLineOptions";
 import React from "react";
-import {PerformanceStateProps} from "../../types";
+import {FantasyData, PerformanceStateProps, PlayerPoolAttributes} from "../../types";
 import * as _ from "lodash";
-import {getChartData} from "../../helpers/getChartData/getChartData";
+import {CHART_CONFIG, CHART_OPTIONS} from "../../constants";
+import {playerIsInOptimalLineup} from "../../helpers/playerIsInOptimalLineup/playerIsInOptimalLineup";
 
 export const PerformanceChart = (props: PerformanceStateProps) => {
-    const {site, fantasyData, optimalLineup}: any = props.state;
+    const {fantasyData, playerPool, optimalLineup, position}: any = props.state;
 
-    const sortedFantasyData = _.sortBy(fantasyData, site).filter((player: any) => player.Fanduel !== 0);
-    const labels = sortedFantasyData.map((player: any) => player.name);
-    const datasets = getChartData(site, sortedFantasyData);
+    const sortedFantasyData: FantasyData[] = _.sortBy(fantasyData, 'Fanduel');
+    const filteredFantasyData = sortedFantasyData.filter((player: FantasyData) => {
+        const playerHasCurrentPosition = !position ||
+            playerPool.find((playerPoolPlayer: PlayerPoolAttributes) =>
+                playerPoolPlayer.playerId === player.playerId)?.position === position;
+        return playerHasCurrentPosition && player.Fanduel !== 0
+    });
+    const labels = filteredFantasyData.map((player: any) => player.name);
+    const datasets = [{
+        ...CHART_CONFIG,
+        data: filteredFantasyData.map((playerData: any) => playerData.Fanduel),
+    }];
     const chartData = {
         labels,
         datasets
+    };
+
+    const chartOptions = {
+        ...CHART_OPTIONS,
+        elements: {
+            point: {
+                radius: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 10 : 2,
+                pointStyle: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 'star' : 'circle',
+                borderWidth: (context: any) => playerIsInOptimalLineup(optimalLineup, context) ? 3 : 1
+            }
+        },
     };
 
     return (
@@ -21,7 +41,7 @@ export const PerformanceChart = (props: PerformanceStateProps) => {
             <Line data={chartData}
                   width={1000}
                   height={500}
-                  options={getLineOptions(site, optimalLineup)}/>
+                  options={chartOptions}/>
         </div>
     )
 };

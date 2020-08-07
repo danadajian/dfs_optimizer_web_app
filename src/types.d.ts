@@ -53,17 +53,17 @@ export type LineupAttributes = {
 export type PlayerPoolAttributes = {
     playerId: number,
     position: string,
-    displayPosition: string,
+    displayPosition?: string,
     team: string,
     name: string,
-    status: string,
-    opponent: string,
-    gameDate: string,
+    status?: string,
+    opponent?: string,
+    gameDate?: string,
     projection: number,
     salary: number,
-    opponentRank: number,
-    spread: string,
-    overUnder: number,
+    opponentRank?: number,
+    spread?: string,
+    overUnder?: number,
     weather?: Weather
 
     [key: string]: any
@@ -89,9 +89,11 @@ export type PerformanceState = {
     isLoading: boolean,
     date: Date,
     fantasyData?: FantasyData[],
+    playerPool?: PlayerPoolAttributes[],
     optimalLineup?: LineupAttributes[],
-    site?: string,
-    sport?: string
+    positions?: string[],
+    sport?: string,
+    position?: string
 }
 
 export type PerformanceStateProps = {

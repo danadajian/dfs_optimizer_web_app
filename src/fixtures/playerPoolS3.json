@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Tyler Chatwood",
+    "team": "CHC",
+    "position": "P",
+    "salary": 9600,
+    "playerId": 456036,
+    "projection": 27.15026
+  },
+  {
+    "name": "Zac Gallen",
+    "team": "ARI",
+    "position": "P",
+    "salary": 8200,
+    "playerId": 857550,
+    "projection": 25.91176
+  },
+  {
+    "name": "Nate Pearson",
+    "team": "TOR",
+    "position": "P",
+    "salary": 7500,
+    "playerId": 1054997,
+    "projection": 26.81631
+  },
+  {
+    "name": "Wade LeBlanc",
+    "team": "BAL",
+    "position": "P",
+    "salary": 6600,
+    "playerId": 326535,
+    "projection": 24.1921
+  },
+  {
+    "name": "Josh Lindblom",
+    "team": "MIL",
+    "position": "P",
+    "salary": 6500,
+    "playerId": 454435,
+    "projection": 30.36405
+  },
+  {
+    "name": "Brad Keller",
+    "team": "KAN",
+    "position": "P",
+    "salary": 6400,
+    "playerId": 737865,
+    "projection": 22.56348
+  },
+  {
+    "name": "Touki Toussaint",
+    "team": "ATL",
+    "position": "P",
+    "salary": 6300,
+    "playerId": 828666,
+    "projection": 25.20954
+  },
+  {
+    "name": "Gio Gonzalez",
+    "team": "CWS",
+    "position": "P",
+    "salary": 6100,
+    "playerId": 253557,
+    "projection": 27.18661
+  },
+  {
+    "name": "Jordan Yamamoto",
+    "team": "MIA",
+    "position": "P",
+    "salary": 5700,
+    "playerId": 829040,
+    "projection": 28.41008
+  },
+  {
+    "name": "Brandon Bielak",
+    "team": "HOU",
+    "position": "P",
+    "salary": 5500,
+    "playerId": 915815,
+    "projection": 25.13553
+  },
+  {
+    "name": "Christian Yelich",
+    "team": "MIL",
+    "position": "OF",
+    "salary": 3900,
+    "playerId": 548190,
+    "projection": 12.79745
+  },
+  {
+    "name": "Alex Bregman",
+    "team": "HOU",
+    "position": "3B",
+    "salary": 3900,
+    "playerId": 659419,
+    "projection": 12.94539
+  },
+  {
+    "name": "Ronald Acuna",
+    "team": "ATL",
+    "position": "OF",
+    "salary": 3700,
+    "playerId": 877503,
+    "projection": 14.53356
+  },
+  {
+    "name": "Anthony Rizzo",
+    "team": "CHC",
+    "position": "1B",
+    "salary": 3700,
+    "playerId": 390610,
+    "projection": 12.90034
+  },
+  {
+    "name": "Kris Bryant",
+    "team": "CHC",
+    "position": "3B",
+    "salary": 3700,
+    "playerId": 549381,
+    "projection": 12.39137
+  },
+  {
+    "name": "Jose Altuve",
+    "team": "HOU",
+    "position": "2B",
+    "salary": 3700,
+    "playerId": 455591,
+    "projection": 12.20159
+  },
+  {
+    "name": "Yoan Moncada",
+    "team": "CWS",
+    "position": "3B",
+    "salary": 3600,
+    "playerId": 864590,
+    "projection": 11.57189
+  },
+  {
+    "name": "Freddie Freeman",
+    "team": "ATL",
+    "position": "1B",
+    "salary": 3600,
+    "playerId": 390291,
+    "projection": 13.87237
+  },
+  {
+    "name": "Javier Baez",
+    "team": "CHC",
+    "position": "SS",
+    "salary": 3500,
+    "playerId": 597757,
+    "projection": 11.46269
+  },
+  {
+    "name": "Whit Merrifield",
+    "team": "KAN",
+    "position": "OF",
+    "salary": 3500,
+    "playerId": 526882,
+    "projection": 10.06849
+  },
+  {
+    "name": "Eloy Jimenez",
+    "team": "CWS",
+    "position": "OF",
+    "salary": 3400,
+    "playerId": 830373,
+    "projection": 11.24161
+  },
+  {
+    "name": "George Springer",
+    "team": "HOU",
+    "position": "OF",
+    "salary": 3400,
+    "playerId": 526414,
+    "projection": 12.18659
+  },
+  {
+    "name": "Carlos Correa",
+    "team": "HOU",
+    "position": "SS",
+    "salary": 3400,
+    "playerId": 657850,
+    "projection": 10.37365
+  },
+  {
+    "name": "Michael Brantley",
+    "team": "HOU",
+    "position": "OF",
+    "salary": 3300,
+    "playerId": 290204,
+    "projection": 11.0573
+  },
+  {
+    "name": "Keston Hiura",
+    "team": "MIL",
+    "position": "2B",
+    "salary": 3300,
+    "playerId": 1054985,
+    "projection": 11.28691
+  },
+  {
+    "name": "Marcell Ozuna",
+    "team": "ATL",
+    "position": "OF",
+    "salary": 3300,
+    "playerId": 503013,
+    "projection": 12.18981
+  },
+  {
+    "name": "Jose Abreu",
+    "team": "CWS",
+    "position": "1B",
+    "salary": 3200,
+    "playerId": 491174,
+    "projection": 10.71084
+  },
+  {
+    "name": "Luis Robert",
+    "team": "CWS",
+    "position": "OF",
+    "salary": 3200,
+    "playerId": 1051903,
+    "projection": 10.03092
+  },
+  {
+    "name": "Dansby Swanson",
+    "team": "ATL",
+    "position": "SS",
+    "salary": 3100,
+    "playerId": 659260,
+    "projection": 11.29329
+  },
+  {
+    "name": "Brian Anderson",
+    "team": "MIA",
+    "position": "3B",
+    "salary": 3100,
+    "playerId": 599204,
+    "projection": 10.74025
+  },
+  {
+    "name": "Willson Contreras",
+    "team": "CHC",
+    "position": "C",
+    "salary": 3100,
+    "playerId": 508176,
+    "projection": 11.2605
+  },
+  {
+    "name": "Jorge Soler",
+    "team": "KAN",
+    "position": "OF",
+    "salary": 3100,
+    "playerId": 658226,
+    "projection": 10.74646
+  },
+  {
+    "name": "Cavan Biggio",
+    "team": "TOR",
+    "position": "2B",
+    "salary": 3000,
+    "playerId": 738582,
+    "projection": 11.30267
+  },
+  {
+    "name": "Ian Happ",
+    "team": "CHC",
+    "position": "OF",
+    "salary": 3000,
+    "playerId": 827194,
+    "projection": 9.26692
+  },
+  {
+    "name": "Starling Marte",
+    "team": "ARI",
+    "position": "OF",
+    "salary": 3000,
+    "playerId": 503030,
+    "projection": 11.95307
+  },
+  {
+    "name": "Jesus Aguilar",
+    "team": "MIA",
+    "position": "1B",
+    "salary": 3000,
+    "playerId": 505981,
+    "projection": 10.82684
+  },
+  {
+    "name": "Yulieski Gurriel",
+    "team": "HOU",
+    "position": "1B",
+    "salary": 2900,
+    "playerId": 817365,
+    "projection": 9.48148
+  },
+  {
+    "name": "Ketel Marte",
+    "team": "ARI",
+    "position": "2B",
+    "salary": 2900,
+    "playerId": 597026,
+    "projection": 12.32705
+  },
+  {
+    "name": "Kyle Schwarber",
+    "team": "CHC",
+    "position": "OF",
+    "salary": 2800,
+    "playerId": 709545,
+    "projection": 12.83376
+  },
+  {
+    "name": "Renato Nunez",
+    "team": "BAL",
+    "position": "1B",
+    "salary": 2800,
+    "playerId": 596834,
+    "projection": 8.93991
+  },
+  {
+    "name": "Avisail Garcia",
+    "team": "MIL",
+    "position": "OF",
+    "salary": 2800,
+    "playerId": 497563,
+    "projection": 10.63506
+  },
+  {
+    "name": "Anthony Santander",
+    "team": "BAL",
+    "position": "OF",
+    "salary": 2800,
+    "playerId": 659463,
+    "projection": 8.98103
+  },
+  {
+    "name": "Leury Garcia",
+    "team": "CWS",
+    "position": "2B",
+    "salary": 2800,
+    "playerId": 456103,
+    "projection": 8.41611
+  },
+  {
+    "name": "Ben Gamel",
+    "team": "MIL",
+    "position": "OF",
+    "salary": 2800,
+    "playerId": 548493,
+    "projection": 9.8332
+  },
+  {
+    "name": "Hanser Alberto",
+    "team": "BAL",
+    "position": "2B",
+    "salary": 2800,
+    "playerId": 551306,
+    "projection": 8.78971
+  },
+  {
+    "name": "Jose Iglesias",
+    "team": "BAL",
+    "position": "SS",
+    "salary": 2700,
+    "playerId": 519724,
+    "projection": 8.76184
+  },
+  {
+    "name": "Maikel Franco",
+    "team": "KAN",
+    "position": "3B",
+    "salary": 2700,
+    "playerId": 549529,
+    "projection": 8.23791
+  },
+  {
+    "name": "Kyle Tucker",
+    "team": "HOU",
+    "position": "OF",
+    "salary": 2700,
+    "playerId": 874240,
+    "projection": 9.21595
+  },
+  {
+    "name": "Vladimir Guerrero Jr.",
+    "team": "TOR",
+    "position": "1B",
+    "salary": 2700,
+    "playerId": 920245,
+    "projection": 11.04938
+  },
+  {
+    "name": "Bo Bichette",
+    "team": "TOR",
+    "position": "SS",
+    "salary": 2700,
+    "playerId": 917949,
+    "projection": 11.38304
+  },
+  {
+    "name": "Christian Walker",
+    "team": "ARI",
+    "position": "1B",
+    "salary": 2700,
+    "playerId": 503826,
+    "projection": 11.61014
+  },
+  {
+    "name": "Yasmani Grandal",
+    "team": "CWS",
+    "position": "C",
+    "salary": 2700,
+    "playerId": 392198,
+    "projection": 11.26003
+  },
+  {
+    "name": "Josh Reddick",
+    "team": "HOU",
+    "position": "OF",
+    "salary": 2600,
+    "playerId": 328018,
+    "projection": 8.6941
+  },
+  {
+    "name": "Salvador Perez",
+    "team": "KAN",
+    "position": "C",
+    "salary": 2600,
+    "playerId": 392995,
+    "projection": 8.76059
+  },
+  {
+    "name": "Jonathan Villar",
+    "team": "MIA",
+    "position": "OF",
+    "salary": 2600,
+    "playerId": 503851,
+    "projection": 11.63089
+  },
+  {
+    "name": "Rowdy Tellez",
+    "team": "TOR",
+    "position": "1B",
+    "salary": 2600,
+    "playerId": 738437,
+    "projection": 10.74438
+  },
+  {
+    "name": "Travis Shaw",
+    "team": "TOR",
+    "position": "3B",
+    "salary": 2500,
+    "playerId": 578040,
+    "projection": 9.06964
+  },
+  {
+    "name": "Justin Smoak",
+    "team": "MIL",
+    "position": "1B",
+    "salary": 2500,
+    "playerId": 454366,
+    "projection": 9.95599
+  },
+  {
+    "name": "Ryan O'Hearn",
+    "team": "KAN",
+    "position": "1B",
+    "salary": 2500,
+    "playerId": 829141,
+    "projection": 9.33619
+  },
+  {
+    "name": "Nico Hoerner",
+    "team": "CHC",
+    "position": "2B",
+    "salary": 2500,
+    "playerId": 1054431,
+    "projection": 8.92661
+  },
+  {
+    "name": "Eduardo Escobar",
+    "team": "ARI",
+    "position": "3B",
+    "salary": 2500,
+    "playerId": 455635,
+    "projection": 10.28367
+  },
+  {
+    "name": "Austin Hays",
+    "team": "BAL",
+    "position": "OF",
+    "salary": 2500,
+    "playerId": 874219,
+    "projection": 8.05168
+  },
+  {
+    "name": "Nomar Mazara",
+    "team": "CWS",
+    "position": "OF",
+    "salary": 2500,
+    "playerId": 659453,
+    "projection": 9.99566
+  },
+  {
+    "name": "Lourdes Gurriel",
+    "team": "TOR",
+    "position": "OF",
+    "salary": 2500,
+    "playerId": 908697,
+    "projection": 9.98046
+  },
+  {
+    "name": "Raul Mondesi",
+    "team": "KAN",
+    "position": "SS",
+    "salary": 2500,
+    "playerId": 659237,
+    "projection": 8.93184
+  },
+  {
+    "name": "Kole Calhoun",
+    "team": "ARI",
+    "position": "OF",
+    "salary": 2500,
+    "playerId": 546813,
+    "projection": 11.49595
+  },
+  {
+    "name": "Francisco Cervelli",
+    "team": "MIA",
+    "position": "C",
+    "salary": 2400,
+    "playerId": 294320,
+    "projection": 9.75673
+  },
+  {
+    "name": "Randal Grichuk",
+    "team": "TOR",
+    "position": "OF",
+    "salary": 2400,
+    "playerId": 500734,
+    "projection": 9.7095
+  },
+  {
+    "name": "Dwight Smith",
+    "team": "BAL",
+    "position": "OF",
+    "salary": 2400,
+    "playerId": 597794,
+    "projection": 9.01533
+  },
+  {
+    "name": "David Peralta",
+    "team": "ARI",
+    "position": "OF",
+    "salary": 2400,
+    "playerId": 329170,
+    "projection": 9.66784
+  },
+  {
+    "name": "Reese McGuire",
+    "team": "TOR",
+    "position": "C",
+    "salary": 2300,
+    "playerId": 737505,
+    "projection": 8.12477
+  },
+  {
+    "name": "Victor Caratini",
+    "team": "CHC",
+    "position": "C",
+    "salary": 2300,
+    "playerId": 737618,
+    "projection": 9.31304
+  },
+  {
+    "name": "Magneuris Sierra",
+    "team": "MIA",
+    "position": "OF",
+    "salary": 2300,
+    "playerId": 736866,
+    "projection": 6.71657
+  },
+  {
+    "name": "Alex Gordon",
+    "team": "KAN",
+    "position": "OF",
+    "salary": 2300,
+    "playerId": 303361,
+    "projection": 8.51067
+  },
+  {
+    "name": "Tyler Flowers",
+    "team": "ATL",
+    "position": "C",
+    "salary": 2300,
+    "playerId": 326094,
+    "projection": 8.81731
+  },
+  {
+    "name": "Martin Maldonado",
+    "team": "HOU",
+    "position": "C",
+    "salary": 2300,
+    "playerId": 254445,
+    "projection": 7.28263
+  },
+  {
+    "name": "Jedd Gyorko",
+    "team": "MIL",
+    "position": "3B",
+    "salary": 2200,
+    "playerId": 526816,
+    "projection": 9.73238
+  },
+  {
+    "name": "Orlando Arcia",
+    "team": "MIL",
+    "position": "SS",
+    "salary": 2200,
+    "playerId": 596917,
+    "projection": 7.81487
+  },
+  {
+    "name": "Chance Sisco",
+    "team": "BAL",
+    "position": "C",
+    "salary": 2200,
+    "playerId": 737615,
+    "projection": 8.185
+  },
+  {
+    "name": "Omar Narvaez",
+    "team": "MIL",
+    "position": "C",
+    "salary": 2200,
+    "playerId": 504967,
+    "projection": 8.79948
+  },
+  {
+    "name": "Nick Markakis",
+    "team": "ATL",
+    "position": "OF",
+    "salary": 2200,
+    "playerId": 225649,
+    "projection": 8.58834
+  },
+  {
+    "name": "Jason Heyward",
+    "team": "CHC",
+    "position": "OF",
+    "salary": 2200,
+    "playerId": 388409,
+    "projection": 9.93464
+  },
+  {
+    "name": "Johan Camargo",
+    "team": "ATL",
+    "position": "3B",
+    "salary": 2200,
+    "playerId": 657234,
+    "projection": 9.12589
+  },
+  {
+    "name": "Lewis Brinson",
+    "team": "MIA",
+    "position": "OF",
+    "salary": 2100,
+    "playerId": 657923,
+    "projection": 8.03261
+  },
+  {
+    "name": "Nick Ahmed",
+    "team": "ARI",
+    "position": "SS",
+    "salary": 2100,
+    "playerId": 577767,
+    "projection": 8.21861
+  },
+  {
+    "name": "Logan Forsythe",
+    "team": "MIA",
+    "position": "3B",
+    "salary": 2100,
+    "playerId": 454417,
+    "projection": 7.76796
+  },
+  {
+    "name": "Chris Davis",
+    "team": "BAL",
+    "position": "1B",
+    "salary": 2100,
+    "playerId": 326739,
+    "projection": 6.98694
+  },
+  {
+    "name": "Adam Duvall",
+    "team": "ATL",
+    "position": "OF",
+    "salary": 2100,
+    "playerId": 549078,
+    "projection": 11.0396
+  },
+  {
+    "name": "Jon Berti",
+    "team": "MIA",
+    "position": "OF",
+    "salary": 2100,
+    "playerId": 598490,
+    "projection": 11.01945
+  },
+  {
+    "name": "Monte Harrison",
+    "team": "MIA",
+    "position": "OF",
+    "salary": 2000,
+    "playerId": 828691,
+    "projection": 8.22596
+  },
+  {
+    "name": "Adeiny Hechavarria",
+    "team": "ATL",
+    "position": "SS",
+    "salary": 2000,
+    "playerId": 541415,
+    "projection": 7.96964
+  },
+  {
+    "name": "Nicholas Lopez",
+    "team": "KAN",
+    "position": "2B",
+    "salary": 2000,
+    "playerId": 918022,
+    "projection": 7.43447
+  },
+  {
+    "name": "Pat Valaika",
+    "team": "BAL",
+    "position": "3B",
+    "salary": 2000,
+    "playerId": 708988,
+    "projection": 6.22906
+  },
+  {
+    "name": "Zack Collins",
+    "team": "CWS",
+    "position": "C",
+    "salary": 2000,
+    "playerId": 738390,
+    "projection": 8.12775
+  },
+  {
+    "name": "Andy Young",
+    "team": "ARI",
+    "position": "3B",
+    "salary": 2000,
+    "playerId": 919031,
+    "projection": 9.30624
+  },
+  {
+    "name": "Carson Kelly",
+    "team": "ARI",
+    "position": "C",
+    "salary": 2000,
+    "playerId": 657963,
+    "projection": 9.48698
+  },
+  {
+    "name": "Danny Mendick",
+    "team": "CWS",
+    "position": "2B",
+    "salary": 2000,
+    "playerId": 875320,
+    "projection": 7.14316
+  },
+  {
+    "name": "Mark Mathias",
+    "team": "MIL",
+    "position": "2B",
+    "salary": 2000,
+    "playerId": 875006,
+    "projection": 7.55553
+  },
+  {
+    "name": "Joe Panik",
+    "team": "TOR",
+    "position": "2B",
+    "salary": 2000,
+    "playerId": 577938,
+    "projection": 8.17978
+  },
+  {
+    "name": "Nick Heath",
+    "team": "KAN",
+    "position": "OF",
+    "salary": 2000,
+    "playerId": 918355,
+    "projection": 7.46889
+  }
+]

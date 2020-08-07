@@ -4,16 +4,32 @@ import {DFS_PIPELINE_BUCKET_NAME, FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian
 
 jest.mock('../../aws/aws');
 
+const mockPlayerPool = [
+    {
+        position: 'position1'
+    },
+    {
+        position: 'position1'
+    },
+    {
+        position: 'position2'
+    }
+];
 const mockOptimalLineup = {
     lineup: 'optimal lineup'
 };
-(retrieveObjectFromS3 as jest.Mock).mockImplementation((bucketName: string) => {
-    return bucketName === FANTASY_ANALYTICS_BUCKET_NAME ? 'recent fantasy data' : mockOptimalLineup
+(retrieveObjectFromS3 as jest.Mock).mockImplementation((bucketName: string, fileName: string) => {
+    const resultMap: any = {
+        'sportRecentFantasyData.json': 'recent fantasy data',
+        'sportPlayerPool.json': mockPlayerPool,
+        'sportOptimalLineup.json': mockOptimalLineup,
+    };
+    return resultMap[fileName];
 })
 
 describe('handleShowPerformance', () => {
     let result: any;
-    const sport = 'a sport';
+    const sport = 'sport';
     const state = {
         some: 'state'
     }
@@ -33,11 +49,15 @@ describe('handleShowPerformance', () => {
     });
 
     it('should call retrieveObjectFromS3 for fantasy bucket with correct params', () => {
-        expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'a sportRecentFantasyData.json')
+        expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'sportRecentFantasyData.json')
     });
 
     it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
-        expect(retrieveObjectFromS3).toHaveBeenCalledWith(DFS_PIPELINE_BUCKET_NAME, 'a sportOptimalLineup.json')
+        expect(retrieveObjectFromS3).toHaveBeenCalledWith(DFS_PIPELINE_BUCKET_NAME, 'sportPlayerPool.json')
+    });
+
+    it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
+        expect(retrieveObjectFromS3).toHaveBeenCalledWith(DFS_PIPELINE_BUCKET_NAME, 'sportOptimalLineup.json')
     });
 
     it('should call setState again with correct params', () => {
@@ -46,7 +66,9 @@ describe('handleShowPerformance', () => {
             isLoading: false,
             sport,
             fantasyData: 'recent fantasy data',
-            optimalLineup: 'optimal lineup'
+            playerPool: mockPlayerPool,
+            optimalLineup: 'optimal lineup',
+            positions: ['position1', 'position2']
         })
     });
 })

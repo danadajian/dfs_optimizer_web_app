@@ -7,9 +7,9 @@ import {StateProps} from "../../types";
 import {INITIAL_PERFORMANCE_STATE} from "../../constants";
 import {NavBar} from "../home/NavBar";
 import {SportButtons} from "./SportButtons";
-import {SiteButtons} from "./SiteButtons";
 import {PerformanceChart} from "./PerformanceChart";
 import {PerformanceTable} from "./PerformanceTable";
+import {PositionButtons} from "./PositionButtons";
 
 export const Performance = (props: StateProps) => {
     const [state, setState] = useState(INITIAL_PERFORMANCE_STATE);
@@ -21,8 +21,9 @@ export const Performance = (props: StateProps) => {
             <Jumbotron className="mt-2">
                 <h1>Performance</h1>
                 <section className="Performance-header mt-5 mb-2">
-                    <SiteButtons {...performanceProps}/>
+                    {!state.sport && <h4>Select a sport:</h4>}
                     <SportButtons {...performanceProps}/>
+                    <PositionButtons {...performanceProps}/>
                 </section>
                 <section className="Performance-data">
                     <PerformanceTable {...performanceProps}/>

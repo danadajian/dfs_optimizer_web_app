@@ -125,7 +125,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
         formatter: (cellContent: any, row: PlayerPoolAttributes) =>
             <p>
                 {row.opponent && row.opponent + ' '}
-                <b style={getOpponentRankStyle(row.opponentRank)}>
+                <b style={getOpponentRankStyle(row.opponentRank!)}>
                     {row.opponentRank && getOrdinalString(row.opponentRank)}
                 </b>
             </p>
