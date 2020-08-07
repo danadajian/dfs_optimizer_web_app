@@ -3,22 +3,17 @@ import {playerIsInOptimalLineup} from "./playerIsInOptimalLineup";
 describe('playerIsInOptimalLineup', () => {
     const optimalLineup = [
         {
-            name: 'player1'
+            playerId: 1
         },
         {
-            name: 'player2'
+            playerId: 2
         }
     ];
     describe('true case', () => {
         let result: any;
         const context = {
-            chart: {
-                data: {
-                    labels: [
-                        'player69',
-                        'player1'
-                    ]
-                }
+            dataset: {
+                playerIds: [1, 2]
             },
             dataIndex: 1
         }
@@ -36,13 +31,8 @@ describe('playerIsInOptimalLineup', () => {
     describe('false case', () => {
         let result: any;
         const context = {
-            chart: {
-                data: {
-                    labels: [
-                        'player69',
-                        'player1'
-                    ]
-                }
+            dataset: {
+                playerIds: [69, 1]
             },
             dataIndex: 0
         }
