@@ -1,7 +1,8 @@
 import {retrieveObjectFromS3} from "../../aws/aws";
-import {DFS_PIPELINE_BUCKET_NAME, FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
+import {FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
 import {PerformanceState, PlayerPoolAttributes} from "../../types";
 import * as _ from "lodash";
+import {formatDate} from "../../helpers/formatDate/formatDate";
 
 export const handleShowPerformance = async (sport: string, state: PerformanceState,
                                             setState: (state: PerformanceState) => void) => {
@@ -11,19 +12,26 @@ export const handleShowPerformance = async (sport: string, state: PerformanceSta
         sport
     })).then(() => {
         return Promise.all([
-            retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentFantasyData.json`),
-            retrieveObjectFromS3(DFS_PIPELINE_BUCKET_NAME, `${sport}PlayerPool.json`),
-            retrieveObjectFromS3(DFS_PIPELINE_BUCKET_NAME, `${sport}OptimalLineup.json`)
+            retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentFantasyData.json`).catch(() => []),
+            retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentPlayerPools.json`).catch(() => []),
+            retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentOptimalLineups.json`).catch(() => [])
         ]);
-    }).then(([fantasyData, playerPool, optimalLineupObject]) => {
+    }).then(([allFantasyData, allPlayerPools, allOptimalLineups]) => {
+        const dateString = formatDate(state.date);
+        const fantasyData = allFantasyData?.find((fantasyData: any) => fantasyData.date === dateString)?.fantasyData || [];
+        const playerPool = allPlayerPools?.find((playerPool: any) => playerPool.date === dateString)?.playerPool || [];
+        const optimalLineup = allOptimalLineups?.find((optimalLineup: any) => optimalLineup.date === dateString)?.optimalLineup || [];
         const positions: string[] = _.uniq(playerPool?.map((player: PlayerPoolAttributes) => player.position));
         setState({
             ...state,
             isLoading: false,
             sport,
+            allFantasyData,
             fantasyData,
+            allPlayerPools,
             playerPool,
-            optimalLineup: optimalLineupObject?.lineup,
+            allOptimalLineups,
+            optimalLineup,
             positions
         });
     });

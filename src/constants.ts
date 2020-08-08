@@ -1,5 +1,8 @@
 import {PerformanceState, State} from "./types";
 
+export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+
 export const INITIAL_STATE: State = {
     isLoading: false,
     isOptimizing: false,
@@ -12,9 +15,17 @@ export const INITIAL_STATE: State = {
     contests: [],
 };
 
+const getYesterdayDate = () => {
+    if (isDevelopment())
+        return new Date('2020-08-07 EST');
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return date
+}
+
 export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
     isLoading: false,
-    date: new Date()
+    date: getYesterdayDate()
 }
 
 export const INJURY_ABBREVIATIONS: any = {
@@ -58,8 +69,6 @@ export const TEAM_ABBREVIATIONS: any = {
     'Was': 'Washington'
 };
 export const KNAPSACK_PROBLEM_LINK = "https://en.wikipedia.org/wiki/Knapsack_problem";
-export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
-export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 export const SUPPORTED_SITES = ['Fanduel', 'DraftKings'];
 export const MAX_COMBINATIONS = 1000000;
 export const DESKTOP_VIEW_THRESHOLD = 1200;

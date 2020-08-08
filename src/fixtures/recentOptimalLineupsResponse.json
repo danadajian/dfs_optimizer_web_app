@@ -1,0 +1,70 @@
+[
+  {
+    "date": "2020-08-07",
+    "optimalLineup": [
+      {
+        "name": "Josh Lindblom",
+        "team": "MIL",
+        "position": "P",
+        "projection": 30.36405,
+        "playerId": 454435
+      },
+      {
+        "name": "Anthony Rizzo",
+        "team": "CHC",
+        "position": "1B",
+        "projection": 12.90034,
+        "playerId": 390610
+      },
+      {
+        "name": "Ketel Marte",
+        "team": "ARI",
+        "position": "2B",
+        "projection": 12.32705,
+        "playerId": 597026
+      },
+      {
+        "name": "Alex Bregman",
+        "team": "HOU",
+        "position": "3B",
+        "projection": 12.94539,
+        "playerId": 659419
+      },
+      {
+        "name": "Javier Baez",
+        "team": "CHC",
+        "position": "SS",
+        "projection": 11.46269,
+        "playerId": 597757
+      },
+      {
+        "name": "Ronald Acuna",
+        "team": "ATL",
+        "position": "OF",
+        "projection": 14.53356,
+        "playerId": 877503
+      },
+      {
+        "name": "Kyle Schwarber",
+        "team": "CHC",
+        "position": "OF",
+        "projection": 12.83376,
+        "playerId": 709545
+      },
+      {
+        "name": "Christian Yelich",
+        "team": "MIL",
+        "position": "OF",
+        "projection": 12.79745,
+        "playerId": 548190
+      },
+      {
+        "name": "Freddie Freeman",
+        "team": "ATL",
+        "position": "1B",
+        "projection": 13.87237,
+        "playerId": 390291
+      }
+    ]
+  }
+]

@@ -1,10 +1,12 @@
 import {handleShowPerformance} from "./handleShowPerformance";
 import {retrieveObjectFromS3} from "../../aws/aws";
-import {DFS_PIPELINE_BUCKET_NAME, FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
+import {FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
+import {formatDate} from "../../helpers/formatDate/formatDate";
 
 jest.mock('../../aws/aws');
+jest.mock('../../helpers/formatDate/formatDate');
 
-const mockPlayerPool = [
+const playerPool = [
     {
         position: 'position1'
     },
@@ -15,17 +17,42 @@ const mockPlayerPool = [
         position: 'position2'
     }
 ];
-const mockOptimalLineup = {
-    lineup: 'optimal lineup'
-};
-(retrieveObjectFromS3 as jest.Mock).mockImplementation((bucketName: string, fileName: string) => {
+const mockPlayerPools = [
+    {
+        date: '2020-08-07',
+        playerPool
+    }
+];
+const mockFantasyData = [
+    {
+        date: '2020-08-06',
+        fantasyData: 'other recent fantasy data'
+    },
+    {
+        date: '2020-08-07',
+        fantasyData: 'recent fantasy data'
+    }
+];
+const mockOptimalLineups = [
+    {
+        date: '2020-08-06',
+        optimalLineup: 'other optimal lineup'
+    },
+    {
+        date: '2020-08-07',
+        optimalLineup: 'optimal lineup'
+    }
+];
+(retrieveObjectFromS3 as jest.Mock).mockImplementation(async (bucketName: string, fileName: string) => {
     const resultMap: any = {
-        'sportRecentFantasyData.json': 'recent fantasy data',
-        'sportPlayerPool.json': mockPlayerPool,
-        'sportOptimalLineup.json': mockOptimalLineup,
+        'sportRecentFantasyData.json': mockFantasyData,
+        'sportRecentPlayerPools.json': mockPlayerPools,
+        'sportRecentOptimalLineups.json': mockOptimalLineups,
     };
     return resultMap[fileName];
-})
+});
+
+(formatDate as jest.Mock).mockReturnValue('2020-08-07');
 
 describe('handleShowPerformance', () => {
     let result: any;
@@ -53,11 +80,11 @@ describe('handleShowPerformance', () => {
     });
 
     it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
-        expect(retrieveObjectFromS3).toHaveBeenCalledWith(DFS_PIPELINE_BUCKET_NAME, 'sportPlayerPool.json')
+        expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'sportRecentPlayerPools.json')
     });
 
     it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
-        expect(retrieveObjectFromS3).toHaveBeenCalledWith(DFS_PIPELINE_BUCKET_NAME, 'sportOptimalLineup.json')
+        expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'sportRecentOptimalLineups.json')
     });
 
     it('should call setState again with correct params', () => {
@@ -65,8 +92,11 @@ describe('handleShowPerformance', () => {
             some: 'state',
             isLoading: false,
             sport,
+            allFantasyData: mockFantasyData,
             fantasyData: 'recent fantasy data',
-            playerPool: mockPlayerPool,
+            allPlayerPools: mockPlayerPools,
+            playerPool,
+            allOptimalLineups: mockOptimalLineups,
             optimalLineup: 'optimal lineup',
             positions: ['position1', 'position2']
         })

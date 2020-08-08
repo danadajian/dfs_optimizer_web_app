@@ -8,8 +8,8 @@ const mockInjuriesData = require('../fixtures/nflInjuriesResponse.json');
 const mockOptimalLineupResponse = require('../fixtures/optimalLineupResponse.json');
 const mockStartTimesData = require('../fixtures/startTimes.json');
 const mockRecentFantasyData = require('../fixtures/recentFantasyDataResponse.json');
-const mockPlayerPoolS3 = require('../fixtures/playerPoolS3.json');
-const mockOptimalLineupS3 = require('../fixtures/optimalLineupS3.json');
+const mockPlayerPools = require('../fixtures/recentPlayerPoolsResponse.json');
+const mockOptimalLineups = require('../fixtures/recentOptimalLineupsResponse.json');
 
 export const invokeLambdaFunction = async (functionName: any, payload: any = {}) => {
     const params = {
@@ -39,8 +39,8 @@ export const retrieveObjectFromS3 = async (bucketName: string, fileName: string)
     if (isDevelopment()) {
         const mockResponseMap: any = {
             'startTimes.json': mockStartTimesData,
-            'mlbOptimalLineup.json': mockOptimalLineupS3,
-            'mlbPlayerPool.json': mockPlayerPoolS3,
+            'mlbRecentOptimalLineups.json': mockOptimalLineups,
+            'mlbRecentPlayerPools.json': mockPlayerPools,
             'mlbRecentFantasyData.json': mockRecentFantasyData
         };
         return delay(250).then(() => mockResponseMap[fileName])

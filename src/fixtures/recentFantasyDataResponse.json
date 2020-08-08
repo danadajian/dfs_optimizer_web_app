@@ -1,1958 +1,1963 @@
 [
   {
-    "playerId": 549507,
-    "name": "Max Kepler",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 548087,
-    "name": "Jorge Polanco",
-    "Fanduel": 18.2,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 201363,
-    "name": "Nelson Cruz",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 548299,
-    "name": "Eddie Rosario",
-    "Fanduel": 27.9,
-    "DraftKings": 20
-  },
-  {
-    "playerId": 548088,
-    "name": "Miguel Sano",
-    "Fanduel": 25.7,
-    "DraftKings": 18
-  },
-  {
-    "playerId": 329201,
-    "name": "Marwin Gonzalez",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 455889,
-    "name": "Ehire Adrianza",
-    "Fanduel": 6,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 454594,
-    "name": "Alex Avila",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 657851,
-    "name": "Byron Buxton",
-    "Fanduel": 18.7,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 379502,
-    "name": "Kenta Maeda",
-    "Fanduel": 25,
-    "DraftKings": 13.1
-  },
-  {
-    "playerId": 244022,
-    "name": "Tyler Clippard",
-    "Fanduel": 9,
-    "DraftKings": 5.65
-  },
-  {
-    "playerId": 293981,
-    "name": "Sergio Romo",
-    "Fanduel": 3,
-    "DraftKings": 1.65
-  },
-  {
-    "playerId": 503168,
-    "name": "Taylor Rogers",
-    "Fanduel": -2,
-    "DraftKings": -3.05
-  },
-  {
-    "playerId": 737830,
-    "name": "Adam Frazier",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 599250,
-    "name": "Phillip Evans",
-    "Fanduel": 3.5,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 597768,
-    "name": "Josh Bell",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 621019,
-    "name": "Colin Moran",
-    "Fanduel": 9.2,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 828671,
-    "name": "Cole Tucker",
-    "Fanduel": 3.2,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 873683,
-    "name": "Bryan Reynolds",
-    "Fanduel": 15.4,
-    "DraftKings": 12
-  },
-  {
-    "playerId": 507194,
-    "name": "Gregory Polanco",
-    "Fanduel": 25.7,
-    "DraftKings": 18
-  },
-  {
-    "playerId": 550025,
-    "name": "JT Riddle",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 827183,
-    "name": "Kevin Newman",
-    "Fanduel": 10,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 500839,
-    "name": "John Ryan Murphy",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 328207,
-    "name": "Jarrod Dyson",
-    "Fanduel": 18.2,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 875176,
-    "name": "JT Brubaker",
-    "Fanduel": 6,
-    "DraftKings": 1.15
-  },
-  {
-    "playerId": 856266,
-    "name": "Cody Ponce",
-    "Fanduel": 12,
-    "DraftKings": 6.95
-  },
-  {
-    "playerId": 621598,
-    "name": "Chris Stratton",
-    "Fanduel": 8,
-    "DraftKings": 4.55
-  },
-  {
-    "playerId": 602898,
-    "name": "Sam Howard",
-    "Fanduel": 13,
-    "DraftKings": 8.4
-  },
-  {
-    "playerId": 602692,
-    "name": "Austin Slater",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 455617,
-    "name": "Wilmer Flores",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 291100,
-    "name": "Donovan Solano",
-    "Fanduel": 18.2,
-    "DraftKings": 15
-  },
-  {
-    "playerId": 326460,
-    "name": "Evan Longoria",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 262071,
-    "name": "Hunter Pence",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 503161,
-    "name": "Mike Yastrzemski",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 502060,
-    "name": "Darin Ruf",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 526380,
-    "name": "Alex Dickerson",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 254551,
-    "name": "Pablo Sandoval",
-    "Fanduel": 12.2,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 746793,
-    "name": "Chadwick Tromp",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 327177,
-    "name": "Brandon Belt",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 738378,
-    "name": "Mauricio Dubon",
-    "Fanduel": 28.7,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 578009,
-    "name": "Tyler Anderson",
-    "Fanduel": 24,
-    "DraftKings": 14.85
-  },
-  {
-    "playerId": 549195,
-    "name": "Wandy Peralta",
-    "Fanduel": 1,
-    "DraftKings": -0.45
-  },
-  {
-    "playerId": 739018,
-    "name": "Shaun Anderson",
-    "Fanduel": 2,
-    "DraftKings": 0.9
-  },
-  {
-    "playerId": 918679,
-    "name": "Rico Garcia",
-    "Fanduel": -9,
-    "DraftKings": -7.8
-  },
-  {
-    "playerId": 918160,
-    "name": "Caleb Baragar",
-    "Fanduel": -4,
-    "DraftKings": -3.7
-  },
-  {
-    "playerId": 918322,
-    "name": "Conner Menez",
-    "Fanduel": 7,
-    "DraftKings": 3.8
-  },
-  {
-    "playerId": 657861,
-    "name": "David Dahl",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 597765,
-    "name": "Trevor Story",
-    "Fanduel": 21.7,
-    "DraftKings": 17
-  },
-  {
-    "playerId": 454446,
-    "name": "Charlie Blackmon",
-    "Fanduel": 28.2,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 500816,
-    "name": "Nolan Arenado",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 244013,
-    "name": "Matt Kemp",
-    "Fanduel": 6,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 829542,
-    "name": "Sam Hilliard",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 737539,
-    "name": "Ryan McMahon",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 738479,
-    "name": "Garrett Hampson",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 500788,
-    "name": "Chris Owings",
-    "Fanduel": 15.7,
-    "DraftKings": 11
-  },
-  {
-    "playerId": 291425,
-    "name": "Drew Butera",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 327744,
-    "name": "Daniel Murphy",
-    "Fanduel": 22.2,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 548197,
-    "name": "Tony Wolters",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 599746,
-    "name": "Kyle Freeland",
-    "Fanduel": 21,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 658334,
-    "name": "Yency Almonte",
-    "Fanduel": 12,
-    "DraftKings": 7.05
-  },
-  {
-    "playerId": 505259,
-    "name": "Jairo Diaz",
-    "Fanduel": 4,
-    "DraftKings": 1.8
-  },
-  {
-    "playerId": 546772,
-    "name": "Marcus Semien",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 829185,
-    "name": "Ramon Laureano",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 828672,
-    "name": "Matt Chapman",
-    "Fanduel": 9.2,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 526811,
-    "name": "Mark Canha",
-    "Fanduel": 9.7,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 657863,
-    "name": "Matt Olson",
-    "Fanduel": 21.7,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 708990,
-    "name": "Chad Pinder",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 328428,
-    "name": "Khris Davis",
-    "Fanduel": 13,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 739765,
-    "name": "Franklin Barreto",
-    "Fanduel": 3.2,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 503644,
-    "name": "Stephen Piscotty",
-    "Fanduel": 3.5,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 873680,
-    "name": "Sean Murphy",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 502128,
-    "name": "Mike Fiers",
-    "Fanduel": 18,
-    "DraftKings": 8.1
-  },
-  {
-    "playerId": 390408,
-    "name": "T.J. McFarland",
-    "Fanduel": 3,
-    "DraftKings": 1.65
-  },
-  {
-    "playerId": 244136,
-    "name": "Yusmeiro Petit",
-    "Fanduel": 9,
-    "DraftKings": 4.45
-  },
-  {
-    "playerId": 393300,
-    "name": "Liam Hendriks",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 199996,
-    "name": "Shin-Soo Choo",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 291792,
-    "name": "Elvis Andrus",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 738175,
-    "name": "Willie Calhoun",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 657856,
-    "name": "Joey Gallo",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 389301,
-    "name": "Todd Frazier",
-    "Fanduel": 21.7,
-    "DraftKings": 17
-  },
-  {
-    "playerId": 874054,
-    "name": "Nick Solak",
-    "Fanduel": 6,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 737855,
-    "name": "Isiah Kiner-Falefa",
-    "Fanduel": 21.4,
-    "DraftKings": 18
-  },
-  {
-    "playerId": 872474,
-    "name": "Anderson Tejeda",
-    "Fanduel": 34.7,
-    "DraftKings": 26
-  },
-  {
-    "playerId": 200140,
-    "name": "Jeff Mathis",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 200980,
-    "name": "Robinson Chirinos",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 327725,
-    "name": "Mike Minor",
-    "Fanduel": 18,
-    "DraftKings": 9.65
-  },
-  {
-    "playerId": 658965,
-    "name": "Jimmy Herget",
-    "Fanduel": 6,
-    "DraftKings": 4.25
-  },
-  {
-    "playerId": 507216,
-    "name": "Joely Rodriguez",
-    "Fanduel": -1,
-    "DraftKings": -2.3
-  },
-  {
-    "playerId": 599241,
-    "name": "Nick Goody",
-    "Fanduel": 1,
-    "DraftKings": 0.15
-  },
-  {
-    "playerId": 828879,
-    "name": "Brett Martin",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 858824,
-    "name": "David Fletcher",
-    "Fanduel": 6,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 500736,
-    "name": "Mike Trout",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 455515,
-    "name": "Anthony Rendon",
-    "Fanduel": 9.2,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 727378,
-    "name": "Shohei Ohtani",
-    "Fanduel": 24.9,
-    "DraftKings": 18
-  },
-  {
-    "playerId": 598119,
-    "name": "Tommy La Stella",
-    "Fanduel": 15.7,
-    "DraftKings": 12
-  },
-  {
-    "playerId": 317008,
-    "name": "Justin Upton",
-    "Fanduel": 6.5,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 501964,
-    "name": "Brian Goodwin",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 501262,
-    "name": "Max Stassi",
-    "Fanduel": 25.7,
-    "DraftKings": 18
-  },
-  {
-    "playerId": 826671,
-    "name": "Luis Rengifo",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 597750,
-    "name": "Dylan Bundy",
-    "Fanduel": 64,
-    "DraftKings": 41.75
-  },
-  {
-    "playerId": 737507,
-    "name": "J.P. Crawford",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 875186,
-    "name": "Dylan Moore",
-    "Fanduel": 9,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 501199,
-    "name": "Kyle Seager",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 597778,
-    "name": "Daniel Vogelbach",
-    "Fanduel": 18.7,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 738578,
-    "name": "Shed Long Jr.",
-    "Fanduel": 6,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 915774,
-    "name": "Evan White",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 454527,
-    "name": "Dee Gordon",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 599039,
-    "name": "Mallex Smith",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 658019,
-    "name": "Joe Hudson",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 548165,
-    "name": "Taijuan Walker",
-    "Fanduel": 8,
-    "DraftKings": 2.05
-  },
-  {
-    "playerId": 1118989,
-    "name": "Joey Gerber",
-    "Fanduel": 4,
-    "DraftKings": 2.4
-  },
-  {
-    "playerId": 602564,
-    "name": "Taylor Guilbeau",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 827482,
-    "name": "Dan Altavilla",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 738684,
-    "name": "Nestor Cortes",
-    "Fanduel": 6,
-    "DraftKings": 3.3
-  },
-  {
-    "playerId": 737856,
-    "name": "Mike Tauchman",
-    "Fanduel": 13,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 502753,
-    "name": "Luke Voit",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 454371,
-    "name": "Aaron Hicks",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 390316,
-    "name": "Giancarlo Stanton",
-    "Fanduel": 6,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 830372,
-    "name": "Gleyber Torres",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 291262,
-    "name": "Brett Gardner",
-    "Fanduel": 9.2,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 549847,
-    "name": "Aaron Judge",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 505997,
-    "name": "Gio Urshela",
-    "Fanduel": 12.4,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 549555,
-    "name": "Gary Sanchez",
-    "Fanduel": 22.2,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 737878,
-    "name": "Tyler Wade",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 500845,
-    "name": "DJ LeMahieu",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 828875,
-    "name": "Jordan Montgomery",
-    "Fanduel": 3,
-    "DraftKings": -1.2
-  },
-  {
-    "playerId": 501206,
-    "name": "David Hale",
-    "Fanduel": 16,
-    "DraftKings": 9.45
-  },
-  {
-    "playerId": 709534,
-    "name": "Jonathan Holder",
-    "Fanduel": 14,
-    "DraftKings": 8.55
-  },
-  {
-    "playerId": 290131,
-    "name": "Andrew McCutchen",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 827179,
-    "name": "Rhys Hoskins",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 548033,
-    "name": "Bryce Harper",
-    "Fanduel": 15.4,
-    "DraftKings": 11
-  },
-  {
-    "playerId": 548255,
-    "name": "J.T. Realmuto",
-    "Fanduel": 31.9,
-    "DraftKings": 23
-  },
-  {
-    "playerId": 526190,
-    "name": "Phil Gosselin",
-    "Fanduel": 13,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 290133,
-    "name": "Jay Bruce",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 456349,
-    "name": "Didi Gregorius",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 857705,
-    "name": "Scott Kingery",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 254167,
-    "name": "Neil Walker",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 597773,
-    "name": "Roman Quinn",
-    "Fanduel": 12,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 657853,
-    "name": "Zach Eflin",
-    "Fanduel": 27,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 325009,
-    "name": "Deolis Guerra",
-    "Fanduel": 12,
-    "DraftKings": 7.65
-  },
-  {
-    "playerId": 737889,
-    "name": "Nick Pivetta",
-    "Fanduel": 6,
-    "DraftKings": 3.3
-  },
-  {
-    "playerId": 393430,
-    "name": "Jose Alvarez",
-    "Fanduel": 5,
-    "DraftKings": 2.9
-  },
-  {
-    "playerId": 550523,
-    "name": "Hector Neris",
-    "Fanduel": 7,
-    "DraftKings": 3.8
-  },
-  {
-    "playerId": 503285,
-    "name": "Cesar Hernandez",
-    "Fanduel": 32.1,
-    "DraftKings": 22
-  },
-  {
-    "playerId": 598784,
-    "name": "Jose Ramirez",
-    "Fanduel": 59.8,
-    "DraftKings": 44
-  },
-  {
-    "playerId": 597754,
-    "name": "Francisco Lindor",
-    "Fanduel": 12.7,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 830276,
-    "name": "Yu Chang",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 295203,
-    "name": "Carlos Santana",
-    "Fanduel": 18.7,
-    "DraftKings": 12
-  },
-  {
-    "playerId": 548327,
-    "name": "Adam Plutko",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 657490,
-    "name": "Franmil Reyes",
-    "Fanduel": 16.2,
-    "DraftKings": 12
-  },
-  {
-    "playerId": 503146,
-    "name": "Mike Freeman",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 503853,
-    "name": "Domingo Santana",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 737612,
-    "name": "Oscar Mercado",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 577780,
-    "name": "Beau Taylor",
-    "Fanduel": 9.7,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 548171,
-    "name": "Delino DeShields",
-    "Fanduel": 12.7,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 254892,
-    "name": "Carlos Carrasco",
-    "Fanduel": 52,
-    "DraftKings": 30.5
-  },
-  {
-    "playerId": 829228,
-    "name": "Cam Hill",
-    "Fanduel": 9,
-    "DraftKings": 6.25
-  },
-  {
-    "playerId": 875251,
-    "name": "Phil Maton",
-    "Fanduel": 3,
-    "DraftKings": 1.65
-  },
-  {
-    "playerId": 594240,
-    "name": "Shogo Akiyama",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 548164,
-    "name": "Nick Castellanos",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 390641,
-    "name": "Christian Colon",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 201517,
-    "name": "Joey Votto",
-    "Fanduel": 6,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 577924,
-    "name": "Travis Jankowski",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 505033,
-    "name": "Eugenio Suarez",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 657865,
-    "name": "Jesse Winker",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 873264,
-    "name": "Nick Senzel",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 392933,
-    "name": "Freddy Galvis",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 620958,
-    "name": "Kyle Farmer",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 501601,
-    "name": "Tucker Barnhart",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 657487,
-    "name": "Luis Castillo",
-    "Fanduel": 33,
-    "DraftKings": 18.45
-  },
-  {
-    "playerId": 738334,
-    "name": "Jose De Leon",
-    "Fanduel": -10,
-    "DraftKings": -11.05
-  },
-  {
-    "playerId": 737542,
-    "name": "Cody Reed",
-    "Fanduel": -5,
-    "DraftKings": -5.05
-  },
-  {
-    "playerId": 500767,
-    "name": "Matt Davidson",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 526414,
-    "name": "George Springer",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 875569,
-    "name": "Myles Straw",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 455591,
-    "name": "Jose Altuve",
-    "Fanduel": 40.1,
-    "DraftKings": 31
-  },
-  {
-    "playerId": 659419,
-    "name": "Alex Bregman",
-    "Fanduel": 28.2,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 290204,
-    "name": "Michael Brantley",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 817365,
-    "name": "Yuli Gurriel",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 657850,
-    "name": "Carlos Correa",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 328018,
-    "name": "Josh Reddick",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 874240,
-    "name": "Kyle Tucker",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 254445,
-    "name": "Martin Maldonado",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 915815,
-    "name": "Brandon Bielak",
-    "Fanduel": 18,
-    "DraftKings": 10.25
-  },
-  {
-    "playerId": 599742,
-    "name": "Cy Sneed",
-    "Fanduel": -8,
-    "DraftKings": -7.05
-  },
-  {
-    "playerId": 737558,
-    "name": "Blake Taylor",
-    "Fanduel": 7,
-    "DraftKings": 2.6
-  },
-  {
-    "playerId": 873285,
-    "name": "Andre Scrubb",
-    "Fanduel": 7,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 390190,
-    "name": "Ryan Pressly",
-    "Fanduel": -6,
-    "DraftKings": -6.4
-  },
-  {
-    "playerId": 597026,
-    "name": "Ketel Marte",
-    "Fanduel": 9,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 546813,
-    "name": "Kole Calhoun",
-    "Fanduel": 13,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 503030,
-    "name": "Starling Marte",
-    "Fanduel": 18.2,
-    "DraftKings": 15
-  },
-  {
-    "playerId": 503826,
-    "name": "Christian Walker",
-    "Fanduel": 12.7,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 455635,
-    "name": "Eduardo Escobar",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 329170,
-    "name": "David Peralta",
-    "Fanduel": 12.5,
-    "DraftKings": 9
-  },
-  {
-    "playerId": 657963,
-    "name": "Carson Kelly",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 919031,
-    "name": "Andy Young",
-    "Fanduel": 9.5,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 738248,
-    "name": "Tim Locastro",
-    "Fanduel": 3.2,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 577767,
-    "name": "Nick Ahmed",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 857550,
-    "name": "Zac Gallen",
-    "Fanduel": 34,
-    "DraftKings": 17.3
-  },
-  {
-    "playerId": 658917,
-    "name": "Alex Young",
-    "Fanduel": 6,
-    "DraftKings": 4.25
-  },
-  {
-    "playerId": 738289,
-    "name": "Stefan Crichton",
-    "Fanduel": -1,
-    "DraftKings": -1.7
-  },
-  {
-    "playerId": 597763,
-    "name": "Andrew Chafin",
-    "Fanduel": 1,
-    "DraftKings": 0.75
-  },
-  {
-    "playerId": 244150,
-    "name": "Junior Guerra",
-    "Fanduel": 12,
-    "DraftKings": 8.25
-  },
-  {
-    "playerId": 526882,
-    "name": "Whit Merrifield",
-    "Fanduel": 40.6,
-    "DraftKings": 30
-  },
-  {
-    "playerId": 658226,
-    "name": "Jorge Soler",
-    "Fanduel": 31.4,
-    "DraftKings": 24
-  },
-  {
-    "playerId": 392995,
-    "name": "Salvador Perez",
-    "Fanduel": 25.2,
-    "DraftKings": 19
-  },
-  {
-    "playerId": 829141,
-    "name": "Ryan O'Hearn",
-    "Fanduel": 19,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 658005,
-    "name": "Brett Phillips",
-    "Fanduel": 12.2,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 659237,
-    "name": "Adalberto Mondesi",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 597771,
-    "name": "Cam Gallagher",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 303361,
-    "name": "Alex Gordon",
-    "Fanduel": 19.2,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 549529,
-    "name": "Maikel Franco",
-    "Fanduel": 31.4,
-    "DraftKings": 23
-  },
-  {
-    "playerId": 918022,
-    "name": "Nicky Lopez",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 918355,
-    "name": "Nick Heath",
-    "Fanduel": 21.7,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 737865,
-    "name": "Brad Keller",
-    "Fanduel": 42,
-    "DraftKings": 26.25
-  },
-  {
-    "playerId": 621583,
-    "name": "Kyle Zimmer",
-    "Fanduel": 15,
-    "DraftKings": 10.5
-  },
-  {
-    "playerId": 738158,
-    "name": "Kevin McCarthy",
-    "Fanduel": 3,
-    "DraftKings": -0.5
-  },
-  {
-    "playerId": 549381,
-    "name": "Kris Bryant",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 454535,
-    "name": "Jason Kipnis",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 390610,
-    "name": "Anthony Rizzo",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 658323,
-    "name": "David Bote",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 597757,
-    "name": "Javier Baez",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 500784,
-    "name": "Josh Phegley",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 709545,
-    "name": "Kyle Schwarber",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 508176,
-    "name": "Willson Contreras",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 657859,
-    "name": "Albert Almora Jr.",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 388409,
-    "name": "Jason Heyward",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 550188,
-    "name": "Dan Winkler",
-    "Fanduel": 3,
-    "DraftKings": 1.05
-  },
-  {
-    "playerId": 454499,
-    "name": "Craig Kimbrel",
-    "Fanduel": 3,
-    "DraftKings": 0.45
-  },
-  {
-    "playerId": 658528,
-    "name": "Alec Mills",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 737618,
-    "name": "Victor Caratini",
-    "Fanduel": 9.5,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 1054431,
-    "name": "Nico Hoerner",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 827194,
-    "name": "Ian Happ",
-    "Fanduel": 6,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 456036,
-    "name": "Tyler Chatwood",
-    "Fanduel": -5,
-    "DraftKings": -9.35
-  },
-  {
-    "playerId": 657936,
-    "name": "Duane Underwood Jr.",
-    "Fanduel": 1,
-    "DraftKings": -2.35
-  },
-  {
-    "playerId": 502039,
-    "name": "Ryan Tepera",
-    "Fanduel": 10,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 917949,
-    "name": "Bo Bichette",
-    "Fanduel": 18.7,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 738582,
-    "name": "Cavan Biggio",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 908697,
-    "name": "Lourdes Gurriel Jr.",
-    "Fanduel": 12.2,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 738437,
-    "name": "Rowdy Tellez",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 920245,
-    "name": "Vladimir Guerrero Jr.",
-    "Fanduel": 3.5,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 500734,
-    "name": "Randal Grichuk",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 578040,
-    "name": "Travis Shaw",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 596861,
-    "name": "Teoscar Hernandez",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 577938,
-    "name": "Joe Panik",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 737505,
-    "name": "Reese McGuire",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 1054997,
-    "name": "Nate Pearson",
-    "Fanduel": 21,
-    "DraftKings": 12.25
-  },
-  {
-    "playerId": 329093,
-    "name": "Rafael Dolis",
-    "Fanduel": 9,
-    "DraftKings": 5.65
-  },
-  {
-    "playerId": 548284,
-    "name": "A.J. Cole",
-    "Fanduel": 3,
-    "DraftKings": 2.25
-  },
-  {
-    "playerId": 829155,
-    "name": "Jordan Romano",
-    "Fanduel": 6,
-    "DraftKings": 4.25
-  },
-  {
-    "playerId": 393253,
-    "name": "Wilmer Font",
-    "Fanduel": -2,
-    "DraftKings": -1.85
-  },
-  {
-    "playerId": 877503,
-    "name": "Ronald Acuna Jr.",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 659260,
-    "name": "Dansby Swanson",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 390291,
-    "name": "Freddie Freeman",
-    "Fanduel": 28.2,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 503013,
-    "name": "Marcell Ozuna",
-    "Fanduel": 6.2,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 225649,
-    "name": "Nick Markakis",
-    "Fanduel": 18.7,
-    "DraftKings": 14
-  },
-  {
-    "playerId": 549078,
-    "name": "Adam Duvall",
-    "Fanduel": 3.5,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 657234,
-    "name": "Johan Camargo",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 326094,
-    "name": "Tyler Flowers",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 541415,
-    "name": "Adeiny Hechavarria",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 828666,
-    "name": "Touki Toussaint",
-    "Fanduel": 42,
-    "DraftKings": 24.6
-  },
-  {
-    "playerId": 500725,
-    "name": "Tyler Matzek",
-    "Fanduel": 2,
-    "DraftKings": 0.9
-  },
-  {
-    "playerId": 501767,
-    "name": "Shane Greene",
-    "Fanduel": 5,
-    "DraftKings": 3.5
-  },
-  {
-    "playerId": 327089,
-    "name": "Mark Melancon",
-    "Fanduel": 9,
-    "DraftKings": 6.25
-  },
-  {
-    "playerId": 551306,
-    "name": "Hanser Alberto",
-    "Fanduel": 12.2,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 659463,
-    "name": "Anthony Santander",
-    "Fanduel": 18.7,
-    "DraftKings": 15
-  },
-  {
-    "playerId": 519724,
-    "name": "Jose Iglesias",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 597794,
-    "name": "Dwight Smith Jr.",
-    "Fanduel": 22.2,
-    "DraftKings": 16
-  },
-  {
-    "playerId": 596834,
-    "name": "Renato Nunez",
-    "Fanduel": 37.4,
-    "DraftKings": 28
-  },
-  {
-    "playerId": 737615,
-    "name": "Chance Sisco",
-    "Fanduel": 27.7,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 874219,
-    "name": "Austin Hays",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 326739,
-    "name": "Chris Davis",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 708988,
-    "name": "Pat Valaika",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 599084,
-    "name": "Pedro Severino",
-    "Fanduel": 6.5,
-    "DraftKings": 5
-  },
-  {
-    "playerId": 658104,
-    "name": "Andrew Velazquez",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 326535,
-    "name": "Wade LeBlanc",
-    "Fanduel": -5,
-    "DraftKings": -7.9
-  },
-  {
-    "playerId": 598951,
-    "name": "Shawn Armstrong",
-    "Fanduel": 11,
-    "DraftKings": 7.75
-  },
-  {
-    "playerId": 658921,
-    "name": "Evan Phillips",
-    "Fanduel": -3,
-    "DraftKings": -3.55
-  },
-  {
-    "playerId": 500805,
-    "name": "Mychal Givens",
-    "Fanduel": 6,
-    "DraftKings": 3.65
-  },
-  {
-    "playerId": 738159,
-    "name": "Paul Fry",
-    "Fanduel": 9,
-    "DraftKings": 5.65
-  },
-  {
-    "playerId": 503851,
-    "name": "Jonathan Villar",
-    "Fanduel": 34.2,
-    "DraftKings": 27
-  },
-  {
-    "playerId": 598490,
-    "name": "Jon Berti",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 294320,
-    "name": "Francisco Cervelli",
-    "Fanduel": 15.4,
-    "DraftKings": 12
-  },
-  {
-    "playerId": 505981,
-    "name": "Jesus Aguilar",
-    "Fanduel": 9.7,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 599204,
-    "name": "Brian Anderson",
-    "Fanduel": 22.5,
-    "DraftKings": 17
-  },
-  {
-    "playerId": 657923,
-    "name": "Lewis Brinson",
-    "Fanduel": 6.2,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 502420,
-    "name": "Corey Dickerson",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 454417,
-    "name": "Logan Forsythe",
-    "Fanduel": 12.2,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 736866,
-    "name": "Magneuris Sierra",
-    "Fanduel": 9.7,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 828691,
-    "name": "Monte Harrison",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 829040,
-    "name": "Jordan Yamamoto",
-    "Fanduel": 12,
-    "DraftKings": 5.4
-  },
-  {
-    "playerId": 872759,
-    "name": "Jorge Guzman",
-    "Fanduel": -3,
-    "DraftKings": -4.15
-  },
-  {
-    "playerId": 503374,
-    "name": "Mike Morin",
-    "Fanduel": 12,
-    "DraftKings": 8.5
-  },
-  {
-    "playerId": 328086,
-    "name": "Brad Boxberger",
-    "Fanduel": 9,
-    "DraftKings": 6.25
-  },
-  {
-    "playerId": 254178,
-    "name": "Brandon Kintzler",
-    "Fanduel": 0,
-    "DraftKings": -1.55
-  },
-  {
-    "playerId": 1051903,
-    "name": "Luis Robert",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 864590,
-    "name": "Yoan Moncada",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 491174,
-    "name": "Jose Abreu",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 392198,
-    "name": "Yasmani Grandal",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 830373,
-    "name": "Eloy Jimenez",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 659453,
-    "name": "Nomar Mazara",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 709002,
-    "name": "Adam Engel",
-    "Fanduel": 3.2,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 456103,
-    "name": "Leury Garcia",
-    "Fanduel": 34.7,
-    "DraftKings": 25
-  },
-  {
-    "playerId": 738390,
-    "name": "Zack Collins",
-    "Fanduel": 3,
-    "DraftKings": 2
-  },
-  {
-    "playerId": 875320,
-    "name": "Danny Mendick",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 501273,
-    "name": "Ryan Goins",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 253557,
-    "name": "Gio Gonzalez",
-    "Fanduel": 10,
-    "DraftKings": 1.15
-  },
-  {
-    "playerId": 738581,
-    "name": "Matt Foster",
-    "Fanduel": 8,
-    "DraftKings": 4.9
-  },
-  {
-    "playerId": 874145,
-    "name": "Ian Hamilton",
-    "Fanduel": 9,
-    "DraftKings": 5.05
-  },
-  {
-    "playerId": 598246,
-    "name": "Jace Fry",
-    "Fanduel": 9,
-    "DraftKings": 5.65
-  },
-  {
-    "playerId": 389709,
-    "name": "Steve Cishek",
-    "Fanduel": -7,
-    "DraftKings": -7.5
-  },
-  {
-    "playerId": 658405,
-    "name": "Brady Lail",
-    "Fanduel": 7,
-    "DraftKings": 3.8
-  },
-  {
-    "playerId": 548493,
-    "name": "Ben Gamel",
-    "Fanduel": 0,
-    "DraftKings": 0
-  },
-  {
-    "playerId": 1054985,
-    "name": "Keston Hiura",
-    "Fanduel": 6,
-    "DraftKings": 6
-  },
-  {
-    "playerId": 548190,
-    "name": "Christian Yelich",
-    "Fanduel": 37.1,
-    "DraftKings": 26
-  },
-  {
-    "playerId": 497563,
-    "name": "Avisail Garcia",
-    "Fanduel": 15.4,
-    "DraftKings": 11
-  },
-  {
-    "playerId": 326123,
-    "name": "Logan Morrison",
-    "Fanduel": 3,
-    "DraftKings": 3
-  },
-  {
-    "playerId": 526816,
-    "name": "Jedd Gyorko",
-    "Fanduel": 28.7,
-    "DraftKings": 21
-  },
-  {
-    "playerId": 390324,
-    "name": "Eric Sogard",
-    "Fanduel": 9.2,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 454366,
-    "name": "Justin Smoak",
-    "Fanduel": 6.7,
-    "DraftKings": 4
-  },
-  {
-    "playerId": 504967,
-    "name": "Omar Narvaez",
-    "Fanduel": 9,
-    "DraftKings": 8
-  },
-  {
-    "playerId": 875006,
-    "name": "Mark Mathias",
-    "Fanduel": 13,
-    "DraftKings": 10
-  },
-  {
-    "playerId": 596917,
-    "name": "Orlando Arcia",
-    "Fanduel": 9.5,
-    "DraftKings": 7
-  },
-  {
-    "playerId": 454435,
-    "name": "Josh Lindblom",
-    "Fanduel": 36,
-    "DraftKings": 22.25
-  },
-  {
-    "playerId": 737343,
-    "name": "Freddy Peralta",
-    "Fanduel": 27,
-    "DraftKings": 16.95
-  },
-  {
-    "playerId": 744476,
-    "name": "Eric Yardley",
-    "Fanduel": 6,
-    "DraftKings": 3.05
+    "date": "2020-08-07",
+    "fantasyData": [
+      {
+        "playerId": 549507,
+        "name": "Max Kepler",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 548087,
+        "name": "Jorge Polanco",
+        "Fanduel": 18.2,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 201363,
+        "name": "Nelson Cruz",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 548299,
+        "name": "Eddie Rosario",
+        "Fanduel": 27.9,
+        "DraftKings": 20
+      },
+      {
+        "playerId": 548088,
+        "name": "Miguel Sano",
+        "Fanduel": 25.7,
+        "DraftKings": 18
+      },
+      {
+        "playerId": 329201,
+        "name": "Marwin Gonzalez",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 455889,
+        "name": "Ehire Adrianza",
+        "Fanduel": 6,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 454594,
+        "name": "Alex Avila",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 657851,
+        "name": "Byron Buxton",
+        "Fanduel": 18.7,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 379502,
+        "name": "Kenta Maeda",
+        "Fanduel": 25,
+        "DraftKings": 13.1
+      },
+      {
+        "playerId": 244022,
+        "name": "Tyler Clippard",
+        "Fanduel": 9,
+        "DraftKings": 5.65
+      },
+      {
+        "playerId": 293981,
+        "name": "Sergio Romo",
+        "Fanduel": 3,
+        "DraftKings": 1.65
+      },
+      {
+        "playerId": 503168,
+        "name": "Taylor Rogers",
+        "Fanduel": -2,
+        "DraftKings": -3.05
+      },
+      {
+        "playerId": 737830,
+        "name": "Adam Frazier",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 599250,
+        "name": "Phillip Evans",
+        "Fanduel": 3.5,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 597768,
+        "name": "Josh Bell",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 621019,
+        "name": "Colin Moran",
+        "Fanduel": 9.2,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 828671,
+        "name": "Cole Tucker",
+        "Fanduel": 3.2,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 873683,
+        "name": "Bryan Reynolds",
+        "Fanduel": 15.4,
+        "DraftKings": 12
+      },
+      {
+        "playerId": 507194,
+        "name": "Gregory Polanco",
+        "Fanduel": 25.7,
+        "DraftKings": 18
+      },
+      {
+        "playerId": 550025,
+        "name": "JT Riddle",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 827183,
+        "name": "Kevin Newman",
+        "Fanduel": 10,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 500839,
+        "name": "John Ryan Murphy",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 328207,
+        "name": "Jarrod Dyson",
+        "Fanduel": 18.2,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 875176,
+        "name": "JT Brubaker",
+        "Fanduel": 6,
+        "DraftKings": 1.15
+      },
+      {
+        "playerId": 856266,
+        "name": "Cody Ponce",
+        "Fanduel": 12,
+        "DraftKings": 6.95
+      },
+      {
+        "playerId": 621598,
+        "name": "Chris Stratton",
+        "Fanduel": 8,
+        "DraftKings": 4.55
+      },
+      {
+        "playerId": 602898,
+        "name": "Sam Howard",
+        "Fanduel": 13,
+        "DraftKings": 8.4
+      },
+      {
+        "playerId": 602692,
+        "name": "Austin Slater",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 455617,
+        "name": "Wilmer Flores",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 291100,
+        "name": "Donovan Solano",
+        "Fanduel": 18.2,
+        "DraftKings": 15
+      },
+      {
+        "playerId": 326460,
+        "name": "Evan Longoria",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 262071,
+        "name": "Hunter Pence",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 503161,
+        "name": "Mike Yastrzemski",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 502060,
+        "name": "Darin Ruf",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 526380,
+        "name": "Alex Dickerson",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 254551,
+        "name": "Pablo Sandoval",
+        "Fanduel": 12.2,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 746793,
+        "name": "Chadwick Tromp",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 327177,
+        "name": "Brandon Belt",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 738378,
+        "name": "Mauricio Dubon",
+        "Fanduel": 28.7,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 578009,
+        "name": "Tyler Anderson",
+        "Fanduel": 24,
+        "DraftKings": 14.85
+      },
+      {
+        "playerId": 549195,
+        "name": "Wandy Peralta",
+        "Fanduel": 1,
+        "DraftKings": -0.45
+      },
+      {
+        "playerId": 739018,
+        "name": "Shaun Anderson",
+        "Fanduel": 2,
+        "DraftKings": 0.9
+      },
+      {
+        "playerId": 918679,
+        "name": "Rico Garcia",
+        "Fanduel": -9,
+        "DraftKings": -7.8
+      },
+      {
+        "playerId": 918160,
+        "name": "Caleb Baragar",
+        "Fanduel": -4,
+        "DraftKings": -3.7
+      },
+      {
+        "playerId": 918322,
+        "name": "Conner Menez",
+        "Fanduel": 7,
+        "DraftKings": 3.8
+      },
+      {
+        "playerId": 657861,
+        "name": "David Dahl",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 597765,
+        "name": "Trevor Story",
+        "Fanduel": 21.7,
+        "DraftKings": 17
+      },
+      {
+        "playerId": 454446,
+        "name": "Charlie Blackmon",
+        "Fanduel": 28.2,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 500816,
+        "name": "Nolan Arenado",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 244013,
+        "name": "Matt Kemp",
+        "Fanduel": 6,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 829542,
+        "name": "Sam Hilliard",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 737539,
+        "name": "Ryan McMahon",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 738479,
+        "name": "Garrett Hampson",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 500788,
+        "name": "Chris Owings",
+        "Fanduel": 15.7,
+        "DraftKings": 11
+      },
+      {
+        "playerId": 291425,
+        "name": "Drew Butera",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 327744,
+        "name": "Daniel Murphy",
+        "Fanduel": 22.2,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 548197,
+        "name": "Tony Wolters",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 599746,
+        "name": "Kyle Freeland",
+        "Fanduel": 21,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 658334,
+        "name": "Yency Almonte",
+        "Fanduel": 12,
+        "DraftKings": 7.05
+      },
+      {
+        "playerId": 505259,
+        "name": "Jairo Diaz",
+        "Fanduel": 4,
+        "DraftKings": 1.8
+      },
+      {
+        "playerId": 546772,
+        "name": "Marcus Semien",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 829185,
+        "name": "Ramon Laureano",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 828672,
+        "name": "Matt Chapman",
+        "Fanduel": 9.2,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 526811,
+        "name": "Mark Canha",
+        "Fanduel": 9.7,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 657863,
+        "name": "Matt Olson",
+        "Fanduel": 21.7,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 708990,
+        "name": "Chad Pinder",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 328428,
+        "name": "Khris Davis",
+        "Fanduel": 13,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 739765,
+        "name": "Franklin Barreto",
+        "Fanduel": 3.2,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 503644,
+        "name": "Stephen Piscotty",
+        "Fanduel": 3.5,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 873680,
+        "name": "Sean Murphy",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 502128,
+        "name": "Mike Fiers",
+        "Fanduel": 18,
+        "DraftKings": 8.1
+      },
+      {
+        "playerId": 390408,
+        "name": "T.J. McFarland",
+        "Fanduel": 3,
+        "DraftKings": 1.65
+      },
+      {
+        "playerId": 244136,
+        "name": "Yusmeiro Petit",
+        "Fanduel": 9,
+        "DraftKings": 4.45
+      },
+      {
+        "playerId": 393300,
+        "name": "Liam Hendriks",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 199996,
+        "name": "Shin-Soo Choo",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 291792,
+        "name": "Elvis Andrus",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 738175,
+        "name": "Willie Calhoun",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 657856,
+        "name": "Joey Gallo",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 389301,
+        "name": "Todd Frazier",
+        "Fanduel": 21.7,
+        "DraftKings": 17
+      },
+      {
+        "playerId": 874054,
+        "name": "Nick Solak",
+        "Fanduel": 6,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 737855,
+        "name": "Isiah Kiner-Falefa",
+        "Fanduel": 21.4,
+        "DraftKings": 18
+      },
+      {
+        "playerId": 872474,
+        "name": "Anderson Tejeda",
+        "Fanduel": 34.7,
+        "DraftKings": 26
+      },
+      {
+        "playerId": 200140,
+        "name": "Jeff Mathis",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 200980,
+        "name": "Robinson Chirinos",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 327725,
+        "name": "Mike Minor",
+        "Fanduel": 18,
+        "DraftKings": 9.65
+      },
+      {
+        "playerId": 658965,
+        "name": "Jimmy Herget",
+        "Fanduel": 6,
+        "DraftKings": 4.25
+      },
+      {
+        "playerId": 507216,
+        "name": "Joely Rodriguez",
+        "Fanduel": -1,
+        "DraftKings": -2.3
+      },
+      {
+        "playerId": 599241,
+        "name": "Nick Goody",
+        "Fanduel": 1,
+        "DraftKings": 0.15
+      },
+      {
+        "playerId": 828879,
+        "name": "Brett Martin",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 858824,
+        "name": "David Fletcher",
+        "Fanduel": 6,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 500736,
+        "name": "Mike Trout",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 455515,
+        "name": "Anthony Rendon",
+        "Fanduel": 9.2,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 727378,
+        "name": "Shohei Ohtani",
+        "Fanduel": 24.9,
+        "DraftKings": 18
+      },
+      {
+        "playerId": 598119,
+        "name": "Tommy La Stella",
+        "Fanduel": 15.7,
+        "DraftKings": 12
+      },
+      {
+        "playerId": 317008,
+        "name": "Justin Upton",
+        "Fanduel": 6.5,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 501964,
+        "name": "Brian Goodwin",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 501262,
+        "name": "Max Stassi",
+        "Fanduel": 25.7,
+        "DraftKings": 18
+      },
+      {
+        "playerId": 826671,
+        "name": "Luis Rengifo",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 597750,
+        "name": "Dylan Bundy",
+        "Fanduel": 64,
+        "DraftKings": 41.75
+      },
+      {
+        "playerId": 737507,
+        "name": "J.P. Crawford",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 875186,
+        "name": "Dylan Moore",
+        "Fanduel": 9,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 501199,
+        "name": "Kyle Seager",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 597778,
+        "name": "Daniel Vogelbach",
+        "Fanduel": 18.7,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 738578,
+        "name": "Shed Long Jr.",
+        "Fanduel": 6,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 915774,
+        "name": "Evan White",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 454527,
+        "name": "Dee Gordon",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 599039,
+        "name": "Mallex Smith",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 658019,
+        "name": "Joe Hudson",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 548165,
+        "name": "Taijuan Walker",
+        "Fanduel": 8,
+        "DraftKings": 2.05
+      },
+      {
+        "playerId": 1118989,
+        "name": "Joey Gerber",
+        "Fanduel": 4,
+        "DraftKings": 2.4
+      },
+      {
+        "playerId": 602564,
+        "name": "Taylor Guilbeau",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 827482,
+        "name": "Dan Altavilla",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 738684,
+        "name": "Nestor Cortes",
+        "Fanduel": 6,
+        "DraftKings": 3.3
+      },
+      {
+        "playerId": 737856,
+        "name": "Mike Tauchman",
+        "Fanduel": 13,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 502753,
+        "name": "Luke Voit",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 454371,
+        "name": "Aaron Hicks",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 390316,
+        "name": "Giancarlo Stanton",
+        "Fanduel": 6,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 830372,
+        "name": "Gleyber Torres",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 291262,
+        "name": "Brett Gardner",
+        "Fanduel": 9.2,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 549847,
+        "name": "Aaron Judge",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 505997,
+        "name": "Gio Urshela",
+        "Fanduel": 12.4,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 549555,
+        "name": "Gary Sanchez",
+        "Fanduel": 22.2,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 737878,
+        "name": "Tyler Wade",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 500845,
+        "name": "DJ LeMahieu",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 828875,
+        "name": "Jordan Montgomery",
+        "Fanduel": 3,
+        "DraftKings": -1.2
+      },
+      {
+        "playerId": 501206,
+        "name": "David Hale",
+        "Fanduel": 16,
+        "DraftKings": 9.45
+      },
+      {
+        "playerId": 709534,
+        "name": "Jonathan Holder",
+        "Fanduel": 14,
+        "DraftKings": 8.55
+      },
+      {
+        "playerId": 290131,
+        "name": "Andrew McCutchen",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 827179,
+        "name": "Rhys Hoskins",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 548033,
+        "name": "Bryce Harper",
+        "Fanduel": 15.4,
+        "DraftKings": 11
+      },
+      {
+        "playerId": 548255,
+        "name": "J.T. Realmuto",
+        "Fanduel": 31.9,
+        "DraftKings": 23
+      },
+      {
+        "playerId": 526190,
+        "name": "Phil Gosselin",
+        "Fanduel": 13,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 290133,
+        "name": "Jay Bruce",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 456349,
+        "name": "Didi Gregorius",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 857705,
+        "name": "Scott Kingery",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 254167,
+        "name": "Neil Walker",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 597773,
+        "name": "Roman Quinn",
+        "Fanduel": 12,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 657853,
+        "name": "Zach Eflin",
+        "Fanduel": 27,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 325009,
+        "name": "Deolis Guerra",
+        "Fanduel": 12,
+        "DraftKings": 7.65
+      },
+      {
+        "playerId": 737889,
+        "name": "Nick Pivetta",
+        "Fanduel": 6,
+        "DraftKings": 3.3
+      },
+      {
+        "playerId": 393430,
+        "name": "Jose Alvarez",
+        "Fanduel": 5,
+        "DraftKings": 2.9
+      },
+      {
+        "playerId": 550523,
+        "name": "Hector Neris",
+        "Fanduel": 7,
+        "DraftKings": 3.8
+      },
+      {
+        "playerId": 503285,
+        "name": "Cesar Hernandez",
+        "Fanduel": 32.1,
+        "DraftKings": 22
+      },
+      {
+        "playerId": 598784,
+        "name": "Jose Ramirez",
+        "Fanduel": 59.8,
+        "DraftKings": 44
+      },
+      {
+        "playerId": 597754,
+        "name": "Francisco Lindor",
+        "Fanduel": 12.7,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 830276,
+        "name": "Yu Chang",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 295203,
+        "name": "Carlos Santana",
+        "Fanduel": 18.7,
+        "DraftKings": 12
+      },
+      {
+        "playerId": 548327,
+        "name": "Adam Plutko",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 657490,
+        "name": "Franmil Reyes",
+        "Fanduel": 16.2,
+        "DraftKings": 12
+      },
+      {
+        "playerId": 503146,
+        "name": "Mike Freeman",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 503853,
+        "name": "Domingo Santana",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 737612,
+        "name": "Oscar Mercado",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 577780,
+        "name": "Beau Taylor",
+        "Fanduel": 9.7,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 548171,
+        "name": "Delino DeShields",
+        "Fanduel": 12.7,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 254892,
+        "name": "Carlos Carrasco",
+        "Fanduel": 52,
+        "DraftKings": 30.5
+      },
+      {
+        "playerId": 829228,
+        "name": "Cam Hill",
+        "Fanduel": 9,
+        "DraftKings": 6.25
+      },
+      {
+        "playerId": 875251,
+        "name": "Phil Maton",
+        "Fanduel": 3,
+        "DraftKings": 1.65
+      },
+      {
+        "playerId": 594240,
+        "name": "Shogo Akiyama",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 548164,
+        "name": "Nick Castellanos",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 390641,
+        "name": "Christian Colon",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 201517,
+        "name": "Joey Votto",
+        "Fanduel": 6,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 577924,
+        "name": "Travis Jankowski",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 505033,
+        "name": "Eugenio Suarez",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 657865,
+        "name": "Jesse Winker",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 873264,
+        "name": "Nick Senzel",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 392933,
+        "name": "Freddy Galvis",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 620958,
+        "name": "Kyle Farmer",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 501601,
+        "name": "Tucker Barnhart",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 657487,
+        "name": "Luis Castillo",
+        "Fanduel": 33,
+        "DraftKings": 18.45
+      },
+      {
+        "playerId": 738334,
+        "name": "Jose De Leon",
+        "Fanduel": -10,
+        "DraftKings": -11.05
+      },
+      {
+        "playerId": 737542,
+        "name": "Cody Reed",
+        "Fanduel": -5,
+        "DraftKings": -5.05
+      },
+      {
+        "playerId": 500767,
+        "name": "Matt Davidson",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 526414,
+        "name": "George Springer",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 875569,
+        "name": "Myles Straw",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 455591,
+        "name": "Jose Altuve",
+        "Fanduel": 40.1,
+        "DraftKings": 31
+      },
+      {
+        "playerId": 659419,
+        "name": "Alex Bregman",
+        "Fanduel": 28.2,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 290204,
+        "name": "Michael Brantley",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 817365,
+        "name": "Yuli Gurriel",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 657850,
+        "name": "Carlos Correa",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 328018,
+        "name": "Josh Reddick",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 874240,
+        "name": "Kyle Tucker",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 254445,
+        "name": "Martin Maldonado",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 915815,
+        "name": "Brandon Bielak",
+        "Fanduel": 18,
+        "DraftKings": 10.25
+      },
+      {
+        "playerId": 599742,
+        "name": "Cy Sneed",
+        "Fanduel": -8,
+        "DraftKings": -7.05
+      },
+      {
+        "playerId": 737558,
+        "name": "Blake Taylor",
+        "Fanduel": 7,
+        "DraftKings": 2.6
+      },
+      {
+        "playerId": 873285,
+        "name": "Andre Scrubb",
+        "Fanduel": 7,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 390190,
+        "name": "Ryan Pressly",
+        "Fanduel": -6,
+        "DraftKings": -6.4
+      },
+      {
+        "playerId": 597026,
+        "name": "Ketel Marte",
+        "Fanduel": 9,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 546813,
+        "name": "Kole Calhoun",
+        "Fanduel": 13,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 503030,
+        "name": "Starling Marte",
+        "Fanduel": 18.2,
+        "DraftKings": 15
+      },
+      {
+        "playerId": 503826,
+        "name": "Christian Walker",
+        "Fanduel": 12.7,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 455635,
+        "name": "Eduardo Escobar",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 329170,
+        "name": "David Peralta",
+        "Fanduel": 12.5,
+        "DraftKings": 9
+      },
+      {
+        "playerId": 657963,
+        "name": "Carson Kelly",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 919031,
+        "name": "Andy Young",
+        "Fanduel": 9.5,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 738248,
+        "name": "Tim Locastro",
+        "Fanduel": 3.2,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 577767,
+        "name": "Nick Ahmed",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 857550,
+        "name": "Zac Gallen",
+        "Fanduel": 34,
+        "DraftKings": 17.3
+      },
+      {
+        "playerId": 658917,
+        "name": "Alex Young",
+        "Fanduel": 6,
+        "DraftKings": 4.25
+      },
+      {
+        "playerId": 738289,
+        "name": "Stefan Crichton",
+        "Fanduel": -1,
+        "DraftKings": -1.7
+      },
+      {
+        "playerId": 597763,
+        "name": "Andrew Chafin",
+        "Fanduel": 1,
+        "DraftKings": 0.75
+      },
+      {
+        "playerId": 244150,
+        "name": "Junior Guerra",
+        "Fanduel": 12,
+        "DraftKings": 8.25
+      },
+      {
+        "playerId": 526882,
+        "name": "Whit Merrifield",
+        "Fanduel": 40.6,
+        "DraftKings": 30
+      },
+      {
+        "playerId": 658226,
+        "name": "Jorge Soler",
+        "Fanduel": 31.4,
+        "DraftKings": 24
+      },
+      {
+        "playerId": 392995,
+        "name": "Salvador Perez",
+        "Fanduel": 25.2,
+        "DraftKings": 19
+      },
+      {
+        "playerId": 829141,
+        "name": "Ryan O'Hearn",
+        "Fanduel": 19,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 658005,
+        "name": "Brett Phillips",
+        "Fanduel": 12.2,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 659237,
+        "name": "Adalberto Mondesi",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 597771,
+        "name": "Cam Gallagher",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 303361,
+        "name": "Alex Gordon",
+        "Fanduel": 19.2,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 549529,
+        "name": "Maikel Franco",
+        "Fanduel": 31.4,
+        "DraftKings": 23
+      },
+      {
+        "playerId": 918022,
+        "name": "Nicky Lopez",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 918355,
+        "name": "Nick Heath",
+        "Fanduel": 21.7,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 737865,
+        "name": "Brad Keller",
+        "Fanduel": 42,
+        "DraftKings": 26.25
+      },
+      {
+        "playerId": 621583,
+        "name": "Kyle Zimmer",
+        "Fanduel": 15,
+        "DraftKings": 10.5
+      },
+      {
+        "playerId": 738158,
+        "name": "Kevin McCarthy",
+        "Fanduel": 3,
+        "DraftKings": -0.5
+      },
+      {
+        "playerId": 549381,
+        "name": "Kris Bryant",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 454535,
+        "name": "Jason Kipnis",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 390610,
+        "name": "Anthony Rizzo",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 658323,
+        "name": "David Bote",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 597757,
+        "name": "Javier Baez",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 500784,
+        "name": "Josh Phegley",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 709545,
+        "name": "Kyle Schwarber",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 508176,
+        "name": "Willson Contreras",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 657859,
+        "name": "Albert Almora Jr.",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 388409,
+        "name": "Jason Heyward",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 550188,
+        "name": "Dan Winkler",
+        "Fanduel": 3,
+        "DraftKings": 1.05
+      },
+      {
+        "playerId": 454499,
+        "name": "Craig Kimbrel",
+        "Fanduel": 3,
+        "DraftKings": 0.45
+      },
+      {
+        "playerId": 658528,
+        "name": "Alec Mills",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 737618,
+        "name": "Victor Caratini",
+        "Fanduel": 9.5,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 1054431,
+        "name": "Nico Hoerner",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 827194,
+        "name": "Ian Happ",
+        "Fanduel": 6,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 456036,
+        "name": "Tyler Chatwood",
+        "Fanduel": -5,
+        "DraftKings": -9.35
+      },
+      {
+        "playerId": 657936,
+        "name": "Duane Underwood Jr.",
+        "Fanduel": 1,
+        "DraftKings": -2.35
+      },
+      {
+        "playerId": 502039,
+        "name": "Ryan Tepera",
+        "Fanduel": 10,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 917949,
+        "name": "Bo Bichette",
+        "Fanduel": 18.7,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 738582,
+        "name": "Cavan Biggio",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 908697,
+        "name": "Lourdes Gurriel Jr.",
+        "Fanduel": 12.2,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 738437,
+        "name": "Rowdy Tellez",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 920245,
+        "name": "Vladimir Guerrero Jr.",
+        "Fanduel": 3.5,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 500734,
+        "name": "Randal Grichuk",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 578040,
+        "name": "Travis Shaw",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 596861,
+        "name": "Teoscar Hernandez",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 577938,
+        "name": "Joe Panik",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 737505,
+        "name": "Reese McGuire",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 1054997,
+        "name": "Nate Pearson",
+        "Fanduel": 21,
+        "DraftKings": 12.25
+      },
+      {
+        "playerId": 329093,
+        "name": "Rafael Dolis",
+        "Fanduel": 9,
+        "DraftKings": 5.65
+      },
+      {
+        "playerId": 548284,
+        "name": "A.J. Cole",
+        "Fanduel": 3,
+        "DraftKings": 2.25
+      },
+      {
+        "playerId": 829155,
+        "name": "Jordan Romano",
+        "Fanduel": 6,
+        "DraftKings": 4.25
+      },
+      {
+        "playerId": 393253,
+        "name": "Wilmer Font",
+        "Fanduel": -2,
+        "DraftKings": -1.85
+      },
+      {
+        "playerId": 877503,
+        "name": "Ronald Acuna Jr.",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 659260,
+        "name": "Dansby Swanson",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 390291,
+        "name": "Freddie Freeman",
+        "Fanduel": 28.2,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 503013,
+        "name": "Marcell Ozuna",
+        "Fanduel": 6.2,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 225649,
+        "name": "Nick Markakis",
+        "Fanduel": 18.7,
+        "DraftKings": 14
+      },
+      {
+        "playerId": 549078,
+        "name": "Adam Duvall",
+        "Fanduel": 3.5,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 657234,
+        "name": "Johan Camargo",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 326094,
+        "name": "Tyler Flowers",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 541415,
+        "name": "Adeiny Hechavarria",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 828666,
+        "name": "Touki Toussaint",
+        "Fanduel": 42,
+        "DraftKings": 24.6
+      },
+      {
+        "playerId": 500725,
+        "name": "Tyler Matzek",
+        "Fanduel": 2,
+        "DraftKings": 0.9
+      },
+      {
+        "playerId": 501767,
+        "name": "Shane Greene",
+        "Fanduel": 5,
+        "DraftKings": 3.5
+      },
+      {
+        "playerId": 327089,
+        "name": "Mark Melancon",
+        "Fanduel": 9,
+        "DraftKings": 6.25
+      },
+      {
+        "playerId": 551306,
+        "name": "Hanser Alberto",
+        "Fanduel": 12.2,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 659463,
+        "name": "Anthony Santander",
+        "Fanduel": 18.7,
+        "DraftKings": 15
+      },
+      {
+        "playerId": 519724,
+        "name": "Jose Iglesias",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 597794,
+        "name": "Dwight Smith Jr.",
+        "Fanduel": 22.2,
+        "DraftKings": 16
+      },
+      {
+        "playerId": 596834,
+        "name": "Renato Nunez",
+        "Fanduel": 37.4,
+        "DraftKings": 28
+      },
+      {
+        "playerId": 737615,
+        "name": "Chance Sisco",
+        "Fanduel": 27.7,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 874219,
+        "name": "Austin Hays",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 326739,
+        "name": "Chris Davis",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 708988,
+        "name": "Pat Valaika",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 599084,
+        "name": "Pedro Severino",
+        "Fanduel": 6.5,
+        "DraftKings": 5
+      },
+      {
+        "playerId": 658104,
+        "name": "Andrew Velazquez",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 326535,
+        "name": "Wade LeBlanc",
+        "Fanduel": -5,
+        "DraftKings": -7.9
+      },
+      {
+        "playerId": 598951,
+        "name": "Shawn Armstrong",
+        "Fanduel": 11,
+        "DraftKings": 7.75
+      },
+      {
+        "playerId": 658921,
+        "name": "Evan Phillips",
+        "Fanduel": -3,
+        "DraftKings": -3.55
+      },
+      {
+        "playerId": 500805,
+        "name": "Mychal Givens",
+        "Fanduel": 6,
+        "DraftKings": 3.65
+      },
+      {
+        "playerId": 738159,
+        "name": "Paul Fry",
+        "Fanduel": 9,
+        "DraftKings": 5.65
+      },
+      {
+        "playerId": 503851,
+        "name": "Jonathan Villar",
+        "Fanduel": 34.2,
+        "DraftKings": 27
+      },
+      {
+        "playerId": 598490,
+        "name": "Jon Berti",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 294320,
+        "name": "Francisco Cervelli",
+        "Fanduel": 15.4,
+        "DraftKings": 12
+      },
+      {
+        "playerId": 505981,
+        "name": "Jesus Aguilar",
+        "Fanduel": 9.7,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 599204,
+        "name": "Brian Anderson",
+        "Fanduel": 22.5,
+        "DraftKings": 17
+      },
+      {
+        "playerId": 657923,
+        "name": "Lewis Brinson",
+        "Fanduel": 6.2,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 502420,
+        "name": "Corey Dickerson",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 454417,
+        "name": "Logan Forsythe",
+        "Fanduel": 12.2,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 736866,
+        "name": "Magneuris Sierra",
+        "Fanduel": 9.7,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 828691,
+        "name": "Monte Harrison",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 829040,
+        "name": "Jordan Yamamoto",
+        "Fanduel": 12,
+        "DraftKings": 5.4
+      },
+      {
+        "playerId": 872759,
+        "name": "Jorge Guzman",
+        "Fanduel": -3,
+        "DraftKings": -4.15
+      },
+      {
+        "playerId": 503374,
+        "name": "Mike Morin",
+        "Fanduel": 12,
+        "DraftKings": 8.5
+      },
+      {
+        "playerId": 328086,
+        "name": "Brad Boxberger",
+        "Fanduel": 9,
+        "DraftKings": 6.25
+      },
+      {
+        "playerId": 254178,
+        "name": "Brandon Kintzler",
+        "Fanduel": 0,
+        "DraftKings": -1.55
+      },
+      {
+        "playerId": 1051903,
+        "name": "Luis Robert",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 864590,
+        "name": "Yoan Moncada",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 491174,
+        "name": "Jose Abreu",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 392198,
+        "name": "Yasmani Grandal",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 830373,
+        "name": "Eloy Jimenez",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 659453,
+        "name": "Nomar Mazara",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 709002,
+        "name": "Adam Engel",
+        "Fanduel": 3.2,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 456103,
+        "name": "Leury Garcia",
+        "Fanduel": 34.7,
+        "DraftKings": 25
+      },
+      {
+        "playerId": 738390,
+        "name": "Zack Collins",
+        "Fanduel": 3,
+        "DraftKings": 2
+      },
+      {
+        "playerId": 875320,
+        "name": "Danny Mendick",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 501273,
+        "name": "Ryan Goins",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 253557,
+        "name": "Gio Gonzalez",
+        "Fanduel": 10,
+        "DraftKings": 1.15
+      },
+      {
+        "playerId": 738581,
+        "name": "Matt Foster",
+        "Fanduel": 8,
+        "DraftKings": 4.9
+      },
+      {
+        "playerId": 874145,
+        "name": "Ian Hamilton",
+        "Fanduel": 9,
+        "DraftKings": 5.05
+      },
+      {
+        "playerId": 598246,
+        "name": "Jace Fry",
+        "Fanduel": 9,
+        "DraftKings": 5.65
+      },
+      {
+        "playerId": 389709,
+        "name": "Steve Cishek",
+        "Fanduel": -7,
+        "DraftKings": -7.5
+      },
+      {
+        "playerId": 658405,
+        "name": "Brady Lail",
+        "Fanduel": 7,
+        "DraftKings": 3.8
+      },
+      {
+        "playerId": 548493,
+        "name": "Ben Gamel",
+        "Fanduel": 0,
+        "DraftKings": 0
+      },
+      {
+        "playerId": 1054985,
+        "name": "Keston Hiura",
+        "Fanduel": 6,
+        "DraftKings": 6
+      },
+      {
+        "playerId": 548190,
+        "name": "Christian Yelich",
+        "Fanduel": 37.1,
+        "DraftKings": 26
+      },
+      {
+        "playerId": 497563,
+        "name": "Avisail Garcia",
+        "Fanduel": 15.4,
+        "DraftKings": 11
+      },
+      {
+        "playerId": 326123,
+        "name": "Logan Morrison",
+        "Fanduel": 3,
+        "DraftKings": 3
+      },
+      {
+        "playerId": 526816,
+        "name": "Jedd Gyorko",
+        "Fanduel": 28.7,
+        "DraftKings": 21
+      },
+      {
+        "playerId": 390324,
+        "name": "Eric Sogard",
+        "Fanduel": 9.2,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 454366,
+        "name": "Justin Smoak",
+        "Fanduel": 6.7,
+        "DraftKings": 4
+      },
+      {
+        "playerId": 504967,
+        "name": "Omar Narvaez",
+        "Fanduel": 9,
+        "DraftKings": 8
+      },
+      {
+        "playerId": 875006,
+        "name": "Mark Mathias",
+        "Fanduel": 13,
+        "DraftKings": 10
+      },
+      {
+        "playerId": 596917,
+        "name": "Orlando Arcia",
+        "Fanduel": 9.5,
+        "DraftKings": 7
+      },
+      {
+        "playerId": 454435,
+        "name": "Josh Lindblom",
+        "Fanduel": 36,
+        "DraftKings": 22.25
+      },
+      {
+        "playerId": 737343,
+        "name": "Freddy Peralta",
+        "Fanduel": 27,
+        "DraftKings": 16.95
+      },
+      {
+        "playerId": 744476,
+        "name": "Eric Yardley",
+        "Fanduel": 6,
+        "DraftKings": 3.05
+      }
+    ]
   }
 ]
