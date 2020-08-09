@@ -2,7 +2,7 @@ import {retrieveObjectFromS3} from "../../aws/aws";
 import {FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
 import {PerformanceState, PlayerPoolAttributes} from "../../types";
 import * as _ from "lodash";
-import {formatDate} from "../../helpers/formatDate/formatDate";
+import moment from "moment";
 
 export const handleShowPerformance = async (sport: string, state: PerformanceState,
                                             setState: (state: PerformanceState) => void) => {
@@ -17,7 +17,7 @@ export const handleShowPerformance = async (sport: string, state: PerformanceSta
             retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentOptimalLineups.json`).catch(() => [])
         ]);
     }).then(([allFantasyData, allPlayerPools, allOptimalLineups]) => {
-        const dateString = formatDate(state.date);
+        const dateString = moment(state.date).format('YYYY-MM-DD');
         const fantasyData = allFantasyData?.find((fantasyData: any) => fantasyData.date === dateString)?.fantasyData || [];
         const playerPool = allPlayerPools?.find((playerPool: any) => playerPool.date === dateString)?.playerPool || [];
         const optimalLineup = allOptimalLineups?.find((optimalLineup: any) => optimalLineup.date === dateString)?.optimalLineup || [];

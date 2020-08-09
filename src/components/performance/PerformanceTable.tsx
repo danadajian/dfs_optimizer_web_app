@@ -37,7 +37,8 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         {
             dataField: 'positionPercentile',
             text: 'Percentile (Position)',
-            formatter: (cell: any, row: any) => <p>{getPlayerPercentile(row.actual, fantasyData!.filter((player: FantasyData) => playerPool?.find((playerPoolPlayer: PlayerPoolAttributes) => playerPoolPlayer.playerId === player.playerId)?.position === row.position)).toFixed(1)}</p>
+            formatter: (cell: any, row: any) =>
+                <p>{getPlayerPercentile(row.actual, fantasyData!.filter((player: FantasyData) => playerPool?.find((playerPoolPlayer: PlayerPoolAttributes) => playerPoolPlayer.playerId === player.playerId)?.position === row.position)).toFixed(1)}</p>
         },
         {
             dataField: 'overallPercentile',
@@ -46,10 +47,10 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         }
     ];
 
-    return <>{tableData && <BootstrapTable keyField='name'
-                                           data={tableData}
-                                           columns={columns}
-                                           classes="Player-table"
-                                           headerWrapperClasses="Player-pool-grid-header"
-                                           rowClasses="Player-pool-row"/>}</>
+    return <>{tableData && (fantasyData && fantasyData.length > 0) && <BootstrapTable keyField='name'
+                                                                                      data={tableData}
+                                                                                      columns={columns}
+                                                                                      classes="Player-table"
+                                                                                      headerWrapperClasses="Player-pool-grid-header"
+                                                                                      rowClasses="Player-pool-row"/>}</>
 };

@@ -1,6 +1,7 @@
 import {PerformanceState, State} from "./types";
+import moment from "moment";
 
-export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development';
+export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
 export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
 
 export const INITIAL_STATE: State = {
@@ -15,17 +16,9 @@ export const INITIAL_STATE: State = {
     contests: [],
 };
 
-const getYesterdayDate = () => {
-    if (isDevelopment())
-        return new Date('2020-08-07 EST');
-    const date = new Date();
-    date.setDate(date.getDate() - 1);
-    return date
-}
-
 export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
     isLoading: false,
-    date: getYesterdayDate()
+    date: moment()
 }
 
 export const INJURY_ABBREVIATIONS: any = {

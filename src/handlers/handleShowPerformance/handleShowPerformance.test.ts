@@ -1,9 +1,10 @@
 import {handleShowPerformance} from "./handleShowPerformance";
 import {retrieveObjectFromS3} from "../../aws/aws";
 import {FANTASY_ANALYTICS_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
-import {formatDate} from "../../helpers/formatDate/formatDate";
+import moment from "moment";
 
 jest.mock('../../aws/aws');
+jest.mock('moment');
 jest.mock('../../helpers/formatDate/formatDate');
 
 const playerPool = [
@@ -51,8 +52,11 @@ const mockOptimalLineups = [
     };
     return resultMap[fileName];
 });
-
-(formatDate as jest.Mock).mockReturnValue('2020-08-07');
+(moment as any).mockImplementation(() => {
+    return {
+        format: jest.fn(() => '2020-08-07')
+    }
+})
 
 describe('handleShowPerformance', () => {
     let result: any;
