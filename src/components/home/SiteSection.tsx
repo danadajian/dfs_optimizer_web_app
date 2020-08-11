@@ -3,7 +3,7 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Tooltip from 'react-bootstrap/Tooltip'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
-import {handleSiteChange} from "../../handlers/handleSiteChange/handleSiteChange";
+import {handleSiteChange} from "../../handlers/home/handleSiteChange/handleSiteChange";
 import {StateProps} from "../../types";
 import {SUPPORTED_SITES} from "../../constants";
 

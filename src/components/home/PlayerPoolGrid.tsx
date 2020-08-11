@@ -4,12 +4,12 @@ import {PlayerPoolAttributes, StateProps} from "../../types";
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory from 'react-bootstrap-table2-editor';
 import Button from 'react-bootstrap/Button';
-import {handleAddPlayerToLineup} from "../../handlers/handleAddPlayerToLineup/handleAddPlayerToLineup";
-import {handleAddPlayerToBlackList} from "../../handlers/handleAddPlayerToBlackList/handleAddPlayerToBlackList";
+import {handleAddPlayerToLineup} from "../../handlers/home/handleAddPlayerToLineup/handleAddPlayerToLineup";
+import {handleAddPlayerToBlackList} from "../../handlers/home/handleAddPlayerToBlackList/handleAddPlayerToBlackList";
 import {PlayerPoolPlayerCell} from "./PlayerPoolPlayerCell";
 import {getOrdinalString} from "../../helpers/getOrdinalString/getOrdinalString";
 import {getOpponentRankStyle} from "./LineupPlayerCell";
-import {handleRemovePlayerFromLineup} from "../../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
+import {handleRemovePlayerFromLineup} from "../../handlers/home/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
 import {getWeatherImage} from "../../helpers/getWeatherImage/getWeatherImage";
 import {SUPPORTED_WEATHER_SPORTS} from "@dadajian/shared-fantasy-constants";
 

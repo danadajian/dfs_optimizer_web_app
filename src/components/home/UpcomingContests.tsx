@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 import Spinner from 'react-bootstrap/Spinner'
 import BootstrapTable from 'react-bootstrap-table-next';
 import '../../css/home/UpcomingContests.css'
-import {handleUpcomingContestsLoad} from "../../handlers/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
+import {handleUpcomingContestsLoad} from "../../handlers/home/handleUpcomingContestsLoad/handleUpcomingContestsLoad";
 
 export const UpcomingContests = () => {
     const [startTimes, setStartTimes]: any = useState(undefined);

@@ -1,5 +1,4 @@
 import {PerformanceState, State} from "./types";
-import moment from "moment";
 
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
 export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
@@ -18,7 +17,7 @@ export const INITIAL_STATE: State = {
 
 export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
     isLoading: false,
-    date: moment()
+    date: new Date()
 }
 
 export const INJURY_ABBREVIATIONS: any = {

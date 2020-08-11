@@ -1,7 +1,7 @@
 import {SUPPORTED_SPORTS} from "@dadajian/shared-fantasy-constants";
 import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner";
-import {handleShowPerformance} from "../../handlers/handleShowPerformance/handleShowPerformance";
+import {handleSportChange} from "../../handlers/performance/handleSportChange/handleSportChange";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import React from "react";
 import {PerformanceStateProps} from "../../types";
@@ -27,7 +27,7 @@ export const SportButtons = (props: PerformanceStateProps) => {
                                         value={supportedSport}
                                         active={sport === supportedSport}
                                         onClick={(event: any) =>
-                                            handleShowPerformance(event.target.value, state, setState)}>
+                                            handleSportChange(event.target.value, state, setState)}>
                         {supportedSport.toUpperCase()}</Button>)
             }
         </ButtonGroup>

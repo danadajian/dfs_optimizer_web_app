@@ -2,7 +2,7 @@ import React from "react";
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
 import Button from 'react-bootstrap/Button'
 import {StateProps} from "../../types";
-import {handleSportChange} from "../../handlers/handleSportChange/handleSportChange";
+import {handleSportChange} from "../../handlers/home/handleSportChange/handleSportChange";
 import Tooltip from "react-bootstrap/Tooltip";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import {SUPPORTED_SPORTS} from "@dadajian/shared-fantasy-constants";

@@ -4,7 +4,7 @@ import '../../css/home/LineupPlayer.css'
 import {LineupPlayerCell} from "./LineupPlayerCell";
 import {getFormattedSalary} from "../../helpers/getFormattedSalary/getFormattedSalary";
 import {getAdjustedDraftKingsSalary} from "../../helpers/getAdjustedDraftKingsSalary/getAdjustedDraftKingsSalary";
-import {handleRemovePlayerFromLineup} from "../../handlers/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
+import {handleRemovePlayerFromLineup} from "../../handlers/home/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
 import {sumAttribute} from "../../helpers/sumAttribute/sumAttribute";
 import {StateProps} from "../../types";
 import BootstrapTable from "react-bootstrap-table-next";

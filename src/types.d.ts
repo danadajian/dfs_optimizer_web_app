@@ -1,5 +1,3 @@
-import {Moment} from "moment-timezone/moment-timezone";
-
 export type State = {
     isLoading: boolean,
     isOptimizing?: boolean,
@@ -89,7 +87,7 @@ export type StartTime = {
 
 export type PerformanceState = {
     isLoading: boolean,
-    date: Moment,
+    date: Date,
     allFantasyData?: any[],
     fantasyData?: FantasyData[],
     allPlayerPools?: any[],

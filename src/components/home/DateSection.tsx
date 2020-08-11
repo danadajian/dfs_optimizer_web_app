@@ -2,7 +2,7 @@ import React from "react";
 import DatePicker from 'react-datepicker';
 import {StateProps} from "../../types";
 import '../../css/home/DateSection.css'
-import {handleDateChange} from "../../handlers/handleDateChange/handleDateChange";
+import {handleDateChange} from "../../handlers/home/handleDateChange/handleDateChange";
 
 export const DateSection = (props: StateProps) =>
     <DatePicker className="Date-section text-center"

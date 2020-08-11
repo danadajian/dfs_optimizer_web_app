@@ -8,9 +8,9 @@ import {Lineup} from "./Lineup";
 import {Optimizing} from "./Optimizing";
 import {BlackList} from "./BlackList";
 import {LineupAttributes, StateProps} from "../../types";
-import {handleGenerateOptimalLineup} from "../../handlers/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
-import {handleClearLineup} from "../../handlers/handleClearLineup/handleClearLineup";
-import {handleExportLineup} from "../../handlers/handleExportLineup/handleExportLineup";
+import {handleGenerateOptimalLineup} from "../../handlers/home/handleGenerateOptimalLineup/handleGenerateOptimalLineup";
+import {handleClearLineup} from "../../handlers/home/handleClearLineup/handleClearLineup";
+import {handleExportLineup} from "../../handlers/home/handleExportLineup/handleExportLineup";
 
 export const ActionButtonSection = (props: StateProps) => {
     const {isOptimizing, site, sport, contest, lineup, blackList, playerPool} = props.state;

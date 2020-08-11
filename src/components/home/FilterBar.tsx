@@ -6,7 +6,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import '../../css/home/FilterBar.css'
 import {PlayerPoolAttributes, StateProps} from "../../types";
 import {getSetFromArray} from "../../helpers/getSetFromArray/getSetFromArray";
-import {handleFilterPlayers} from "../../handlers/handleFilterPlayers/handleFilterPlayers";
+import {handleFilterPlayers} from "../../handlers/home/handleFilterPlayers/handleFilterPlayers";
 
 export const FilterBar: any = (props: StateProps) => {
     const {playerPool, sortValue} = props.state;
