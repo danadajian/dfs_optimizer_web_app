@@ -10,15 +10,10 @@ import {SportButtons} from "./SportButtons";
 import {PerformanceChart} from "./PerformanceChart";
 import {PerformanceTable} from "./PerformanceTable";
 import {PositionButtons} from "./PositionButtons";
-import DatePicker from "react-datepicker";
-import {handleDateChange} from "../../handlers/performance/handleDateChange/handleDateChange";
-import {getPastDate} from "../../helpers/getPastDate/getPastDate";
+import {DateButtons} from "./DateButtons";
 
 export const Performance = (props: StateProps) => {
-    const [state, setState] = useState({
-        ...INITIAL_PERFORMANCE_STATE,
-        date: getPastDate(1)
-    });
+    const [state, setState] = useState(INITIAL_PERFORMANCE_STATE);
     const performanceProps = {state, setState};
 
     return (
@@ -27,9 +22,7 @@ export const Performance = (props: StateProps) => {
             <Jumbotron className="mt-2">
                 <h1>Performance</h1>
                 <section className="Performance-header mt-5 mb-2">
-                    <DatePicker className="Date-section text-center"
-                                selected={state.date}
-                                onChange={(date: Date) => handleDateChange(date, state, setState)}/>
+                    <DateButtons {...performanceProps}/>
                     <SportButtons {...performanceProps}/>
                     <PositionButtons {...performanceProps}/>
                 </section>

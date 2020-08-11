@@ -1,16 +1,8 @@
 import {getPerformanceDataByDate} from "./getPerformanceDataByDate";
-import * as moment from "moment-timezone";
-
-jest.mock('moment-timezone');
-
-const format = jest.fn(() => 'the right date');
-(moment as any).mockImplementation(() => ({
-    format
-}));
 
 describe('getPerformanceDataByDate', () => {
     let result: any;
-    const date = new Date();
+    const date = 'the right date';
     const playerPool = [
         {
             position: 'position1'
@@ -57,10 +49,6 @@ describe('getPerformanceDataByDate', () => {
     beforeEach(() => {
         // @ts-ignore
         result = getPerformanceDataByDate(date, state)
-    })
-
-    it('should call format with correct params', () => {
-        expect(format).toHaveBeenCalledWith('YYYY-MM-DD')
     });
 
     it('should return expected result', () => {

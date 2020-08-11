@@ -87,7 +87,7 @@ export type StartTime = {
 
 export type PerformanceState = {
     isLoading: boolean,
-    date: Date,
+    date: string,
     allFantasyData?: any[],
     fantasyData?: FantasyData[],
     allPlayerPools?: any[],

@@ -1,4 +1,5 @@
 import {PerformanceState, State} from "./types";
+import moment from "moment-timezone";
 
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
 export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
@@ -17,7 +18,7 @@ export const INITIAL_STATE: State = {
 
 export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
     isLoading: false,
-    date: new Date()
+    date: isDevelopment() ? '2020-08-07' : moment().tz('America/New_York').format('YYYY-MM-DD')
 }
 
 export const INJURY_ABBREVIATIONS: any = {
