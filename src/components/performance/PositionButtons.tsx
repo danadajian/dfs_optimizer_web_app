@@ -15,7 +15,7 @@ export const PositionButtons = (props: PerformanceStateProps) => {
     };
 
     return (
-        <ButtonGroup className="mt-1" aria-label="Position buttons">
+        <ButtonGroup className="Position-buttons mt-2" aria-label="Position buttons">
             {positions && positions.length > 0 && fantasyData &&
             <Button key={'All'}
                     value={undefined}

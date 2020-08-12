@@ -12,6 +12,16 @@
     align-items: center;
 }
 
+.Position-buttons {
+    max-width: 25vw;
+}
+
+.Performance-chart-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Performance-chart {
     max-width: 100vw;
 }

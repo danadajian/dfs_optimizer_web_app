@@ -54,14 +54,14 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         },
         {
             dataField: 'positionPercentile',
-            text: 'Percentile (Position)',
-            footer: (columnData: any) => _.chain(columnData).mean().round(2).value(),
+            text: 'Percentile (Pos)',
+            footer: (columnData: any) => `Avg: ${_.chain(columnData).mean().round(2).value()}`,
             footerStyle
         },
         {
             dataField: 'overallPercentile',
-            text: 'Percentile (Overall)',
-            footer: (columnData: any) => _.chain(columnData).meanBy().round(2).value(),
+            text: 'Percentile (Ovr)',
+            footer: (columnData: any) => `Avg: ${_.chain(columnData).meanBy().round(2).value()}`,
             footerStyle
         }
     ];

@@ -24,11 +24,13 @@ export const Performance = (props: StateProps) => {
                 <section className="Performance-header mt-5 mb-2">
                     <DateButtons {...performanceProps}/>
                     <SportButtons {...performanceProps}/>
-                    <PositionButtons {...performanceProps}/>
                 </section>
                 <section className="Performance-data">
                     <PerformanceTable {...performanceProps}/>
-                    <PerformanceChart {...performanceProps}/>
+                    <div className="Performance-chart-section">
+                        <PositionButtons {...performanceProps}/>
+                        <PerformanceChart {...performanceProps}/>
+                    </div>
                 </section>
             </Jumbotron>
         </>
