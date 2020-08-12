@@ -5,20 +5,19 @@ import {LineupPlayerCell} from "./LineupPlayerCell";
 import {getFormattedSalary} from "../../helpers/getFormattedSalary/getFormattedSalary";
 import {getAdjustedDraftKingsSalary} from "../../helpers/getAdjustedDraftKingsSalary/getAdjustedDraftKingsSalary";
 import {handleRemovePlayerFromLineup} from "../../handlers/home/handleRemovePlayerFromLineup/handleRemovePlayerFromLineup";
-import {sumAttribute} from "../../helpers/sumAttribute/sumAttribute";
 import {StateProps} from "../../types";
 import BootstrapTable from "react-bootstrap-table-next";
+import * as _ from 'lodash';
 
 const removeIcon = require('../../icons/remove.svg');
 
 export const LineupGrid = (props: StateProps) => {
     const {site, lineup, whiteList, salaryCap} = props.state;
 
-    const pointSum = sumAttribute(lineup!, 'projection');
-    const salarySum = sumAttribute(lineup!, 'salary');
-
     const lineupHeaderClass = (site === 'Fanduel') ? "Fanduel-header" : "DraftKings-header";
 
+    const projectionSum = _.chain(lineup).sumBy('projection').value() || 0;
+    const salarySum = _.chain(lineup).sumBy('salary').value() || 0;
     const salaryStyle = {
         color: (salarySum > salaryCap!) ? 'indianred' : 'black'
     };
@@ -53,7 +52,7 @@ export const LineupGrid = (props: StateProps) => {
     }, {
         dataField: 'projection',
         text: 'Projection',
-        footer: pointSum.toFixed(1),
+        footer: projectionSum.toFixed(1),
         formatter: (cellContent: any, row: any) => {
             const projection = row.projection && Number(row.projection).toFixed(1);
             return <p>{projection}</p>

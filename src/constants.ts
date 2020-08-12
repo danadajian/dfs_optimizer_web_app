@@ -3,11 +3,14 @@ import moment from "moment-timezone";
 
 export const isDevelopment = () => !process.env.NODE_ENV || process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test';
 export const delay = (ms: number) => new Promise(res => setTimeout(res, ms));
+export const EASTERN_TIME_ZONE = 'America/New_York';
+export const DATE_FORMAT_STRING = 'YYYY-MM-DD';
+export const NOW = moment().tz(EASTERN_TIME_ZONE).format(DATE_FORMAT_STRING);
 
 export const INITIAL_STATE: State = {
     isLoading: false,
     isOptimizing: false,
-    date: new Date(),
+    date: NOW,
     playerPool: [],
     filteredPool: [],
     whiteList: [],
@@ -18,7 +21,7 @@ export const INITIAL_STATE: State = {
 
 export const INITIAL_PERFORMANCE_STATE: PerformanceState = {
     isLoading: false,
-    date: isDevelopment() ? '2020-08-07' : moment().tz('America/New_York').format('YYYY-MM-DD')
+    date: isDevelopment() ? '2020-08-07' : NOW
 }
 
 export const INJURY_ABBREVIATIONS: any = {

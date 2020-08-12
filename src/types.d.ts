@@ -1,7 +1,7 @@
 export type State = {
     isLoading: boolean,
     isOptimizing?: boolean,
-    date: Date,
+    date: string,
     maxCombinations?: number,
     salaryCap?: number,
     whiteList?: number[],

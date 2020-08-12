@@ -1,15 +1,11 @@
 import {getDfsData} from './getDfsData'
 import {invokeLambdaFunction} from "../../aws/aws";
-import {formatDate} from "../formatDate/formatDate";
 
 jest.mock('../../aws/aws');
-jest.mock('../formatDate/formatDate');
-
-(formatDate as jest.Mock).mockReturnValue('formatted date');
 
 describe('get dfs data', () => {
     const sport = 'a sport';
-    const date = new Date('4/20/2020');
+    const date = '2020-04-20';
 
     describe('fanduel case', () => {
         let result: any;
@@ -38,7 +34,7 @@ describe('get dfs data', () => {
         });
 
         it('should call invoke lambda with correct params', () => {
-            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_FANDUEL_LAMBDA, {date: 'formatted date'})
+            expect(invokeLambdaFunction).toHaveBeenCalledWith(process.env.REACT_APP_FANDUEL_LAMBDA, {date})
         });
 
         it('should return expected result', () => {

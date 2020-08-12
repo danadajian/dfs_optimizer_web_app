@@ -7,6 +7,8 @@ jest.mock('../handleSportChange/handleSportChange');
 const setState = jest.fn();
 
 describe('handleDateChange', () => {
+    const date = new Date('2020-04-20T05:00:00Z');
+
     describe('site and sport exist case', () => {
         let result: any;
         const state = {
@@ -14,7 +16,6 @@ describe('handleDateChange', () => {
             sport: 'a sport',
             idk: 'test'
         };
-        const date = 'a date'
         beforeEach(async () => {
             // @ts-ignore
             result = await handleDateChange(date, state, setState)
@@ -25,7 +26,7 @@ describe('handleDateChange', () => {
                 site: 'a site',
                 sport: 'a sport',
                 idk: 'test',
-                date
+                date: '2020-04-20'
             }, setState)
         });
     });
@@ -36,7 +37,6 @@ describe('handleDateChange', () => {
             some: 'state',
             idk: 'test'
         };
-        const date = 'a date'
         beforeEach(async () => {
             // @ts-ignore
             result = await handleDateChange(date, state, setState)
@@ -46,7 +46,7 @@ describe('handleDateChange', () => {
             expect(setState).toHaveBeenCalledWith({
                 some: 'state',
                 idk: 'test',
-                date
+                date: '2020-04-20'
             })
         });
     })

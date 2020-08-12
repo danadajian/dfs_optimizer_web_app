@@ -3,12 +3,17 @@ import {PerformanceStateProps} from "../../types";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
 import {handleDateChange} from "../../handlers/performance/handleDateChange/handleDateChange";
-import {getNeighboringDate} from "../../helpers/getNeighboringDate/getNeighboringDate";
+import moment from "moment-timezone";
+import {DATE_FORMAT_STRING, EASTERN_TIME_ZONE} from "../../constants";
 
 export const DateButtons = (props: PerformanceStateProps) => {
     const {state, setState} = props;
     const {date} = state;
-    const buttonDates = [getNeighboringDate(date, 1), date, getNeighboringDate(date, -1)];
+    const buttonDates = [
+        moment(date).tz(EASTERN_TIME_ZONE).subtract(1, 'days').format(DATE_FORMAT_STRING),
+        date,
+        moment(date).tz(EASTERN_TIME_ZONE).add(1, 'days').format(DATE_FORMAT_STRING)
+    ];
 
     return (
         <ButtonGroup className="mb-2" aria-label="Date buttons">
