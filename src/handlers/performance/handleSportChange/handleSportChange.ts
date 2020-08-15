@@ -12,18 +12,16 @@ export const handleSportChange = async (sport: string, state: PerformanceState,
     })).then(() => {
         return Promise.all([
             retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentFantasyData.json`).catch(() => []),
-            retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentPlayerPools.json`).catch(() => []),
             retrieveObjectFromS3(FANTASY_ANALYTICS_BUCKET_NAME, `${sport}RecentOptimalLineups.json`).catch(() => [])
         ]);
-    }).then(([allFantasyData, allPlayerPools, allOptimalLineups]) => {
+    }).then(([allRecentFantasyData, allOptimalLineups]) => {
         setState({
             ...state,
             isLoading: false,
             sport,
-            allFantasyData,
-            allPlayerPools,
+            allRecentFantasyData,
             allOptimalLineups,
-            ...getPerformanceDataByDate(state.date, {allFantasyData, allPlayerPools, allOptimalLineups})
+            ...getPerformanceDataByDate(state.date, {allRecentFantasyData, allOptimalLineups})
         });
     });
 };

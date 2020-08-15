@@ -1,20 +1,20 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import {FantasyData, LineupAttributes, PerformanceStateProps, PlayerPoolAttributes} from "../../types";
-import {getPlayerPercentile} from "../../helpers/getPlayerPercentile/getPlayerPercentile";
+import {FantasyData, LineupAttributes, PerformanceStateProps} from "../../types";
 import * as _ from "lodash";
 
 export const PerformanceTable = (props: PerformanceStateProps) => {
-    const {fantasyData, playerPool, optimalLineup} = props.state;
+    const {recentFantasyData, optimalLineup} = props.state;
+    const {fantasyData, positionPercentile, overallPercentile, positions} = recentFantasyData || {};
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => {
         const actual = fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0;
         return {
-        ...optimalPlayer,
+            ...optimalPlayer,
             actual,
-            positionPercentile: Number(getPlayerPercentile(actual, fantasyData!.filter((player: FantasyData) =>
-                playerPool?.find((playerPoolPlayer: PlayerPoolAttributes) => playerPoolPlayer.playerId === player.playerId)?.position === optimalPlayer.position)).toFixed(1)),
-            overallPercentile: Number(getPlayerPercentile(actual, fantasyData!).toFixed(1))
+            positionPercentile,
+            overallPercentile,
+            positions
         }
     });
 
@@ -66,10 +66,10 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         }
     ];
 
-    return <>{tableData && (fantasyData && fantasyData.length > 0) && <BootstrapTable keyField='name'
-                                                                                      data={tableData}
-                                                                                      columns={columns}
-                                                                                      classes="Player-table"
-                                                                                      headerWrapperClasses="Player-pool-grid-header"
-                                                                                      rowClasses="Player-pool-row"/>}</>
+    return <>{tableData && (recentFantasyData) && <BootstrapTable keyField='name'
+                                                                  data={tableData}
+                                                                  columns={columns}
+                                                                  classes="Player-table"
+                                                                  headerWrapperClasses="Player-pool-grid-header"
+                                                                  rowClasses="Player-pool-row"/>}</>
 };

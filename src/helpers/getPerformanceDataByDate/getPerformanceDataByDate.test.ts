@@ -3,24 +3,7 @@ import {getPerformanceDataByDate} from "./getPerformanceDataByDate";
 describe('getPerformanceDataByDate', () => {
     let result: any;
     const date = 'the right date';
-    const playerPool = [
-        {
-            position: 'position1'
-        },
-        {
-            position: 'position1'
-        },
-        {
-            position: 'position2'
-        }
-    ];
-    const allPlayerPools = [
-        {
-            date: 'the right date',
-            playerPool
-        }
-    ];
-    const allFantasyData = [
+    const allRecentFantasyData = [
         {
             date: 'the wrong date',
             fantasyData: 'other fantasy data'
@@ -41,8 +24,7 @@ describe('getPerformanceDataByDate', () => {
         }
     ];
     const state = {
-        allFantasyData,
-        allPlayerPools,
+        allRecentFantasyData,
         allOptimalLineups
     };
 
@@ -53,10 +35,11 @@ describe('getPerformanceDataByDate', () => {
 
     it('should return expected result', () => {
         expect(result).toEqual({
-            fantasyData: 'fantasy data',
-            playerPool,
+            recentFantasyData: {
+                date: 'the right date',
+                fantasyData: 'fantasy data'
+            },
             optimalLineup: 'optimal lineup',
-            positions: ['position1', 'position2']
         })
     });
 });

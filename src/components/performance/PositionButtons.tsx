@@ -5,7 +5,7 @@ import React from "react";
 
 export const PositionButtons = (props: PerformanceStateProps) => {
     const {state, setState} = props;
-    const {position, positions, fantasyData} = state;
+    const {position, positions, recentFantasyData} = state;
 
     const togglePosition = (event: any) => {
         setState({
@@ -16,7 +16,7 @@ export const PositionButtons = (props: PerformanceStateProps) => {
 
     return (
         <ButtonGroup className="Position-buttons mt-2" aria-label="Position buttons">
-            {positions && positions.length > 0 && fantasyData &&
+            {positions && positions.length > 0 && recentFantasyData &&
             <Button key={'All'}
                     value={undefined}
                     variant="info"

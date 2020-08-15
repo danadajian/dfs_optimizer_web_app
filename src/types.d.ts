@@ -88,20 +88,27 @@ export type StartTime = {
 export type PerformanceState = {
     isLoading: boolean,
     date: string,
-    allFantasyData?: any[],
-    fantasyData?: FantasyData[],
-    allPlayerPools?: any[],
-    playerPool?: PlayerPoolAttributes[],
+    sport?: string,
+    allRecentFantasyData?: RecentFantasyData[],
+    recentFantasyData?: RecentFantasyData,
     allOptimalLineups?: any[],
     optimalLineup?: LineupAttributes[],
-    positions?: string[],
-    sport?: string,
     position?: string
+    positions?: string[],
+    rollingOverallPercentile?: number
 }
 
 export type PerformanceStateProps = {
     state: PerformanceState,
     setState: (state: PerformanceState) => void,
+}
+
+export type RecentFantasyData = {
+    date: string,
+    fantasyData: FantasyData[],
+    positionPercentile: number,
+    overallPercentile: number,
+    positions: string[]
 }
 
 export type FantasyData = {

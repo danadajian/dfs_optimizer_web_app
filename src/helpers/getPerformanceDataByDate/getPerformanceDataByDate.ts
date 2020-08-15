@@ -1,15 +1,12 @@
-import {PlayerPoolAttributes} from "../../types";
-import * as _ from "lodash";
+import * as _ from 'lodash';
 
 export const getPerformanceDataByDate = (date: string, state: any) => {
-    const fantasyData = state.allFantasyData?.find((fantasyData: any) => fantasyData.date === date)?.fantasyData || [];
-    const playerPool = state.allPlayerPools?.find((playerPool: any) => playerPool.date === date)?.playerPool || [];
+    const recentFantasyData = state.allRecentFantasyData?.find((fantasyData: any) => fantasyData.date === date);
+    const rollingOverallPercentile = _.chain(recentFantasyData).meanBy('overallPercentile').round(1).value();
     const optimalLineup = state.allOptimalLineups?.find((optimalLineup: any) => optimalLineup.date === date)?.optimalLineup || [];
-    const positions: string[] = _.uniq(playerPool?.map((player: PlayerPoolAttributes) => player.position));
     return {
-        fantasyData,
-        playerPool,
+        recentFantasyData,
+        rollingOverallPercentile,
         optimalLineup,
-        positions
     }
 }

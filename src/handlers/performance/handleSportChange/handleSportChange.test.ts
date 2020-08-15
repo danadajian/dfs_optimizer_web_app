@@ -6,13 +6,11 @@ import {getPerformanceDataByDate} from "../../../helpers/getPerformanceDataByDat
 jest.mock('../../../aws/aws');
 jest.mock('../../../helpers/getPerformanceDataByDate/getPerformanceDataByDate');
 
-const allFantasyData = 'all fantasy data';
-const allPlayerPools = 'all player pools';
+const allRecentFantasyData = 'all recent fantasy data';
 const allOptimalLineups = 'all optimal lineups';
 (retrieveObjectFromS3 as jest.Mock).mockImplementation(async (bucketName: string, fileName: string) => {
     const resultMap: any = {
-        'sportRecentFantasyData.json': allFantasyData,
-        'sportRecentPlayerPools.json': allPlayerPools,
+        'sportRecentFantasyData.json': allRecentFantasyData,
         'sportRecentOptimalLineups.json': allOptimalLineups,
     };
     return resultMap[fileName];
@@ -50,15 +48,11 @@ describe('handleSportChange', () => {
     });
 
     it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
-        expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'sportRecentPlayerPools.json')
-    });
-
-    it('should call retrieveObjectFromS3 for pipeline bucket with correct params', () => {
         expect(retrieveObjectFromS3).toHaveBeenCalledWith(FANTASY_ANALYTICS_BUCKET_NAME, 'sportRecentOptimalLineups.json')
     });
 
     it('should call getPerformanceDataByDate with correct params', () => {
-        expect(getPerformanceDataByDate).toHaveBeenCalledWith('the date', {allFantasyData, allPlayerPools, allOptimalLineups})
+        expect(getPerformanceDataByDate).toHaveBeenCalledWith('the date', {allRecentFantasyData, allOptimalLineups})
     });
 
     it('should call setState again with correct params', () => {
@@ -67,8 +61,7 @@ describe('handleSportChange', () => {
             date: 'the date',
             isLoading: false,
             sport,
-            allFantasyData,
-            allPlayerPools,
+            allRecentFantasyData,
             allOptimalLineups,
             aBitOf: 'data',
             more: 'data'
