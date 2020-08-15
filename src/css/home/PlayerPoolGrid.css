@@ -47,3 +47,7 @@
 .Player-pool-row p {
     all: unset;
 }
+
+.Weather {
+    height: 4vmin;
+}

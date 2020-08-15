@@ -150,7 +150,7 @@ export const PlayerPoolGrid: any = (props: StateProps) => {
             editable: false,
             formatter: (cellContent: any, row: PlayerPoolAttributes) =>
                 <span>
-                    {row.weather && <img src={getWeatherImage(row.weather.forecast)} alt={"weather"} style={{height: '4vmin'}}/>}
+                    {row.weather && <img src={getWeatherImage(row.weather.forecast)} alt={"weather"} className="Weather"/>}
                     <p>
                         {row.weather && row.weather.details}
                     </p>
