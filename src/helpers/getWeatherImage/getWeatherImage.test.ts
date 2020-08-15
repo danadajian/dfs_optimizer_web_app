@@ -19,7 +19,7 @@ describe('getWeatherImage', () => {
         let result: any;
 
         beforeEach(() => {
-            result = getWeatherImage('invalid forecast')
+            result = getWeatherImage(undefined)
         })
 
         it('should return expected result', () => {

@@ -5,13 +5,13 @@ const snowy = require("../../icons/snowy.ico") as any;
 const stormy = require("../../icons/stormy.ico") as any;
 const sunny = require("../../icons/sunny.ico") as any;
 
-export const getWeatherImage = (caseSensitiveForecast: string): any => {
+export const getWeatherImage = (caseSensitiveForecast: string | undefined): any => {
     const forecast = caseSensitiveForecast?.toLowerCase();
-    return (forecast) &&
+    return forecast && (
         (forecast.includes('partly')) ? partlyCloudy :
             (forecast.includes('cloud') || forecast.includes('fog')) ? cloudy :
                 (forecast.includes('storm') || forecast.includes('thunder')) ? stormy :
                     (forecast.includes('rain') || forecast.includes('shower')) ? rainy :
                         (forecast.includes('snow') || forecast.includes('flurr')) ? snowy :
-                            (forecast.includes('sun') || forecast.includes('clear')) ? sunny : undefined;
+                            (forecast.includes('sun') || forecast.includes('clear')) ? sunny : undefined);
 }
