@@ -8,7 +8,7 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
     const {fantasyData, avgPositionPercentile, avgOverallPercentile} = recentFantasyData || {};
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => {
-        const fantasyDataPlayer = fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId);
+        const fantasyDataPlayer = fantasyData?.find((player: FantasyData) => player.playerId === optimalPlayer.playerId);
         const actual = fantasyDataPlayer?.Fanduel || 0;
         const {positionPercentile, overallPercentile} = fantasyDataPlayer || {};
         return {
