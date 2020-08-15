@@ -7,6 +7,7 @@
         "name": "Asdrubal Cabrera",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 43.75,
         "overallPercentile": 33.71647509578544
       },
@@ -15,6 +16,7 @@
         "name": "Eric Thames",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -23,6 +25,7 @@
         "name": "Starlin Castro",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "2B",
         "positionPercentile": 96.875,
         "overallPercentile": 83.9080459770115
       },
@@ -31,6 +34,7 @@
         "name": "Stephen Strasburg",
         "Fanduel": 4,
         "DraftKings": -1.05,
+        "position": "P",
         "positionPercentile": 20,
         "overallPercentile": 33.33333333333333
       },
@@ -39,6 +43,7 @@
         "name": "Michael A. Taylor",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -47,6 +52,7 @@
         "name": "Yan Gomes",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -55,6 +61,7 @@
         "name": "Bryan Holaday",
         "Fanduel": 16.2,
         "DraftKings": 12,
+        "position": "C",
         "positionPercentile": 80,
         "overallPercentile": 75.47892720306514
       },
@@ -63,6 +70,7 @@
         "name": "Asher Wojciechowski",
         "Fanduel": 23,
         "DraftKings": 12.65,
+        "position": "P",
         "positionPercentile": 52,
         "overallPercentile": 85.82375478927203
       },
@@ -71,6 +79,7 @@
         "name": "Adam Eaton",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -79,6 +88,7 @@
         "name": "Hanser Alberto",
         "Fanduel": 19.2,
         "DraftKings": 14,
+        "position": "2B",
         "positionPercentile": 93.75,
         "overallPercentile": 81.60919540229885
       },
@@ -87,6 +97,7 @@
         "name": "Renato Nunez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -95,6 +106,7 @@
         "name": "Dwight Smith Jr.",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -103,6 +115,7 @@
         "name": "Trea Turner",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "SS",
         "positionPercentile": 67.85714285714286,
         "overallPercentile": 49.808429118773944
       },
@@ -111,6 +124,7 @@
         "name": "Rio Ruiz",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -119,6 +133,7 @@
         "name": "Anthony Santander",
         "Fanduel": 10,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 52.87356321839081,
         "overallPercentile": 63.2183908045977
       },
@@ -127,6 +142,7 @@
         "name": "Pat Valaika",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "3B",
         "positionPercentile": 46.875,
         "overallPercentile": 39.08045977011494
       },
@@ -135,6 +151,7 @@
         "name": "Chance Sisco",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -143,6 +160,7 @@
         "name": "Austin Hays",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -151,6 +169,7 @@
         "name": "Juan Soto",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -159,6 +178,7 @@
         "name": "Carter Kieboom",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -167,6 +187,7 @@
         "name": "Brett Gardner",
         "Fanduel": 12,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 54.02298850574713,
         "overallPercentile": 63.984674329501914
       },
@@ -175,6 +196,7 @@
         "name": "Mitch Moreland",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -183,6 +205,7 @@
         "name": "Aaron Hicks",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -191,6 +214,7 @@
         "name": "Gerrit Cole",
         "Fanduel": 52,
         "DraftKings": 31.35,
+        "position": "P",
         "positionPercentile": 92,
         "overallPercentile": 99.23371647509579
       },
@@ -199,6 +223,7 @@
         "name": "Christian Vazquez",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -207,6 +232,7 @@
         "name": "DJ LeMahieu",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -215,6 +241,7 @@
         "name": "J.D. Martinez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -223,6 +250,7 @@
         "name": "Luke Voit",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "1B",
         "positionPercentile": 77.77777777777779,
         "overallPercentile": 67.43295019157088
       },
@@ -231,6 +259,7 @@
         "name": "Gio Urshela",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -239,6 +268,7 @@
         "name": "Jackie Bradley Jr.",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -247,6 +277,7 @@
         "name": "Gary Sanchez",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "C",
         "positionPercentile": 93.33333333333333,
         "overallPercentile": 83.9080459770115
       },
@@ -255,6 +286,7 @@
         "name": "Xander Bogaerts",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -263,6 +295,7 @@
         "name": "Kevin Pillar",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -271,6 +304,7 @@
         "name": "Colten Brewer",
         "Fanduel": 8,
         "DraftKings": 1.8,
+        "position": "P",
         "positionPercentile": 28.000000000000004,
         "overallPercentile": 49.42528735632184
       },
@@ -279,6 +313,7 @@
         "name": "Clint Frazier",
         "Fanduel": 13,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 70.88122605363985
       },
@@ -287,6 +322,7 @@
         "name": "Mike Tauchman",
         "Fanduel": 32.4,
         "DraftKings": 23,
+        "position": "OF",
         "positionPercentile": 95.40229885057471,
         "overallPercentile": 94.6360153256705
       },
@@ -295,6 +331,7 @@
         "name": "Rafael Devers",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -303,6 +340,7 @@
         "name": "Alex Verdugo",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 80.45977011494253,
         "overallPercentile": 83.9080459770115
       },
@@ -311,6 +349,7 @@
         "name": "Gleyber Torres",
         "Fanduel": 28.4,
         "DraftKings": 22,
+        "position": "SS",
         "positionPercentile": 92.85714285714286,
         "overallPercentile": 90.80459770114942
       },
@@ -319,6 +358,7 @@
         "name": "Jonathan Arauz",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -327,6 +367,7 @@
         "name": "Robinson Cano",
         "Fanduel": 25.2,
         "DraftKings": 19,
+        "position": "2B",
         "positionPercentile": 100,
         "overallPercentile": 87.35632183908046
       },
@@ -335,6 +376,7 @@
         "name": "Andrew McCutchen",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -343,6 +385,7 @@
         "name": "Jay Bruce",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -351,6 +394,7 @@
         "name": "Wilson Ramos",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -359,6 +403,7 @@
         "name": "Jean Segura",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -367,6 +412,7 @@
         "name": "Didi Gregorius",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "SS",
         "positionPercentile": 75,
         "overallPercentile": 53.25670498084292
       },
@@ -375,6 +421,7 @@
         "name": "Bryce Harper",
         "Fanduel": 12.7,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -383,6 +430,7 @@
         "name": "J.T. Realmuto",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "C",
         "positionPercentile": 100,
         "overallPercentile": 88.50574712643679
       },
@@ -391,6 +439,7 @@
         "name": "Brandon Nimmo",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 59.77011494252874,
         "overallPercentile": 67.43295019157088
       },
@@ -399,6 +448,7 @@
         "name": "Roman Quinn",
         "Fanduel": 12.7,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -407,6 +457,7 @@
         "name": "Walker Lockett",
         "Fanduel": 18,
         "DraftKings": 7.5,
+        "position": "P",
         "positionPercentile": 40,
         "overallPercentile": 76.24521072796935
       },
@@ -415,6 +466,7 @@
         "name": "Michael Conforto",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -423,6 +475,7 @@
         "name": "Amed Rosario",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -431,6 +484,7 @@
         "name": "Dominic Smith",
         "Fanduel": 28.2,
         "DraftKings": 21,
+        "position": "OF",
         "positionPercentile": 89.65517241379311,
         "overallPercentile": 90.42145593869732
       },
@@ -439,6 +493,7 @@
         "name": "Luis Guillorme",
         "Fanduel": 18.5,
         "DraftKings": 15,
+        "position": "2B",
         "positionPercentile": 90.625,
         "overallPercentile": 77.77777777777779
       },
@@ -447,6 +502,7 @@
         "name": "Rhys Hoskins",
         "Fanduel": 15.2,
         "DraftKings": 11,
+        "position": "1B",
         "positionPercentile": 88.88888888888889,
         "overallPercentile": 72.41379310344827
       },
@@ -455,6 +511,7 @@
         "name": "Pete Alonso",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -463,6 +520,7 @@
         "name": "Andres Gimenez",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "2B",
         "positionPercentile": 78.125,
         "overallPercentile": 64.75095785440614
       },
@@ -471,6 +529,7 @@
         "name": "Spencer Howard",
         "Fanduel": 7,
         "DraftKings": 0.1,
+        "position": "P",
         "positionPercentile": 24,
         "overallPercentile": 49.042145593869726
       },
@@ -479,6 +538,7 @@
         "name": "Joey Votto",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "1B",
         "positionPercentile": 74.07407407407408,
         "overallPercentile": 64.75095785440614
       },
@@ -487,6 +547,7 @@
         "name": "Freddy Galvis",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "SS",
         "positionPercentile": 85.71428571428571,
         "overallPercentile": 64.75095785440614
       },
@@ -495,6 +556,7 @@
         "name": "Sonny Gray",
         "Fanduel": 57,
         "DraftKings": 33.4,
+        "position": "P",
         "positionPercentile": 100,
         "overallPercentile": 100
       },
@@ -503,6 +565,7 @@
         "name": "Tucker Barnhart",
         "Fanduel": 16.2,
         "DraftKings": 11,
+        "position": "C",
         "positionPercentile": 80,
         "overallPercentile": 75.47892720306514
       },
@@ -511,6 +574,7 @@
         "name": "Erik Gonzalez",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 53.57142857142857,
         "overallPercentile": 33.71647509578544
       },
@@ -519,6 +583,7 @@
         "name": "Gregory Polanco",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -527,6 +592,7 @@
         "name": "Jacob Stallings",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -535,6 +601,7 @@
         "name": "Nick Castellanos",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -543,6 +610,7 @@
         "name": "Shogo Akiyama",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -551,6 +619,7 @@
         "name": "Josh Bell",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -559,6 +628,7 @@
         "name": "Kyle Farmer",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "2B",
         "positionPercentile": 53.125,
         "overallPercentile": 49.808429118773944
       },
@@ -567,6 +637,7 @@
         "name": "Colin Moran",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -575,6 +646,7 @@
         "name": "Jesse Winker",
         "Fanduel": 43.9,
         "DraftKings": 32,
+        "position": "OF",
         "positionPercentile": 98.85057471264368,
         "overallPercentile": 97.31800766283524
       },
@@ -583,6 +655,7 @@
         "name": "Josh VanMeter",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -591,6 +664,7 @@
         "name": "Adam Frazier",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -599,6 +673,7 @@
         "name": "Chad Kuhl",
         "Fanduel": 24,
         "DraftKings": 14.25,
+        "position": "P",
         "positionPercentile": 56.00000000000001,
         "overallPercentile": 86.20689655172413
       },
@@ -607,6 +682,7 @@
         "name": "Kevin Newman",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -615,6 +691,7 @@
         "name": "Cole Tucker",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -623,6 +700,7 @@
         "name": "Nick Senzel",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -631,6 +709,7 @@
         "name": "Bryan Reynolds",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -639,6 +718,7 @@
         "name": "Miguel Cabrera",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -647,6 +727,7 @@
         "name": "Carlos Santana",
         "Fanduel": 12.4,
         "DraftKings": 8,
+        "position": "1B",
         "positionPercentile": 77.77777777777779,
         "overallPercentile": 67.43295019157088
       },
@@ -655,6 +736,7 @@
         "name": "Cameron Maybin",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -663,6 +745,7 @@
         "name": "Ivan Nova",
         "Fanduel": -11,
         "DraftKings": -10.7,
+        "position": "P",
         "positionPercentile": 4,
         "overallPercentile": 0.38314176245210724
       },
@@ -671,6 +754,7 @@
         "name": "Austin Romine",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 45.21072796934866
       },
@@ -679,6 +763,7 @@
         "name": "Sandy Leon",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "C",
         "positionPercentile": 53.333333333333336,
         "overallPercentile": 33.71647509578544
       },
@@ -687,6 +772,7 @@
         "name": "Tyler Naquin",
         "Fanduel": 22.7,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 82.75862068965517,
         "overallPercentile": 85.44061302681992
       },
@@ -695,6 +781,7 @@
         "name": "Cesar Hernandez",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -703,6 +790,7 @@
         "name": "Domingo Santana",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -711,6 +799,7 @@
         "name": "Jonathan Schoop",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -719,6 +808,7 @@
         "name": "Delino DeShields",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -727,6 +817,7 @@
         "name": "JaCoby Jones",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -735,6 +826,7 @@
         "name": "Niko Goodrum",
         "Fanduel": 31.2,
         "DraftKings": 23,
+        "position": "SS",
         "positionPercentile": 100,
         "overallPercentile": 93.10344827586206
       },
@@ -743,6 +835,7 @@
         "name": "Jeimer Candelario",
         "Fanduel": 18.4,
         "DraftKings": 15,
+        "position": "1B",
         "positionPercentile": 92.5925925925926,
         "overallPercentile": 76.62835249042146
       },
@@ -751,6 +844,7 @@
         "name": "Francisco Lindor",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 57.14285714285714,
         "overallPercentile": 39.08045977011494
       },
@@ -759,6 +853,7 @@
         "name": "Jose Ramirez",
         "Fanduel": 15.7,
         "DraftKings": 11,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -767,6 +862,7 @@
         "name": "Victor Reyes",
         "Fanduel": 12,
         "DraftKings": 11,
+        "position": "OF",
         "positionPercentile": 54.02298850574713,
         "overallPercentile": 63.984674329501914
       },
@@ -775,6 +871,7 @@
         "name": "Franmil Reyes",
         "Fanduel": 38.1,
         "DraftKings": 27,
+        "position": "OF",
         "positionPercentile": 97.70114942528735,
         "overallPercentile": 96.16858237547893
       },
@@ -783,6 +880,7 @@
         "name": "Willi Castro",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -791,6 +889,7 @@
         "name": "Aaron Civale",
         "Fanduel": 21,
         "DraftKings": 10.1,
+        "position": "P",
         "positionPercentile": 44,
         "overallPercentile": 82.37547892720306
       },
@@ -799,6 +898,7 @@
         "name": "Nick Markakis",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -807,6 +907,7 @@
         "name": "Matt Joyce",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -815,6 +916,7 @@
         "name": "Francisco Cervelli",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -823,6 +925,7 @@
         "name": "Travis d'Arnaud",
         "Fanduel": 21.7,
         "DraftKings": 17,
+        "position": "C",
         "positionPercentile": 90,
         "overallPercentile": 83.14176245210729
       },
@@ -831,6 +934,7 @@
         "name": "Freddie Freeman",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -839,6 +943,7 @@
         "name": "Corey Dickerson",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 50.57471264367817,
         "overallPercentile": 60.53639846743295
       },
@@ -847,6 +952,7 @@
         "name": "Marcell Ozuna",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -855,6 +961,7 @@
         "name": "Ender Inciarte",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -863,6 +970,7 @@
         "name": "Jonathan Villar",
         "Fanduel": 30.7,
         "DraftKings": 24,
+        "position": "SS",
         "positionPercentile": 96.42857142857143,
         "overallPercentile": 92.72030651340997
       },
@@ -871,6 +979,7 @@
         "name": "Jesus Aguilar",
         "Fanduel": 13.5,
         "DraftKings": 9,
+        "position": "1B",
         "positionPercentile": 85.18518518518519,
         "overallPercentile": 71.64750957854406
       },
@@ -879,6 +988,7 @@
         "name": "Adam Duvall",
         "Fanduel": 12.5,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 60.91954022988506,
         "overallPercentile": 68.96551724137932
       },
@@ -887,6 +997,7 @@
         "name": "Jon Berti",
         "Fanduel": 18.4,
         "DraftKings": 15,
+        "position": "2B",
         "positionPercentile": 87.5,
         "overallPercentile": 76.62835249042146
       },
@@ -895,6 +1006,7 @@
         "name": "Brian Anderson",
         "Fanduel": 6.5,
         "DraftKings": 4,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -903,6 +1015,7 @@
         "name": "Johan Camargo",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -911,6 +1024,7 @@
         "name": "Dansby Swanson",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -919,6 +1033,7 @@
         "name": "Pablo Lopez",
         "Fanduel": 46,
         "DraftKings": 25.3,
+        "position": "P",
         "positionPercentile": 80,
         "overallPercentile": 98.08429118773945
       },
@@ -927,6 +1042,7 @@
         "name": "Magneuris Sierra",
         "Fanduel": 24.9,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 83.9080459770115,
         "overallPercentile": 86.97318007662835
       },
@@ -935,6 +1051,7 @@
         "name": "Eddy Alvarez",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "3B",
         "positionPercentile": 78.125,
         "overallPercentile": 67.43295019157088
       },
@@ -943,6 +1060,7 @@
         "name": "Kyle Wright",
         "Fanduel": 3,
         "DraftKings": -2.05,
+        "position": "P",
         "positionPercentile": 16,
         "overallPercentile": 18.007662835249043
       },
@@ -951,6 +1069,7 @@
         "name": "Austin Riley",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -959,6 +1078,7 @@
         "name": "Howie Kendrick",
         "Fanduel": 13.2,
         "DraftKings": 9,
+        "position": "2B",
         "positionPercentile": 81.25,
         "overallPercentile": 71.26436781609196
       },
@@ -967,6 +1087,7 @@
         "name": "Asdrubal Cabrera",
         "Fanduel": 28.4,
         "DraftKings": 20,
+        "position": "3B",
         "positionPercentile": 96.875,
         "overallPercentile": 90.80459770114942
       },
@@ -975,6 +1096,7 @@
         "name": "Chris Davis",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -983,6 +1105,7 @@
         "name": "Tommy Milone",
         "Fanduel": 9,
         "DraftKings": 1.6,
+        "position": "P",
         "positionPercentile": 32,
         "overallPercentile": 49.808429118773944
       },
@@ -991,6 +1114,7 @@
         "name": "Eric Thames",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -999,6 +1123,7 @@
         "name": "Stephen Strasburg",
         "Fanduel": -1,
         "DraftKings": -1.1,
+        "position": "P",
         "positionPercentile": 8,
         "overallPercentile": 0.7662835249042145
       },
@@ -1007,6 +1132,7 @@
         "name": "Michael A. Taylor",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -1015,6 +1141,7 @@
         "name": "Yan Gomes",
         "Fanduel": 25.2,
         "DraftKings": 19,
+        "position": "C",
         "positionPercentile": 96.66666666666667,
         "overallPercentile": 87.35632183908046
       },
@@ -1023,6 +1150,7 @@
         "name": "Jose Iglesias",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1031,6 +1159,7 @@
         "name": "Bryan Holaday",
         "Fanduel": 1,
         "DraftKings": -0.45,
+        "position": "C",
         "positionPercentile": 20,
         "overallPercentile": 17.24137931034483
       },
@@ -1039,6 +1168,7 @@
         "name": "Adam Eaton",
         "Fanduel": 22.4,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 81.60919540229885,
         "overallPercentile": 85.0574712643678
       },
@@ -1047,6 +1177,7 @@
         "name": "Hanser Alberto",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 65.625,
         "overallPercentile": 60.53639846743295
       },
@@ -1055,6 +1186,7 @@
         "name": "Dwight Smith Jr.",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -1063,6 +1195,7 @@
         "name": "Pedro Severino",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -1071,6 +1204,7 @@
         "name": "Trea Turner",
         "Fanduel": 18.9,
         "DraftKings": 15,
+        "position": "SS",
         "positionPercentile": 89.28571428571429,
         "overallPercentile": 80.84291187739464
       },
@@ -1079,6 +1213,7 @@
         "name": "Rio Ruiz",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -1087,6 +1222,7 @@
         "name": "Anthony Santander",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -1095,6 +1231,7 @@
         "name": "Pat Valaika",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1103,6 +1240,7 @@
         "name": "Chance Sisco",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "C",
         "positionPercentile": 53.333333333333336,
         "overallPercentile": 33.71647509578544
       },
@@ -1111,6 +1249,7 @@
         "name": "Victor Robles",
         "Fanduel": 18.4,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 71.26436781609196,
         "overallPercentile": 76.62835249042146
       },
@@ -1119,6 +1258,7 @@
         "name": "Austin Hays",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -1127,6 +1267,7 @@
         "name": "Juan Soto",
         "Fanduel": 25.4,
         "DraftKings": 19,
+        "position": "OF",
         "positionPercentile": 85.0574712643678,
         "overallPercentile": 88.12260536398468
       },
@@ -1135,6 +1276,7 @@
         "name": "Carter Kieboom",
         "Fanduel": 18.9,
         "DraftKings": 14,
+        "position": "3B",
         "positionPercentile": 90.625,
         "overallPercentile": 80.84291187739464
       },
@@ -1143,6 +1285,7 @@
         "name": "Manny Pina",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -1151,6 +1294,7 @@
         "name": "Jason Heyward",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -1159,6 +1303,7 @@
         "name": "Eric Sogard",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 46.875,
         "overallPercentile": 39.08045977011494
       },
@@ -1167,6 +1312,7 @@
         "name": "Anthony Rizzo",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "1B",
         "positionPercentile": 70.37037037037037,
         "overallPercentile": 60.53639846743295
       },
@@ -1175,6 +1321,7 @@
         "name": "Justin Smoak",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -1183,6 +1330,7 @@
         "name": "Jason Kipnis",
         "Fanduel": 9.7,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 71.875,
         "overallPercentile": 62.45210727969349
       },
@@ -1191,6 +1339,7 @@
         "name": "Avisail Garcia",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -1199,6 +1348,7 @@
         "name": "Brock Holt",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1207,6 +1357,7 @@
         "name": "Willson Contreras",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -1215,6 +1366,7 @@
         "name": "Christian Yelich",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -1223,6 +1375,7 @@
         "name": "Ben Gamel",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1231,6 +1384,7 @@
         "name": "Javier Baez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -1239,6 +1393,7 @@
         "name": "Brandon Woodruff",
         "Fanduel": 16,
         "DraftKings": 8.15,
+        "position": "P",
         "positionPercentile": 36,
         "overallPercentile": 75.09578544061303
       },
@@ -1247,6 +1402,7 @@
         "name": "David Bote",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -1255,6 +1411,7 @@
         "name": "Alec Mills",
         "Fanduel": 27,
         "DraftKings": 15.3,
+        "position": "P",
         "positionPercentile": 60,
         "overallPercentile": 90.03831417624522
       },
@@ -1263,6 +1420,7 @@
         "name": "Kyle Schwarber",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -1271,6 +1429,7 @@
         "name": "Ian Happ",
         "Fanduel": 6.5,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -1279,6 +1438,7 @@
         "name": "Luis Urias",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -1287,6 +1447,7 @@
         "name": "Nico Hoerner",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -1295,6 +1456,7 @@
         "name": "Keston Hiura",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "2B",
         "positionPercentile": 43.75,
         "overallPercentile": 39.08045977011494
       },
@@ -1303,6 +1465,7 @@
         "name": "Shin-Soo Choo",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -1311,6 +1474,7 @@
         "name": "Jeff Mathis",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -1319,6 +1483,7 @@
         "name": "Elvis Andrus",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -1327,6 +1492,7 @@
         "name": "Daniel Murphy",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -1335,6 +1501,7 @@
         "name": "Todd Frazier",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -1343,6 +1510,7 @@
         "name": "Lance Lynn",
         "Fanduel": 52,
         "DraftKings": 35.55,
+        "position": "P",
         "positionPercentile": 92,
         "overallPercentile": 99.23371647509579
       },
@@ -1351,6 +1519,7 @@
         "name": "Charlie Blackmon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1359,6 +1528,7 @@
         "name": "Nolan Arenado",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 40.625,
         "overallPercentile": 32.18390804597701
       },
@@ -1367,6 +1537,7 @@
         "name": "Tony Wolters",
         "Fanduel": 3.2,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 50,
         "overallPercentile": 31.417624521072796
       },
@@ -1375,6 +1546,7 @@
         "name": "Raimel Tapia",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1383,6 +1555,7 @@
         "name": "Trevor Story",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1391,6 +1564,7 @@
         "name": "Rougned Odor",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "2B",
         "positionPercentile": 50,
         "overallPercentile": 45.21072796934866
       },
@@ -1399,6 +1573,7 @@
         "name": "Joey Gallo",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1407,6 +1582,7 @@
         "name": "David Dahl",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1415,6 +1591,7 @@
         "name": "Ryan McMahon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1423,6 +1600,7 @@
         "name": "Isiah Kiner-Falefa",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1431,6 +1609,7 @@
         "name": "Willie Calhoun",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -1439,6 +1618,7 @@
         "name": "Garrett Hampson",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "2B",
         "positionPercentile": 43.75,
         "overallPercentile": 39.08045977011494
       },
@@ -1447,6 +1627,7 @@
         "name": "Ryan Castellani",
         "Fanduel": 32,
         "DraftKings": 20.1,
+        "position": "P",
         "positionPercentile": 64,
         "overallPercentile": 93.48659003831418
       },
@@ -1455,6 +1636,7 @@
         "name": "Nick Solak",
         "Fanduel": 33.9,
         "DraftKings": 26,
+        "position": "OF",
         "positionPercentile": 96.55172413793103,
         "overallPercentile": 95.01915708812261
       },
@@ -1463,6 +1645,7 @@
         "name": "Martin Maldonado",
         "Fanduel": 19.2,
         "DraftKings": 13,
+        "position": "C",
         "positionPercentile": 86.66666666666667,
         "overallPercentile": 81.60919540229885
       },
@@ -1471,6 +1654,7 @@
         "name": "Josh Reddick",
         "Fanduel": 18.7,
         "DraftKings": 15,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -1479,6 +1663,7 @@
         "name": "Dee Gordon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1487,6 +1672,7 @@
         "name": "Jose Altuve",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 37.5,
         "overallPercentile": 32.18390804597701
       },
@@ -1495,6 +1681,7 @@
         "name": "Kyle Seager",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -1503,6 +1690,7 @@
         "name": "George Springer",
         "Fanduel": 18.6,
         "DraftKings": 13,
+        "position": "OF",
         "positionPercentile": 72.41379310344827,
         "overallPercentile": 78.16091954022988
       },
@@ -1511,6 +1699,7 @@
         "name": "Austin Nola",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -1519,6 +1708,7 @@
         "name": "Carlos Correa",
         "Fanduel": 9.7,
         "DraftKings": 6,
+        "position": "SS",
         "positionPercentile": 82.14285714285714,
         "overallPercentile": 62.45210727969349
       },
@@ -1527,6 +1717,7 @@
         "name": "Tim Lopes",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -1535,6 +1726,7 @@
         "name": "Alex Bregman",
         "Fanduel": 15.7,
         "DraftKings": 11,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -1543,6 +1735,7 @@
         "name": "J.P. Crawford",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1551,6 +1744,7 @@
         "name": "Shed Long Jr.",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -1559,6 +1753,7 @@
         "name": "Yuli Gurriel",
         "Fanduel": 33.9,
         "DraftKings": 26,
+        "position": "1B",
         "positionPercentile": 100,
         "overallPercentile": 95.01915708812261
       },
@@ -1567,6 +1762,7 @@
         "name": "Kyle Lewis",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -1575,6 +1771,7 @@
         "name": "Framber Valdez",
         "Fanduel": 40,
         "DraftKings": 20.7,
+        "position": "P",
         "positionPercentile": 72,
         "overallPercentile": 96.55172413793103
       },
@@ -1583,6 +1780,7 @@
         "name": "Kyle Tucker",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -1591,6 +1789,7 @@
         "name": "Dylan Moore",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "3B",
         "positionPercentile": 75,
         "overallPercentile": 64.75095785440614
       },
@@ -1599,6 +1798,7 @@
         "name": "Evan White",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -1607,6 +1807,7 @@
         "name": "Yordan Alvarez",
         "Fanduel": 32.2,
         "DraftKings": 22,
+        "position": "OF",
         "positionPercentile": 93.10344827586206,
         "overallPercentile": 93.86973180076629
       },
@@ -1615,6 +1816,7 @@
         "name": "Tommy Pham",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1623,6 +1825,7 @@
         "name": "David Peralta",
         "Fanduel": 9.5,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 50.57471264367817,
         "overallPercentile": 60.53639846743295
       },
@@ -1631,6 +1834,7 @@
         "name": "Stephen Vogt",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -1639,6 +1843,7 @@
         "name": "Eric Hosmer",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "1B",
         "positionPercentile": 62.96296296296296,
         "overallPercentile": 49.808429118773944
       },
@@ -1647,6 +1852,7 @@
         "name": "Wil Myers",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -1655,6 +1861,7 @@
         "name": "Starling Marte",
         "Fanduel": 12.7,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -1663,6 +1870,7 @@
         "name": "Christian Walker",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -1671,6 +1879,7 @@
         "name": "Kole Calhoun",
         "Fanduel": 28.4,
         "DraftKings": 21,
+        "position": "OF",
         "positionPercentile": 90.80459770114942,
         "overallPercentile": 90.80459770114942
       },
@@ -1679,6 +1888,7 @@
         "name": "Manny Machado",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -1687,6 +1897,7 @@
         "name": "Jurickson Profar",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1695,6 +1906,7 @@
         "name": "Merrill Kelly",
         "Fanduel": 51,
         "DraftKings": 30,
+        "position": "P",
         "positionPercentile": 88,
         "overallPercentile": 98.85057471264368
       },
@@ -1703,6 +1915,7 @@
         "name": "Nick Ahmed",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 57.14285714285714,
         "overallPercentile": 39.08045977011494
       },
@@ -1711,6 +1924,7 @@
         "name": "Ketel Marte",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 37.5,
         "overallPercentile": 32.18390804597701
       },
@@ -1719,6 +1933,7 @@
         "name": "Francisco Mejia",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -1727,6 +1942,7 @@
         "name": "Dinelson Lamet",
         "Fanduel": 43,
         "DraftKings": 25.1,
+        "position": "P",
         "positionPercentile": 76,
         "overallPercentile": 96.93486590038314
       },
@@ -1735,6 +1951,7 @@
         "name": "Jake Cronenworth",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 65.625,
         "overallPercentile": 60.53639846743295
       },
@@ -1743,6 +1960,7 @@
         "name": "Trent Grisham",
         "Fanduel": 15,
         "DraftKings": 13,
+        "position": "OF",
         "positionPercentile": 67.81609195402298,
         "overallPercentile": 72.03065134099617
       },
@@ -1751,6 +1969,7 @@
         "name": "Andy Young",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -1759,6 +1978,7 @@
         "name": "Fernando Tatis Jr.",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1767,6 +1987,7 @@
         "name": "Daulton Varsho",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 60,
         "overallPercentile": 39.08045977011494
       },
@@ -1775,6 +1996,7 @@
         "name": "Albert Pujols",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 59.25925925925925,
         "overallPercentile": 39.08045977011494
       },
@@ -1783,6 +2005,7 @@
         "name": "Justin Upton",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1791,6 +2014,7 @@
         "name": "Clayton Kershaw",
         "Fanduel": 46,
         "DraftKings": 27.95,
+        "position": "P",
         "positionPercentile": 80,
         "overallPercentile": 98.08429118773945
       },
@@ -1799,6 +2023,7 @@
         "name": "Justin Turner",
         "Fanduel": 15.7,
         "DraftKings": 12,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -1807,6 +2032,7 @@
         "name": "Anthony Rendon",
         "Fanduel": 24.7,
         "DraftKings": 18,
+        "position": "3B",
         "positionPercentile": 93.75,
         "overallPercentile": 86.59003831417624
       },
@@ -1815,6 +2041,7 @@
         "name": "AJ Pollock",
         "Fanduel": 15.7,
         "DraftKings": 12,
+        "position": "OF",
         "positionPercentile": 68.96551724137932,
         "overallPercentile": 73.18007662835248
       },
@@ -1823,6 +2050,7 @@
         "name": "Mike Trout",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -1831,6 +2059,7 @@
         "name": "Max Stassi",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -1839,6 +2068,7 @@
         "name": "Kike Hernandez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -1847,6 +2077,7 @@
         "name": "Austin Barnes",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -1855,6 +2086,7 @@
         "name": "Mookie Betts",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -1863,6 +2095,7 @@
         "name": "Tommy La Stella",
         "Fanduel": 10,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 75,
         "overallPercentile": 63.2183908045977
       },
@@ -1871,6 +2104,7 @@
         "name": "Chris Taylor",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1879,6 +2113,7 @@
         "name": "Corey Seager",
         "Fanduel": 6.7,
         "DraftKings": 4,
+        "position": "SS",
         "positionPercentile": 64.28571428571429,
         "overallPercentile": 48.65900383141762
       },
@@ -1887,6 +2122,7 @@
         "name": "Shohei Ohtani",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -1895,6 +2131,7 @@
         "name": "Cody Bellinger",
         "Fanduel": 44.4,
         "DraftKings": 32,
+        "position": "OF",
         "positionPercentile": 100,
         "overallPercentile": 97.70114942528735
       },
@@ -1903,6 +2140,7 @@
         "name": "Edwin Rios",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "1B",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 53.25670498084292
       },
@@ -1911,6 +2149,7 @@
         "name": "David Fletcher",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -1919,6 +2158,7 @@
         "name": "Patrick Sandoval",
         "Fanduel": 21,
         "DraftKings": 10.7,
+        "position": "P",
         "positionPercentile": 44,
         "overallPercentile": 82.37547892720306
       },
@@ -1927,6 +2167,7 @@
         "name": "Jo Adell",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -1935,6 +2176,7 @@
         "name": "Pablo Sandoval",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -1943,6 +2185,7 @@
         "name": "Hunter Pence",
         "Fanduel": 28.7,
         "DraftKings": 20,
+        "position": "OF",
         "positionPercentile": 91.95402298850574,
         "overallPercentile": 91.95402298850574
       },
@@ -1951,6 +2194,7 @@
         "name": "Donovan Solano",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -1959,6 +2203,7 @@
         "name": "Johnny Cueto",
         "Fanduel": 34,
         "DraftKings": 18.75,
+        "position": "P",
         "positionPercentile": 68,
         "overallPercentile": 95.78544061302682
       },
@@ -1967,6 +2212,7 @@
         "name": "Evan Longoria",
         "Fanduel": 28.7,
         "DraftKings": 21,
+        "position": "3B",
         "positionPercentile": 100,
         "overallPercentile": 91.95402298850574
       },
@@ -1975,6 +2221,7 @@
         "name": "Khris Davis",
         "Fanduel": 12.7,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -1983,6 +2230,7 @@
         "name": "Robbie Grossman",
         "Fanduel": 21.9,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 79.3103448275862,
         "overallPercentile": 83.5249042145594
       },
@@ -1991,6 +2239,7 @@
         "name": "Wilmer Flores",
         "Fanduel": 15.2,
         "DraftKings": 14,
+        "position": "2B",
         "positionPercentile": 84.375,
         "overallPercentile": 72.41379310344827
       },
@@ -1999,6 +2248,7 @@
         "name": "Darin Ruf",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -2007,6 +2257,7 @@
         "name": "Mike Yastrzemski",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -2015,6 +2266,7 @@
         "name": "Stephen Piscotty",
         "Fanduel": 32.2,
         "DraftKings": 23,
+        "position": "OF",
         "positionPercentile": 93.10344827586206,
         "overallPercentile": 93.86973180076629
       },
@@ -2023,6 +2275,7 @@
         "name": "Mark Canha",
         "Fanduel": 15.9,
         "DraftKings": 11,
+        "position": "OF",
         "positionPercentile": 70.11494252873564,
         "overallPercentile": 74.71264367816092
       },
@@ -2031,6 +2284,7 @@
         "name": "Marcus Semien",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "SS",
         "positionPercentile": 67.85714285714286,
         "overallPercentile": 49.808429118773944
       },
@@ -2039,6 +2293,7 @@
         "name": "Matt Olson",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "1B",
         "positionPercentile": 96.29629629629629,
         "overallPercentile": 78.544061302682
       },
@@ -2047,6 +2302,7 @@
         "name": "Tony Kemp",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2055,6 +2311,7 @@
         "name": "Mauricio Dubon",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "SS",
         "positionPercentile": 75,
         "overallPercentile": 53.25670498084292
       },
@@ -2063,6 +2320,7 @@
         "name": "Chadwick Tromp",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 60,
         "overallPercentile": 39.08045977011494
       },
@@ -2071,6 +2329,7 @@
         "name": "Matt Chapman",
         "Fanduel": 3.2,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 37.5,
         "overallPercentile": 31.417624521072796
       },
@@ -2079,6 +2338,7 @@
         "name": "Sean Murphy",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -2087,6 +2347,7 @@
         "name": "Jesus Luzardo",
         "Fanduel": 1,
         "DraftKings": -5.1,
+        "position": "P",
         "positionPercentile": 12,
         "overallPercentile": 17.24137931034483
       }
@@ -2111,6 +2372,7 @@
         "name": "Asdrubal Cabrera",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 43.75,
         "overallPercentile": 33.71647509578544
       },
@@ -2119,6 +2381,7 @@
         "name": "Eric Thames",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -2127,6 +2390,7 @@
         "name": "Starlin Castro",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "2B",
         "positionPercentile": 96.875,
         "overallPercentile": 83.9080459770115
       },
@@ -2135,6 +2399,7 @@
         "name": "Stephen Strasburg",
         "Fanduel": 4,
         "DraftKings": -1.05,
+        "position": "P",
         "positionPercentile": 20,
         "overallPercentile": 33.33333333333333
       },
@@ -2143,6 +2408,7 @@
         "name": "Michael A. Taylor",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -2151,6 +2417,7 @@
         "name": "Yan Gomes",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -2159,6 +2426,7 @@
         "name": "Bryan Holaday",
         "Fanduel": 16.2,
         "DraftKings": 12,
+        "position": "C",
         "positionPercentile": 80,
         "overallPercentile": 75.47892720306514
       },
@@ -2167,6 +2435,7 @@
         "name": "Asher Wojciechowski",
         "Fanduel": 23,
         "DraftKings": 12.65,
+        "position": "P",
         "positionPercentile": 52,
         "overallPercentile": 85.82375478927203
       },
@@ -2175,6 +2444,7 @@
         "name": "Adam Eaton",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -2183,6 +2453,7 @@
         "name": "Hanser Alberto",
         "Fanduel": 19.2,
         "DraftKings": 14,
+        "position": "2B",
         "positionPercentile": 93.75,
         "overallPercentile": 81.60919540229885
       },
@@ -2191,6 +2462,7 @@
         "name": "Renato Nunez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -2199,6 +2471,7 @@
         "name": "Dwight Smith Jr.",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -2207,6 +2480,7 @@
         "name": "Trea Turner",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "SS",
         "positionPercentile": 67.85714285714286,
         "overallPercentile": 49.808429118773944
       },
@@ -2215,6 +2489,7 @@
         "name": "Rio Ruiz",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2223,6 +2498,7 @@
         "name": "Anthony Santander",
         "Fanduel": 10,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 52.87356321839081,
         "overallPercentile": 63.2183908045977
       },
@@ -2231,6 +2507,7 @@
         "name": "Pat Valaika",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "3B",
         "positionPercentile": 46.875,
         "overallPercentile": 39.08045977011494
       },
@@ -2239,6 +2516,7 @@
         "name": "Chance Sisco",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -2247,6 +2525,7 @@
         "name": "Austin Hays",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -2255,6 +2534,7 @@
         "name": "Juan Soto",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -2263,6 +2543,7 @@
         "name": "Carter Kieboom",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2271,6 +2552,7 @@
         "name": "Brett Gardner",
         "Fanduel": 12,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 54.02298850574713,
         "overallPercentile": 63.984674329501914
       },
@@ -2279,6 +2561,7 @@
         "name": "Mitch Moreland",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -2287,6 +2570,7 @@
         "name": "Aaron Hicks",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -2295,6 +2579,7 @@
         "name": "Gerrit Cole",
         "Fanduel": 52,
         "DraftKings": 31.35,
+        "position": "P",
         "positionPercentile": 92,
         "overallPercentile": 99.23371647509579
       },
@@ -2303,6 +2588,7 @@
         "name": "Christian Vazquez",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -2311,6 +2597,7 @@
         "name": "DJ LeMahieu",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -2319,6 +2606,7 @@
         "name": "J.D. Martinez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -2327,6 +2615,7 @@
         "name": "Luke Voit",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "1B",
         "positionPercentile": 77.77777777777779,
         "overallPercentile": 67.43295019157088
       },
@@ -2335,6 +2624,7 @@
         "name": "Gio Urshela",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -2343,6 +2633,7 @@
         "name": "Jackie Bradley Jr.",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -2351,6 +2642,7 @@
         "name": "Gary Sanchez",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "C",
         "positionPercentile": 93.33333333333333,
         "overallPercentile": 83.9080459770115
       },
@@ -2359,6 +2651,7 @@
         "name": "Xander Bogaerts",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -2367,6 +2660,7 @@
         "name": "Kevin Pillar",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -2375,6 +2669,7 @@
         "name": "Colten Brewer",
         "Fanduel": 8,
         "DraftKings": 1.8,
+        "position": "P",
         "positionPercentile": 28.000000000000004,
         "overallPercentile": 49.42528735632184
       },
@@ -2383,6 +2678,7 @@
         "name": "Clint Frazier",
         "Fanduel": 13,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 70.88122605363985
       },
@@ -2391,6 +2687,7 @@
         "name": "Mike Tauchman",
         "Fanduel": 32.4,
         "DraftKings": 23,
+        "position": "OF",
         "positionPercentile": 95.40229885057471,
         "overallPercentile": 94.6360153256705
       },
@@ -2399,6 +2696,7 @@
         "name": "Rafael Devers",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -2407,6 +2705,7 @@
         "name": "Alex Verdugo",
         "Fanduel": 22.2,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 80.45977011494253,
         "overallPercentile": 83.9080459770115
       },
@@ -2415,6 +2714,7 @@
         "name": "Gleyber Torres",
         "Fanduel": 28.4,
         "DraftKings": 22,
+        "position": "SS",
         "positionPercentile": 92.85714285714286,
         "overallPercentile": 90.80459770114942
       },
@@ -2423,6 +2723,7 @@
         "name": "Jonathan Arauz",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -2431,6 +2732,7 @@
         "name": "Robinson Cano",
         "Fanduel": 25.2,
         "DraftKings": 19,
+        "position": "2B",
         "positionPercentile": 100,
         "overallPercentile": 87.35632183908046
       },
@@ -2439,6 +2741,7 @@
         "name": "Andrew McCutchen",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -2447,6 +2750,7 @@
         "name": "Jay Bruce",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -2455,6 +2759,7 @@
         "name": "Wilson Ramos",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -2463,6 +2768,7 @@
         "name": "Jean Segura",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -2471,6 +2777,7 @@
         "name": "Didi Gregorius",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "SS",
         "positionPercentile": 75,
         "overallPercentile": 53.25670498084292
       },
@@ -2479,6 +2786,7 @@
         "name": "Bryce Harper",
         "Fanduel": 12.7,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -2487,6 +2795,7 @@
         "name": "J.T. Realmuto",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "C",
         "positionPercentile": 100,
         "overallPercentile": 88.50574712643679
       },
@@ -2495,6 +2804,7 @@
         "name": "Brandon Nimmo",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 59.77011494252874,
         "overallPercentile": 67.43295019157088
       },
@@ -2503,6 +2813,7 @@
         "name": "Roman Quinn",
         "Fanduel": 12.7,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -2511,6 +2822,7 @@
         "name": "Walker Lockett",
         "Fanduel": 18,
         "DraftKings": 7.5,
+        "position": "P",
         "positionPercentile": 40,
         "overallPercentile": 76.24521072796935
       },
@@ -2519,6 +2831,7 @@
         "name": "Michael Conforto",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -2527,6 +2840,7 @@
         "name": "Amed Rosario",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -2535,6 +2849,7 @@
         "name": "Dominic Smith",
         "Fanduel": 28.2,
         "DraftKings": 21,
+        "position": "OF",
         "positionPercentile": 89.65517241379311,
         "overallPercentile": 90.42145593869732
       },
@@ -2543,6 +2858,7 @@
         "name": "Luis Guillorme",
         "Fanduel": 18.5,
         "DraftKings": 15,
+        "position": "2B",
         "positionPercentile": 90.625,
         "overallPercentile": 77.77777777777779
       },
@@ -2551,6 +2867,7 @@
         "name": "Rhys Hoskins",
         "Fanduel": 15.2,
         "DraftKings": 11,
+        "position": "1B",
         "positionPercentile": 88.88888888888889,
         "overallPercentile": 72.41379310344827
       },
@@ -2559,6 +2876,7 @@
         "name": "Pete Alonso",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -2567,6 +2885,7 @@
         "name": "Andres Gimenez",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "2B",
         "positionPercentile": 78.125,
         "overallPercentile": 64.75095785440614
       },
@@ -2575,6 +2894,7 @@
         "name": "Spencer Howard",
         "Fanduel": 7,
         "DraftKings": 0.1,
+        "position": "P",
         "positionPercentile": 24,
         "overallPercentile": 49.042145593869726
       },
@@ -2583,6 +2903,7 @@
         "name": "Joey Votto",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "1B",
         "positionPercentile": 74.07407407407408,
         "overallPercentile": 64.75095785440614
       },
@@ -2591,6 +2912,7 @@
         "name": "Freddy Galvis",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "SS",
         "positionPercentile": 85.71428571428571,
         "overallPercentile": 64.75095785440614
       },
@@ -2599,6 +2921,7 @@
         "name": "Sonny Gray",
         "Fanduel": 57,
         "DraftKings": 33.4,
+        "position": "P",
         "positionPercentile": 100,
         "overallPercentile": 100
       },
@@ -2607,6 +2930,7 @@
         "name": "Tucker Barnhart",
         "Fanduel": 16.2,
         "DraftKings": 11,
+        "position": "C",
         "positionPercentile": 80,
         "overallPercentile": 75.47892720306514
       },
@@ -2615,6 +2939,7 @@
         "name": "Erik Gonzalez",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 53.57142857142857,
         "overallPercentile": 33.71647509578544
       },
@@ -2623,6 +2948,7 @@
         "name": "Gregory Polanco",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -2631,6 +2957,7 @@
         "name": "Jacob Stallings",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -2639,6 +2966,7 @@
         "name": "Nick Castellanos",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -2647,6 +2975,7 @@
         "name": "Shogo Akiyama",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -2655,6 +2984,7 @@
         "name": "Josh Bell",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "1B",
         "positionPercentile": 33.33333333333333,
         "overallPercentile": 18.007662835249043
       },
@@ -2663,6 +2993,7 @@
         "name": "Kyle Farmer",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "2B",
         "positionPercentile": 53.125,
         "overallPercentile": 49.808429118773944
       },
@@ -2671,6 +3002,7 @@
         "name": "Colin Moran",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2679,6 +3011,7 @@
         "name": "Jesse Winker",
         "Fanduel": 43.9,
         "DraftKings": 32,
+        "position": "OF",
         "positionPercentile": 98.85057471264368,
         "overallPercentile": 97.31800766283524
       },
@@ -2687,6 +3020,7 @@
         "name": "Josh VanMeter",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -2695,6 +3029,7 @@
         "name": "Adam Frazier",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2703,6 +3038,7 @@
         "name": "Chad Kuhl",
         "Fanduel": 24,
         "DraftKings": 14.25,
+        "position": "P",
         "positionPercentile": 56.00000000000001,
         "overallPercentile": 86.20689655172413
       },
@@ -2711,6 +3047,7 @@
         "name": "Kevin Newman",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -2719,6 +3056,7 @@
         "name": "Cole Tucker",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -2727,6 +3065,7 @@
         "name": "Nick Senzel",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -2735,6 +3074,7 @@
         "name": "Bryan Reynolds",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -2743,6 +3083,7 @@
         "name": "Miguel Cabrera",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -2751,6 +3092,7 @@
         "name": "Carlos Santana",
         "Fanduel": 12.4,
         "DraftKings": 8,
+        "position": "1B",
         "positionPercentile": 77.77777777777779,
         "overallPercentile": 67.43295019157088
       },
@@ -2759,6 +3101,7 @@
         "name": "Cameron Maybin",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -2767,6 +3110,7 @@
         "name": "Ivan Nova",
         "Fanduel": -11,
         "DraftKings": -10.7,
+        "position": "P",
         "positionPercentile": 4,
         "overallPercentile": 0.38314176245210724
       },
@@ -2775,6 +3119,7 @@
         "name": "Austin Romine",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 45.21072796934866
       },
@@ -2783,6 +3128,7 @@
         "name": "Sandy Leon",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "C",
         "positionPercentile": 53.333333333333336,
         "overallPercentile": 33.71647509578544
       },
@@ -2791,6 +3137,7 @@
         "name": "Tyler Naquin",
         "Fanduel": 22.7,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 82.75862068965517,
         "overallPercentile": 85.44061302681992
       },
@@ -2799,6 +3146,7 @@
         "name": "Cesar Hernandez",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -2807,6 +3155,7 @@
         "name": "Domingo Santana",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -2815,6 +3164,7 @@
         "name": "Jonathan Schoop",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -2823,6 +3173,7 @@
         "name": "Delino DeShields",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -2831,6 +3182,7 @@
         "name": "JaCoby Jones",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -2839,6 +3191,7 @@
         "name": "Niko Goodrum",
         "Fanduel": 31.2,
         "DraftKings": 23,
+        "position": "SS",
         "positionPercentile": 100,
         "overallPercentile": 93.10344827586206
       },
@@ -2847,6 +3200,7 @@
         "name": "Jeimer Candelario",
         "Fanduel": 18.4,
         "DraftKings": 15,
+        "position": "1B",
         "positionPercentile": 92.5925925925926,
         "overallPercentile": 76.62835249042146
       },
@@ -2855,6 +3209,7 @@
         "name": "Francisco Lindor",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 57.14285714285714,
         "overallPercentile": 39.08045977011494
       },
@@ -2863,6 +3218,7 @@
         "name": "Jose Ramirez",
         "Fanduel": 15.7,
         "DraftKings": 11,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -2871,6 +3227,7 @@
         "name": "Victor Reyes",
         "Fanduel": 12,
         "DraftKings": 11,
+        "position": "OF",
         "positionPercentile": 54.02298850574713,
         "overallPercentile": 63.984674329501914
       },
@@ -2879,6 +3236,7 @@
         "name": "Franmil Reyes",
         "Fanduel": 38.1,
         "DraftKings": 27,
+        "position": "OF",
         "positionPercentile": 97.70114942528735,
         "overallPercentile": 96.16858237547893
       },
@@ -2887,6 +3245,7 @@
         "name": "Willi Castro",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -2895,6 +3254,7 @@
         "name": "Aaron Civale",
         "Fanduel": 21,
         "DraftKings": 10.1,
+        "position": "P",
         "positionPercentile": 44,
         "overallPercentile": 82.37547892720306
       },
@@ -2903,6 +3263,7 @@
         "name": "Nick Markakis",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -2911,6 +3272,7 @@
         "name": "Matt Joyce",
         "Fanduel": 9,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -2919,6 +3281,7 @@
         "name": "Francisco Cervelli",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -2927,6 +3290,7 @@
         "name": "Travis d'Arnaud",
         "Fanduel": 21.7,
         "DraftKings": 17,
+        "position": "C",
         "positionPercentile": 90,
         "overallPercentile": 83.14176245210729
       },
@@ -2935,6 +3299,7 @@
         "name": "Freddie Freeman",
         "Fanduel": 6,
         "DraftKings": 6,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -2943,6 +3308,7 @@
         "name": "Corey Dickerson",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 50.57471264367817,
         "overallPercentile": 60.53639846743295
       },
@@ -2951,6 +3317,7 @@
         "name": "Marcell Ozuna",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -2959,6 +3326,7 @@
         "name": "Ender Inciarte",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -2967,6 +3335,7 @@
         "name": "Jonathan Villar",
         "Fanduel": 30.7,
         "DraftKings": 24,
+        "position": "SS",
         "positionPercentile": 96.42857142857143,
         "overallPercentile": 92.72030651340997
       },
@@ -2975,6 +3344,7 @@
         "name": "Jesus Aguilar",
         "Fanduel": 13.5,
         "DraftKings": 9,
+        "position": "1B",
         "positionPercentile": 85.18518518518519,
         "overallPercentile": 71.64750957854406
       },
@@ -2983,6 +3353,7 @@
         "name": "Adam Duvall",
         "Fanduel": 12.5,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 60.91954022988506,
         "overallPercentile": 68.96551724137932
       },
@@ -2991,6 +3362,7 @@
         "name": "Jon Berti",
         "Fanduel": 18.4,
         "DraftKings": 15,
+        "position": "2B",
         "positionPercentile": 87.5,
         "overallPercentile": 76.62835249042146
       },
@@ -2999,6 +3371,7 @@
         "name": "Brian Anderson",
         "Fanduel": 6.5,
         "DraftKings": 4,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -3007,6 +3380,7 @@
         "name": "Johan Camargo",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3015,6 +3389,7 @@
         "name": "Dansby Swanson",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3023,6 +3398,7 @@
         "name": "Pablo Lopez",
         "Fanduel": 46,
         "DraftKings": 25.3,
+        "position": "P",
         "positionPercentile": 80,
         "overallPercentile": 98.08429118773945
       },
@@ -3031,6 +3407,7 @@
         "name": "Magneuris Sierra",
         "Fanduel": 24.9,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 83.9080459770115,
         "overallPercentile": 86.97318007662835
       },
@@ -3039,6 +3416,7 @@
         "name": "Eddy Alvarez",
         "Fanduel": 12.4,
         "DraftKings": 9,
+        "position": "3B",
         "positionPercentile": 78.125,
         "overallPercentile": 67.43295019157088
       },
@@ -3047,6 +3425,7 @@
         "name": "Kyle Wright",
         "Fanduel": 3,
         "DraftKings": -2.05,
+        "position": "P",
         "positionPercentile": 16,
         "overallPercentile": 18.007662835249043
       },
@@ -3055,6 +3434,7 @@
         "name": "Austin Riley",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3063,6 +3443,7 @@
         "name": "Howie Kendrick",
         "Fanduel": 13.2,
         "DraftKings": 9,
+        "position": "2B",
         "positionPercentile": 81.25,
         "overallPercentile": 71.26436781609196
       },
@@ -3071,6 +3452,7 @@
         "name": "Asdrubal Cabrera",
         "Fanduel": 28.4,
         "DraftKings": 20,
+        "position": "3B",
         "positionPercentile": 96.875,
         "overallPercentile": 90.80459770114942
       },
@@ -3079,6 +3461,7 @@
         "name": "Chris Davis",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -3087,6 +3470,7 @@
         "name": "Tommy Milone",
         "Fanduel": 9,
         "DraftKings": 1.6,
+        "position": "P",
         "positionPercentile": 32,
         "overallPercentile": 49.808429118773944
       },
@@ -3095,6 +3479,7 @@
         "name": "Eric Thames",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -3103,6 +3488,7 @@
         "name": "Stephen Strasburg",
         "Fanduel": -1,
         "DraftKings": -1.1,
+        "position": "P",
         "positionPercentile": 8,
         "overallPercentile": 0.7662835249042145
       },
@@ -3111,6 +3497,7 @@
         "name": "Michael A. Taylor",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -3119,6 +3506,7 @@
         "name": "Yan Gomes",
         "Fanduel": 25.2,
         "DraftKings": 19,
+        "position": "C",
         "positionPercentile": 96.66666666666667,
         "overallPercentile": 87.35632183908046
       },
@@ -3127,6 +3515,7 @@
         "name": "Jose Iglesias",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3135,6 +3524,7 @@
         "name": "Bryan Holaday",
         "Fanduel": 1,
         "DraftKings": -0.45,
+        "position": "C",
         "positionPercentile": 20,
         "overallPercentile": 17.24137931034483
       },
@@ -3143,6 +3533,7 @@
         "name": "Adam Eaton",
         "Fanduel": 22.4,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 81.60919540229885,
         "overallPercentile": 85.0574712643678
       },
@@ -3151,6 +3542,7 @@
         "name": "Hanser Alberto",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 65.625,
         "overallPercentile": 60.53639846743295
       },
@@ -3159,6 +3551,7 @@
         "name": "Dwight Smith Jr.",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -3167,6 +3560,7 @@
         "name": "Pedro Severino",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -3175,6 +3569,7 @@
         "name": "Trea Turner",
         "Fanduel": 18.9,
         "DraftKings": 15,
+        "position": "SS",
         "positionPercentile": 89.28571428571429,
         "overallPercentile": 80.84291187739464
       },
@@ -3183,6 +3578,7 @@
         "name": "Rio Ruiz",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -3191,6 +3587,7 @@
         "name": "Anthony Santander",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -3199,6 +3596,7 @@
         "name": "Pat Valaika",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3207,6 +3605,7 @@
         "name": "Chance Sisco",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "C",
         "positionPercentile": 53.333333333333336,
         "overallPercentile": 33.71647509578544
       },
@@ -3215,6 +3614,7 @@
         "name": "Victor Robles",
         "Fanduel": 18.4,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 71.26436781609196,
         "overallPercentile": 76.62835249042146
       },
@@ -3223,6 +3623,7 @@
         "name": "Austin Hays",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -3231,6 +3632,7 @@
         "name": "Juan Soto",
         "Fanduel": 25.4,
         "DraftKings": 19,
+        "position": "OF",
         "positionPercentile": 85.0574712643678,
         "overallPercentile": 88.12260536398468
       },
@@ -3239,6 +3641,7 @@
         "name": "Carter Kieboom",
         "Fanduel": 18.9,
         "DraftKings": 14,
+        "position": "3B",
         "positionPercentile": 90.625,
         "overallPercentile": 80.84291187739464
       },
@@ -3247,6 +3650,7 @@
         "name": "Manny Pina",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -3255,6 +3659,7 @@
         "name": "Jason Heyward",
         "Fanduel": 12.2,
         "DraftKings": 10,
+        "position": "OF",
         "positionPercentile": 56.32183908045977,
         "overallPercentile": 64.75095785440614
       },
@@ -3263,6 +3668,7 @@
         "name": "Eric Sogard",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 46.875,
         "overallPercentile": 39.08045977011494
       },
@@ -3271,6 +3677,7 @@
         "name": "Anthony Rizzo",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "1B",
         "positionPercentile": 70.37037037037037,
         "overallPercentile": 60.53639846743295
       },
@@ -3279,6 +3686,7 @@
         "name": "Justin Smoak",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -3287,6 +3695,7 @@
         "name": "Jason Kipnis",
         "Fanduel": 9.7,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 71.875,
         "overallPercentile": 62.45210727969349
       },
@@ -3295,6 +3704,7 @@
         "name": "Avisail Garcia",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -3303,6 +3713,7 @@
         "name": "Brock Holt",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3311,6 +3722,7 @@
         "name": "Willson Contreras",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -3319,6 +3731,7 @@
         "name": "Christian Yelich",
         "Fanduel": 25.7,
         "DraftKings": 18,
+        "position": "OF",
         "positionPercentile": 86.20689655172413,
         "overallPercentile": 88.50574712643679
       },
@@ -3327,6 +3740,7 @@
         "name": "Ben Gamel",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3335,6 +3749,7 @@
         "name": "Javier Baez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -3343,6 +3758,7 @@
         "name": "Brandon Woodruff",
         "Fanduel": 16,
         "DraftKings": 8.15,
+        "position": "P",
         "positionPercentile": 36,
         "overallPercentile": 75.09578544061303
       },
@@ -3351,6 +3767,7 @@
         "name": "David Bote",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "3B",
         "positionPercentile": 65.625,
         "overallPercentile": 53.25670498084292
       },
@@ -3359,6 +3776,7 @@
         "name": "Alec Mills",
         "Fanduel": 27,
         "DraftKings": 15.3,
+        "position": "P",
         "positionPercentile": 60,
         "overallPercentile": 90.03831417624522
       },
@@ -3367,6 +3785,7 @@
         "name": "Kyle Schwarber",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -3375,6 +3794,7 @@
         "name": "Ian Happ",
         "Fanduel": 6.5,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 34.48275862068966,
         "overallPercentile": 45.21072796934866
       },
@@ -3383,6 +3803,7 @@
         "name": "Luis Urias",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -3391,6 +3812,7 @@
         "name": "Nico Hoerner",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -3399,6 +3821,7 @@
         "name": "Keston Hiura",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "2B",
         "positionPercentile": 43.75,
         "overallPercentile": 39.08045977011494
       },
@@ -3407,6 +3830,7 @@
         "name": "Shin-Soo Choo",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -3415,6 +3839,7 @@
         "name": "Jeff Mathis",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -3423,6 +3848,7 @@
         "name": "Elvis Andrus",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "SS",
         "positionPercentile": 3.571428571428571,
         "overallPercentile": 1.1494252873563218
       },
@@ -3431,6 +3857,7 @@
         "name": "Daniel Murphy",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -3439,6 +3866,7 @@
         "name": "Todd Frazier",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -3447,6 +3875,7 @@
         "name": "Lance Lynn",
         "Fanduel": 52,
         "DraftKings": 35.55,
+        "position": "P",
         "positionPercentile": 92,
         "overallPercentile": 99.23371647509579
       },
@@ -3455,6 +3884,7 @@
         "name": "Charlie Blackmon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3463,6 +3893,7 @@
         "name": "Nolan Arenado",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 40.625,
         "overallPercentile": 32.18390804597701
       },
@@ -3471,6 +3902,7 @@
         "name": "Tony Wolters",
         "Fanduel": 3.2,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 50,
         "overallPercentile": 31.417624521072796
       },
@@ -3479,6 +3911,7 @@
         "name": "Raimel Tapia",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3487,6 +3920,7 @@
         "name": "Trevor Story",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3495,6 +3929,7 @@
         "name": "Rougned Odor",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "2B",
         "positionPercentile": 50,
         "overallPercentile": 45.21072796934866
       },
@@ -3503,6 +3938,7 @@
         "name": "Joey Gallo",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3511,6 +3947,7 @@
         "name": "David Dahl",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3519,6 +3956,7 @@
         "name": "Ryan McMahon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3527,6 +3965,7 @@
         "name": "Isiah Kiner-Falefa",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "3B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3535,6 +3974,7 @@
         "name": "Willie Calhoun",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -3543,6 +3983,7 @@
         "name": "Garrett Hampson",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "2B",
         "positionPercentile": 43.75,
         "overallPercentile": 39.08045977011494
       },
@@ -3551,6 +3992,7 @@
         "name": "Ryan Castellani",
         "Fanduel": 32,
         "DraftKings": 20.1,
+        "position": "P",
         "positionPercentile": 64,
         "overallPercentile": 93.48659003831418
       },
@@ -3559,6 +4001,7 @@
         "name": "Nick Solak",
         "Fanduel": 33.9,
         "DraftKings": 26,
+        "position": "OF",
         "positionPercentile": 96.55172413793103,
         "overallPercentile": 95.01915708812261
       },
@@ -3567,6 +4010,7 @@
         "name": "Martin Maldonado",
         "Fanduel": 19.2,
         "DraftKings": 13,
+        "position": "C",
         "positionPercentile": 86.66666666666667,
         "overallPercentile": 81.60919540229885
       },
@@ -3575,6 +4019,7 @@
         "name": "Josh Reddick",
         "Fanduel": 18.7,
         "DraftKings": 15,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -3583,6 +4028,7 @@
         "name": "Dee Gordon",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3591,6 +4037,7 @@
         "name": "Jose Altuve",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 37.5,
         "overallPercentile": 32.18390804597701
       },
@@ -3599,6 +4046,7 @@
         "name": "Kyle Seager",
         "Fanduel": 6.5,
         "DraftKings": 5,
+        "position": "3B",
         "positionPercentile": 53.125,
         "overallPercentile": 45.21072796934866
       },
@@ -3607,6 +4055,7 @@
         "name": "George Springer",
         "Fanduel": 18.6,
         "DraftKings": 13,
+        "position": "OF",
         "positionPercentile": 72.41379310344827,
         "overallPercentile": 78.16091954022988
       },
@@ -3615,6 +4064,7 @@
         "name": "Austin Nola",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -3623,6 +4073,7 @@
         "name": "Carlos Correa",
         "Fanduel": 9.7,
         "DraftKings": 6,
+        "position": "SS",
         "positionPercentile": 82.14285714285714,
         "overallPercentile": 62.45210727969349
       },
@@ -3631,6 +4082,7 @@
         "name": "Tim Lopes",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 37.93103448275862,
         "overallPercentile": 49.808429118773944
       },
@@ -3639,6 +4091,7 @@
         "name": "Alex Bregman",
         "Fanduel": 15.7,
         "DraftKings": 11,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -3647,6 +4100,7 @@
         "name": "J.P. Crawford",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3655,6 +4109,7 @@
         "name": "Shed Long Jr.",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "2B",
         "positionPercentile": 28.125,
         "overallPercentile": 18.007662835249043
       },
@@ -3663,6 +4118,7 @@
         "name": "Yuli Gurriel",
         "Fanduel": 33.9,
         "DraftKings": 26,
+        "position": "1B",
         "positionPercentile": 100,
         "overallPercentile": 95.01915708812261
       },
@@ -3671,6 +4127,7 @@
         "name": "Kyle Lewis",
         "Fanduel": 6,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 19.54022988505747,
         "overallPercentile": 33.71647509578544
       },
@@ -3679,6 +4136,7 @@
         "name": "Framber Valdez",
         "Fanduel": 40,
         "DraftKings": 20.7,
+        "position": "P",
         "positionPercentile": 72,
         "overallPercentile": 96.55172413793103
       },
@@ -3687,6 +4145,7 @@
         "name": "Kyle Tucker",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -3695,6 +4154,7 @@
         "name": "Dylan Moore",
         "Fanduel": 12.2,
         "DraftKings": 9,
+        "position": "3B",
         "positionPercentile": 75,
         "overallPercentile": 64.75095785440614
       },
@@ -3703,6 +4163,7 @@
         "name": "Evan White",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -3711,6 +4172,7 @@
         "name": "Yordan Alvarez",
         "Fanduel": 32.2,
         "DraftKings": 22,
+        "position": "OF",
         "positionPercentile": 93.10344827586206,
         "overallPercentile": 93.86973180076629
       },
@@ -3719,6 +4181,7 @@
         "name": "Tommy Pham",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3727,6 +4190,7 @@
         "name": "David Peralta",
         "Fanduel": 9.5,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 50.57471264367817,
         "overallPercentile": 60.53639846743295
       },
@@ -3735,6 +4199,7 @@
         "name": "Stephen Vogt",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -3743,6 +4208,7 @@
         "name": "Eric Hosmer",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "1B",
         "positionPercentile": 62.96296296296296,
         "overallPercentile": 49.808429118773944
       },
@@ -3751,6 +4217,7 @@
         "name": "Wil Myers",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -3759,6 +4226,7 @@
         "name": "Starling Marte",
         "Fanduel": 12.7,
         "DraftKings": 9,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -3767,6 +4235,7 @@
         "name": "Christian Walker",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -3775,6 +4244,7 @@
         "name": "Kole Calhoun",
         "Fanduel": 28.4,
         "DraftKings": 21,
+        "position": "OF",
         "positionPercentile": 90.80459770114942,
         "overallPercentile": 90.80459770114942
       },
@@ -3783,6 +4253,7 @@
         "name": "Manny Machado",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -3791,6 +4262,7 @@
         "name": "Jurickson Profar",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3799,6 +4271,7 @@
         "name": "Merrill Kelly",
         "Fanduel": 51,
         "DraftKings": 30,
+        "position": "P",
         "positionPercentile": 88,
         "overallPercentile": 98.85057471264368
       },
@@ -3807,6 +4280,7 @@
         "name": "Nick Ahmed",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "SS",
         "positionPercentile": 57.14285714285714,
         "overallPercentile": 39.08045977011494
       },
@@ -3815,6 +4289,7 @@
         "name": "Ketel Marte",
         "Fanduel": 3.5,
         "DraftKings": 2,
+        "position": "2B",
         "positionPercentile": 37.5,
         "overallPercentile": 32.18390804597701
       },
@@ -3823,6 +4298,7 @@
         "name": "Francisco Mejia",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -3831,6 +4307,7 @@
         "name": "Dinelson Lamet",
         "Fanduel": 43,
         "DraftKings": 25.1,
+        "position": "P",
         "positionPercentile": 76,
         "overallPercentile": 96.93486590038314
       },
@@ -3839,6 +4316,7 @@
         "name": "Jake Cronenworth",
         "Fanduel": 9.5,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 65.625,
         "overallPercentile": 60.53639846743295
       },
@@ -3847,6 +4325,7 @@
         "name": "Trent Grisham",
         "Fanduel": 15,
         "DraftKings": 13,
+        "position": "OF",
         "positionPercentile": 67.81609195402298,
         "overallPercentile": 72.03065134099617
       },
@@ -3855,6 +4334,7 @@
         "name": "Andy Young",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 21.875,
         "overallPercentile": 18.007662835249043
       },
@@ -3863,6 +4343,7 @@
         "name": "Fernando Tatis Jr.",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3871,6 +4352,7 @@
         "name": "Daulton Varsho",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 60,
         "overallPercentile": 39.08045977011494
       },
@@ -3879,6 +4361,7 @@
         "name": "Albert Pujols",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 59.25925925925925,
         "overallPercentile": 39.08045977011494
       },
@@ -3887,6 +4370,7 @@
         "name": "Justin Upton",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3895,6 +4379,7 @@
         "name": "Clayton Kershaw",
         "Fanduel": 46,
         "DraftKings": 27.95,
+        "position": "P",
         "positionPercentile": 80,
         "overallPercentile": 98.08429118773945
       },
@@ -3903,6 +4388,7 @@
         "name": "Justin Turner",
         "Fanduel": 15.7,
         "DraftKings": 12,
+        "position": "3B",
         "positionPercentile": 81.25,
         "overallPercentile": 73.18007662835248
       },
@@ -3911,6 +4397,7 @@
         "name": "Anthony Rendon",
         "Fanduel": 24.7,
         "DraftKings": 18,
+        "position": "3B",
         "positionPercentile": 93.75,
         "overallPercentile": 86.59003831417624
       },
@@ -3919,6 +4406,7 @@
         "name": "AJ Pollock",
         "Fanduel": 15.7,
         "DraftKings": 12,
+        "position": "OF",
         "positionPercentile": 68.96551724137932,
         "overallPercentile": 73.18007662835248
       },
@@ -3927,6 +4415,7 @@
         "name": "Mike Trout",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "OF",
         "positionPercentile": 1.1494252873563218,
         "overallPercentile": 1.1494252873563218
       },
@@ -3935,6 +4424,7 @@
         "name": "Max Stassi",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "C",
         "positionPercentile": 3.3333333333333335,
         "overallPercentile": 1.1494252873563218
       },
@@ -3943,6 +4433,7 @@
         "name": "Kike Hernandez",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -3951,6 +4442,7 @@
         "name": "Austin Barnes",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "C",
         "positionPercentile": 70,
         "overallPercentile": 53.25670498084292
       },
@@ -3959,6 +4451,7 @@
         "name": "Mookie Betts",
         "Fanduel": 3,
         "DraftKings": 2,
+        "position": "OF",
         "positionPercentile": 13.793103448275861,
         "overallPercentile": 18.007662835249043
       },
@@ -3967,6 +4460,7 @@
         "name": "Tommy La Stella",
         "Fanduel": 10,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 75,
         "overallPercentile": 63.2183908045977
       },
@@ -3975,6 +4469,7 @@
         "name": "Chris Taylor",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -3983,6 +4478,7 @@
         "name": "Corey Seager",
         "Fanduel": 6.7,
         "DraftKings": 4,
+        "position": "SS",
         "positionPercentile": 64.28571428571429,
         "overallPercentile": 48.65900383141762
       },
@@ -3991,6 +4487,7 @@
         "name": "Shohei Ohtani",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "OF",
         "positionPercentile": 42.5287356321839,
         "overallPercentile": 53.25670498084292
       },
@@ -3999,6 +4496,7 @@
         "name": "Cody Bellinger",
         "Fanduel": 44.4,
         "DraftKings": 32,
+        "position": "OF",
         "positionPercentile": 100,
         "overallPercentile": 97.70114942528735
       },
@@ -4007,6 +4505,7 @@
         "name": "Edwin Rios",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "1B",
         "positionPercentile": 66.66666666666666,
         "overallPercentile": 53.25670498084292
       },
@@ -4015,6 +4514,7 @@
         "name": "David Fletcher",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "SS",
         "positionPercentile": 17.857142857142858,
         "overallPercentile": 18.007662835249043
       },
@@ -4023,6 +4523,7 @@
         "name": "Patrick Sandoval",
         "Fanduel": 21,
         "DraftKings": 10.7,
+        "position": "P",
         "positionPercentile": 44,
         "overallPercentile": 82.37547892720306
       },
@@ -4031,6 +4532,7 @@
         "name": "Jo Adell",
         "Fanduel": 6.2,
         "DraftKings": 4,
+        "position": "OF",
         "positionPercentile": 26.436781609195403,
         "overallPercentile": 39.08045977011494
       },
@@ -4039,6 +4541,7 @@
         "name": "Pablo Sandoval",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "1B",
         "positionPercentile": 3.7037037037037033,
         "overallPercentile": 1.1494252873563218
       },
@@ -4047,6 +4550,7 @@
         "name": "Hunter Pence",
         "Fanduel": 28.7,
         "DraftKings": 20,
+        "position": "OF",
         "positionPercentile": 91.95402298850574,
         "overallPercentile": 91.95402298850574
       },
@@ -4055,6 +4559,7 @@
         "name": "Donovan Solano",
         "Fanduel": 9.2,
         "DraftKings": 7,
+        "position": "2B",
         "positionPercentile": 56.25,
         "overallPercentile": 53.25670498084292
       },
@@ -4063,6 +4568,7 @@
         "name": "Johnny Cueto",
         "Fanduel": 34,
         "DraftKings": 18.75,
+        "position": "P",
         "positionPercentile": 68,
         "overallPercentile": 95.78544061302682
       },
@@ -4071,6 +4577,7 @@
         "name": "Evan Longoria",
         "Fanduel": 28.7,
         "DraftKings": 21,
+        "position": "3B",
         "positionPercentile": 100,
         "overallPercentile": 91.95402298850574
       },
@@ -4079,6 +4586,7 @@
         "name": "Khris Davis",
         "Fanduel": 12.7,
         "DraftKings": 8,
+        "position": "OF",
         "positionPercentile": 62.06896551724138,
         "overallPercentile": 69.34865900383141
       },
@@ -4087,6 +4595,7 @@
         "name": "Robbie Grossman",
         "Fanduel": 21.9,
         "DraftKings": 16,
+        "position": "OF",
         "positionPercentile": 79.3103448275862,
         "overallPercentile": 83.5249042145594
       },
@@ -4095,6 +4604,7 @@
         "name": "Wilmer Flores",
         "Fanduel": 15.2,
         "DraftKings": 14,
+        "position": "2B",
         "positionPercentile": 84.375,
         "overallPercentile": 72.41379310344827
       },
@@ -4103,6 +4613,7 @@
         "name": "Darin Ruf",
         "Fanduel": 6,
         "DraftKings": 5,
+        "position": "1B",
         "positionPercentile": 44.44444444444444,
         "overallPercentile": 33.71647509578544
       },
@@ -4111,6 +4622,7 @@
         "name": "Mike Yastrzemski",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "OF",
         "positionPercentile": 73.5632183908046,
         "overallPercentile": 78.544061302682
       },
@@ -4119,6 +4631,7 @@
         "name": "Stephen Piscotty",
         "Fanduel": 32.2,
         "DraftKings": 23,
+        "position": "OF",
         "positionPercentile": 93.10344827586206,
         "overallPercentile": 93.86973180076629
       },
@@ -4127,6 +4640,7 @@
         "name": "Mark Canha",
         "Fanduel": 15.9,
         "DraftKings": 11,
+        "position": "OF",
         "positionPercentile": 70.11494252873564,
         "overallPercentile": 74.71264367816092
       },
@@ -4135,6 +4649,7 @@
         "name": "Marcus Semien",
         "Fanduel": 9,
         "DraftKings": 8,
+        "position": "SS",
         "positionPercentile": 67.85714285714286,
         "overallPercentile": 49.808429118773944
       },
@@ -4143,6 +4658,7 @@
         "name": "Matt Olson",
         "Fanduel": 18.7,
         "DraftKings": 14,
+        "position": "1B",
         "positionPercentile": 96.29629629629629,
         "overallPercentile": 78.544061302682
       },
@@ -4151,6 +4667,7 @@
         "name": "Tony Kemp",
         "Fanduel": 0,
         "DraftKings": 0,
+        "position": "2B",
         "positionPercentile": 3.125,
         "overallPercentile": 1.1494252873563218
       },
@@ -4159,6 +4676,7 @@
         "name": "Mauricio Dubon",
         "Fanduel": 9.2,
         "DraftKings": 8,
+        "position": "SS",
         "positionPercentile": 75,
         "overallPercentile": 53.25670498084292
       },
@@ -4167,6 +4685,7 @@
         "name": "Chadwick Tromp",
         "Fanduel": 6.2,
         "DraftKings": 5,
+        "position": "C",
         "positionPercentile": 60,
         "overallPercentile": 39.08045977011494
       },
@@ -4175,6 +4694,7 @@
         "name": "Matt Chapman",
         "Fanduel": 3.2,
         "DraftKings": 2,
+        "position": "3B",
         "positionPercentile": 37.5,
         "overallPercentile": 31.417624521072796
       },
@@ -4183,6 +4703,7 @@
         "name": "Sean Murphy",
         "Fanduel": 3,
         "DraftKings": 3,
+        "position": "C",
         "positionPercentile": 23.333333333333332,
         "overallPercentile": 18.007662835249043
       },
@@ -4191,12 +4712,13 @@
         "name": "Jesus Luzardo",
         "Fanduel": 1,
         "DraftKings": -5.1,
+        "position": "P",
         "positionPercentile": 12,
         "overallPercentile": 17.24137931034483
       }
     ],
-    "avgPositionPercentile": 69.69,
-    "avgOverallPercentile": 42.0,
+    "avgPositionPercentile": 47.9,
+    "avgOverallPercentile": 47.2,
     "positions": [
       "P",
       "OF",

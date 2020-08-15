@@ -106,8 +106,8 @@ export type PerformanceStateProps = {
 export type RecentFantasyData = {
     date: string,
     fantasyData: FantasyData[],
-    positionPercentile: number,
-    overallPercentile: number,
+    avgPositionPercentile: number,
+    avgOverallPercentile: number,
     positions: string[]
 }
 
@@ -115,5 +115,8 @@ export type FantasyData = {
     playerId: number,
     name: string,
     Fanduel: number,
-    DraftKings: number
+    DraftKings: number,
+    position: string,
+    positionPercentile: number,
+    overallPercentile: number
 }

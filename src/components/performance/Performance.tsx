@@ -11,6 +11,7 @@ import {PerformanceChart} from "./PerformanceChart";
 import {PerformanceTable} from "./PerformanceTable";
 import {PositionButtons} from "./PositionButtons";
 import {DateButtons} from "./DateButtons";
+import {PerformanceHeader} from "./PerformanceHeader";
 
 export const Performance = (props: StateProps) => {
     const [state, setState] = useState(INITIAL_PERFORMANCE_STATE);
@@ -24,8 +25,7 @@ export const Performance = (props: StateProps) => {
                 <section className="Performance-header mt-5 mb-2">
                     <DateButtons {...performanceProps}/>
                     <SportButtons {...performanceProps}/>
-                    {state.rollingOverallPercentile &&
-                    <h3>{state.rollingOverallPercentile}</h3>}
+                    <PerformanceHeader {...performanceProps}/>
                 </section>
                 <section className="Performance-data">
                     <PerformanceTable {...performanceProps}/>

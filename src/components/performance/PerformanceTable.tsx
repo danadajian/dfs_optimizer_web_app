@@ -5,16 +5,17 @@ import * as _ from "lodash";
 
 export const PerformanceTable = (props: PerformanceStateProps) => {
     const {recentFantasyData, optimalLineup} = props.state;
-    const {fantasyData, positionPercentile, overallPercentile, positions} = recentFantasyData || {};
+    const {fantasyData, avgPositionPercentile, avgOverallPercentile} = recentFantasyData || {};
 
     const tableData = optimalLineup?.map((optimalPlayer: LineupAttributes) => {
-        const actual = fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId)?.Fanduel || 0;
+        const fantasyDataPlayer = fantasyData!.find((player: FantasyData) => player.playerId === optimalPlayer.playerId);
+        const actual = fantasyDataPlayer?.Fanduel || 0;
+        const {positionPercentile, overallPercentile} = fantasyDataPlayer || {};
         return {
             ...optimalPlayer,
             actual,
             positionPercentile,
-            overallPercentile,
-            positions
+            overallPercentile
         }
     });
 
@@ -41,27 +42,29 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         {
             dataField: 'projection',
             text: 'Projected',
-            formatter: (cell: any, row: any) => <p>{row.projection.toFixed(1)}</p>,
+            formatter: (cell: any, row: any) => <p>{row.projection?.toFixed(1)}</p>,
             footer: (columnData: any) => _.chain(columnData).sum().round(2).value(),
             footerStyle
         },
         {
             dataField: 'actual',
             text: 'Actual',
-            formatter: (cell: any, row: any) => <p>{row.actual.toFixed(1)}</p>,
+            formatter: (cell: any, row: any) => <p>{row.actual?.toFixed(1)}</p>,
             footer: (columnData: any) => _.chain(columnData).sum().round(2).value(),
             footerStyle
         },
         {
             dataField: 'positionPercentile',
             text: 'Percentile (Pos)',
-            footer: (columnData: any) => `Avg: ${_.chain(columnData).mean().round(2).value()}`,
+            formatter: (cell: any, row: any) => <p>{row.positionPercentile?.toFixed(1)}</p>,
+            footer: `Avg: ${avgPositionPercentile}`,
             footerStyle
         },
         {
             dataField: 'overallPercentile',
             text: 'Percentile (Ovr)',
-            footer: (columnData: any) => `Avg: ${_.chain(columnData).mean().round(2).value()}`,
+            formatter: (cell: any, row: any) => <p>{row.overallPercentile?.toFixed(1)}</p>,
+            footer: `Avg: ${avgOverallPercentile}`,
             footerStyle
         }
     ];

@@ -6,7 +6,14 @@ import {getPerformanceDataByDate} from "../../../helpers/getPerformanceDataByDat
 jest.mock('../../../aws/aws');
 jest.mock('../../../helpers/getPerformanceDataByDate/getPerformanceDataByDate');
 
-const allRecentFantasyData = 'all recent fantasy data';
+const allRecentFantasyData = [
+    {
+        avgOverallPercentile: 69.69
+    },
+    {
+        avgOverallPercentile: 420.69
+    }
+];
 const allOptimalLineups = 'all optimal lineups';
 (retrieveObjectFromS3 as jest.Mock).mockImplementation(async (bucketName: string, fileName: string) => {
     const resultMap: any = {
@@ -63,6 +70,7 @@ describe('handleSportChange', () => {
             sport,
             allRecentFantasyData,
             allOptimalLineups,
+            rollingOverallPercentile: 245.2,
             aBitOf: 'data',
             more: 'data'
         })
