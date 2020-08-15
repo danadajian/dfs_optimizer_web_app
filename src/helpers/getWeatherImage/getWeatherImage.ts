@@ -6,7 +6,7 @@ const stormy = require("../../icons/stormy.ico") as any;
 const sunny = require("../../icons/sunny.ico") as any;
 
 export const getWeatherImage = (caseSensitiveForecast: string): any => {
-    const forecast = caseSensitiveForecast.toLowerCase();
+    const forecast = caseSensitiveForecast?.toLowerCase();
     return (forecast) &&
         (forecast.includes('partly')) ? partlyCloudy :
             (forecast.includes('cloud') || forecast.includes('fog')) ? cloudy :

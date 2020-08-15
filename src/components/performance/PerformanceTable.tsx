@@ -16,11 +16,11 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
                 playerPool?.find((playerPoolPlayer: PlayerPoolAttributes) => playerPoolPlayer.playerId === player.playerId)?.position === optimalPlayer.position)).toFixed(1)),
             overallPercentile: Number(getPlayerPercentile(actual, fantasyData!).toFixed(1))
         }
-    }) || [];
+    });
 
     const footerStyle = {
         textAlign: 'center'
-    }
+    };
 
     const columns: any = [
         {
@@ -61,7 +61,7 @@ export const PerformanceTable = (props: PerformanceStateProps) => {
         {
             dataField: 'overallPercentile',
             text: 'Percentile (Ovr)',
-            footer: (columnData: any) => `Avg: ${_.chain(columnData).meanBy().round(2).value()}`,
+            footer: (columnData: any) => `Avg: ${_.chain(columnData).mean().round(2).value()}`,
             footerStyle
         }
     ];
