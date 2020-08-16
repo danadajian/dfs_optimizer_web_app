@@ -1,5 +1,4 @@
-import {DFS_PIPELINE_BUCKET_NAME} from "@dadajian/shared-fantasy-constants";
-import {StartTime} from "../../../types";
+import {DFS_PIPELINE_BUCKET_NAME, StartTime} from "@dadajian/shared-fantasy-constants";
 import {retrieveObjectFromS3} from "../../../aws/aws";
 
 export const handleUpcomingContestsLoad = (setStartTimes: (startTimes: StartTime[]) => void): void => {

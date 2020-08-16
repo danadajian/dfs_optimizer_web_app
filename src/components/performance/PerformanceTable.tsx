@@ -1,7 +1,8 @@
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import {FantasyData, LineupAttributes, PerformanceStateProps} from "../../types";
+import {LineupAttributes, PerformanceStateProps} from "../../types";
 import * as _ from "lodash";
+import {FantasyData} from "@dadajian/shared-fantasy-constants";
 
 export const PerformanceTable = (props: PerformanceStateProps) => {
     const {recentFantasyData, optimalLineup} = props.state;

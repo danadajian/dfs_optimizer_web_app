@@ -1,9 +1,10 @@
 import {Line} from "react-chartjs-2";
 import React from "react";
-import {FantasyData, PerformanceStateProps} from "../../types";
+import {PerformanceStateProps} from "../../types";
 import * as _ from "lodash";
 import {CHART_CONFIG, CHART_OPTIONS} from "../../constants";
 import {playerIsInOptimalLineup} from "../../helpers/playerIsInOptimalLineup/playerIsInOptimalLineup";
+import {FantasyData} from "@dadajian/shared-fantasy-constants";
 
 export const PerformanceChart = (props: PerformanceStateProps) => {
     const {recentFantasyData, optimalLineup, position}: any = props.state;

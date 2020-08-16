@@ -1,3 +1,5 @@
+import {RecentFantasyData} from "@dadajian/shared-fantasy-constants";
+
 export type State = {
     isLoading: boolean,
     isOptimizing?: boolean,
@@ -65,8 +67,6 @@ export type PlayerPoolAttributes = {
     spread?: string,
     overUnder?: number,
     weather?: Weather
-
-    [key: string]: any
 }
 
 export type Weather = {
@@ -78,11 +78,6 @@ export type DfsContest = {
     contest: string,
     players: any[],
     sport?: string
-}
-
-export type StartTime = {
-    sport: string,
-    time: string
 }
 
 export type PerformanceState = {
@@ -101,22 +96,4 @@ export type PerformanceState = {
 export type PerformanceStateProps = {
     state: PerformanceState,
     setState: (state: PerformanceState) => void,
-}
-
-export type RecentFantasyData = {
-    date: string,
-    fantasyData: FantasyData[],
-    avgPositionPercentile: number,
-    avgOverallPercentile: number,
-    positions: string[]
-}
-
-export type FantasyData = {
-    playerId: number,
-    name: string,
-    Fanduel: number,
-    DraftKings: number,
-    position: string,
-    positionPercentile: number,
-    overallPercentile: number
 }
