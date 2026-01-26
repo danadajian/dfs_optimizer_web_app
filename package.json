@@ -22,7 +22,7 @@
     "chart.js": "^2.9.3",
     "dotenv": "latest",
     "html2canvas": "^1.0.0-rc.6",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.23",
     "moment-timezone": "^0.5.31",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
